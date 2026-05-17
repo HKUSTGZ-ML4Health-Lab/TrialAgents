@@ -24,7 +24,7 @@ from utils.data_utils.paths import get_responses_path, get_training_runs_path, g
 from utils.context.process_data import load_clinical_trial_datasets_old, process_patient_df_old
 from utils.metrics import minpse
 from src.training.lnl_train import run_dividemix
-from utils.baselines.small_models import *
+from baselines.small_models import *
 
 
 def set_seed(seed=42):

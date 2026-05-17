@@ -15,7 +15,7 @@ from utils.context.process_data import load_clinical_trial_datasets_old, process
 from utils.retrieval.hparams import nct_config as config
 from utils.data_utils.paths import get_baselines_runs_path, get_baselines_saved_models_path, get_responses_path
 from src.training.lnl_dataloader import process_data
-from TrialAgents.utils.baselines.small_models import *
+from baselines.small_models import *
 
 os.environ["CUDA_VISIBLE_DEVICES"] = config.get("gpuid", "0")
 
