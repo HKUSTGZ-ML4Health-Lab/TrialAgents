@@ -1,0 +1,114 @@
+# TrialAgents Gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+.ENV
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data (large files)
+data/raw/
+data/processed/
+data/outputs/
+data/checkpoints/*.pth
+data/checkpoints/*.pt
+data/checkpoints/*.ckpt
+
+# Logs
+logs/
+*.log
+
+# Results
+results/
+outputs/
+
+# API Keys and Secrets
+*.key
+*.secret
+.env.local
+utils/config.py
+!utils/config.py.example
+
+# Model files
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.pb
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Documentation build
+docs/_build/
+site/
+
+# Test coverage
+htmlcov/
+.coverage
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+typeshed/
+
+# Misc
+*.bak
+*.backup
+*~
+
+# others
+docs/
+.cursorrules
+logs/
+__pycache__/
+*.pyc
+utils/viz/
+data/

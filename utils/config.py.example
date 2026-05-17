@@ -1,0 +1,127 @@
+# LLM API configurations
+LLM_CONFIGS = {
+    "deepseek-chat": {
+        "api_key": "your-deepseek-api-key-here",
+        "api_base": "https://api.deepseek.com/v1",
+        "model": "deepseek-chat",
+        "max_tokens": 4096,
+        "temperature": 0.7,
+    },
+    "deepseek-reasoner": {
+        "api_key": "your-deepseek-api-key-here",
+        "api_base": "https://api.deepseek.com/v1",
+        "model": "deepseek-reasoner",
+        "max_tokens": 4096,
+        "temperature": 0.7,
+    },
+    "gpt-4o": {
+        "api_key": "your-openai-api-key-here",
+        "api_base": "https://api.openai.com/v1",
+        "model": "gpt-4o",
+        "max_tokens": 4096,
+        "temperature": 0.7,
+    },
+    "gpt-4o-mini": {
+        "api_key": "your-openai-api-key-here",
+        "api_base": "https://api.openai.com/v1",
+        "model": "gpt-4o-mini",
+        "max_tokens": 4096,
+        "temperature": 0.7,
+    },
+    "qwen-plus": {
+        "api_key": "your-qwen-api-key-here",
+        "api_base": "https://dashscope.aliyuncs.com/api/v1",
+        "model": "qwen-plus",
+        "max_tokens": 4096,
+        "temperature": 0.7,
+    },
+    "qwen-turbo": {
+        "api_key": "your-qwen-api-key-here",
+        "api_base": "https://dashscope.aliyuncs.com/api/v1",
+        "model": "qwen-turbo",
+        "max_tokens": 4096,
+        "temperature": 0.7,
+    },
+    "gemini-2.0-flash": {
+        "api_key": "your-gemini-api-key-here",
+        "api_base": "https://generativelanguage.googleapis.com",
+        "model": "gemini-2.0-flash",
+        "max_tokens": 4096,
+        "temperature": 0.7,
+    },
+}
+
+# 默认LLM配置
+DEFAULT_LLM = "deepseek-chat"
+
+# 数据集配置
+DATASET_CONFIGS = {
+    "NCT00694382": {
+        "name": "NCT00694382",
+        "description": "Phase III Trial of Chemotherapy",
+        "num_patients": 1162,
+        "num_features": 150,
+        "outcome_type": "binary",
+    },
+    "NCT00174655": {
+        "name": "NCT00174655",
+        "description": "Immunotherapy Trial",
+        "num_patients": 976,
+        "num_features": 120,
+        "outcome_type": "binary",
+    },
+    "NCT00003299": {
+        "name": "NCT00003299",
+        "description": "Radiation Therapy Trial",
+        "num_patients": 563,
+        "num_features": 100,
+        "outcome_type": "binary",
+    },
+}
+
+# Agent配置
+AGENT_CONFIG = {
+    "clinician_num": 3,
+    "max_round": 5,
+    "consensus_threshold": 0.8,
+    "specialties": [
+        "emergency_medicine",
+        "oncology",
+        "general_medicine"
+    ],
+}
+
+# 检索配置
+RETRIEVAL_CONFIG = {
+    "retriever_name": "MedCPT",
+    "corpus_name": "MSD",
+    "top_k": 5,
+    "similarity_threshold": 0.7,
+}
+
+# LNL训练配置
+LNL_CONFIG = {
+    "method": "co_teaching",
+    "noise_rate": 0.2,
+    "forget_rate": 0.2,
+    "num_gradual": 10,
+    "epochs": 100,
+    "batch_size": 32,
+    "learning_rate": 1e-3,
+}
+
+# 数据路径配置（相对路径，基于项目根目录）
+DATA_PATHS = {
+    "raw": "data/raw",
+    "processed": "data/processed",
+    "outputs": "data/outputs",
+    "checkpoints": "data/checkpoints",
+    "logs": "logs",
+}
+
+# 实验配置
+EXPERIMENT_CONFIG = {
+    "save_intermediate": True,
+    "log_level": "INFO",
+    "random_seed": 42,
+}
