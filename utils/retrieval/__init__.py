@@ -16,7 +16,7 @@ import tqdm
 from sentence_transformers.models import Transformer, Pooling
 from sentence_transformers import SentenceTransformer
 
-from ..others.hparams import nct_config
+from .hparams import nct_config
 
 # 配置HF镜像
 os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'

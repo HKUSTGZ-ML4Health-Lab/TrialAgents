@@ -21,7 +21,7 @@ import torch.nn.functional as F
 import torch.backends.cudnn as cudnn
 from torch.utils.tensorboard import SummaryWriter
 
-from baselines.small_models import *
+from TrialAgents.utils.baselines.small_models import *
 from utils.retrieval.hparams import nct_config as default_config
 from utils.data.paths import get_checkpoints_path, get_logs_path
 from src.training.lnl_dataloader import nct_dataloader
