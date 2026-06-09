@@ -1,8 +1,8 @@
 """
-TrialAgents 协作引擎
+TrialAgents Collaboration Engine
 
-从 m-agents/utils/framework.py 迁移并重构
-负责管理多智能体之间的多轮协作讨论流程
+Migrated and refactored from m-agents/utils/framework.py
+Manages the multi-round collaborative discussion workflow between agents.
 """
 
 import json
@@ -15,28 +15,29 @@ from ..agents.clinician_agent import ClinicianAgent  # pyright: ignore[reportMis
 
 class CollaborationEngine:
     """
-    协作引擎 / Collaboration Engine
-    
-    管理多轮协作讨论流程，协调SupervisorAgent和多个ClinicianAgent之间的交互。
-    
-    工作流程：
-    1. 初始化：接收初始Supervisor意见和报告
-    2. 多轮讨论：每轮收集Clinician反馈，Supervisor整合
-    3. 终止判断：根据Supervisor的action决定是否继续或结束
-    4. 输出：最终的报告和token统计
-    
+    Collaboration Engine
+
+    Manages the multi-round collaborative discussion workflow, coordinating
+    between SupervisorAgent and multiple ClinicianAgents.
+
+    Workflow:
+    1. Initialization: Receive initial Supervisor opinion and report
+    2. Multi-round discussion: Collect Clinician feedback each round, Supervisor integrates
+    3. Termination: Decide whether to continue or finalize based on Supervisor's action
+    4. Output: Final report and token statistics
+
     Attributes:
-        supervisor_agent: SupervisorAgent实例
-        clinician_agents: ClinicianAgent列表
-        supervisor_opinion: 当前Supervisor意见
-        supervisor_report: 当前Supervisor报告
-        clinician_responses: clinician响应列表
-        clinician_num: clinician数量
-        max_round: 最大讨论轮数
-        now_round: 当前轮数
-        save_dir: 保存目录
+        supervisor_agent: SupervisorAgent instance
+        clinician_agents: List of ClinicianAgent instances
+        supervisor_opinion: Current Supervisor opinion
+        supervisor_report: Current Supervisor report
+        clinician_responses: Clinician response list
+        clinician_num: Number of clinicians
+        max_round: Maximum discussion rounds
+        now_round: Current round number
+        save_dir: Save directory
     """
-    
+
     def __init__(
         self,
         supervisor_agent: SupervisorAgent,
@@ -48,16 +49,16 @@ class CollaborationEngine:
         max_round: int = 3
     ):
         """
-        初始化协作引擎
-        
+        Initialize the Collaboration Engine.
+
         Args:
-            supervisor_agent: SupervisorAgent实例
-            clinician_agents: ClinicianAgent列表
-            supervisor_opinion: 初始Supervisor意见
-            supervisor_report: 初始Supervisor报告
-            save_dir: 保存目录路径
-            clinician_num: clinician数量
-            max_round: 最大讨论轮数
+            supervisor_agent: SupervisorAgent instance
+            clinician_agents: List of ClinicianAgent instances
+            supervisor_opinion: Initial Supervisor opinion
+            supervisor_report: Initial Supervisor report
+            save_dir: Save directory path
+            clinician_num: Number of clinicians
+            max_round: Maximum discussion rounds
         """
         self.supervisor_agent = supervisor_agent
         self.clinician_agents = clinician_agents
@@ -66,57 +67,48 @@ class CollaborationEngine:
         self.save_dir = save_dir
         self.clinician_num = clinician_num
         self.max_round = max_round
-        
+
         self.clinician_responses = []
         self.now_round = 0
-    
+
     def collaborate(self) -> Tuple[str, int, int, int]:
         """
-        执行多轮协作讨论
-        
-        核心方法，执行阶段二的协作流程：
-        1. 每轮并行收集所有Clinician的反馈
-        2. Supervisor整合反馈并生成新报告
-        3. Supervisor决定是继续还是结束
-        4. 达到max_round或Supervisor决定结束则退出
-        
+        Execute multi-round collaborative discussion.
+
+        Core method for Phase 2 collaboration flow:
+        1. Collect feedback from all Clinicians in parallel each round
+        2. Supervisor integrates feedback and generates new report
+        3. Supervisor decides whether to continue or finalize
+        4. Exit when max_round reached or Supervisor decides to finalize
+
         Returns:
             (final_report, final_round, prompt_tokens, completion_tokens)
-            final_report: 最终报告文本
-            final_round: 实际进行的轮数
-            prompt_tokens: 总prompt token数
-            completion_tokens: 总completion token数
         """
-        # 确保初始状态正确
         assert len(self.clinician_responses) == 0 and self.now_round == 0, \
             "Collaboration already started or invalid state"
-        
+
         prompt_tokens = 0
         completion_tokens = 0
-        
-        # 多轮讨论循环
+
         while self.now_round < self.max_round:
             self.now_round += 1
-            print(f"\\n{'='*50}")
+            print(f"\n{'='*50}")
             print(f"Starting Round {self.now_round}/{self.max_round}")
             print(f"{'='*50}")
-            
-            # 清空上一轮响应
+
             self.clinician_responses = []
-            
-            # 并行处理所有ClinicianAgent
+
             def process_clinician(clinician_agent: ClinicianAgent, idx: int) -> Tuple[int, int]:
                 """
-                处理单个ClinicianAgent的协作
-                
+                Process a single ClinicianAgent collaboration.
+
                 Args:
-                    clinician_agent: ClinicianAgent实例
-                    idx: clinician索引
-                    
+                    clinician_agent: ClinicianAgent instance
+                    idx: Clinician index
+
                 Returns:
-                    (prompt_token, completion_token)
+                    (prompt_tokens, completion_tokens)
                 """
-                # 读取上一轮分析结果
                 review_file = f"{self.save_dir}/clinician{idx + 1}_review.json"
                 try:
                     with open(review_file, 'r') as f:
@@ -124,42 +116,32 @@ class CollaborationEngine:
                 except (FileNotFoundError, json.JSONDecodeError) as e:
                     print(f"Warning: Could not load {review_file}: {e}")
                     last_review = {'logit': 0.5, 'conf_logit': 0.5}
-                
-                # 执行协作讨论
+
                 response, messages, prompt_token, completion_token = clinician_agent.collaboration(
                     supervisor_opinion=self.supervisor_opinion,
                     supervisor_report=self.supervisor_report,
                     last_review=last_review
                 )
 
-                # 将响应添加到共享列表，供Supervisor整合
                 self.clinician_responses.append(response)
 
-                # 保存响应
                 round_file = f"{self.save_dir}/clinician{idx + 1}_round{self.now_round}_review.json"
                 with open(round_file, "w") as f:
                     json.dump(response, f, indent=2)
-                
-                # messages_file = f"{self.save_dir}/clinician{idx + 1}_round{self.now_round}_review_messages.json"
-                # with open(messages_file, "w") as f:
-                #     json.dump(messages, f, indent=2)
-                
-                # 保存user prompt
+
                 if len(messages) > 1:
                     prompt_file = f"{self.save_dir}/clinician{idx + 1}_round{self.now_round}_review_userprompt.txt"
                     with open(prompt_file, "w") as f:
                         f.write(messages[1].get("content", ""))
-                
+
                 return prompt_token, completion_token
-            
-            # 并行执行所有ClinicianAgent
+
             with ThreadPoolExecutor(max_workers=self.clinician_num) as executor:
                 futures = [
                     executor.submit(process_clinician, clinician_agent, i)
                     for i, clinician_agent in enumerate(self.clinician_agents)
                 ]
-                
-                # 收集结果
+
                 for future in futures:
                     try:
                         prompt_token, completion_token = future.result()
@@ -167,62 +149,55 @@ class CollaborationEngine:
                         completion_tokens += completion_token
                     except Exception as e:
                         print(f"Error in doctor process: {e}")
-            
-            # Supervisor整合所有Clinician的反馈
-            print(f"\\nSupervisorAgent is summarizing round {self.now_round}...")
+
+            print(f"\nSupervisorAgent is summarizing round {self.now_round}...")
             action, summary_content, messages, prompt_token, completion_token = \
                 self.supervisor_agent.summary(self.clinician_responses, is_initial=False)
-            
-            # 保存Supervisor的总结
+
             summary_file = f"{self.save_dir}/supervisor_round{self.now_round}_summary.json"
             with open(summary_file, "w") as f:
                 json.dump(summary_content, f, indent=2)
-            
-            # 保存messages
+
             messages_file = f"{self.save_dir}/supervisor_round{self.now_round}_summary_messages.json"
             with open(messages_file, "w") as f:
                 json.dump(messages, f, indent=2)
-            
+
             prompt_tokens += prompt_token
             completion_tokens += completion_token
-            
-            # 更新Supervisor意见和报告
+
             self.supervisor_opinion = summary_content.get("answer", self.supervisor_opinion)
             self.supervisor_report = summary_content.get("report", self.supervisor_report)
-            
-            print(f"\\nRound {self.now_round} completed.")
+
+            print(f"\nRound {self.now_round} completed.")
             print(f"Action: {'Continue' if action == 1 else 'Finalize'}")
-            
-            # 检查是否结束讨论
+
             if action == 0:
-                print(f"\\n{'='*50}")
+                print(f"\n{'='*50}")
                 print("Consensus reached! Finalizing report...")
                 print(f"{'='*50}")
                 break
             else:
                 print("Continuing to next round...")
-        
-        # 检查是否达到最大轮数仍未达成共识
+
         if self.now_round == self.max_round:
-            print(f"\\n{'='*50}")
+            print(f"\n{'='*50}")
             print(f"Warning: No agreement reached after {self.max_round} rounds.")
             print("Using last round's report as final.")
             print(f"{'='*50}")
-        
-        # 重置轮数计数器
+
         final_round = self.now_round
         self.now_round = 0
-        
+
         return self.supervisor_report, final_round, prompt_tokens, completion_tokens
-    
+
     def get_discussion_summary(self) -> Dict:
         """
-        获取讨论摘要
-        
-        返回多轮讨论的统计信息和关键结果
-        
+        Get discussion summary.
+
+        Returns statistics and key results from the multi-round discussion.
+
         Returns:
-            讨论摘要字典
+            Discussion summary dict
         """
         return {
             "total_rounds": self.now_round,
@@ -231,14 +206,13 @@ class CollaborationEngine:
             "final_opinion": self.supervisor_opinion,
             "discussion_complete": self.now_round < self.max_round or self.now_round == 0,
         }
-    
+
     def save_intermediate_results(self) -> None:
         """
-        保存中间结果
-        
-        将所有中间结果保存到指定目录
+        Save intermediate results.
+
+        Persists all intermediate results to the specified directory.
         """
-        # 保存当前状态
         state_file = f"{self.save_dir}/collaboration_state.json"
         state = {
             "now_round": self.now_round,
@@ -251,5 +225,5 @@ class CollaborationEngine:
             json.dump(state, f, indent=2)
 
 
-# 为了向后兼容，保留Collaboration别名
+# Backwards-compatibility alias
 Collaboration = CollaborationEngine

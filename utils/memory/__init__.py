@@ -1,33 +1,31 @@
 """
 TrialAgents Memory Bank
 
-长期记忆模块，让Agent能够从过去的错误中学习
+Long-term memory module enabling agents to learn from past errors.
 
-主要组件：
-- MemoryStore: 存储管理（ErrorCase, SuccessCase, PatternMeta）
-- MemoryEngine: FAISS向量检索引擎
-- MemoryInjector: Prompt注入器
-- MemoryUpdater: 自动更新器
+Core components:
+- MemoryStore: Storage management (ErrorCase, SuccessCase, PatternMeta)
+- MemoryEngine: FAISS vector search engine
+- MemoryInjector: Prompt injector
+- MemoryUpdater: Auto updater
 
-用法示例：
+Usage example:
     from utils.memory import MemoryStore, MemoryEngine, MemoryInjector, MemoryUpdater
 
-    # 初始化
     store = MemoryStore()
     engine = MemoryEngine(store=store)
     injector = MemoryInjector(engine)
     updater = MemoryUpdater(store, engine)
 
-    # 检索相似错误
+    # Search similar errors
     similar_errors = engine.search_similar_errors(patient_text, k=5)
 
-    # 注入到prompt
+    # Inject into prompt
     enhanced_prompt = injector.inject_for_clinician(base_prompt, patient_text)
 
-    # 登记预测结果
+    # Register prediction result
     is_error, case_id = updater.register_prediction_result(...)
 """
-
 from .schema import (
     ErrorType,
     PatientProfile,

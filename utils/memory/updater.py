@@ -1,8 +1,8 @@
 """
-TrialAgents Memory Bank - 自动更新器
+TrialAgents Memory Bank - Auto Updater
 
-负责在预测错误时自动登记到Memory Bank
-包括根因分析和改进提示生成
+Responsible for automatically registering prediction errors into the Memory Bank
+Includes root cause analysis and improvement hint generation
 """
 
 import os
@@ -18,29 +18,29 @@ from .schema import ErrorCase, SuccessCase, PatientProfile, ErrorType
 
 class MemoryUpdater:
     """
-    记忆自动更新器
+    Memory auto updater
 
-    负责：
-    1. 预测结果评估（是否错误）
-    2. 错误案例自动登记
-    3. 根因分析（使用LLM）
-    4. 改进提示生成
-    5. 成功案例登记
+    Responsibilities:
+    1. Prediction result evaluation (whether it was an error)
+    2. Automatic error case registration
+    3. Root cause analysis (using LLM)
+    4. Improvement hint generation
+    5. Success case registration
     """
 
     def __init__(
         self,
         store: MemoryStore,
         engine: MemoryEngine,
-        llm_client=None,  # 可选：用于根因分析
+        llm_client=None,  # Optional: for root cause analysis
     ):
         """
-        初始化更新器
+        Initialize updater
 
         Args:
-            store: MemoryStore实例
-            engine: MemoryEngine实例
-            llm_client: 可选的LLM客户端，用于根因分析
+            store: MemoryStore instance
+            engine: MemoryEngine instance
+            llm_client: Optional LLM client for root cause analysis
         """
         self.store = store
         self.engine = engine
@@ -58,30 +58,30 @@ class MemoryUpdater:
         clinician_confidence: float = 0.5,
     ) -> Tuple[bool, Optional[str]]:
         """
-        登记预测结果，自动判断是否错误并登记
+        Register prediction result, automatically determine whether it was an error and register
 
         Args:
-            case_id: 案例ID
-            dataset: 数据集名称
-            patient_profile: 患者特征
-            clinician_index: clinician索引
-            clinician_analysis: clinician分析文本
-            prediction: 预测值 (0-1)
-            ground_truth: 真实标签 (0或1)
-            clinician_confidence: clinician置信度
+            case_id: Case ID
+            dataset: Dataset name
+            patient_profile: Patient profile
+            clinician_index: Clinician index
+            clinician_analysis: Clinician analysis text
+            prediction: Prediction value (0-1)
+            ground_truth: Ground truth label (0 or 1)
+            clinician_confidence: Clinician confidence
 
         Returns:
-            (is_error, error_case_id 或 success_case_id)
+            (is_error, error_case_id or success_case_id)
         """
-        # 判断是否错误
+        # Determine if prediction is wrong
         predicted_class = 1 if prediction >= 0.5 else 0
         is_error = predicted_class != ground_truth
 
-        # 判断错误类型
+        # Determine error type
         error_type = self._classify_error(prediction, ground_truth, clinician_confidence)
 
         if is_error:
-            # 生成根因分析
+            # Generate root cause analysis
             root_cause, improvement_hint = self._analyze_error(
                 clinician_analysis=clinician_analysis,
                 prediction=prediction,
@@ -89,7 +89,7 @@ class MemoryUpdater:
                 error_type=error_type,
             )
 
-            # 创建错误案例
+            # Create error case
             error_case = ErrorCase(
                 case_id=case_id,
                 dataset=dataset,
@@ -97,7 +97,7 @@ class MemoryUpdater:
                 clinician_analysis=clinician_analysis,
                 error_type=error_type,
                 root_cause=root_cause,
-                correction="",  # 稍后可以补充
+                correction="",  # Can be supplemented later
                 improvement_hint=improvement_hint,
                 timestamp=datetime.now(),
                 frequency=1,
@@ -106,16 +106,16 @@ class MemoryUpdater:
                 ground_truth=ground_truth,
             )
 
-            # 存储
+            # Store
             stored_id = self.store.add_error(error_case)
 
-            # 更新索引
+            # Update index
             self.engine.add_error_case(error_case)
 
             return True, stored_id
 
         else:
-            # 创建成功案例
+            # Create success case
             success_case = SuccessCase(
                 case_id=case_id,
                 dataset=dataset,
@@ -128,10 +128,10 @@ class MemoryUpdater:
                 clinician_index=clinician_index,
             )
 
-            # 存储
+            # Store
             stored_id = self.store.add_success(success_case)
 
-            # 更新索引
+            # Update index
             self.engine.add_success_case(success_case)
 
             return False, stored_id
@@ -143,12 +143,12 @@ class MemoryUpdater:
         confidence: float,
     ) -> ErrorType:
         """
-        分类错误类型
+        Classify error type
 
         Args:
-            prediction: 预测值
-            ground_truth: 真实标签
-            confidence: 置信度
+            prediction: Prediction value
+            ground_truth: Ground truth label
+            confidence: Confidence
 
         Returns:
             ErrorType
@@ -156,13 +156,13 @@ class MemoryUpdater:
         predicted_class = 1 if prediction >= 0.5 else 0
 
         if predicted_class == 0 and ground_truth == 1:
-            # 漏报（低估风险）
+            # False negative (underestimated risk)
             if confidence < 0.5:
                 return ErrorType.UNDERESTIMATION
             else:
                 return ErrorType.WRONG_BASIS
         elif predicted_class == 1 and ground_truth == 0:
-            # 误报（高估风险）
+            # False positive (overestimated risk)
             if confidence > 0.5:
                 return ErrorType.OVERESTIMATION
             else:
@@ -178,18 +178,18 @@ class MemoryUpdater:
         error_type: ErrorType,
     ) -> Tuple[str, str]:
         """
-        分析错误根因并生成改进提示
+        Analyze error root cause and generate improvement hint
 
         Args:
-            clinician_analysis: clinician分析文本
-            prediction: 预测值
-            ground_truth: 真实标签
-            error_type: 错误类型
+            clinician_analysis: Clinician analysis text
+            prediction: Prediction value
+            ground_truth: Ground truth label
+            error_type: Error type
 
         Returns:
             (root_cause, improvement_hint)
         """
-        # 如果有LLM客户端，使用LLM分析
+        # If LLM client is available, use LLM analysis
         if self.llm_client is not None:
             try:
                 return self._llm_analyze_error(
@@ -198,7 +198,7 @@ class MemoryUpdater:
             except Exception as e:
                 print(f"Warning: LLM error analysis failed: {e}")
 
-        # Fallback: 基于规则的简单分析
+        # Fallback: simple rule-based analysis
         return self._rule_based_analysis(prediction, ground_truth, error_type)
 
     def _llm_analyze_error(
@@ -209,13 +209,13 @@ class MemoryUpdater:
         error_type: ErrorType,
     ) -> Tuple[str, str]:
         """
-        使用LLM分析错误根因
+        Use LLM to analyze error root cause
 
         Args:
-            clinician_analysis: clinician分析
-            prediction: 预测值
-            ground_truth: 真实标签
-            error_type: 错误类型
+            clinician_analysis: Clinician analysis
+            prediction: Prediction value
+            ground_truth: Ground truth label
+            error_type: Error type
 
         Returns:
             (root_cause, improvement_hint)
@@ -255,7 +255,7 @@ Please analyze the error and provide root cause and improvement hint."""
 
             content = response.choices[0].message.content
 
-            # 解析JSON
+            # Parse JSON
             from src.agents.json_parser import extract_and_parse_json
             result = extract_and_parse_json(content)
 
@@ -272,7 +272,7 @@ Please analyze the error and provide root cause and improvement hint."""
         error_type: ErrorType,
     ) -> Tuple[str, str]:
         """
-        基于规则的简单错误分析
+        Simple rule-based error analysis
 
         Returns:
             (root_cause, improvement_hint)
@@ -300,15 +300,15 @@ Please analyze the error and provide root cause and improvement hint."""
 
     def _extract_key_triggers(self, analysis: str) -> List[str]:
         """
-        从分析中提取关键触发词
+        Extract key trigger words from analysis
 
         Args:
-            analysis: 分析文本
+            analysis: Analysis text
 
         Returns:
-            关键触发词列表
+            List of key trigger words
         """
-        # 简单的关键词提取
+        # Simple keyword extraction
         trigger_keywords = [
             "high risk", "low risk", "critical", "stable",
             "comorbidity", "age", "prognosis", "treatment",
@@ -322,7 +322,7 @@ Please analyze the error and provide root cause and improvement hint."""
             if keyword in analysis_lower:
                 triggers.append(keyword)
 
-        # 返回最多5个
+        # Return at most 5
         return triggers[:5]
 
     def update_from_batch_results(
@@ -332,15 +332,15 @@ Please analyze the error and provide root cause and improvement hint."""
         dataset: str,
     ) -> Dict[str, Any]:
         """
-        从批量结果文件批量更新记忆
+        Batch update memory from batch result files
 
         Args:
-            results_file: supervisor_logits_json.json 文件路径
-            clinician_analysis_file: clinician{idx}_review.json 文件路径
-            dataset: 数据集名称
+            results_file: supervisor_logits_json.json file path
+            clinician_analysis_file: clinician{idx}_review.json file path
+            dataset: Dataset name
 
         Returns:
-            更新统计
+            Update statistics
         """
         stats = {
             "total": 0,
@@ -349,7 +349,7 @@ Please analyze the error and provide root cause and improvement hint."""
             "failed": 0,
         }
 
-        # 读取预测结果
+        # Read prediction results
         try:
             with open(results_file, "r") as f:
                 results = json.load(f)
@@ -357,9 +357,9 @@ Please analyze the error and provide root cause and improvement hint."""
             print(f"Error reading results file: {e}")
             return stats
 
-        # 读取clinician分析
+        # Read clinician analyses
         clinician_analyses = {}
-        for idx in range(3):  # 假设3个医生
+        for idx in range(3):  # Assuming 3 clinicians
             doc_file = clinician_analysis_file.replace("{idx}", str(idx + 1))
             if os.path.exists(doc_file):
                 try:
@@ -368,7 +368,7 @@ Please analyze the error and provide root cause and improvement hint."""
                 except Exception:
                     pass
 
-        # 遍历每个患者
+        # Iterate over each patient
         for case_id, result in results.items():
             if case_id.startswith("total") or case_id == "processed_count":
                 continue
@@ -392,18 +392,18 @@ Please analyze the error and provide root cause and improvement hint."""
                     ground_truth=ground_truth,
                 )
 
-                # 获取clinician分析
+                # Get clinician analysis
                 clinician_analysis = ""
                 if clinician_analyses:
                     first_analysis = next(iter(clinician_analyses.values()), {})
                     clinician_analysis = first_analysis.get("analysis", "")
 
-                # 登记结果
+                # Register result
                 is_error, _ = self.register_prediction_result(
                     case_id=case_id,
                     dataset=dataset,
                     patient_profile=patient_profile,
-                    clinician_index=0,  # 默认第一个医生
+                    clinician_index=0,  # Default to first clinician
                     clinician_analysis=clinician_analysis,
                     prediction=prediction,
                     ground_truth=ground_truth,
@@ -418,7 +418,7 @@ Please analyze the error and provide root cause and improvement hint."""
                 print(f"Error processing case {case_id}: {e}")
                 stats["failed"] += 1
 
-        # 保存索引
+        # Save index
         self.engine.save_index()
 
         return stats
@@ -426,22 +426,22 @@ Please analyze the error and provide root cause and improvement hint."""
 
 def create_memory_updater(config: Dict = None) -> MemoryUpdater:
     """
-    工厂函数：创建MemoryUpdater
+    Factory function: create MemoryUpdater
 
     Args:
-        config: 配置字典
+        config: Configuration dictionary
 
     Returns:
-        MemoryUpdater实例
+        MemoryUpdater instance
     """
     from .store import MemoryStore
     from .engine import MemoryEngine
 
-    # 创建存储和引擎
+    # Create store and engine
     store = MemoryStore()
     engine = MemoryEngine(store=store)
 
-    # 可选：创建LLM客户端
+    # Optional: create LLM client
     llm_client = None
     if config and config.get("use_llm_analysis", False):
         try:

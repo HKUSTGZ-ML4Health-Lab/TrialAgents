@@ -1,27 +1,30 @@
 """
-TrialAgents 数据运行工具
+TrialAgents Data Runner Utilities
 
-从 m-agents/utils/runner_utils.py 迁移至此
-提供时间序列数据处理功能
+Migrated from m-agents/utils/runner_utils.py
+Provides time series data processing functionality
 """
 
 import os
 import json
+from pathlib import Path
 from typing import List
 
 
 def process_time_series(dataset: str, patient_list: List) -> None:
     """
-    将患者数据序列化并保存为JSON
+    Serialize patient data and save as JSON
 
     Args:
-        dataset: 数据集名称
-        patient_list: 患者数据列表
+        dataset: Dataset name
+        patient_list: Patient data list
 
     Note:
-        数据保存到 /home/chunyu.lei/DEAP/SELF_DATA/mas/m-agents/processed_data/{dataset}/{patient_id}.json
+        Data is saved to {MAS_PROCESSED_DATA_DIR}/{dataset}/{patient_id}.json
     """
-    save_base = f"/home/chunyu.lei/DEAP/SELF_DATA/mas/m-agents/processed_data/{dataset}"
+    _default_dir = str(Path(__file__).parent.parent.parent.parent / "m-agents" / "processed_data")
+    save_base = os.getenv("MAS_PROCESSED_DATA_DIR", _default_dir)
+    save_base = os.path.join(save_base, dataset)
 
     if not os.path.exists(save_base):
         os.makedirs(save_base)
@@ -33,8 +36,8 @@ def process_time_series(dataset: str, patient_list: List) -> None:
         if os.path.exists(save_path):
             continue
 
-        # patient_data格式: [patient_id, features..., label]
-        # 序列化处理
+        # patient_data format: [patient_id, features..., label]
+        # Serialize and save
         try:
             with open(save_path, 'w') as f:
                 json.dump(patient_data, f)

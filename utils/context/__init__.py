@@ -1,23 +1,9 @@
 """
-TrialAgents 医疗上下文模块
+TrialAgents Medical Context Module
 
-提供患者医疗上下文的构建和管理功能
+Patient medical context construction and management.
 """
 
-from .datasets_info import (
-    medical_char,
-    medical_name,
-    medical_unit,
-    medical_show,
-    medical_standard,
-    medical_standard_for_esrd,
-    medical_keys,
-    disease_chinese,
-    disease_english,
-    original_disease,
-    mimic_range,
-    mimic_unit,
-)
 
 from .healthcare_context_utils import (
     get_data_from_files,
@@ -44,19 +30,6 @@ from .process_data import (
 )
 
 __all__ = [
-    # datasets_info
-    'medical_char',
-    'medical_name',
-    'medical_unit',
-    'medical_show',
-    'medical_standard',
-    'medical_standard_for_esrd',
-    'medical_keys',
-    'disease_chinese',
-    'disease_english',
-    'original_disease',
-    'mimic_range',
-    'mimic_unit',
     # healthcare_context_utils
     'get_data_from_files',
     'get_var_desc',

@@ -1,7 +1,7 @@
 """
-TrialAgents Memory Bank - Prompt注入
+TrialAgents Memory Bank - Prompt Injection
 
-将检索到的相似案例注入到Agent的prompt中
+Injects retrieved similar cases into the Agent's prompt
 """
 
 from typing import List, Optional, Dict, Any
@@ -11,12 +11,13 @@ from .schema import ErrorCase, SuccessCase
 
 class MemoryInjector:
     """
-    记忆注入器
+    Memory injector
 
-    负责将相似案例检索结果注入到ClinicianAgent和SupervisorAgent的prompt中
+    Responsible for injecting similar case search results into
+    ClinicianAgent and SupervisorAgent prompts
     """
 
-    # 注入模板
+    # Injection templates
     ERROR_WARNING_TEMPLATE = """
 ## ⚠️ Similar Past Errors (Learning from Mistakes)
 
@@ -57,28 +58,28 @@ This section contains relevant past cases retrieved from memory to assist your a
 
     def __init__(self, memory_engine: MemoryEngine):
         """
-        初始化注入器
+        Initialize injector
 
         Args:
-            memory_engine: MemoryEngine实例
+            memory_engine: MemoryEngine instance
         """
         self.engine = memory_engine
 
     def build_error_warning(self, error_results: List[SearchResult]) -> str:
         """
-        构建错误警示文本
+        Build error warning text
 
         Args:
-            error_results: 检索到的相似错误
+            error_results: Retrieved similar errors
 
         Returns:
-            格式化的错误警示文本
+            Formatted error warning text
         """
         if not error_results:
             return ""
 
         warnings = []
-        for idx, result in enumerate(error_results[:3], 1):  # 最多3个
+        for idx, result in enumerate(error_results[:3], 1):  # Maximum of 3
             if result.case_type != "error":
                 continue
 
@@ -100,13 +101,13 @@ This section contains relevant past cases retrieved from memory to assist your a
 
     def build_success_reference(self, success_results: List[SearchResult]) -> str:
         """
-        构建成功案例参考文本
+        Build success case reference text
 
         Args:
-            success_results: 检索到的相似成功案例
+            success_results: Retrieved similar success cases
 
         Returns:
-            格式化的成功案例参考文本
+            Formatted success case reference text
         """
         if not success_results:
             return ""
@@ -140,25 +141,25 @@ This section contains relevant past cases retrieved from memory to assist your a
         k_errors: int = 3,
     ) -> str:
         """
-        为ClinicianAgent构建带有记忆上下文的prompt
+        Build prompt with memory context for ClinicianAgent
 
         Args:
-            base_prompt: 原始prompt
-            patient_profile_text: 患者特征文本（用于检索）
-            error_types: 关注的错误类型列表
-            k_errors: 检索的错误案例数量
+            base_prompt: Original prompt
+            patient_profile_text: Patient feature text (for search)
+            error_types: List of error types to focus on
+            k_errors: Number of error cases to retrieve
 
         Returns:
-            注入记忆后的prompt
+            Prompt with injected memory
         """
-        # 检索相似错误
+        # Search for similar errors
         error_results = self.engine.search_similar_errors(
             patient_profile_text=patient_profile_text,
             k=k_errors,
             error_types=error_types,
         )
 
-        # 构建错误警示
+        # Build error warning
         error_warning = self.build_error_warning(error_results)
 
         if error_warning:
@@ -174,18 +175,18 @@ This section contains relevant past cases retrieved from memory to assist your a
         k_successes: int = 2,
     ) -> str:
         """
-        为SupervisorAgent构建带有记忆上下文的prompt
+        Build prompt with memory context for SupervisorAgent
 
         Args:
-            base_prompt: 原始prompt
-            patient_profile_text: 患者特征文本（用于检索）
-            k_errors: 检索的错误案例数量
-            k_successes: 检索的成功案例数量
+            base_prompt: Original prompt
+            patient_profile_text: Patient feature text (for search)
+            k_errors: Number of error cases to retrieve
+            k_successes: Number of success cases to retrieve
 
         Returns:
-            注入记忆后的prompt
+            Prompt with injected memory
         """
-        # 检索相似错误和成功案例
+        # Search for similar errors and success cases
         error_results = self.engine.search_similar_errors(
             patient_profile_text=patient_profile_text,
             k=k_errors,
@@ -197,7 +198,7 @@ This section contains relevant past cases retrieved from memory to assist your a
             min_confidence=0.7,
         )
 
-        # 构建记忆文本
+        # Build memory text
         memory_parts = []
 
         if error_results:
@@ -219,11 +220,11 @@ This section contains relevant past cases retrieved from memory to assist your a
         k: int = 5,
     ) -> Dict[str, List[SearchResult]]:
         """
-        获取所有相似案例（用于调试和分析）
+        Get all similar cases (for debugging and analysis)
 
         Args:
-            patient_profile_text: 患者特征文本
-            k: 检索数量
+            patient_profile_text: Patient feature text
+            k: Number of results to retrieve
 
         Returns:
             {"errors": [...], "successes": [...]}
@@ -246,9 +247,9 @@ This section contains relevant past cases retrieved from memory to assist your a
 
 class PromptEnhancer:
     """
-    Prompt增强器
+    Prompt enhancer
 
-    提供额外的prompt增强功能，如Chain-of-Thought结构化
+    Provides additional prompt enhancement features, such as Chain-of-Thought structuring
     """
 
     COT_SYSTEM_PROMPT = """You are a medical expert analyzing patient data.
@@ -276,18 +277,18 @@ Output your analysis in JSON format with these fields:
 
     def enhance_for_cot(self, base_prompt: str, patient_profile_text: str = None) -> str:
         """
-        增强prompt为Chain-of-Thought格式
+        Enhance prompt to Chain-of-Thought format
 
         Args:
-            base_prompt: 原始prompt
-            patient_profile_text: 患者特征文本（可选，用于记忆注入）
+            base_prompt: Original prompt
+            patient_profile_text: Patient feature text (optional, for memory injection)
 
         Returns:
-            增强后的prompt
+            Enhanced prompt
         """
         enhanced = base_prompt
 
-        # 如果有记忆注入器，添加记忆上下文
+        # If memory injector is available, add memory context
         if self.memory_injector and patient_profile_text:
             enhanced = self.memory_injector.inject_for_clinician(
                 base_prompt=enhanced,
@@ -298,5 +299,5 @@ Output your analysis in JSON format with these fields:
         return enhanced
 
     def get_cot_system_prompt(self) -> str:
-        """获取Chain-of-Thought系统prompt"""
+        """Get Chain-of-Thought system prompt"""
         return self.COT_SYSTEM_PROMPT

@@ -147,12 +147,12 @@ class TrialAgentsAdapter:
     def __init__(self, mode: str = "rule_based", llm_model: str = "deepseek-chat",
                  doctor_num: int = 4, max_round: int = 1):
         """
-        初始化TrialAgents适配器
+        Initialize the TrialAgents adapter.
 
-        :param mode: 推荐模式，可选 "rule_based", "single_agent", "multi_agent"
-        :param llm_model: LLM模型名称
-        :param doctor_num: 多Agent模式下的specialist数量
-        :param max_round: 多Agent模式下的最大讨论轮数
+        :param mode: Recommendation mode, one of "rule_based", "single_agent", "multi_agent"
+        :param llm_model: LLM model name
+        :param doctor_num: Number of specialists in multi-agent mode
+        :param max_round: Maximum number of discussion rounds in multi-agent mode
         """
         self.mode = mode
         self.llm_model = llm_model

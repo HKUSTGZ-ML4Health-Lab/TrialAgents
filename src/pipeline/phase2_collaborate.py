@@ -1,8 +1,7 @@
 """
 TrialAgents Phase 2: Multi-round Collaborative Diagnosis
 
-阶段二：多轮协同诊断
-Supervisor Agent组织Clinician Agents进行多轮讨论
+Supervisor Agent organizes Clinician Agents for multi-round discussion.
 """
 
 import json
@@ -30,7 +29,7 @@ def run_phase2(
     start_idx: int = 0,
     end_idx: int = None,
 ):
-    """执行阶段二：多轮协同诊断"""
+    """Execute Phase 2: Multi-round Collaborative Diagnosis."""
     config = {
         "dataset_name": dataset_name,
         "task": task,
@@ -43,7 +42,7 @@ def run_phase2(
         "mode": task,
         "model_names": ["time_series_model"] * AGENT_CONFIG.get("clinician_num", 3),
     }
-    
+
     save_dir = build_experiment_path(
         dataset_name=config["dataset_name"],
         task=config["task"],
@@ -51,24 +50,22 @@ def run_phase2(
         corpus_name=config["corpus_name"],
         group=config["group"],
     )
-    
-    print(f"\\nPhase 2: Multi-round Collaborative Diagnosis")
-    print(f"Dataset: {dataset_name}, Max Rounds: {config['max_round']}\\n")
-    
-    # 加载数据
+
+    print(f"\nPhase 2: Multi-round Collaborative Diagnosis")
+    print(f"Dataset: {dataset_name}, Max Rounds: {config['max_round']}\n")
+
     if wrap_data is None:
         raise ImportError("wrap_data not available")
-    
+
     patients_list = wrap_data(config)
     dataset_info = DATASET_CONFIGS.get(dataset_name, {})
     total = dataset_info.get("num_patients", len(patients_list))
-    
+
     if end_idx is None:
         end_idx = total
-    
+
     patients_list = patients_list[start_idx:end_idx]
-    
-    # 初始化Agent
+
     if RetrievalSystem is not None:
         retrieval_system = RetrievalSystem(
             retriever_name=config["retriever_name"],
@@ -76,14 +73,13 @@ def run_phase2(
         )
     else:
         retrieval_system = None
-    
+
     supervisor_agent = SupervisorAgent(llm=config["llm"])
     clinician_agents = [
         ClinicianAgent(config, i, retrieval_system, llm=config["llm"], save_dir=save_dir)
         for i in range(config["clinician_num"])
     ]
-    
-    # 处理每个患者
+
     for patient_index, patient_df in tqdm(
         enumerate(patients_list),
         total=len(patients_list),
@@ -91,35 +87,30 @@ def run_phase2(
     ):
         patient_id = patient_df[0]
         sub_save_dir = f"{save_dir}/{patient_id}"
-        
-        # 检查阶段一结果
+
         review_file = os.path.join(sub_save_dir, "clinician1_review.json")
         if not os.path.exists(review_file):
             print(f"Skipping {patient_id} - Phase 1 not completed")
             continue
-        
-        # 检查是否已处理
+
         final_summary_file = os.path.join(sub_save_dir, "meta_final_summary.json")
         if os.path.exists(final_summary_file):
             print(f"Skipping {patient_id} - Phase 2 already completed")
             continue
-        
-        print(f"\\nProcessing {patient_id}...")
-        
-        # 读取阶段一结果
+
+        print(f"\nProcessing {patient_id}...")
+
         analysis_results = []
         for i in range(config["clinician_num"]):
             with open(f"{sub_save_dir}/clinician{i+1}_review.json", "r") as f:
                 analysis_results.append(json.load(f))
-        
-        # Supervisor生成初始综述
-        supervisor_agent.set_basic_info("")  # 可以设置患者基本信息
+
+        supervisor_agent.set_basic_info("")
         summary_content, messages, _, _ = supervisor_agent.summary(analysis_results, is_initial=True)
-        
+
         with open(f"{sub_save_dir}/meta_summary.json", "w") as f:
             json.dump(summary_content, f, indent=2)
-        
-        # 多轮协作
+
         collaboration = CollaborationEngine(
             supervisor_agent=supervisor_agent,
             clinician_agents=clinician_agents,
@@ -129,15 +120,15 @@ def run_phase2(
             clinician_num=config["clinician_num"],
             max_round=config["max_round"]
         )
-        
+
         current_report, rounds, _, _ = collaboration.collaborate()
-        
+
         with open(f"{sub_save_dir}/meta_final_summary.json", "w") as f:
             json.dump({"final_report": current_report, "rounds": rounds}, f, indent=2)
-        
+
         print(f"Completed {rounds} rounds for {patient_id}")
-    
-    print(f"\\nPhase 2 completed. Results in {save_dir}")
+
+    print(f"\nPhase 2 completed. Results in {save_dir}")
     return save_dir
 
 
@@ -149,7 +140,7 @@ def main():
     parser.add_argument("--group", default="experimental")
     parser.add_argument("--start_idx", type=int, default=0)
     parser.add_argument("--end_idx", type=int, default=None)
-    
+
     args = parser.parse_args()
     run_phase2(args.dataset, args.task, args.llm, args.group, args.start_idx, args.end_idx)
 

@@ -34,14 +34,28 @@ def process_data(train_zip, es_zip, test_zip):
         processed_data = []
         for i, patient_data in enumerate(X_series):
             demographic_list, indicator_list, value_list, time_list = (
-                patient_data[0], patient_data[1], patient_data[2], patient_data[3])
+                patient_data[1], patient_data[2], patient_data[3], patient_data[4])
 
-            df = pd.DataFrame({
-                'demographic_col': demographic_list,
-                'indicator_col': indicator_list,
-                'value_col': value_list,
-                'time_col': time_list
+            num_events = len(indicator_list)
+            demo = list(demographic_list)
+            demo_matrix = np.tile(demo, (num_events, 1))
+            demo_df = pd.DataFrame(demo_matrix, columns=[f"demo_{i}" for i in range(len(demo))])
+
+            event_df = pd.DataFrame({
+                "indicator_col": indicator_list,
+                "value_col": value_list,
+                "time_col": time_list
             })
+
+            df = pd.concat([demo_df, event_df], axis=1)
+
+            # df = pd.DataFrame({
+            #     'demographic_cols': demographic_list,
+            #     'indicator_col': indicator_list,
+            #     'value_col': value_list,
+            #     'time_col': time_list
+            # })
+
             processed_data.append(df)
         return processed_data, y_labels
 
@@ -66,7 +80,10 @@ def process_data(train_zip, es_zip, test_zip):
                 df_encoded['indicator_col'] = cat_encoder.transform(patient_df['indicator_col'])
                 df_encoded['value_col'] = pd.to_numeric(df_encoded['value_col'], errors='coerce').fillna(0)
                 df_encoded['time_col'] = pd.to_numeric(df_encoded['time_col'], errors='coerce').fillna(0)
-                df_encoded['demographic_col'] = pd.to_numeric(df_encoded['demographic_col'], errors='coerce').fillna(0)
+                demo_cols = [c for c in df_encoded.columns if c.startswith("demo_")]
+                df_encoded[demo_cols] = df_encoded[demo_cols].apply(
+                    pd.to_numeric, errors="coerce"
+                ).fillna(0)
                 encoded_data.append(df_encoded)
             return encoded_data
 
@@ -224,12 +241,24 @@ class nct_dataset(Dataset):
                 print("%s data has a size of %d" % (self.mode, len(self.noise_label)))
 
     def _process_time_series(self, patient_df):
-        required_cols = ['demographic_col', 'indicator_col', 'value_col', 'time_col']
-        for col in required_cols:
-            if col not in patient_df.columns:
-                raise ValueError(f"Missing required column: {col}")
+        demo_cols = [c for c in patient_df.columns if c.startswith("demo_")]
+        if not demo_cols:
+            raise ValueError("Missing demo_ columns")
 
-        patient_df = patient_df.sort_values('time_col').reset_index(drop=True)
+        def _demo_key(c):
+            try:
+                return int(c.split("_", 1)[1])
+            except Exception:
+                return c
+
+        demo_cols = sorted(demo_cols, key=_demo_key)
+        required_cols = demo_cols + ["indicator_col", "value_col", "time_col"]
+
+        missing = [c for c in required_cols if c not in patient_df.columns]
+        if missing:
+            raise ValueError(f"Missing required columns: {missing}")
+
+        patient_df = patient_df.sort_values("time_col").reset_index(drop=True)
         features = patient_df[required_cols].values.astype(np.float32)
         seq_len = len(features)
 

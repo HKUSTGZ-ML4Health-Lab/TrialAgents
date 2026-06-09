@@ -1,9 +1,8 @@
 """
-TrialAgents 数据处理模块
+TrialAgents Data Utilities Module
 
-包含数据路径管理、运行工具和数据包装
+Data path management, runner utilities, and data wrapping.
 """
-
 from .paths import (
     build_experiment_path,
     ensure_dir,

@@ -81,8 +81,8 @@ class NumericNormalizer(nn.Module):
     def __init__(self, mode="zscore", learnable=True, eps=1e-6):
         """
         mode: 'zscore', 'minmax', 'log1p'
-        learnable: 是否让均值/方差作为可学习参数（仅 zscore/minmax）
-        eps: 防止除0
+        learnable: Whether mean/variance are learnable parameters (zscore/minmax only)
+        eps: Prevent division by zero
         """
         super().__init__()
         self.mode = mode
@@ -90,7 +90,7 @@ class NumericNormalizer(nn.Module):
 
         if mode in ("zscore", "minmax"):
             mean_init = 0.0
-            scale_init = 1.0 if mode == "zscore" else 1.0  # minmax 下scale≈max-min
+            scale_init = 1.0 if mode == "zscore" else 1.0  # for minmax, scale ≈ max-min
             if learnable:
                 self.mean = nn.Parameter(torch.tensor(mean_init, dtype=torch.float32))
                 self.scale = nn.Parameter(torch.tensor(scale_init, dtype=torch.float32))
@@ -100,7 +100,7 @@ class NumericNormalizer(nn.Module):
 
     def forward(self, x):
         """
-        x: [B, S, 1] 连续特征
+        x: [B, S, 1] continuous features
         """
         if self.mode == "zscore":
             return (x - self.mean) / (self.scale + self.eps)
@@ -112,17 +112,17 @@ class NumericNormalizer(nn.Module):
             raise ValueError(f"Unknown mode: {self.mode}")
 
 class Time2Vec(nn.Module):
-    """简单版 Time2Vec：连续标量 -> 向量"""
+    """Simple Time2Vec: continuous scalar -> vector"""
     def __init__(self, k: int, d_out: int):
         super().__init__()
         self.k = k
-        # 线性项
+        # Linear term
         self.w0 = nn.Parameter(torch.randn(1))
         self.b0 = nn.Parameter(torch.randn(1))
-        # 周期项
+        # Periodic term
         self.w = nn.Parameter(torch.randn(k))
         self.b = nn.Parameter(torch.randn(k))
-        # 投影到目标维度
+        # Project to target dimension
         self.proj = nn.Linear(k + 1, d_out)
 
     def forward(self, x):  # x: [B, S, 1]
@@ -149,12 +149,12 @@ class NCTTimeSeriesTransformer(nn.Module):
         self.max_seq_len = max_seq_len
         self.d_model = d_model
 
-        # 标准化模块
+        # Normalization modules
         self.age_norm  = NumericNormalizer(mode="zscore", learnable=True)
         self.value_norm = NumericNormalizer(mode="zscore", learnable=True)
-        self.time_norm = NumericNormalizer(mode="log1p", learnable=False)  # 时间用 log1p
+        self.time_norm = NumericNormalizer(mode="log1p", learnable=False)  # time uses log1p
 
-        # 嵌入模块
+        # Embedding modules
         if use_time2vec:
             self.time_embedding = Time2Vec(k=time2vec_k, d_out=d_model)
         else:
@@ -239,7 +239,7 @@ class NCTTimeSeriesTransformer(nn.Module):
 
 
 # =====================
-# LSTM for NCT Clinical Time Series Data (支持双向开关)
+# LSTM for NCT Clinical Time Series Data (supports bidirectional)
 # =====================
 class NCTTimeSeriesLSTM(nn.Module):
     def __init__(self, 
@@ -258,12 +258,12 @@ class NCTTimeSeriesLSTM(nn.Module):
         self.hidden_size = hidden_size
         self.bidirectional = bidirectional
         
-        # 标准化模块（复用Transformer的设计）
+        # Normalization modules (reusing Transformer design)
         self.age_norm = NumericNormalizer(mode="zscore", learnable=True)
         self.value_norm = NumericNormalizer(mode="zscore", learnable=True)
         self.time_norm = NumericNormalizer(mode="log1p", learnable=False)
-        
-        # 嵌入模块
+
+        # Embedding modules
         if use_time2vec:
             self.time_embedding = Time2Vec(k=time2vec_k, d_out=hidden_size)
         else:
@@ -273,10 +273,10 @@ class NCTTimeSeriesLSTM(nn.Module):
         self.value_embedding = nn.Linear(1, hidden_size)
         self.indicator_embedding = nn.Embedding(indicator_vocab_size, hidden_size)
         
-        # 特征融合
+        # Feature fusion
         self.fusion_norm = nn.LayerNorm(hidden_size)
-        
-        # LSTM（支持双向开关）
+
+        # LSTM (with bidirectional toggle)
         self.lstm = nn.LSTM(
             input_size=hidden_size,
             hidden_size=hidden_size,
@@ -286,7 +286,7 @@ class NCTTimeSeriesLSTM(nn.Module):
             batch_first=True
         )
         
-        # 分类器（根据是否双向调整输入维度）
+        # Classifier (adjust input dim based on bidirectional flag)
         lstm_output_size = 2 * hidden_size if bidirectional else hidden_size
         self.classifier = nn.Sequential(
             nn.LayerNorm(lstm_output_size),
@@ -309,7 +309,7 @@ class NCTTimeSeriesLSTM(nn.Module):
             S = self.max_seq_len
             seq_lengths = torch.clamp(seq_lengths, max=self.max_seq_len)
         
-        # 特征标准化和嵌入
+        # Feature normalization and embedding
         age = self.age_norm(x[:, :, 0:1])
         ind = x[:, :, 1]
         val = self.value_norm(x[:, :, 2:3])
@@ -322,36 +322,36 @@ class NCTTimeSeriesLSTM(nn.Module):
         val_e = self.value_embedding(val)
         time_e = self.time_embedding(time)
         
-        # 特征融合
+        # Feature fusion
         combined = (age_e + ind_e + val_e + time_e) / math.sqrt(4.0)
         combined = self.fusion_norm(combined)
         combined = self.dropout(combined)
-        
-        # 打包序列以处理变长输入
+
+        # Pack sequences for variable-length input
         packed_input = nn.utils.rnn.pack_padded_sequence(
             combined, seq_lengths.cpu(), batch_first=True, enforce_sorted=False
         )
         
-        # LSTM前向传播
+        # LSTM forward pass
         packed_output, (h_n, c_n) = self.lstm(packed_input)
-        
-        # 解包序列
+
+        # Unpack sequence
         lstm_out, _ = nn.utils.rnn.pad_packed_sequence(
             packed_output, batch_first=True, total_length=S
         )
         
-        # 使用最后一个有效时间步的输出
+        # Use output at the last valid timestep
         # h_n: [num_layers*directions, batch, hidden_size]
         if self.bidirectional:
-            # 双向：取最后一层的前向和后向隐状态
-            forward_hidden = h_n[-2, :, :]  # 前向LSTM的最后隐状态
-            backward_hidden = h_n[-1, :, :]  # 后向LSTM的最后隐状态
+            # Bidirectional: take the last layer's forward and backward hidden states
+            forward_hidden = h_n[-2, :, :]  # forward LSTM last hidden state
+            backward_hidden = h_n[-1, :, :]  # backward LSTM last hidden state
             final_hidden = torch.cat([forward_hidden, backward_hidden], dim=1)
         else:
-            # 单向：取最后一层的隐状态
+            # Unidirectional: take the last layer's hidden state
             final_hidden = h_n[-1, :, :]
-        
-        # 分类
+
+        # Classify
         logits = self.classifier(final_hidden)
         
         return logits.squeeze(-1) if logits.shape[-1] == 1 else logits
@@ -377,12 +377,12 @@ class NCTTimeSeriesGRU(nn.Module):
         self.hidden_size = hidden_size
         self.bidirectional = bidirectional
         
-        # 标准化模块（复用Transformer的设计）
+        # Normalization modules (reusing Transformer design)
         self.age_norm = NumericNormalizer(mode="zscore", learnable=True)
         self.value_norm = NumericNormalizer(mode="zscore", learnable=True)
         self.time_norm = NumericNormalizer(mode="log1p", learnable=False)
-        
-        # 嵌入模块
+
+        # Embedding modules
         if use_time2vec:
             self.time_embedding = Time2Vec(k=time2vec_k, d_out=hidden_size)
         else:
@@ -391,8 +391,8 @@ class NCTTimeSeriesGRU(nn.Module):
         self.age_embedding = nn.Linear(1, hidden_size)
         self.value_embedding = nn.Linear(1, hidden_size)
         self.indicator_embedding = nn.Embedding(indicator_vocab_size, hidden_size)
-        
-        # 特征融合
+
+        # Feature fusion
         self.fusion_norm = nn.LayerNorm(hidden_size)
         
         # GRU
@@ -405,7 +405,7 @@ class NCTTimeSeriesGRU(nn.Module):
             batch_first=True
         )
         
-        # 分类器（根据bidirectional参数确定输入维度）
+        # Classifier (adjust input dim based on bidirectional parameter)
         classifier_input_size = 2 * hidden_size if self.bidirectional else hidden_size
         self.classifier = nn.Sequential(
             nn.LayerNorm(classifier_input_size),
@@ -428,7 +428,7 @@ class NCTTimeSeriesGRU(nn.Module):
             S = self.max_seq_len
             seq_lengths = torch.clamp(seq_lengths, max=self.max_seq_len)
         
-        # 特征标准化和嵌入
+        # Feature normalization and embedding
         age = self.age_norm(x[:, :, 0:1])
         ind = x[:, :, 1]
         val = self.value_norm(x[:, :, 2:3])
@@ -441,36 +441,36 @@ class NCTTimeSeriesGRU(nn.Module):
         val_e = self.value_embedding(val)
         time_e = self.time_embedding(time)
         
-        # 特征融合
+        # Feature fusion
         combined = (age_e + ind_e + val_e + time_e) / math.sqrt(4.0)
         combined = self.fusion_norm(combined)
         combined = self.dropout(combined)
-        
-        # 打包序列以处理变长输入
+
+        # Pack sequences for variable-length input
         packed_input = nn.utils.rnn.pack_padded_sequence(
             combined, seq_lengths.cpu(), batch_first=True, enforce_sorted=False
         )
         
-        # GRU前向传播
+        # GRU forward pass
         packed_output, h_n = self.gru(packed_input)
-        
-        # 解包序列
+
+        # Unpack sequence
         gru_out, _ = nn.utils.rnn.pad_packed_sequence(
             packed_output, batch_first=True, total_length=S
         )
         
-        # 使用最后一个有效时间步的输出
+        # Use output at the last valid timestep
         # h_n: [num_layers*directions, batch, hidden_size]
         if self.bidirectional:
-            # 双向：取最后一层的前向和后向隐状态
-            forward_hidden = h_n[-2, :, :]  # 前向GRU的最后隐状态
-            backward_hidden = h_n[-1, :, :]  # 后向GRU的最后隐状态
+            # Bidirectional: take the last layer's forward and backward hidden states
+            forward_hidden = h_n[-2, :, :]  # forward GRU last hidden state
+            backward_hidden = h_n[-1, :, :]  # backward GRU last hidden state
             final_hidden = torch.cat([forward_hidden, backward_hidden], dim=1)
         else:
-            # 单向：取最后一层的隐状态
+            # Unidirectional: take the last layer's hidden state
             final_hidden = h_n[-1, :, :]
-        
-        # 分类
+
+        # Classify
         logits = self.classifier(final_hidden)
         
         return logits.squeeze(-1) if logits.shape[-1] == 1 else logits

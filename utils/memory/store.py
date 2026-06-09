@@ -1,7 +1,7 @@
 """
-TrialAgents Memory Bank - 存储管理
+TrialAgents Memory Bank - Storage Management
 
-负责 ErrorCase, SuccessCase, PatternMeta 的持久化存储
+Responsible for persistent storage of ErrorCase, SuccessCase, PatternMeta
 """
 
 import json
@@ -14,20 +14,20 @@ from .schema import ErrorCase, SuccessCase, PatternMeta
 
 class MemoryStore:
     """
-    内存存储管理器
+    In-memory storage manager
 
-    提供 ErrorCase, SuccessCase, PatternMeta 的增删改查操作
+    Provides CRUD operations for ErrorCase, SuccessCase, PatternMeta
     """
 
     def __init__(self, memory_dir: str = None):
         """
-        初始化存储管理器
+        Initialize storage manager
 
         Args:
-            memory_dir: 内存数据存储目录，默认使用 data/memory
+            memory_dir: Memory data storage directory, defaults to data/memory
         """
         if memory_dir is None:
-            # 默认使用 data/memory 目录
+            # Default to data/memory directory
             from utils.data.paths import get_data_path
             memory_dir = os.path.join(get_data_path(), "memory")
 
@@ -36,26 +36,26 @@ class MemoryStore:
         self.success_dir = os.path.join(memory_dir, "successes")
         self.pattern_dir = os.path.join(memory_dir, "patterns")
 
-        # 确保目录存在
+        # Ensure directories exist
         for d in [self.error_dir, self.success_dir, self.pattern_dir]:
             os.makedirs(d, exist_ok=True)
 
-        # 内存缓存
+        # In-memory cache
         self._error_cache: Dict[str, ErrorCase] = {}
         self._success_cache: Dict[str, SuccessCase] = {}
         self._pattern_cache: Dict[str, PatternMeta] = {}
 
-        # 加载已有数据
+        # Load existing data
         self._load_all()
 
     def _load_all(self):
-        """加载所有已有数据到内存缓存"""
+        """Load all existing data into memory cache"""
         self._load_errors()
         self._load_successes()
         self._load_patterns()
 
     def _load_errors(self):
-        """加载错误案例"""
+        """Load error cases"""
         if not os.path.exists(self.error_dir):
             return
 
@@ -71,7 +71,7 @@ class MemoryStore:
                     print(f"Warning: Failed to load error case {filename}: {e}")
 
     def _load_successes(self):
-        """加载成功案例"""
+        """Load success cases"""
         if not os.path.exists(self.success_dir):
             return
 
@@ -87,7 +87,7 @@ class MemoryStore:
                     print(f"Warning: Failed to load success case {filename}: {e}")
 
     def _load_patterns(self):
-        """加载模式元数据"""
+        """Load pattern metadata"""
         if not os.path.exists(self.pattern_dir):
             return
 
@@ -104,15 +104,15 @@ class MemoryStore:
 
     def add_error(self, error_case: ErrorCase) -> str:
         """
-        添加错误案例
+        Add error case
 
         Args:
-            error_case: 错误案例
+            error_case: Error case
 
         Returns:
             case_id
         """
-        # 更新频率
+        # Update frequency
         if error_case.case_id in self._error_cache:
             existing = self._error_cache[error_case.case_id]
             existing.frequency += 1
@@ -120,7 +120,7 @@ class MemoryStore:
 
         self._error_cache[error_case.case_id] = error_case
 
-        # 持久化
+        # Persist to disk
         filepath = os.path.join(self.error_dir, f"{error_case.case_id}.json")
         with open(filepath, "w") as f:
             json.dump(error_case.to_dict(), f, indent=2)
@@ -129,17 +129,17 @@ class MemoryStore:
 
     def add_success(self, success_case: SuccessCase) -> str:
         """
-        添加成功案例
+        Add success case
 
         Args:
-            success_case: 成功案例
+            success_case: Success case
 
         Returns:
             case_id
         """
         self._success_cache[success_case.case_id] = success_case
 
-        # 持久化
+        # Persist to disk
         filepath = os.path.join(self.success_dir, f"{success_case.case_id}.json")
         with open(filepath, "w") as f:
             json.dump(success_case.to_dict(), f, indent=2)
@@ -148,10 +148,10 @@ class MemoryStore:
 
     def add_pattern(self, pattern: PatternMeta) -> str:
         """
-        添加或更新模式元数据
+        Add or update pattern metadata
 
         Args:
-            pattern: 模式元数据
+            pattern: Pattern metadata
 
         Returns:
             pattern_id
@@ -167,7 +167,7 @@ class MemoryStore:
         return pattern.pattern_id
 
     def _save_patterns(self):
-        """保存所有模式到文件"""
+        """Save all patterns to file"""
         patterns_file = os.path.join(self.pattern_dir, "patterns.json")
         patterns_data = [p.to_dict() for p in self._pattern_cache.values()]
 
@@ -175,45 +175,45 @@ class MemoryStore:
             json.dump(patterns_data, f, indent=2)
 
     def get_error(self, case_id: str) -> Optional[ErrorCase]:
-        """获取错误案例"""
+        """Get error case"""
         return self._error_cache.get(case_id)
 
     def get_success(self, case_id: str) -> Optional[SuccessCase]:
-        """获取成功案例"""
+        """Get success case"""
         return self._success_cache.get(case_id)
 
     def get_pattern(self, pattern_id: str) -> Optional[PatternMeta]:
-        """获取模式元数据"""
+        """Get pattern metadata"""
         return self._pattern_cache.get(pattern_id)
 
     def get_all_errors(self) -> List[ErrorCase]:
-        """获取所有错误案例"""
+        """Get all error cases"""
         return list(self._error_cache.values())
 
     def get_all_successes(self) -> List[SuccessCase]:
-        """获取所有成功案例"""
+        """Get all success cases"""
         return list(self._success_cache.values())
 
     def get_all_patterns(self) -> List[PatternMeta]:
-        """获取所有模式元数据"""
+        """Get all pattern metadata"""
         return list(self._pattern_cache.values())
 
     def get_errors_by_type(self, error_type: str) -> List[ErrorCase]:
-        """按错误类型筛选"""
+        """Filter by error type"""
         from .schema import ErrorType
         et = ErrorType(error_type)
         return [e for e in self._error_cache.values() if e.error_type == et]
 
     def get_errors_by_dataset(self, dataset: str) -> List[ErrorCase]:
-        """按数据集筛选"""
+        """Filter by dataset"""
         return [e for e in self._error_cache.values() if e.dataset == dataset]
 
     def get_successes_by_confidence(self, min_confidence: float) -> List[SuccessCase]:
-        """筛选高置信度成功案例"""
+        """Filter high-confidence success cases"""
         return [s for s in self._success_cache.values() if s.confidence >= min_confidence]
 
     def get_statistics(self) -> Dict[str, Any]:
-        """获取统计信息"""
+        """Get statistics"""
         errors = list(self._error_cache.values())
         successes = list(self._success_cache.values())
 
@@ -231,7 +231,7 @@ class MemoryStore:
         }
 
     def clear(self):
-        """清空所有缓存（谨慎使用）"""
+        """Clear all caches (use with caution)"""
         self._error_cache.clear()
         self._success_cache.clear()
         self._pattern_cache.clear()

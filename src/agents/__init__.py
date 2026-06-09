@@ -1,15 +1,13 @@
 """
-TrialAgents智能体模块
+TrialAgents Agent Module
 
-包含四个核心智能体：
-- ClinicianAgent: 三个领域专家（急诊医学、肿瘤学、综合诊疗）
-- SupervisorAgent: 包含Trialist和Supervisor功能
-- SimulatorAgent: 数字孪生生成
+Core agents:
+- ClinicianAgent: Domain experts (emergency medicine, oncology, general practice)
+- SupervisorAgent: Trialist and Supervisor functionality
+- SimulatorAgent: Digital twin generation
 
-迁移说明：
-本模块代码从 m-agents/utils/framework.py 迁移至此
+Migrated from m-agents/utils/framework.py
 """
-
 from .base_agent import Agent
 from .clinician_agent import ClinicianAgent
 from .supervisor_agent import SupervisorAgent

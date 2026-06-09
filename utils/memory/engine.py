@@ -1,8 +1,8 @@
 """
-TrialAgents Memory Bank - 检索引擎
+TrialAgents Memory Bank - Search Engine
 
-基于 FAISS 的向量相似度检索
-支持 ErrorCase 和 SuccessCase 的语义检索
+FAISS-based vector similarity search
+Supports semantic search for ErrorCase and SuccessCase
 """
 
 import os
@@ -11,7 +11,7 @@ import numpy as np
 from typing import List, Tuple, Optional, Dict, Any
 from dataclasses import dataclass
 
-# 可选导入 FAISS，如果不可用则使用备选方案
+# Optionally import FAISS, use fallback if unavailable
 try:
     import faiss
     FAISS_AVAILABLE = True
@@ -22,7 +22,7 @@ except ImportError:
 
 @dataclass
 class SearchResult:
-    """检索结果"""
+    """Search result"""
     case_id: str
     case_type: str                          # "error" or "success"
     similarity: float
@@ -31,30 +31,30 @@ class SearchResult:
 
 class MemoryEngine:
     """
-    记忆检索引擎
+    Memory search engine
 
-    使用 FAISS 进行高效的向量相似度检索
+    Uses FAISS for efficient vector similarity search
     """
 
     def __init__(
         self,
-        embedding_dim: int = 384,           # 默认embedding维度
-        store=None,                          # MemoryStore实例
+        embedding_dim: int = 384,           # Default embedding dimension
+        store=None,                          # MemoryStore instance
         index_path: str = None,
     ):
         """
-        初始化检索引擎
+        Initialize search engine
 
         Args:
-            embedding_dim: embedding向量维度
-            store: MemoryStore实例
-            index_path: 索引保存路径
+            embedding_dim: Embedding vector dimension
+            store: MemoryStore instance
+            index_path: Index save path
         """
         self.embedding_dim = embedding_dim
         self.store = store
-        self.embedding_model = None          # 延迟加载
+        self.embedding_model = None          # Lazy loading
 
-        # 索引路径
+        # Index path
         if index_path is None:
             from utils.data.paths import get_data_path
             index_path = os.path.join(get_data_path(), "memory", "indices")
@@ -62,26 +62,26 @@ class MemoryEngine:
         self.index_path = index_path
         os.makedirs(self.index_path, exist_ok=True)
 
-        # FAISS 索引
+        # FAISS index
         self.error_index = None
         self.success_index = None
 
-        # ID映射
+        # ID mapping
         self.error_ids: List[str] = []
         self.success_ids: List[str] = []
 
-        # 初始化或加载索引
+        # Initialize or load index
         self._init_or_load_index()
 
     def _init_or_load_index(self):
-        """初始化或加载索引"""
+        """Initialize or load index"""
         error_index_file = os.path.join(self.index_path, "error_index.faiss")
         success_index_file = os.path.join(self.index_path, "success_index.faiss")
         error_ids_file = os.path.join(self.index_path, "error_ids.json")
         success_ids_file = os.path.join(self.index_path, "success_ids.json")
 
         if FAISS_AVAILABLE:
-            # 尝试加载已有索引
+            # Try to load existing index
             if os.path.exists(error_index_file) and os.path.exists(error_ids_file):
                 try:
                     self.error_index = faiss.read_index(error_index_file)
@@ -91,7 +91,7 @@ class MemoryEngine:
                     print(f"Warning: Failed to load error index: {e}")
                     self._create_new_indexes()
 
-                # 检查维度是否匹配
+                # Check dimension match
                 if self.error_index is not None and self.error_index.d != self.embedding_dim:
                     print(f"Warning: Error index dimension mismatch ({self.error_index.d} vs {self.embedding_dim}). Recreating.")
                     self._create_new_indexes()
@@ -109,11 +109,11 @@ class MemoryEngine:
                 if self.success_index is None:
                     self.success_index = self._create_index()
         else:
-            # 无FAISS时创建简单索引
+            # Create simple index when FAISS is unavailable
             self._create_new_indexes()
 
     def _create_new_indexes(self):
-        """创建新索引"""
+        """Create new indices"""
         if FAISS_AVAILABLE:
             self.error_index = self._create_index()
             self.success_index = self._create_index()
@@ -121,18 +121,18 @@ class MemoryEngine:
             self.success_ids = []
 
     def _create_index(self):
-        """创建FAISS索引"""
+        """Create FAISS index"""
         if FAISS_AVAILABLE:
-            # 使用内积索引（需要归一化embedding）
+            # Use inner product index (requires normalized embeddings)
             return faiss.IndexIDMap(faiss.IndexFlatIP(self.embedding_dim))
         return None
 
     def _get_embedding_model(self):
-        """延迟加载embedding模型"""
+        """Lazily load embedding model"""
         if self.embedding_model is None:
             try:
                 from sentence_transformers import SentenceTransformer
-                # 使用轻量级模型
+                # Use lightweight model
                 self.embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
             except ImportError:
                 print("Warning: sentence-transformers not available. Using fallback embedding.")
@@ -141,13 +141,13 @@ class MemoryEngine:
 
     def _embed_text(self, text: str) -> np.ndarray:
         """
-        将文本转为embedding向量
+        Convert text to embedding vector
 
         Args:
-            text: 输入文本
+            text: Input text
 
         Returns:
-            embedding向量 (embedding_dim,)
+            Embedding vector (embedding_dim,)
         """
         model = self._get_embedding_model()
 
@@ -155,12 +155,12 @@ class MemoryEngine:
             embedding = model.encode([text], normalize_embeddings=True)[0]
             return embedding.astype('float32')
 
-        # Fallback: 简单的词袋embedding
+        # Fallback: simple bag-of-words embedding
         return self._fallback_embedding(text)
 
     def _fallback_embedding(self, text: str) -> np.ndarray:
-        """简单的fallback embedding（词频向量）"""
-        # 使用固定维度
+        """Simple fallback embedding (term frequency vector)"""
+        # Use fixed dimension
         dim = self.embedding_dim
         words = text.lower().split()
         vec = np.zeros(dim, dtype='float32')
@@ -168,7 +168,7 @@ class MemoryEngine:
         for i, word in enumerate(words[:dim]):
             vec[i % dim] += 1
 
-        # L2归一化
+        # L2 normalization
         norm = np.linalg.norm(vec)
         if norm > 0:
             vec = vec / norm
@@ -176,36 +176,36 @@ class MemoryEngine:
         return vec
 
     def _get_patient_text(self, case) -> str:
-        """从案例中提取用于检索的文本"""
+        """Extract search text from case"""
         if hasattr(case, 'patient_profile'):
             return case.patient_profile.to_text()
         return str(case)
 
     def add_error_case(self, error_case) -> bool:
         """
-        添加错误案例到索引
+        Add error case to index
 
         Args:
-            error_case: ErrorCase实例
+            error_case: ErrorCase instance
 
         Returns:
-            是否成功
+            Whether successful
         """
         try:
-            # 生成embedding
+            # Generate embedding
             text = self._get_patient_text(error_case)
             text += f" | Error type: {error_case.error_type.value}"
             text += f" | Root cause: {error_case.root_cause}"
             embedding = self._embed_text(text)
 
-            # 获取或分配ID
+            # Get or assign ID
             if error_case.case_id in self.error_ids:
                 idx_id = self.error_ids.index(error_case.case_id)
             else:
                 idx_id = len(self.error_ids)
                 self.error_ids.append(error_case.case_id)
 
-            # 添加到FAISS索引
+            # Add to FAISS index
             if FAISS_AVAILABLE and self.error_index is not None:
                 self.error_index.add_with_ids(
                     np.array([embedding]).astype('float32'),
@@ -219,29 +219,29 @@ class MemoryEngine:
 
     def add_success_case(self, success_case) -> bool:
         """
-        添加成功案例到索引
+        Add success case to index
 
         Args:
-            success_case: SuccessCase实例
+            success_case: SuccessCase instance
 
         Returns:
-            是否成功
+            Whether successful
         """
         try:
-            # 生成embedding
+            # Generate embedding
             text = self._get_patient_text(success_case)
             text += f" | Reasoning: {success_case.reasoning_chain[:200]}"
             text += f" | Triggers: {', '.join(success_case.key_triggers[:3])}"
             embedding = self._embed_text(text)
 
-            # 获取或分配ID
+            # Get or assign ID
             if success_case.case_id in self.success_ids:
                 idx_id = self.success_ids.index(success_case.case_id)
             else:
                 idx_id = len(self.success_ids)
                 self.success_ids.append(success_case.case_id)
 
-            # 添加到FAISS索引
+            # Add to FAISS index
             if FAISS_AVAILABLE and self.success_index is not None:
                 self.success_index.add_with_ids(
                     np.array([embedding]).astype('float32'),
@@ -260,27 +260,27 @@ class MemoryEngine:
         error_types: List[str] = None,
     ) -> List[SearchResult]:
         """
-        检索相似的错误案例
+        Search for similar error cases
 
         Args:
-            patient_profile_text: 患者特征文本
-            k: 返回数量
-            error_types: 筛选的错误类型列表
+            patient_profile_text: Patient feature text
+            k: Number of results to return
+            error_types: List of error types to filter by
 
         Returns:
-            相似错误案例列表
+            List of similar error cases
         """
         if self.store is None:
             return []
 
-        # 生成query embedding
+        # Generate query embedding
         query_embedding = self._embed_text(patient_profile_text)
 
         results = []
 
         if FAISS_AVAILABLE and self.error_index is not None and len(self.error_ids) > 0:
-            # FAISS检索
-            search_k = min(k * 2, len(self.error_ids))  # 多检索一些以便过滤
+            # FAISS search
+            search_k = min(k * 2, len(self.error_ids))  # Search more to allow filtering
             distances, indices = self.error_index.search(
                 np.array([query_embedding]).astype('float32'),
                 search_k
@@ -296,11 +296,11 @@ class MemoryEngine:
                 if error_case is None:
                     continue
 
-                # 按错误类型过滤
+                # Filter by error type
                 if error_types and error_case.error_type.value not in error_types:
                     continue
 
-                # 转换为相似度 (0-1)
+                # Convert to similarity (0-1)
                 similarity = float(dist) if dist >= 0 else 0.0
                 similarity = min(1.0, max(0.0, similarity))
 
@@ -314,14 +314,14 @@ class MemoryEngine:
                 if len(results) >= k:
                     break
         else:
-            # Fallback: 简单文本匹配
+            # Fallback: simple text matching
             all_errors = self.store.get_all_errors()
 
             for error_case in all_errors:
                 if error_types and error_case.error_type.value not in error_types:
                     continue
 
-                # 简单相似度计算
+                # Simple similarity calculation
                 text1 = self._get_patient_text(error_case)
                 sim = self._cosine_similarity_simple(patient_profile_text, text1)
 
@@ -332,7 +332,7 @@ class MemoryEngine:
                     data=error_case,
                 ))
 
-            # 排序并返回top-k
+            # Sort and return top-k
             results.sort(key=lambda x: x.similarity, reverse=True)
             results = results[:k]
 
@@ -345,26 +345,26 @@ class MemoryEngine:
         min_confidence: float = 0.0,
     ) -> List[SearchResult]:
         """
-        检索相似的成功案例
+        Search for similar success cases
 
         Args:
-            patient_profile_text: 患者特征文本
-            k: 返回数量
-            min_confidence: 最低置信度
+            patient_profile_text: Patient feature text
+            k: Number of results to return
+            min_confidence: Minimum confidence threshold
 
         Returns:
-            相似成功案例列表
+            List of similar success cases
         """
         if self.store is None:
             return []
 
-        # 生成query embedding
+        # Generate query embedding
         query_embedding = self._embed_text(patient_profile_text)
 
         results = []
 
         if FAISS_AVAILABLE and self.success_index is not None and len(self.success_ids) > 0:
-            # FAISS检索
+            # FAISS search
             search_k = min(k * 2, len(self.success_ids))
             distances, indices = self.success_index.search(
                 np.array([query_embedding]).astype('float32'),
@@ -381,7 +381,7 @@ class MemoryEngine:
                 if success_case is None:
                     continue
 
-                # 按置信度过滤
+                # Filter by confidence
                 if success_case.confidence < min_confidence:
                     continue
 
@@ -421,7 +421,7 @@ class MemoryEngine:
         return results
 
     def _cosine_similarity_simple(self, text1: str, text2: str) -> float:
-        """简单的余弦相似度计算"""
+        """Simple cosine similarity calculation"""
         words1 = set(text1.lower().split())
         words2 = set(text2.lower().split())
 
@@ -434,7 +434,7 @@ class MemoryEngine:
         return len(intersection) / len(union) if union else 0.0
 
     def save_index(self):
-        """保存索引到磁盘"""
+        """Save indices to disk"""
         if not FAISS_AVAILABLE:
             return
 
@@ -454,17 +454,17 @@ class MemoryEngine:
             json.dump(self.success_ids, f)
 
     def rebuild_index(self):
-        """从存储重建索引"""
+        """Rebuild indices from store"""
         if self.store is None:
             return
 
         self._create_new_indexes()
 
-        # 重建错误索引
+        # Rebuild error index
         for error_case in self.store.get_all_errors():
             self.add_error_case(error_case)
 
-        # 重建成功索引
+        # Rebuild success index
         for success_case in self.store.get_all_successes():
             self.add_success_case(success_case)
 

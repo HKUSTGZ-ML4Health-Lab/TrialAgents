@@ -22,7 +22,7 @@ import torch.backends.cudnn as cudnn
 from torch.utils.tensorboard import SummaryWriter
 
 from baselines.small_models import *
-from utils.retrieval.hparams import nct_config as default_config
+from utils.config import DPT_CONFIG as default_config
 from utils.data_utils.paths import get_checkpoints_path, get_logs_path
 from src.training.lnl_dataloader import nct_dataloader
 
@@ -47,14 +47,14 @@ _device = None
 def create_parser():
     parser = argparse.ArgumentParser(description='DivideMix Training')
     parser.add_argument('--batch_size', default=64, type=int, help='train batchsize')
-    parser.add_argument('--lr', '--learning_rate', default=0.02, type=float, help='initial learning rate')
+    parser.add_argument('--lr', '--learning_rate', default=1e-4, type=float, help='initial learning rate')
     parser.add_argument('--noise_mode', default='no')
     parser.add_argument('--warm_up', default=5, type=int, help='warm up epochs')
     parser.add_argument('--alpha', default=4, type=float, help='parameter for Beta')
     parser.add_argument('--lambda_u', default=25, type=float, help='weight for unsupervised loss')
     parser.add_argument('--p_threshold', default=0.5, type=float, help='clean probability threshold')
-    parser.add_argument('--T', default=5, type=float, choices=[0.5, 5.0, 10.0], help='sharpening temperature')
-    parser.add_argument('--num_epochs', default=300, type=int)
+    parser.add_argument('--T', default=5.0, type=float, choices=[0.5, 5.0, 10.0], help='sharpening temperature')
+    parser.add_argument('--num_epochs', default=30, type=int)
     parser.add_argument('--r', default=0.0, type=float, help='noise ratio')
     parser.add_argument('--id', default='')
     parser.add_argument('--seed', default=42)

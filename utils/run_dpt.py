@@ -19,12 +19,12 @@ from sklearn.metrics import roc_auc_score, average_precision_score
 import torch
 from tqdm import tqdm
 
-from utils.retrieval.hparams import nct_config as config
-from utils.data_utils.paths import get_responses_path, get_training_runs_path, get_logs_path
+sys.path.append(os.path.join(os.path.dirname(__file__), '../'))
+from utils.config import DPT_CONFIG as config
+from utils.data_utils.paths import get_responses_path, get_outputs_path, get_logs_path
 from utils.context.process_data import load_clinical_trial_datasets_old, process_patient_df_old
 from utils.metrics import minpse
 from src.training.lnl_train import run_dividemix
-from baselines.small_models import *
 
 
 def set_seed(seed=42):
@@ -85,10 +85,7 @@ class VCTC:
         soft_labels, conf = [], []
         id2soft = {}
         for subfolder in os.listdir(base_dir):
-            expected_suffix = "_morpos" if (
-                config["dataset_name"] in ['NCT03041311', 'NCT00174655', 'NCT00079274']
-                and config.get('group') != 'control'
-            ) else ""
+            expected_suffix = "_morpos"
             expected_folder = (
                 f"{config['dataset_name']}_{config['task']}_{config['llm']}_"
                 f"{config['corpus_name']}_{config['group']}{expected_suffix}"
@@ -101,9 +98,7 @@ class VCTC:
                     continue
                 subsubfolder_path = os.path.join(subfolder_path, subsubfolder)
 
-                json_file = ('supervisor_logits_conf_json.json'
-                             if 'supervisor_logits_conf_json.json' in os.listdir(subsubfolder_path)
-                             else 'supervisor_logits_json.json')
+                json_file = 'zz_final_logits.json'
 
                 json_file_path = os.path.join(subsubfolder_path, json_file)
                 if not os.path.exists(json_file_path):
@@ -113,8 +108,8 @@ class VCTC:
                     with open(json_file_path, 'r', encoding='utf-8') as f:
                         data = json.load(f)
 
-                    logit_key = 'logit' if json_file == 'supervisor_logits_conf_json.json' else 'final_logit'
-                    conf_key = 'conf' if json_file == 'supervisor_logits_conf_json.json' else 'final_conf'
+                    logit_key = 'final_logit'
+                    conf_key = 'final_conf'
 
                     if logit_key in data and conf_key in data:
                         soft_labels.append(data[logit_key])
@@ -137,7 +132,7 @@ class VCTC:
         df = pd.DataFrame(data_raw['df'])
 
         data_args = {
-            'demographic_col': data_raw['demographic_col'],
+            'demographic_cols': data_raw['demographic_cols'],
             'indicator_col': data_raw['indicator_col'],
             'value_col': data_raw['value_col'],
             'patient_id_col': data_raw['patient_id_col'],
@@ -150,22 +145,20 @@ class VCTC:
             value_col=data_args['value_col'],
             time_col=data_args['time_col'],
             label_col=data_args['label_col'],
-            demographic_col=data_args['demographic_col']
+            demographic_cols=data_args['demographic_cols']
         )
 
         preprocess_result = self._preprocess_data(patients_list)
         patients_list = preprocess_result[0]
 
         act_len = min(len(patients_list), len(y_soft))
-        patients_list, y_soft = patients_list.iloc[:act_len], y_soft[:act_len]
+        patients_list, y_soft = patients_list[:act_len], y_soft[:act_len] # .iloc
 
         print(f"Total patients: {len(patients_list)}")
 
         group = config.get('group', 'experimental')
         llm = config.get('llm', 'default')
-        log_dir = get_training_runs_path(f'{dataset}_{llm}_{group}')
-        if dataset in ['NCT03041311', 'NCT00174655', 'NCT00079274'] and group != 'control':
-            log_dir += '_morpos'
+        log_dir = get_outputs_path('dpt_refine', f'{dataset}_{llm}_{group}')
         os.makedirs(log_dir, exist_ok=True)
 
         acc_lst, auprc_lst, auroc_lst, f1_lst, minpse_lst, preds_lst = [], [], [], [], [], []
@@ -176,31 +169,15 @@ class VCTC:
             print(f"Fold {idx_fold + 1} / {config['fold']}")
             data_train, label_train, conf_train = [], [], []
             for idx in index_train:
-                if str(patients_list.iloc[idx][0]) in id2soft:
-                    data_train.append(patients_list.iloc[idx])
-                    label_train.append(id2soft[str(patients_list.iloc[idx][0])][0])
-                    conf_train.append(id2soft[str(patients_list.iloc[idx][0])][1])
+                if str(patients_list[idx][0]) in id2soft:
+                    data_train.append(patients_list[idx])
+                    label_train.append(id2soft[str(patients_list[idx][0])][0])
+                    conf_train.append(id2soft[str(patients_list[idx][0])][1])
             data_train = pd.Series(data_train)
             label_train = np.array(label_train)
             conf_train = np.array(conf_train)
-            data_test = patients_list.iloc[index_test]
+            data_test = [patients_list[idx] for idx in index_test]
             label_test = [i[-1] for i in data_test]
-
-            # Label inversion logic (preserved from original)
-            if 'deepseek' in log_dir:
-                if '_morpos' in log_dir:
-                    if 'NCT03041311' in dataset or 'NCT00174655' in dataset:
-                        pass
-                    else:
-                        label_test = [1 - x for x in label_test]
-                else:
-                    if 'NCT00694382' in dataset:
-                        label_test = [1 - x for x in label_test]
-                        label_train = [1 - x for x in label_train]
-                    else:
-                        label_train = [1 - x for x in label_train]
-                    if 'NCT00041119' in dataset or 'NCT00694382' in dataset:
-                        conf_train = np.array([1 - x for x in conf_train])
 
             train_cnt = sum(1 for x in label_train if x > 0.5)
             test_cnt = sum(1 for x in label_test if x > 0.5)
@@ -267,9 +244,6 @@ class VCTC:
             f.write(f"Average: AUROC: {np.mean(auroc_lst):.4f} ± {np.std(auroc_lst):.4f}\n")
             f.write(f"Average: MINPSE: {np.mean(minpse_lst):.4f} ± {np.std(minpse_lst):.4f}\n")
 
-    def reverse_tune_llm(self, X):
-        pass
-
     def fit(self, iterations=3):
         for t in tqdm(range(iterations), desc="Iterations"):
             y_soft, y_conf, id2soft = self.soft_llm_labeling()
@@ -285,7 +259,7 @@ def random_guess():
     data_raw = data_raw[0]
     df = pd.DataFrame(data_raw['df'])
     data_args = {
-        'demographic_col': data_raw['demographic_col'],
+        'demographic_cols': data_raw['demographic_cols'],
         'indicator_col': data_raw['indicator_col'],
         'value_col': data_raw['value_col'],
         'patient_id_col': data_raw['patient_id_col'],
@@ -298,7 +272,7 @@ def random_guess():
         value_col=data_args['value_col'],
         time_col=data_args['time_col'],
         label_col=data_args['label_col'],
-        demographic_col=data_args['demographic_col']
+        demographic_cols=data_args['demographic_cols']
     )
     y_true = np.array([patient[-1] for patient in patients_list])
     skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
@@ -334,6 +308,6 @@ if __name__ == "__main__":
     seed = 42
     set_seed(seed)
     # Uncomment to run full training:
-    # vctc = VCTC(tau=config.get('tau', 0.75))
-    # vctc.fit(iterations=config.get('loop_num', 1))
-    random_guess()
+    vctc = VCTC(tau=config.get('tau', 0.75))
+    vctc.fit(iterations=config.get('loop_num', 1))
+    # random_guess()

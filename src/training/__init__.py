@@ -1,13 +1,12 @@
 """
-TrialAgents 训练模块
+TrialAgents Training Module
 
-包含 LNL (Learning with Noisy Labels) 训练相关组件：
-- lnl_train: DivideMix 训练核心
-- lnl_dataloader: 数据加载器
-- fusion: 多模态融合模型
-- soft_label_utils: 软标签工具函数
+LNL (Learning with Noisy Labels) training components:
+- lnl_train: DivideMix training core
+- lnl_dataloader: Data loader
+- fusion: Multi-modal fusion model
+- soft_label_utils: Soft label utilities
 """
-
 from .lnl_train import run_dividemix, create_parser
 from .lnl_dataloader import nct_dataloader, nct_dataset, process_data
 from .fusion import Fusion, Merger, Predictor, TransformerEncoder, TransformerEncoderLayer

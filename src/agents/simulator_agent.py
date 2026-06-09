@@ -1,9 +1,10 @@
 """
-TrialAgents SimulatorAgent (数字孪生生成)
+TrialAgents SimulatorAgent (Digital Twin Generator)
 
-新增智能体，负责基于终版报告自回归地模拟患者特异性轨迹
+New agent responsible for auto-regressively simulating patient-specific
+trajectories based on the final report.
 
-这是场景三（多样化任务完成）的执行组件之一
+This is one of the execution components for Scenario 3 (Diverse Task Completion).
 """
 
 from typing import Dict, List, Optional
@@ -14,21 +15,22 @@ from .base_agent import Agent
 class SimulatorAgent(Agent):
     """
     Simulator Agent / Digital Twin Generator
-    
-    基于终版报告自回归地生成患者特异性轨迹，实现数字孪生功能。
-    
-    应用场景：
-    1. 治疗决策支持：模拟不同治疗方案的效果
-    2. 风险预测：预测患者未来健康状况
-    3. 虚拟试验：在真实试验前进行虚拟试验
-    4. 个性化医疗：为特定患者定制治疗策略
-    
+
+    Auto-regressively generates patient-specific trajectories based on the
+    final report, enabling digital twin functionality.
+
+    Use cases:
+    1. Treatment decision support: simulate outcomes of different treatments
+    2. Risk prediction: predict future patient health
+    3. Virtual trials: run virtual trials before real ones
+    4. Personalized medicine: tailor treatment strategies per patient
+
     Attributes:
-        prediction_horizon: 预测时间跨度（天）
-        num_samples: 采样次数（用于不确定性估计）
-        time_step: 时间步长（天）
+        prediction_horizon: Prediction horizon (days)
+        num_samples: Number of samples (for uncertainty estimation)
+        time_step: Time step (days)
     """
-    
+
     def __init__(
         self,
         role: str = "simulator",
@@ -38,56 +40,54 @@ class SimulatorAgent(Agent):
         time_step: int = 1,
     ) -> None:
         """
-        初始化SimulatorAgent
-        
+        Initialize SimulatorAgent.
+
         Args:
-            role: 角色名称
-            llm: LLM模型名称
-            prediction_horizon: 预测时间跨度（天）
-            num_samples: 采样次数
-            time_step: 时间步长（天）
+            role: Role name
+            llm: LLM model name
+            prediction_horizon: Prediction horizon (days)
+            num_samples: Number of samples
+            time_step: Time step (days)
         """
         super().__init__(role, llm)
-        
+
         self.prediction_horizon = prediction_horizon
         self.num_samples = num_samples
         self.time_step = time_step
-        
-        # 状态特征定义
+
         self.state_features = [
-            "vital_signs",      # 生命体征
-            "lab_results",      # 实验室结果
-            "symptoms",         # 症状
-            "medications",      # 用药
-            "risk_score",       # 风险评分
+            "vital_signs",
+            "lab_results",
+            "symptoms",
+            "medications",
+            "risk_score",
         ]
-    
+
     def simulate(self, final_report: Dict, num_samples: int = None) -> Dict:
         """
-        生成数字孪生轨迹
+        Generate digital twin trajectories.
 
-        基于终版报告，生成多条可能的患者发展轨迹
+        Generates multiple possible patient development trajectories
+        based on the final report.
 
         Args:
-            final_report: 来自Phase 2的终版报告
-            num_samples: 采样次数（覆盖默认配置）
+            final_report: Final report from Phase 2
+            num_samples: Number of samples (overrides default)
 
         Returns:
-            Digital Twin字典，包含：
-            - patient_id: 患者ID
-            - base_profile: 基础档案
-            - trajectories: 多条轨迹列表
-            - aggregated_stats: 统计特征
+            Digital Twin dict containing:
+            - patient_id: Patient ID
+            - base_profile: Base profile
+            - trajectories: List of trajectories
+            - aggregated_stats: Statistical features
         """
         num_samples = num_samples or self.num_samples
 
-        # 生成多条轨迹
         trajectories = []
         for sample_id in range(num_samples):
             trajectory = self._generate_single_trajectory(final_report)
             trajectories.append(trajectory)
 
-        # 整合多条轨迹，计算统计特征
         aggregated_stats = self._aggregate_trajectories(trajectories)
         base_profile = self._extract_base_profile(final_report)
 
@@ -99,22 +99,21 @@ class SimulatorAgent(Agent):
         }
 
         return digital_twin
-    
+
     def _generate_single_trajectory(self, final_report: Dict) -> List[Dict]:
         """
-        生成单条轨迹
-        
+        Generate a single trajectory.
+
         Args:
-            final_report: 终版报告
-            
+            final_report: Final report
+
         Returns:
-            单条轨迹列表，每个元素是一个时间步的状态
+            List of per-timestep state dicts
         """
         trajectory = []
         current_state = self._initialize_state(final_report)
-        
+
         for t in range(self.prediction_horizon):
-            # 基于当前状态预测下一时刻
             next_state = self._predict_next_state(
                 current_state=current_state,
                 final_report=final_report,
@@ -125,32 +124,28 @@ class SimulatorAgent(Agent):
                 'state': next_state
             })
             current_state = next_state
-        
+
         return trajectory
-    
+
     def _initialize_state(self, final_report: Dict) -> Dict:
         """
-        基于终版报告初始化患者状态
+        Initialize patient state from the final report.
 
         Args:
-            final_report: 终版报告
+            final_report: Final report
 
         Returns:
-            初始状态字典
+            Initial state dict
         """
-        # 提取基础档案
         base_profile = self._extract_base_profile(final_report)
 
-        # 提取当前健康状况
         predicted_risk = base_profile.get('predicted_risk', 'unknown')
         confidence_score = base_profile.get('confidence_score', 0.5)
         diagnostic_rationale = base_profile.get('diagnostic_rationale', '')
         uncertainties = base_profile.get('uncertainties', [])
 
-        # 提取风险因素（从诊断理由中推断）
         risk_factors = self._extract_risk_factors(diagnostic_rationale, uncertainties)
 
-        # 提取症状和体征（如果有）
         symptoms = final_report.get('symptoms', [])
         vital_signs = final_report.get('vital_signs', {})
         lab_results = final_report.get('lab_results', {})
@@ -168,18 +163,17 @@ class SimulatorAgent(Agent):
 
     def _extract_risk_factors(self, diagnostic_rationale: str, uncertainties: List) -> List[str]:
         """
-        从诊断理由和不确定性中提取风险因素
+        Extract risk factors from diagnostic rationale and uncertainties.
 
         Args:
-            diagnostic_rationale: 诊断理由文本
-            uncertainties: 不确定性列表
+            diagnostic_rationale: Diagnostic rationale text
+            uncertainties: List of uncertainties
 
         Returns:
-            风险因素列表
+            List of risk factors
         """
         risk_factors = []
 
-        # 常见风险因素关键词
         risk_keywords = [
             'high risk', 'low risk', 'severe', 'mild', 'moderate',
             'stable', 'unstable', 'critical', 'chronic', 'acute',
@@ -194,7 +188,6 @@ class SimulatorAgent(Agent):
                     if keyword not in risk_factors:
                         risk_factors.append(keyword)
 
-        # 从不确定性中推断风险因素
         for uncertainty in uncertainties:
             if isinstance(uncertainty, str):
                 for keyword in risk_keywords:
@@ -202,20 +195,19 @@ class SimulatorAgent(Agent):
                         risk_factors.append(keyword)
 
         return risk_factors
-    
+
     def _predict_next_state(self, current_state: Dict, final_report: Dict, timestep: int) -> Dict:
         """
-        预测下一时刻状态
+        Predict the next state.
 
         Args:
-            current_state: 当前状态
-            final_report: 终版报告（基础档案）
-            timestep: 当前时间步
+            current_state: Current state
+            final_report: Final report (base profile)
+            timestep: Current timestep
 
         Returns:
-            下一时刻状态字典
+            Next state dict
         """
-        # 构建预测prompt
         base_profile = self._extract_base_profile(final_report)
 
         prompt = f"""
@@ -252,26 +244,24 @@ Respond in JSON format with fields: predicted_vitals, predicted_symptoms, predic
         ]
 
         try:
-            # 调用LLM
             response, prompt_tokens, completion_tokens = self.invoke(messages)
             next_state = self._parse_llm_response(response, current_state)
         except Exception as e:
             print(f"Warning: LLM prediction failed at timestep {timestep}: {e}")
-            # 如果LLM调用失败，使用基于规则的简单预测
             next_state = self._rule_based_prediction(current_state, timestep)
 
         return next_state
 
     def _parse_llm_response(self, response: Dict, current_state: Dict) -> Dict:
         """
-        解析LLM响应，生成下一状态
+        Parse LLM response to produce the next state.
 
         Args:
-            response: LLM响应字典
-            current_state: 当前状态
+            response: LLM response dict
+            current_state: Current state
 
         Returns:
-            下一状态字典
+            Next state dict
         """
         predicted_vitals = response.get('predicted_vitals', current_state.get('vital_signs', {}))
         predicted_symptoms = response.get('predicted_symptoms', current_state.get('symptoms', []))
@@ -279,7 +269,6 @@ Respond in JSON format with fields: predicted_vitals, predicted_symptoms, predic
         stability = response.get('stability', 'stable')
         confidence = response.get('confidence', current_state.get('confidence', 0.5))
 
-        # 继承不变的部分
         return {
             'health_status': current_state.get('health_status', 'unknown'),
             'confidence': confidence,
@@ -293,19 +282,17 @@ Respond in JSON format with fields: predicted_vitals, predicted_symptoms, predic
 
     def _rule_based_prediction(self, current_state: Dict, timestep: int) -> Dict:
         """
-        基于规则的简单预测（当LLM不可用时使用）
+        Simple rule-based prediction (used when LLM is unavailable).
 
         Args:
-            current_state: 当前状态
-            timestep: 时间步
+            current_state: Current state
+            timestep: Timestep
 
         Returns:
-            下一状态字典
+            Next state dict
         """
-        # 简单的基于时间的衰减/渐变模型
         confidence = max(0.1, current_state.get('confidence', 0.5) * 0.98)
 
-        # 基于风险因素调整稳定性
         risk_factors = current_state.get('risk_factors', [])
         if any(rf in ['high risk', 'severe', 'critical', 'unstable'] for rf in risk_factors):
             stability = 'deteriorating' if timestep > 5 else 'unstable'
@@ -322,16 +309,16 @@ Respond in JSON format with fields: predicted_vitals, predicted_symptoms, predic
             'diagnostic_rationale': current_state.get('diagnostic_rationale', ''),
             'stability': stability,
         }
-    
+
     def _aggregate_trajectories(self, trajectories: List[List[Dict]]) -> Dict:
         """
-        聚合多条轨迹，计算统计特征
+        Aggregate multiple trajectories and compute statistics.
 
         Args:
-            trajectories: 多条轨迹列表
+            trajectories: List of trajectories
 
         Returns:
-            聚合后的Digital Twin字典
+            Aggregated Digital Twin dict
         """
         if not trajectories:
             return {
@@ -342,11 +329,9 @@ Respond in JSON format with fields: predicted_vitals, predicted_symptoms, predic
                 'risk_points': [],
             }
 
-        # 获取时间步数量
         num_timesteps = len(trajectories[0]) if trajectories else 0
         num_samples = len(trajectories)
 
-        # 提取每条轨迹的置信度序列
         confidence_sequences = []
         stability_sequences = []
 
@@ -359,7 +344,6 @@ Respond in JSON format with fields: predicted_vitals, predicted_symptoms, predic
             confidence_sequences.append(confidences)
             stability_sequences.append(stabilities)
 
-        # 计算每个时间步的统计特征
         mean_confidences = []
         std_confidences = []
         percentile_5 = []
@@ -376,9 +360,7 @@ Respond in JSON format with fields: predicted_vitals, predicted_symptoms, predic
             percentile_5.append(np.percentile(t_confidences, 5))
             percentile_95.append(np.percentile(t_confidences, 95))
 
-            # 识别高风险点（标准差高或平均置信度低）
             if std_conf > 0.15 or mean_conf < 0.3:
-                # 统计该时间点的稳定性分布
                 stability_dist = {}
                 for seq in stability_sequences:
                     stab = seq[t]
@@ -391,7 +373,6 @@ Respond in JSON format with fields: predicted_vitals, predicted_symptoms, predic
                     'stability_distribution': stability_dist,
                 })
 
-        # 计算风险趋势
         risk_trend = 'increasing' if len(risk_points) > 2 and risk_points[-1]['mean_confidence'] < risk_points[0]['mean_confidence'] else 'stable'
 
         return {
@@ -404,16 +385,16 @@ Respond in JSON format with fields: predicted_vitals, predicted_symptoms, predic
             'num_samples': num_samples,
             'num_timesteps': num_timesteps,
         }
-    
+
     def _extract_base_profile(self, final_report: Dict) -> Dict:
         """
-        从终版报告中提取基础档案
-        
+        Extract base profile from the final report.
+
         Args:
-            final_report: 终版报告
-            
+            final_report: Final report
+
         Returns:
-            基础档案字典
+            Base profile dict
         """
         return {
             'predicted_risk': final_report.get('predicted_risk'),
@@ -422,42 +403,40 @@ Respond in JSON format with fields: predicted_vitals, predicted_symptoms, predic
             'consensus_summary': final_report.get('consensus_summary'),
             'uncertainties': final_report.get('uncertainties', []),
         }
-    
+
     def generate_alternative_scenarios(self, final_report: Dict, scenarios: List[str]) -> Dict:
         """
-        生成替代场景
-        
-        模拟不同治疗方案或条件下的患者发展
-        
+        Generate alternative scenarios.
+
+        Simulate patient development under different treatments or conditions.
+
         Args:
-            final_report: 终版报告
-            scenarios: 场景描述列表，如["standard_care", "aggressive_treatment", "no_treatment"]
-            
+            final_report: Final report
+            scenarios: Scenario descriptions, e.g. ["standard_care", "aggressive_treatment", "no_treatment"]
+
         Returns:
-            各场景的模拟结果
+            Simulation results per scenario
         """
         results = {}
         for scenario in scenarios:
-            # 修改基础条件，重新模拟
             modified_report = self._modify_report_for_scenario(final_report, scenario)
             trajectory = self._generate_single_trajectory(modified_report)
             results[scenario] = trajectory
         return results
-    
+
     def _modify_report_for_scenario(self, final_report: Dict, scenario: str) -> Dict:
         """
-        根据场景修改报告
+        Modify report based on scenario.
 
         Args:
-            final_report: 原始终版报告
-            scenario: 场景名称
+            final_report: Original final report
+            scenario: Scenario name
 
         Returns:
-            修改后的报告
+            Modified report
         """
         modified = final_report.copy()
 
-        # 场景修改规则
         scenario_modifiers = {
             'standard_care': {
                 'description': 'Standard treatment protocol',
@@ -465,13 +444,13 @@ Respond in JSON format with fields: predicted_vitals, predicted_symptoms, predic
             },
             'aggressive_treatment': {
                 'description': 'More intensive treatment',
-                'risk_adjustment': -0.1,  # 降低风险
-                'confidence_adjustment': -0.05,  # 降低置信度（不确定性增加）
+                'risk_adjustment': -0.1,
+                'confidence_adjustment': -0.05,
             },
             'no_treatment': {
                 'description': 'No treatment / placebo',
-                'risk_adjustment': 0.15,  # 增加风险
-                'confidence_adjustment': 0.1,  # 增加置信度
+                'risk_adjustment': 0.15,
+                'confidence_adjustment': 0.1,
             },
             'best_case': {
                 'description': 'Optimal conditions',
@@ -489,34 +468,31 @@ Respond in JSON format with fields: predicted_vitals, predicted_symptoms, predic
             modifier = scenario_modifiers[scenario]
             base_profile = self._extract_base_profile(final_report)
 
-            # 修改predicted_risk
             current_risk = base_profile.get('predicted_risk', 0.5)
             if isinstance(current_risk, (int, float)):
                 new_risk = max(0.0, min(1.0, current_risk + modifier.get('risk_adjustment', 0.0)))
                 modified['predicted_risk'] = new_risk
 
-            # 修改confidence_score
             current_conf = base_profile.get('confidence_score', 0.5)
             if isinstance(current_conf, (int, float)):
                 new_conf = max(0.0, min(1.0, current_conf + modifier.get('confidence_adjustment', 0.0)))
                 modified['confidence_score'] = new_conf
 
-            # 添加场景元数据
             modified['scenario'] = scenario
             modified['scenario_description'] = modifier['description']
 
         return modified
-    
+
     def export_trajectory(self, digital_twin: Dict, format: str = "json") -> str:
         """
-        导出轨迹到指定格式
+        Export trajectory to a specified format.
 
         Args:
-            digital_twin: Digital Twin字典
-            format: 导出格式（json, csv, dict）
+            digital_twin: Digital Twin dict
+            format: Export format (json, csv, dict)
 
         Returns:
-            导出数据（字符串或字典）
+            Exported data (string or dict)
         """
         import json
         import csv
@@ -526,12 +502,10 @@ Respond in JSON format with fields: predicted_vitals, predicted_symptoms, predic
             return json.dumps(digital_twin, indent=2, ensure_ascii=False)
 
         elif format == "csv":
-            # 将轨迹转换为CSV格式
             trajectories = digital_twin.get('trajectories', [])
             if not trajectories:
                 return ""
 
-            # 获取所有字段名
             all_fields = set()
             for traj in trajectories:
                 for state in traj:
@@ -550,7 +524,6 @@ Respond in JSON format with fields: predicted_vitals, predicted_symptoms, predic
             return output.getvalue()
 
         elif format == "summary":
-            # 返回汇总信息
             summary = {
                 'patient_id': digital_twin.get('patient_id', 'unknown'),
                 'num_trajectories': len(digital_twin.get('trajectories', [])),
@@ -565,13 +538,13 @@ Respond in JSON format with fields: predicted_vitals, predicted_symptoms, predic
 
     def invoke(self, messages: List[Dict[str, str]]) -> tuple:
         """
-        调用LLM API
+        Call LLM API.
 
         Args:
-            messages: 消息列表
+            messages: Message list
 
         Returns:
-            (响应字典, prompt_token数, completion_token数)
+            (response dict, prompt_tokens, completion_tokens)
         """
         import time
         from .json_parser import extract_and_parse_json
@@ -579,11 +552,9 @@ Respond in JSON format with fields: predicted_vitals, predicted_symptoms, predic
         start = time.time()
 
         try:
-            # 获取生成配置
             config = self.get_generation_config()
 
             if 'gemini' not in self.llm.lower():
-                # 使用OpenAI兼容接口
                 response = self.client.chat.completions.create(
                     model=self.llm,
                     messages=messages,
@@ -599,7 +570,6 @@ Respond in JSON format with fields: predicted_vitals, predicted_symptoms, predic
                 prompt_token = response.usage.prompt_tokens
                 completion_token = response.usage.completion_tokens
             else:
-                # 使用Gemini接口
                 response = self.client.models.generate_content(
                     model=self.llm,
                     contents=[messages[0]['content'], messages[1]['content']],
@@ -608,7 +578,6 @@ Respond in JSON format with fields: predicted_vitals, predicted_symptoms, predic
                 prompt_token = response.usage_metadata.prompt_token_count
                 completion_token = response.usage_metadata.candidates_token_count
 
-            # 解析JSON响应
             ans = extract_and_parse_json(content)
 
         except Exception as e:

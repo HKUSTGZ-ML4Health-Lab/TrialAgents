@@ -1,11 +1,11 @@
 """
-TrialAgents 数据处理模块
+TrialAgents Data Processing Module
 
-从 m-agents/utils/process_data.py 迁移至此
-提供临床试验数据集的加载和处理功能
+Migrated from m-agents/utils/process_data.py
+Provides loading and processing functionality for clinical trial datasets.
 
-依赖:
-    sas7bdat: 用于读取SAS格式的临床试验数据（懒加载）
+Dependencies:
+    sas7bdat: For reading SAS-format clinical trial data (lazy-loaded)
     pandas, numpy, torch, tqdm
 """
 
@@ -17,7 +17,7 @@ import pandas as pd
 import torch
 from tqdm.auto import tqdm
 
-# sas7bdat 懒加载
+# sas7bdat lazy loading
 def _get_sas7bdat():
     try:
         from sas7bdat import SAS7BDAT
@@ -31,21 +31,21 @@ def _get_sas7bdat():
 
 def generate(type, cycle_width, start_time, end_time, max_length, coeffs=None, drop_thresh=-1.5, seed=0, random_std=1):
     """
-    生成合成时间序列数据
+    Generate synthetic time series data.
 
     Args:
-        type: 'indicator' 或 'linear' 或 'sin'
-        cycle_width: 周期宽度
-        start_time: 开始时间
-        end_time: 结束时间
-        max_length: 最大长度
-        coeffs: 系数（用于linear和sin类型）
-        drop_thresh: 丢弃阈值
-        seed: 随机种子
-        random_std: 随机标准差
+        type: 'indicator', 'linear', or 'sin'
+        cycle_width: Cycle width
+        start_time: Start time
+        end_time: End time
+        max_length: Maximum length
+        coeffs: Coefficients (for linear and sin types)
+        drop_thresh: Drop threshold
+        seed: Random seed
+        random_std: Random standard deviation
 
     Returns:
-        包含occurrence和values的字典
+        Dictionary containing occurrence and values
     """
     np.random.seed(seed)
     start_time = np.clip(int(start_time + np.random.normal(loc=0, scale=random_std)), 0, max_length - 1)
@@ -77,13 +77,13 @@ def generate(type, cycle_width, start_time, end_time, max_length, coeffs=None, d
 
 def load_synthetic(seed=0):
     """
-    加载合成数据集
+    Load the synthetic dataset.
 
     Args:
-        seed: 随机种子
+        seed: Random seed
 
     Returns:
-        患者数据列表
+        List of patient data
     """
     np.random.seed(seed)
 
@@ -92,7 +92,7 @@ def load_synthetic(seed=0):
     avg_num_events_per_patient = 15
     max_length = 2000
 
-    # 生成事件配置
+    # Generate event configurations
     event_configs = []
     for i in range(num_events_to_generate):
         type = np.random.choice(['linear', 'indicator'])
@@ -112,7 +112,7 @@ def load_synthetic(seed=0):
             'end_time': end_time, 'max_length': max_length, 'coeffs': coeffs
         })
 
-    # 生成患者数据
+    # Generate patient data
     patients_list = []
     for patient_ind in range(num_patients):
         events_to_sample = max(int(np.random.normal(loc=avg_num_events_per_patient, scale=2)), 1)
@@ -135,7 +135,7 @@ def load_synthetic(seed=0):
             'values': values_padded
         })
 
-    # 统计每个事件的发生次数
+    # Count occurrences for each event
     all_event_occurrences = {i: [] for i in range(num_events_to_generate)}
     for patient in patients_list:
         for i, event_ind in enumerate(patient['event_masks'].nonzero()[0]):
@@ -143,7 +143,7 @@ def load_synthetic(seed=0):
 
     all_event_occurrences = {i: np.array(all_event_occurrences[i]) for i in range(num_events_to_generate)}
 
-    # 标准化事件值
+    # Normalize event values
     all_event_means = {}
     all_event_stds = {}
     all_event_values = {i: [] for i in range(num_events_to_generate)}
@@ -174,15 +174,15 @@ def load_synthetic(seed=0):
 
 def convert_dict_to_df(patient_list, indicator_col, value_col, patient_id_col, time_col, label_col):
     """
-    将患者列表转换为DataFrame
+    Convert a patient list to a DataFrame.
 
     Args:
-        patient_list: 患者数据列表
-        indicator_col: 指标列名
-        value_col: 值列名
-        patient_id_col: 患者ID列名
-        time_col: 时间列名
-        label_col: 标签列名
+        patient_list: List of patient data
+        indicator_col: Indicator column name
+        value_col: Value column name
+        patient_id_col: Patient ID column name
+        time_col: Time column name
+        label_col: Label column name
 
     Returns:
         pd.DataFrame
@@ -217,19 +217,19 @@ def convert_dict_to_df(patient_list, indicator_col, value_col, patient_id_col, t
 
 def process_patient_df(df, patient_id_col, indicator_col, value_col, time_col, label_col, demographic_cols=None):
     """
-    处理患者DataFrame，将数据转换为列表格式
+    Process a patient DataFrame, converting data to list format.
 
     Args:
-        df: 原始DataFrame
-        patient_id_col: 患者ID列
-        indicator_col: 指标列
-        value_col: 值列
-        time_col: 时间列（可以是单列或列表）
-        label_col: 标签列
-        demographic_cols: 人口统计学列列表
+        df: Original DataFrame
+        patient_id_col: Patient ID column
+        indicator_col: Indicator column
+        value_col: Value column
+        time_col: Time column (can be a single column or a list)
+        label_col: Label column
+        demographic_cols: List of demographic columns
 
     Returns:
-        患者数据列表
+        List of patient data
     """
     if len(time_col) == 1:
         patient_list = df.groupby(patient_id_col).apply(
@@ -260,19 +260,19 @@ def process_patient_df(df, patient_id_col, indicator_col, value_col, time_col, l
 
 def process_patient_df_as_dict(df, patient_id_col, indicator_col, value_col, time_col, label_col, demographic_cols=None):
     """
-    将患者数据处理为字典格式
+    Process patient data into dictionary format.
 
     Args:
         df: DataFrame
-        patient_id_col: 患者ID列
-        indicator_col: 指标列
-        value_col: 值列
-        time_col: 时间列
-        label_col: 标签列
-        demographic_cols: 人口统计学列
+        patient_id_col: Patient ID column
+        indicator_col: Indicator column
+        value_col: Value column
+        time_col: Time column
+        label_col: Label column
+        demographic_cols: Demographic columns
 
     Returns:
-        患者ID到数据的字典
+        Dictionary mapping patient IDs to their data
     """
     patient_dict = {}
 
@@ -295,13 +295,13 @@ def process_patient_df_as_dict(df, patient_id_col, indicator_col, value_col, tim
 
 def clean_bytes_string(val):
     """
-    清理字节字符串格式
+    Clean byte string formatting.
 
     Args:
-        val: 原始值
+        val: Raw value
 
     Returns:
-        清理后的字符串
+        Cleaned string
     """
     if isinstance(val, bytes):
         return val.decode('utf-8')
@@ -313,17 +313,17 @@ def clean_bytes_string(val):
 
 def load_clinical_trial_datasets(trial_path, dataset_to_process=None, task=None, check_reconstruction=False, min_events_per_patient=2):
     """
-    加载临床试验数据集
+    Load clinical trial datasets.
 
     Args:
-        trial_path: 临床试验数据根目录
-        dataset_to_process: 要处理的数据集名称列表，如 ['NCT00003299', 'NCT00694382']
-        task: 任务类型
-        check_reconstruction: 是否检查数据重构正确性
-        min_events_per_patient: 每个患者最少事件数
+        trial_path: Clinical trial data root directory
+        dataset_to_process: List of dataset names to process, e.g. ['NCT00003299', 'NCT00694382']
+        task: Task type
+        check_reconstruction: Whether to verify data reconstruction correctness
+        min_events_per_patient: Minimum number of events per patient
 
     Returns:
-        处理后的数据参数字典列表
+        List of processed data parameter dictionaries
     """
     if dataset_to_process is None:
         dataset_to_process = [
@@ -574,7 +574,7 @@ def load_clinical_trial_datasets(trial_path, dataset_to_process=None, task=None,
             'demographic_cols': ['AGE', 'SEX', 'HTCM', 'WTKG', 'ECOG', 'ECOGSCR', 'SMKSTAT', 'SMKSTAGE', 'SMKENAGE']
         })
 
-    # ==================== 处理数据集 ====================
+    # ==================== Process datasets ====================
     for i in range(len(args)):
         raw_df = args[i]['df']
         df = raw_df.copy()
@@ -584,14 +584,14 @@ def load_clinical_trial_datasets(trial_path, dataset_to_process=None, task=None,
         time_col = args[i]['time_col']
         label_col = args[i]['label_col']
 
-        # 处理time_col
+        # Handle time_col
         if isinstance(time_col, list):
             time_col = time_col[0]
 
-        # 删除空值
+        # Drop null values
         df = df.dropna(subset=[indicator_col, value_col, patient_id_col, time_col, label_col], how='any')
 
-        # 类型转换
+        # Type conversion
         df[indicator_col] = df[indicator_col].astype(str)
         if 'NCT00174655' in dataset_to_process:
             df[value_col] = df[value_col].astype(str)
@@ -601,16 +601,16 @@ def load_clinical_trial_datasets(trial_path, dataset_to_process=None, task=None,
         df[time_col] = df[time_col].astype(float)
         df[label_col] = df[label_col].astype(int)
 
-        # 过滤事件数过少的患者
+        # Filter out patients with too few events
         df = df.groupby(patient_id_col).filter(lambda x: len(x) >= min_events_per_patient)
 
-        # 统计信息
+        # Statistics
         max_occurrences_per_event = df.groupby([patient_id_col, indicator_col]).size().max()
         all_events = np.unique(df[indicator_col])
         patient_list = np.unique(df[patient_id_col])
         print(f'len subjid: {len(patient_list)}, max max_occurrences_per_event: {max_occurrences_per_event}, num events: {len(all_events)}')
 
-        # 去重
+        # Deduplication
         df = df.drop_duplicates(subset=[patient_id_col, time_col, indicator_col])
         df = df.reset_index(drop=True)
         df = df.sort_values(by=[patient_id_col, time_col]).reset_index(drop=True)
@@ -620,9 +620,9 @@ def load_clinical_trial_datasets(trial_path, dataset_to_process=None, task=None,
 
 
 # Backward-compatible aliases for code migrated from m-agents
-def process_patient_df_old(df, patient_id_col, indicator_col, value_col, time_col, label_col, demographic_col=None):
+def process_patient_df_old(df, patient_id_col, indicator_col, value_col, time_col, label_col, demographic_cols=None):
     """Alias for process_patient_df with old parameter name (demographic_col singular)."""
-    return process_patient_df(df, patient_id_col, indicator_col, value_col, time_col, label_col, demographic_cols=demographic_col)
+    return process_patient_df(df, patient_id_col, indicator_col, value_col, time_col, label_col, demographic_cols=demographic_cols)
 
 
 def load_clinical_trial_datasets_old(trial_path, dataset_to_process=None, check_reconstruction=False, min_events_per_patient=2):

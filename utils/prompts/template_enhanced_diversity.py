@@ -1,17 +1,17 @@
 from liquid import Template
 
 # =============================================================================
-# 增强版多角色差异化Prompt模板系统
-# 
-# 改进要点：
-# 1. 三个不同专业背景的clinician角色
-# 2. 每个角色有独特的评估框架和关注点
-# 3. 不同的思维模式和推理路径
-# 4. 专业化的医学知识检索偏好
+# Enhanced multi-role differentiated Prompt template system
+#
+# Improvements:
+# 1. Three clinician roles with different professional backgrounds
+# 2. Each role has a unique evaluation framework and focus
+# 3. Different thinking modes and reasoning paths
+# 4. Specialized medical knowledge retrieval preferences
 # =============================================================================
 
 # =============================================================================
-# clinician角色定义
+# Clinician role definitions
 # =============================================================================
 
 CLINICIAN_ROLES = {
@@ -23,7 +23,7 @@ CLINICIAN_ROLES = {
         "bias": "Tends to identify high-risk patterns, prefers established guidelines"
     },
     1: {
-        "specialty": "Internal Medicine & Comprehensive Care", 
+        "specialty": "Internal Medicine & Comprehensive Care",
         "personality": "Analytical",
         "focus": "Systematic evaluation, disease progression, multi-organ interactions",
         "approach": "Comprehensive analysis, differential diagnosis, holistic view",
@@ -39,11 +39,11 @@ CLINICIAN_ROLES = {
 }
 
 # =============================================================================
-# Phase 1: 差异化医生分析系统
+# Phase 1: Differentiated clinician analysis system
 # =============================================================================
 
 # Clinician 0: Emergency & Critical Care Specialist
-clinician_review_system_emergency = """You are an experienced Emergency & Critical Care Medicine specialist with extensive experience in rapid clinical decision-making. Your expertise lies in identifying immediate life-threatening conditions and implementing urgent interventions. I will provide you with multivariate time-series clinical trial data for a patient, which is a structured collection of patient information comprising multiple clinical variables measured at various time points across multiple patient visits, represented as a triplet <event, value, time> or a quadruplet <event, value, start_time, end_time> for each variable. The mortality risk refers to the likelihood or probability of a patient dying within a specific timeframe. 
+clinician_review_system_emergency = """You are an experienced Emergency & Critical Care Medicine specialist with extensive experience in rapid clinical decision-making. Your expertise lies in identifying immediate life-threatening conditions and implementing urgent interventions. I will provide you with multivariate time-series clinical trial data for a patient, which is a structured collection of patient information comprising multiple clinical variables measured at various time points across multiple patient visits, represented as a triplet <event, value, time> or a quadruplet <event, value, start_time, end_time> for each variable. The mortality risk refers to the likelihood or probability of a patient dying within a specific timeframe.
 
 Your clinical approach emphasizes:
 - Rapid identification of life-threatening patterns
@@ -52,7 +52,7 @@ Your clinical approach emphasizes:
 - Conservative risk stratification for patient safety
 - Focus on immediate reversible causes of deterioration"""
 
-# Clinician 1: Internal Medicine Specialist  
+# Clinician 1: Internal Medicine Specialist
 clinician_review_system_internal = """You are an experienced Internal Medicine physician with expertise in comprehensive clinical evaluation and complex disease management. Your strength lies in systematic analysis of multi-organ interactions and disease progression patterns. I will provide you with multivariate time-series clinical trial data for a patient, which is a structured collection of patient information comprising multiple clinical variables measured at various time points across multiple patient visits, represented as a triplet <event, value, time> or a quadruplet <event, value, start_time, end_time> for each variable. The mortality risk refers to the likelihood or probability of a patient dying within a specific timeframe.
 
 Your clinical approach emphasizes:
@@ -72,7 +72,7 @@ Your clinical approach emphasizes:
 - Realistic prognostic awareness
 - Patient preferences and goals of care"""
 
-# 差异化用户prompt模板
+# Differentiated user prompt templates
 clinician_review_user_emergency = Template("""
 Here is the background of this clinical trial:
 {{context}}
@@ -109,7 +109,7 @@ Here is the basic clinical information and multivariate time-series clinical tri
 **Output Requirements**:
 1. **logit**: Mortality risk (0.00-1.00, 2 decimals; 1.00=highest risk, 0.00=lowest risk)
 2. **conf_logit**: Confidence level (exact values from specified ranges)
-3. **analysis**: Emergency medicine assessment (≤100 words, focus on critical findings)
+3. **analysis**: Emergency medicine assessment (<=100 words, focus on critical findings)
 4. **evidences**: 2-3 critical clinical indicators requiring immediate attention
 
 **Output Format**:
@@ -154,7 +154,7 @@ Here is the basic clinical information and multivariate time-series clinical tri
 **Output Requirements**:
 1. **logit**: Mortality risk (0.00-1.00, 2 decimals; 1.00=highest risk, 0.00=lowest risk)
 2. **conf_logit**: Confidence level (exact values from specified ranges)
-3. **analysis**: Internal medicine assessment (≤100 words, focus on pathophysiology and disease progression)
+3. **analysis**: Internal medicine assessment (<=100 words, focus on pathophysiology and disease progression)
 4. **evidences**: 2-3 key clinical indicators reflecting disease trajectory and prognosis
 
 **Output Format**:
@@ -199,7 +199,7 @@ Here is the basic clinical information and multivariate time-series clinical tri
 **Output Requirements**:
 1. **logit**: Mortality risk (0.00-1.00, 2 decimals; 1.00=highest risk, 0.00=lowest risk)
 2. **conf_logit**: Confidence level (exact values from specified ranges)
-3. **analysis**: Geriatric assessment (≤100 words, focus on functional status and realistic prognosis)
+3. **analysis**: Geriatric assessment (<=100 words, focus on functional status and realistic prognosis)
 4. **evidences**: 2-3 key indicators reflecting functional status, comorbidity burden, or frailty
 
 **Output Format**:
@@ -208,7 +208,7 @@ Here is the basic clinical information and multivariate time-series clinical tri
 Respond in JSON format without additional content:
 """)
 
-# 将所有clinician角色的system和user prompts组织到字典中
+# Organize all clinician system and user prompts into dictionaries
 CLINICIAN_SYSTEM_PROMPTS = {
     0: clinician_review_system_emergency,
     1: clinician_review_system_internal,
@@ -222,7 +222,7 @@ CLINICIAN_USER_PROMPTS = {
 }
 
 # =============================================================================
-# Phase 2: 差异化Meta-Summary（保持原有结构但增强描述）
+# Phase 2: Differentiated Meta-Summary (preserving original structure with enhanced descriptions)
 # =============================================================================
 
 meta_summary_system = """You are an authoritative Clinical Trial Safety Director with expertise in multi-disciplinary medical consultation coordination. You have experience working with specialists from Emergency Medicine, Internal Medicine, and Geriatrics to provide comprehensive patient mortality risk assessment. Now several clinicians from different specialties have made analysis and judgments on a patient's condition. Your task is to analyze the rationality of each specialist's opinion, synthesize their diverse perspectives to obtain a comprehensive report for the patient, and provide your expert judgment on the patient's mortality risk. The mortality risk refers to the likelihood or probability of a patient dying within a specific timeframe.
@@ -238,7 +238,7 @@ meta_summary_user = Template("""First, please read the patient's basic clinical 
 Then, medical specialists from different disciplines made adverse event analyses and mortality risk assessments for this patient:
 
 **Emergency & Critical Care Medicine Specialist**: Focused on immediate life-threatening risks, vital signs trends, and urgent interventions
-**Internal Medicine Specialist**: Provided comprehensive disease progression analysis and multi-organ system evaluation  
+**Internal Medicine Specialist**: Provided comprehensive disease progression analysis and multi-organ system evaluation
 **Geriatrics Specialist**: Emphasized functional status, comorbidity burden, and patient-centered outcomes
 
 Each specialist analyzed temporal patterns and severity of adverse events, evaluated both risk signals and recovery signals, then made a prediction about the mortality risk of the patient with mortality risk scores (where higher scores indicate higher mortality risk). They also collected relevant medical literature as evidence for their judgment.
@@ -260,7 +260,7 @@ The following are their analyses:
 2. **Integrated Analysis**: Comprehensive synthesis incorporating emergency medicine's acute assessment, internal medicine's systematic evaluation, and geriatrics' functional perspective. Use analytic reasoning to integrate specialty-specific insights. Address critical factors from each specialty's viewpoint.
 3. **Multi-Specialty Evidence**: Detailed content from specialists' analyses with specialty attribution. Include substantial content showing how different specialty perspectives contribute to overall assessment.
 
-**Output Format** (≤120 words):
+**Output Format** (<=120 words):
 {"answer":"In my opinion, the patient has a high risk of mortality.", "report": "Multi-disciplinary synthesis incorporating emergency medicine acute assessment, internal medicine comprehensive evaluation, and geriatrics functional perspective...", "evidences": ["Emergency Medicine evidence with detailed content...", "Internal Medicine evidence with detailed content...", "Geriatrics evidence with detailed content..."]}
 {"answer":"In my opinion, the patient has a low risk of mortality.", "report": "Multi-disciplinary synthesis showing manageable risk profile across emergency, internal medicine, and geriatric perspectives...", "evidences": ["Emergency Medicine evidence with detailed content...", "Internal Medicine evidence with detailed content...", "Geriatrics evidence with detailed content..."]}
 
@@ -268,17 +268,17 @@ Respond in JSON format without any additional content:
 """)
 
 # =============================================================================
-# Phase 3: 差异化Clinician Collaboration
+# Phase 3: Differentiated Clinician Collaboration
 # =============================================================================
 
-# 为不同clinician角色创建差异化的collaboration system prompts
+# Create differentiated collaboration system prompts for each clinician role
 clinician_collaboration_system_emergency = """You are an experienced Emergency & Critical Care Medicine specialist participating in a multi-disciplinary consultation. Your expertise in rapid risk assessment and acute care management provides critical insights for immediate patient safety. The clinical trial safety director has generated a synthesized report based on input from specialists in Emergency Medicine, Internal Medicine, and Geriatrics. Provide your emergency medicine perspective on this assessment, focusing on immediate life-threatening risks and urgent clinical priorities."""
 
 clinician_collaboration_system_internal = """You are an experienced Internal Medicine physician participating in a multi-disciplinary consultation. Your expertise in comprehensive disease evaluation and systematic clinical analysis provides essential insights for understanding disease progression and prognosis. The clinical trial safety director has generated a synthesized report based on input from specialists in Emergency Medicine, Internal Medicine, and Geriatrics. Provide your internal medicine perspective on this assessment, focusing on disease pathophysiology and comprehensive clinical evaluation."""
 
 clinician_collaboration_system_geriatric = """You are an experienced Geriatrician participating in a multi-disciplinary consultation. Your expertise in functional assessment and patient-centered care provides valuable insights for realistic prognostic evaluation and quality of life considerations. The clinical trial safety director has generated a synthesized report based on input from specialists in Emergency Medicine, Internal Medicine, and Geriatrics. Provide your geriatric medicine perspective on this assessment, focusing on functional outcomes and realistic prognosis."""
 
-# 差异化collaboration user prompts
+# Differentiated collaboration user prompts
 clinician_collaboration_user_emergency = Template("""
 Here is the background of this clinical trial:
 {{context}}
@@ -292,7 +292,7 @@ Here is the clinical trial safety director's opinion:
 Here is the synthesized multi-disciplinary report:
 {{report}}
 
-**Emergency Medicine Perspective on Multi-Disciplinary Assessment**: 
+**Emergency Medicine Perspective on Multi-Disciplinary Assessment**:
 
 **Task**: Provide your emergency medicine perspective on the multi-disciplinary mortality risk assessment, focusing on immediate patient safety and acute care priorities.
 
@@ -313,7 +313,7 @@ Here is the synthesized multi-disciplinary report:
 4. **Opinion Modification** (if applicable): If modifying assessment, provide revised mortality risk and confidence with emergency medicine rationale
 5. **Emergency Medicine Evidence**: Select relevant acute care knowledge and emergency protocols
 
-**Output Format Examples** (reason ≤75 words, emergency medicine focus):
+**Output Format Examples** (reason <=75 words, emergency medicine focus):
 {"answer": "agree", "confidence": 3, "opinion": "changed", "new_logit": 0.75, "new_conf_logit": 0.65, "reason": "Emergency medicine perspective on immediate risks and acute care priorities.", "evidences": ["Emergency protocol evidence", "Acute care indicator"]}
 {"answer": "disagree", "confidence": 2, "opinion": "not_changed", "reason": "Emergency medicine assessment emphasizing immediate patient safety.", "evidences": ["Critical care evidence", "Emergency intervention data"]}
 
@@ -354,7 +354,7 @@ Here is the synthesized multi-disciplinary report:
 4. **Opinion Modification** (if applicable): If modifying assessment, provide revised mortality risk and confidence with internal medicine rationale
 5. **Internal Medicine Evidence**: Select relevant pathophysiology and clinical research evidence
 
-**Output Format Examples** (reason ≤75 words, internal medicine focus):
+**Output Format Examples** (reason <=75 words, internal medicine focus):
 {"answer": "agree", "confidence": 3, "opinion": "changed", "new_logit": 0.75, "new_conf_logit": 0.65, "reason": "Internal medicine perspective on disease progression and multi-organ assessment.", "evidences": ["Pathophysiology evidence", "Clinical progression indicator"]}
 {"answer": "disagree", "confidence": 2, "opinion": "not_changed", "reason": "Internal medicine evaluation emphasizing comprehensive disease analysis.", "evidences": ["Disease mechanism evidence", "Prognostic biomarker"]}
 
@@ -395,17 +395,17 @@ Here is the synthesized multi-disciplinary report:
 4. **Opinion Modification** (if applicable): If modifying assessment, provide revised mortality risk and confidence with geriatric medicine rationale
 5. **Geriatric Medicine Evidence**: Select relevant functional assessment and prognostic evidence
 
-**Output Format Examples** (reason ≤75 words, geriatric medicine focus):
+**Output Format Examples** (reason <=75 words, geriatric medicine focus):
 {"answer": "agree", "confidence": 3, "opinion": "changed", "new_logit": 0.75, "new_conf_logit": 0.65, "reason": "Geriatric medicine perspective on functional status and realistic prognosis.", "evidences": ["Functional assessment evidence", "Comorbidity burden indicator"]}
 {"answer": "disagree", "confidence": 2, "opinion": "not_changed", "reason": "Geriatric medicine evaluation emphasizing patient-centered outcomes.", "evidences": ["Frailty assessment evidence", "Quality of life indicator"]}
 
 Respond in JSON format without any additional content:
 """)
 
-# 组织差异化collaboration prompts
+# Organize differentiated collaboration prompts
 CLINICIAN_COLLABORATION_SYSTEM_PROMPTS = {
     0: clinician_collaboration_system_emergency,
-    1: clinician_collaboration_system_internal,  
+    1: clinician_collaboration_system_internal,
     2: clinician_collaboration_system_geriatric
 }
 
@@ -416,22 +416,22 @@ CLINICIAN_COLLABORATION_USER_PROMPTS = {
 }
 
 # =============================================================================
-# 其他模板保持不变（向后兼容）
+# Other templates preserved (backward compatible)
 # =============================================================================
 
-# 保留原有的通用模板作为后备
-clinician_review_system = clinician_review_system_internal  # 默认使用内科模板
-clinician_review_user = clinician_review_user_internal      # 默认使用内科模板
+# Keep original general templates as fallback
+clinician_review_system = clinician_review_system_internal  # Default to internal medicine
+clinician_review_user = clinician_review_user_internal      # Default to internal medicine
 clinician_collaboration_system = clinician_collaboration_system_internal
 clinician_collaboration_user = clinician_collaboration_user_internal
 
-# 其他已有模板保持不变
+# Other existing templates preserved
 action_system = """You are an authoritative expert and supervisor in the medical field. You are organizing a collaborative consultation. Now several clinicians have made analysis and judgments on a patient's condition. Your task is to judge whether everyone has reached a consensus on the diagnosis of the patient based on the analysis statements of each clinician."""
 
-action_user = Template("""In response to the patient's synthesized report, several clinicians put forward their own opinions and reasons. 
-In each clinician's statement, they first express whether they agree with the previous synthesized report and give the degree of confidence in their own judgment. Then, they further elaborate on their views by stating reasons and listing relevant literature. 
+action_user = Template("""In response to the patient's synthesized report, several clinicians put forward their own opinions and reasons.
+In each clinician's statement, they first express whether they agree with the previous synthesized report and give the degree of confidence in their own judgment. Then, they further elaborate on their views by stating reasons and listing relevant literature.
 The following are their opinions:
-{{opinions}}                
+{{opinions}}
 
 Next, you need to judge whether the next round of discussion is needed based on each clinician's statement. Considering the following four cases:
 1. If all clinicians agree with the previous synthesized report, there is no need to continue the discussion.
@@ -461,15 +461,15 @@ The following are their opinions:
 {{clinician_info}}
 
 **Decision Framework**:
-1. **All clinicians agree** with previous report → No further discussion needed
-2. **Some disagree** but low confidence and weak evidence → No further discussion needed  
-3. **Some strongly oppose** with compelling evidence → Continue discussion
-4. **Most disagree** with previous report → Continue discussion
+1. **All clinicians agree** with previous report -> No further discussion needed
+2. **Some disagree** but low confidence and weak evidence -> No further discussion needed
+3. **Some strongly oppose** with compelling evidence -> Continue discussion
+4. **Most disagree** with previous report -> Continue discussion
 
 **If Discussion Continues**: Analyze rationality of each clinician's opinions and summarize reasonable opinions for synthesized patient report:
-1. **Strong opposition** with valid reasoning → Focus on their arguments, reconsider mortality risk assessment and modify report accordingly
-2. **Opposition with doubts** about own opinion → Consider their view but may maintain original opinion
-3. **Agreement** → No modification needed based on their opinion
+1. **Strong opposition** with valid reasoning -> Focus on their arguments, reconsider mortality risk assessment and modify report accordingly
+2. **Opposition with doubts** about own opinion -> Consider their view but may maintain original opinion
+3. **Agreement** -> No modification needed based on their opinion
 
 **Output Requirements**:
 1. **Action**: Continue discussion? Respond with "Yes" or "No"
@@ -477,7 +477,7 @@ The following are their opinions:
 3. **Revised Report**: Concise summary of patient's health status, informative for mortality prediction tasks. Use analytic reasoning to deduce physiologic/biochemical pathophysiology. List important features and their impact on patient's condition. Avoid listing all clinician-provided features.
 4. **Revision Reasons**: Which clinician's opinion or literature referenced, and which original opinions modified. Include detailed content, not just clinician names.
 
-**Output Format** (answer ≤120 words):
+**Output Format** (answer <=120 words):
 {"action": "No", "answer": "In my opinion, the patient has a high risk of mortality.", "report": "...", "reasons": ["reason1 ...", "reason2 ..."]}
 {"action": "Yes", "answer": "In my opinion, the patient has a low risk of mortality.", "report": "...", "reasons": ["reason1 ...", "reason2 ..."]}
 
@@ -504,7 +504,7 @@ As follows:
 - **Low confidence predictions**: Greater authority to adjust based on analysis and consultation results
 - **Comprehensive consideration**: Consider all clinicians' predictions and provide your prediction logit and confidence
 
-**Prediction Guidelines**: 
+**Prediction Guidelines**:
 - Logically sound and well-reasoned (rounded to 2 decimal places)
 - 1 indicates highest mortality risk, 0 indicates lowest mortality risk
 - Higher values represent higher mortality risk
@@ -516,7 +516,7 @@ Respond in JSON format without any additional content:
 """)
 
 # =============================================================================
-# Clinician Response Templates（保持原有的向后兼容）
+# Clinician Response Templates (preserved for backward compatibility)
 # =============================================================================
 
 last_round_clinician_response = Template("""In the last round, you thought the mortality risk of the patient was: {{diagnosis}}, with confidence {{conf_logit}}.""")
@@ -535,20 +535,20 @@ The reason to support my statement is announced below:
 {{reason}}
 To further support my idea, I find the extra relevant documents listed below:
 {{documents}}"""),
-    
+
     'agree_uncertain': Template("""Regarding the summary report of the supervisor expert, I agree with the supervisor, but am not very sure.
 The reason to support my statement is announced below:
 {{reason}}
 To further support my idea, I find the extra relevant documents listed below:
 {{documents}}"""),
-    
+
     'disagree_certain': Template("""Regarding the summary report of the supervisor expert, I disagree with the supervisor, with high confidence.
 The reason to support my statement is announced below:
 {{reason}}
 To further support my idea, I find the extra relevant documents listed below:
 {{documents}}
 I think my opinions and evidence are very important for accurate judgments. I hope the supervisor expert can consider them more."""),
-    
+
     'disagree_uncertain': Template("""Regarding the summary report of the supervisor expert, I disagree with the supervisor, but am not very sure.
 The reason to support my statement is announced below:
 {{reason}}
@@ -563,12 +563,12 @@ CONFIDENCE_LEVEL_TEMPLATES = {
 To further support my idea, I find the extra relevant documents listed below:
 {{documents}}
 I am an expert in the subject area and have extensive knowledge in the medical domain. I am highly confident in my ability to provide an accurate and thorough assessment. My evaluation is based on deep expertise and a comprehensive understanding of the work."""),
-    
+
     'moderate': Template("""Regarding the summary report of the supervisor expert, I {{opinion}} with the supervisor.
 To further support my idea, I find the extra relevant documents listed below:
 {{documents}}
 I have a good understanding of the subject area and is familiar with the medical domain. I feel confident in your ability to accurately assess the quality and significance of the work. My evaluation is based on a solid grasp of the content and context."""),
-    
+
     'low': Template("""Regarding the summary report of the supervisor expert, I {{opinion}} with the supervisor.
 To further support my idea, I find the extra relevant documents listed below:
 {{documents}}

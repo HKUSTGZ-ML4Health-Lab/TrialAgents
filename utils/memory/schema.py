@@ -1,7 +1,7 @@
 """
-TrialAgents Memory Bank - 数据结构定义
+TrialAgents Memory Bank - Data Structure Definitions
 
-定义错误案例、成功案例和模式元数据的存储结构
+Defines the storage structures for error cases, success cases, and pattern metadata
 """
 
 from dataclasses import dataclass, field
@@ -11,48 +11,48 @@ from enum import Enum
 
 
 class ErrorType(Enum):
-    """错误类型枚举"""
-    UNDERESTIMATION = "underestimation"       # 低估风险
-    OVERESTIMATION = "overestimation"        # 高估风险
-    MISDIAGNOSIS = "misdiagnosis"           # 误诊
-    WRONG_BASIS = "wrong_basis"             # 依据错误
-    INCOMPLETE_ANALYSIS = "incomplete_analysis"  # 分析不完整
-    CONTRADICTION = "contradiction"          # 逻辑矛盾
-    UNKNOWN = "unknown"                      # 未知类型
+    """Error type enumeration"""
+    UNDERESTIMATION = "underestimation"       # Underestimated risk
+    OVERESTIMATION = "overestimation"        # Overestimated risk
+    MISDIAGNOSIS = "misdiagnosis"           # Misdiagnosis
+    WRONG_BASIS = "wrong_basis"             # Wrong basis
+    INCOMPLETE_ANALYSIS = "incomplete_analysis"  # Incomplete analysis
+    CONTRADICTION = "contradiction"          # Logical contradiction
+    UNKNOWN = "unknown"                      # Unknown type
 
 
 @dataclass
 class PatientProfile:
-    """患者特征摘要（用于相似度检索）"""
+    """Patient feature summary (for similarity retrieval)"""
     patient_id: str
     dataset: str
     group: str                               # control/experimental
-    key_features: Dict[str, Any]            # 关键特征摘要
-    prediction: float                        # 预测值
-    ground_truth: Optional[int] = None      # 真实标签
+    key_features: Dict[str, Any]            # Key feature summary
+    prediction: float                        # Prediction value
+    ground_truth: Optional[int] = None      # Ground truth label
 
     def to_text(self) -> str:
-        """转换为检索文本"""
+        """Convert to retrieval text"""
         features_str = ", ".join([f"{k}={v}" for k, v in self.key_features.items()])
         return f"Patient {self.patient_id} ({self.dataset}/{self.group}): {features_str}, prediction={self.prediction}"
 
 
 @dataclass
 class ErrorCase:
-    """错误案例"""
+    """Error case"""
     case_id: str
     dataset: str
     patient_profile: PatientProfile
-    clinician_analysis: str                    # 出错的分析内容
+    clinician_analysis: str                    # Erroneous analysis content
     error_type: ErrorType
-    root_cause: str                         # 错误根因（LLM生成）
-    correction: str                         # 正确分析
-    improvement_hint: str                    # 改进提示
+    root_cause: str                         # Error root cause (LLM-generated)
+    correction: str                         # Correct analysis
+    improvement_hint: str                    # Improvement hint
     timestamp: datetime = field(default_factory=datetime.now)
-    frequency: int = 1                      # 出现频次
-    clinician_index: int = 0                   # 出错的clinician索引
-    prediction: float = 0.0                 # 错误预测值
-    ground_truth: int = 0                   # 真实标签
+    frequency: int = 1                      # Occurrence frequency
+    clinician_index: int = 0                   # Index of the clinician who made the error
+    prediction: float = 0.0                 # Erroneous prediction value
+    ground_truth: int = 0                   # Ground truth label
 
     def to_dict(self) -> Dict:
         return {
@@ -80,7 +80,7 @@ class ErrorCase:
 
     @classmethod
     def from_dict(cls, data: Dict) -> "ErrorCase":
-        """从字典创建"""
+        """Create from dictionary"""
         patient_profile = PatientProfile(
             patient_id=data["patient_profile"]["patient_id"],
             dataset=data["patient_profile"]["dataset"],
@@ -108,16 +108,16 @@ class ErrorCase:
 
 @dataclass
 class SuccessCase:
-    """成功案例"""
+    """Success case"""
     case_id: str
     dataset: str
     patient_profile: PatientProfile
-    reasoning_chain: str                   # 成功的推理链
-    outcome: str                            # 预测结果描述
-    confidence: float                       # 置信度
-    key_triggers: List[str]                 # 有效触发点
+    reasoning_chain: str                   # Successful reasoning chain
+    outcome: str                            # Prediction outcome description
+    confidence: float                       # Confidence
+    key_triggers: List[str]                 # Effective trigger points
     timestamp: datetime = field(default_factory=datetime.now)
-    clinician_index: int = 0                   # clinician索引
+    clinician_index: int = 0                   # Clinician index
 
     def to_dict(self) -> Dict:
         return {
@@ -141,7 +141,7 @@ class SuccessCase:
 
     @classmethod
     def from_dict(cls, data: Dict) -> "SuccessCase":
-        """从字典创建"""
+        """Create from dictionary"""
         patient_profile = PatientProfile(
             patient_id=data["patient_profile"]["patient_id"],
             dataset=data["patient_profile"]["dataset"],
@@ -165,14 +165,14 @@ class SuccessCase:
 
 @dataclass
 class PatternMeta:
-    """模式元数据 - 从多个案例中提取的高层模式"""
+    """Pattern metadata - High-level patterns extracted from multiple cases"""
     pattern_id: str
     pattern_type: str                       # e.g., "age_related", "comorbidity_interaction"
-    description: str                        # 模式描述
-    frequency: int = 1                      # 出现频次
-    success_rate: float = 0.0                # 应用此模式时的成功率
-    applicable_features: Dict[str, Any]     # 适用特征条件
-    best_practices: List[str]                # 最佳实践建议
+    description: str                        # Pattern description
+    frequency: int = 1                      # Occurrence frequency
+    success_rate: float = 0.0                # Success rate when applying this pattern
+    applicable_features: Dict[str, Any]     # Applicable feature conditions
+    best_practices: List[str]                # Best practice recommendations
     timestamp: datetime = field(default_factory=datetime.now)
 
     def to_dict(self) -> Dict:

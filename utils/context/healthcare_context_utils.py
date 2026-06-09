@@ -1,12 +1,12 @@
 """
-TrialAgents 医疗上下文构建模块
+TrialAgents Healthcare Context Building Module
 
-从 m-agents/utils/healthcare_context_utils.py 迁移至此
-提供患者医疗上下文生成功能
+Migrated from m-agents/utils/healthcare_context_utils.py
+Provides patient medical context generation functionality.
 
-依赖:
-    utils.context.datasets_info: 医疗数据字典
-    utils.context.process_data: 数据处理函数
+Dependencies:
+    utils.context.datasets_info: Medical data dictionaries
+    utils.context.process_data: Data processing functions
 """
 
 import os
@@ -36,14 +36,14 @@ def get_data_from_files(
     patient_index: int = 0
 ) -> Tuple:
     """
-    从文件加载患者数据
+    Load patient data from files.
 
     Args:
-        data_url: 数据目录
-        task: 任务名称
-        model: 模型名称
-        mode: 模式 (test/val)
-        patient_index: 患者索引
+        data_url: Data directory
+        task: Task name
+        model: Model name
+        mode: Mode (test/val)
+        patient_index: Patient index
 
     Returns:
         (x, raw_x, record_time, features, lab_features, note, total_y, y, important_features)
@@ -88,7 +88,7 @@ def get_data_from_files(
 
 
 def get_var_desc(var: float) -> str:
-    """获取变量描述（百分比形式）"""
+    """Get variable description (as percentage)."""
     if var > 0:
         return round(var * 100, 2)
     else:
@@ -96,7 +96,7 @@ def get_var_desc(var: float) -> str:
 
 
 def get_trend_desc(var: float) -> str:
-    """获取趋势描述"""
+    """Get trend description."""
     if var > 0:
         return "increased"
     else:
@@ -104,7 +104,7 @@ def get_trend_desc(var: float) -> str:
 
 
 def get_recommended_trend_desc(var: float) -> str:
-    """获取建议的趋势描述"""
+    """Get recommended trend description."""
     if var > 0:
         return "decrease"
     else:
@@ -112,7 +112,7 @@ def get_recommended_trend_desc(var: float) -> str:
 
 
 def get_range_desc(key: str, var: float) -> str:
-    """获取范围描述"""
+    """Get range description."""
     if key in ["Weight", "Appetite"]:
         return ""
     if key not in medical_standard:
@@ -126,7 +126,7 @@ def get_range_desc(key: str, var: float) -> str:
 
 
 def get_mean_desc(var: str, mean: float) -> str:
-    """获取相对于平均值的描述"""
+    """Get description relative to the mean."""
     if var < mean:
         return f"{round((mean - var) / mean * 100, 0)}% lower"
     elif var > mean:
@@ -134,7 +134,7 @@ def get_mean_desc(var: str, mean: float) -> str:
 
 
 def get_death_desc(risk: float) -> str:
-    """获取死亡风险等级描述"""
+    """Get death risk level description."""
     if risk < 0.5:
         return "a low level"
     elif risk < 0.7:
@@ -144,7 +144,7 @@ def get_death_desc(risk: float) -> str:
 
 
 def get_distribution(data, values) -> str:
-    """获取数据分布描述"""
+    """Get data distribution description."""
     arr = np.sort(np.array(values))
     index = np.searchsorted(arr, data, side='right')
     rank = index / len(arr) * 100
@@ -163,16 +163,16 @@ def format_input_ehr(
     record_time: List[List[str]] = None
 ) -> str:
     """
-    格式化EHR数据为文本描述
+    Format EHR data into text description.
 
     Args:
-        raw_x: 原始特征数据
-        features: 特征名称列表
-        lab_features: 实验室特征列表
-        record_time: 记录时间列表
+        raw_x: Raw feature data
+        features: Feature name list
+        lab_features: Lab test feature list
+        record_time: Record time list
 
     Returns:
-        格式化的EHR描述文本
+        Formatted EHR description text
     """
     ehr = ""
 
@@ -223,13 +223,13 @@ def generate_prompt(
     patient_id: int
 ) -> Tuple[str, str]:
     """
-    生成医疗上下文prompt
+    Generate a medical context prompt.
 
     Args:
-        dataset: 数据集名称
-        data_url: 数据目录
-        patient_index: 患者索引
-        patient_id: 患者ID
+        dataset: Dataset name
+        data_url: Data directory
+        patient_index: Patient index
+        patient_id: Patient ID
 
     Returns:
         (subcontext, hcontext)
@@ -288,9 +288,9 @@ def generate_prompt(
 
 class ContextBuilder:
     """
-    医疗上下文构建器
+    Medical context builder.
 
-    根据患者数据生成用于LLM分析的医疗上下文
+    Generates medical context for LLM analysis based on patient data.
     """
 
     def __init__(
@@ -301,13 +301,13 @@ class ContextBuilder:
         mode: str
     ) -> None:
         """
-        初始化上下文构建器
+        Initialize the context builder.
 
         Args:
-            dataset_name: 数据集名称 (esrd, cdsl, mimic-iv, mimic-iii, NCT*)
-            task: 任务名称
-            model_name: 模型名称
-            mode: 模式 (test/val)
+            dataset_name: Dataset name (esrd, cdsl, mimic-iv, mimic-iii, NCT*)
+            task: Task name
+            model_name: Model name
+            mode: Mode (test/val)
         """
         self.dataset_name = dataset_name
         self.dataset_dir = f"ehr_datasets/{dataset_name}/processed/fold_1"
@@ -322,15 +322,15 @@ class ContextBuilder:
         is_baseline: bool = False
     ):
         """
-        生成患者医疗上下文
+        Generate patient medical context.
 
         Args:
-            patient_index: 患者在数据集中的索引
-            patient_id: 患者ID
-            is_baseline: 是否为基础上下文
+            patient_index: Patient index in the dataset
+            patient_id: Patient ID
+            is_baseline: Whether to generate baseline context only
 
         Returns:
-            (basic_context, subcontext, hcontext) 或 单一上下文字符串
+            (basic_context, subcontext, hcontext) or a single context string
         """
         basic_context = "Here is the patient's basic information:\n"
 
@@ -360,8 +360,11 @@ class ContextBuilder:
             basic_context += f"This {gender} patient, aged {age}, is an patient in Intensive Care Unit (ICU).\n"
 
         elif 'NCT' in self.dataset_name:
-            # 处理NCT临床试验数据
-            patient_data_path = f"/home/chunyu.lei/DEAP/SELF_DATA/mas/m-agents/processed_data/{self.dataset_name}/{patient_id}.json"
+            # Handle NCT clinical trial data
+            from pathlib import Path as _Path
+            _default_dir = str(_Path(__file__).parent.parent.parent.parent / "m-agents" / "processed_data")
+            _processed_dir = os.getenv("MAS_PROCESSED_DATA_DIR", _default_dir)
+            patient_data_path = os.path.join(_processed_dir, self.dataset_name, f"{patient_id}.json")
             if os.path.exists(patient_data_path):
                 with open(patient_data_path, encoding='utf-8') as f:
                     patient_data = json.load(f)

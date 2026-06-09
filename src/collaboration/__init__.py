@@ -1,13 +1,11 @@
 """
-TrialAgents协作引擎模块
+TrialAgents Collaboration Engine Module
 
-包含多智能体协作的核心机制：
-- CollaborationEngine: 管理多轮讨论流程
+Core multi-agent collaboration mechanism:
+- CollaborationEngine: Manages multi-round discussion workflow
 
-迁移说明：
-本模块代码从 m-agents/utils/framework.py 中的 Collaboration 类迁移至此
+Migrated from the Collaboration class in m-agents/utils/framework.py
 """
-
 from .collaboration_engine import CollaborationEngine, Collaboration
 
 __all__ = [
