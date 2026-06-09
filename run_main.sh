@@ -51,19 +51,17 @@ run_trial_job() {
 # =========================
 # Run configuration (modify as needed)
 # =========================
-# DATASET="${DATASET:-NCT03041311}" 
-# NCT00003299, NCT03041311, NCT00694382, NCT00041119, NCT00174655, NCT00079274
+DATASET="${DATASET:-NCT03041311}" 
 LLM="${LLM:-deepseek-chat}"
 GROUP="${GROUP:-control}"
-# experimental, control
 
 declare -a JOBS=()
 
 # Example: parallel multi-task jobs
-JOBS+=("--dataset NCT00003299 --llm ${LLM} --group experimental --start_idx 300")
-JOBS+=("--dataset NCT00003299 --llm ${LLM} --group control --start_idx 300")
-JOBS+=("--dataset NCT00079274 --llm ${LLM} --group experimental --start_idx 300")
-JOBS+=("--dataset NCT00079274 --llm ${LLM} --group control --start_idx 300")
+JOBS+=("--dataset NCT00003299 --llm ${LLM} --group experimental")
+JOBS+=("--dataset NCT00003299 --llm ${LLM} --group control")
+JOBS+=("--dataset NCT00079274 --llm ${LLM} --group experimental")
+JOBS+=("--dataset NCT00079274 --llm ${LLM} --group control")
 
 for job in "${JOBS[@]}"; do
 	run_trial_job "$job"
