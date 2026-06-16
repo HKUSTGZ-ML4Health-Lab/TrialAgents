@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The multi-disciplinary assessment accurately captures the lethal trajectory: early respiratory failure (day 3-8) followed by profound marrow suppression (grade 4 neutropenia/thrombocytopenia day 16-21) with secondary fungal infection indicates progressive multi-organ failure and poor physiologic reserve. Incomplete recovery and persistent pulmonary symptoms reflect ongoing organ damage.",
+  "evidences": [
+    "Early severe hypoxia with advanced malignancy suggests high tumor burden or aggressive pulmonary involvement, portending poor outcomes.",
+    "Grade 4 neutropenia and thrombocytopenia with secondary fungal infection indicate severe bone marrow compromise and increased infection risk.",
+    "Temporal pattern of early respiratory then late hematologic toxicity with incomplete recovery is classic for poor treatment tolerance and multi-organ dysfunction."
+  ]
+}

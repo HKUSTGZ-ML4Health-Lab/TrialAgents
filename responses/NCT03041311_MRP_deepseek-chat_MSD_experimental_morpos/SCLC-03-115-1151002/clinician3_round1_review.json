@@ -1,0 +1,10 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The severe multi-organ toxicity and respiratory compromise indicate profound functional decline and high frailty, consistent with high mortality risk in this age group with obesity and smoking history.",
+  "evidences": [
+    "Severe bone marrow suppression and pulmonary failure indicate poor functional reserve",
+    "Obesity and smoking history compound comorbidity burden, reducing resilience"
+  ]
+}

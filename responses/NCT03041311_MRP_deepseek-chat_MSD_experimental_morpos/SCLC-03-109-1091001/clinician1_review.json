@@ -1,0 +1,10 @@
+{
+  "logit": 0.45,
+  "conf_logit": 0.65,
+  "analysis": "Patient with grade 3 neutropenia (day 18) and pneumonia (day 57-60) now presenting with progressive dyspnea, fatigue, and hypokalemia. Current smoker with ECOG 1. High risk for sepsis and respiratory failure. Immediate assessment of oxygenation, hemodynamics, and electrolyte repletion is critical.",
+  "evidences": [
+    "Grade 3 neutropenia (day 18) followed by grade 3 pneumonia (day 57-60) indicates severe immunosuppression and ongoing infection risk.",
+    "Progressive dyspnea (day 76 ongoing) and fatigue (day 76 ongoing) suggest possible respiratory compromise or sepsis.",
+    "Hypokalemia (day 139 ongoing) can precipitate cardiac arrhythmias and worsen muscle weakness."
+  ]
+}

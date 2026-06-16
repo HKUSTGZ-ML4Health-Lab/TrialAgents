@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The multi-disciplinary assessment correctly identifies sepsis, respiratory failure, and arrhythmia from hypokalemia as immediate life threats. Emergency priorities: assess oxygenation (SpO2, ABG), hemodynamics (MAP, lactate), and stat electrolyte repletion. The cumulative toxicity and ECOG 1 with smoking further elevate risk.",
+  "evidences": [
+    "Sepsis-3 criteria for qSOFA and lactate",
+    "ACLS guidelines for hypokalemia-induced arrhythmia",
+    "ATS/IDSA pneumonia severity assessment"
+  ]
+}

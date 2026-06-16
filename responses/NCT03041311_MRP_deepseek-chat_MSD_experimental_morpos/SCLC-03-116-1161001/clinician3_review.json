@@ -1,0 +1,10 @@
+{
+  "logit": 0.65,
+  "conf_logit": 0.7,
+  "analysis": "This 65-69 year old female with ECOG 1, low BMI (19.5), and smoking history has recurrent severe neutropenia (grade 4) and anemia, indicating significant bone marrow toxicity and frailty. Recurrent infections and functional decline risk are high. Prognosis is guarded; quality of life and patient goals should guide further treatment decisions.",
+  "evidences": [
+    "ECOG performance status 1 with low BMI (19.5) suggesting early functional decline and nutritional risk",
+    "Recurrent grade 4 neutropenia and grade 3 leukopenia indicating severe bone marrow reserve impairment",
+    "Current smoker with multiple hematologic toxicities increasing vulnerability to adverse outcomes"
+  ]
+}

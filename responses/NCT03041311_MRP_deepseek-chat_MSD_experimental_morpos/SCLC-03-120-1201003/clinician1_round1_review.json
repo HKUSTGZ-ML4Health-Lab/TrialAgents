@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "new_logit": 0.45,
+  "new_conf_logit": 0.7,
+  "reason": "Progressive pancytopenia with grade 3 severity, elevated LDH and creatinine, and ECOG 2 indicate high risk of life-threatening bleeding, infection, and renal failure. Immediate blood product support, infection monitoring, and renal protection are urgent.",
+  "evidences": [
+    "Grade 3 pancytopenia requires urgent transfusion and infection prophylaxis per emergency protocols.",
+    "Elevated LDH and creatinine suggest hemolysis/tumor lysis syndrome, necessitating aggressive hydration and renal monitoring.",
+    "ECOG 2 and low BMI indicate poor reserve, increasing risk of rapid decompensation."
+  ]
+}

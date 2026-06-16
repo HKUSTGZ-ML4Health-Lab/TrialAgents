@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 2,
+  "opinion": "changed",
+  "new_logit": 0.15,
+  "new_conf_logit": 0.65,
+  "reason": "The patient's ECOG 0, normal BMI, and lack of multi-organ failure support low mortality risk. Late haemoptysis and chest pain, though concerning, are grade 1-2 and likely reflect localized pulmonary progression rather than systemic decompensation.",
+  "evidences": [
+    "ECOG performance status is a strong independent predictor of survival in oncology patients.",
+    "Grade 1-2 haemoptysis without respiratory failure or anemia suggests limited disease burden.",
+    "Absence of multi-organ dysfunction aligns with favorable short-term prognosis."
+  ]
+}

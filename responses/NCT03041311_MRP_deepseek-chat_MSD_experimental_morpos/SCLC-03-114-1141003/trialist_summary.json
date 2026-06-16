@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient exhibits severe, recurrent, and progressive hematologic toxicities including Grade 4 neutropenia, Grade 3 thrombocytopenia, and prolonged anemia, indicating cumulative bone marrow suppression. Advanced age (75-79), ECOG 2 performance status, and obesity (BMI 30.9) further increase vulnerability to infections and bleeding complications. The pattern of adverse events suggests poor physiologic reserve and limited marrow recovery, leading to a guarded prognosis.",
+  "evidences": [
+    "Recurrent Grade 4 neutropenia (Days 15-21, 57-64) and prolonged Grade 3 neutropenia (Days 79-107) indicating severe immunosuppression and infection risk.",
+    "Progressive thrombocytopenia (Grade 2 to Grade 3) and severe anemia (Grade 3) reflecting multi-lineage suppression and ongoing bone marrow toxicity.",
+    "Advanced age (75-79), ECOG 2, and obesity (BMI 30.9) as poor prognostic factors that limit physiologic reserve and increase mortality risk."
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "action": "Yes",
+  "answer": "In my opinion, the patient has a low risk of mortality.",
+  "report": "The patient has drug-induced bone marrow and pancreatic toxicities (Grade 3 neutropenia, Grade 4 lipase elevation) without progression to sepsis, acute pancreatitis, or multi-organ failure. Superior vena cava syndrome resolved early, and ECOG 1 indicates preserved functional status. The absence of acute airway compromise, hemodynamic instability, or rapid deterioration supports a low short-term mortality risk.",
+  "reasons": [
+    "Clinician 0 and Clinician 2 agree with strong evidence: drug-induced toxicities without systemic progression, ECOG 1, resolved SVCS, stable vital signs, and absence of acute decompensation indicate low mortality risk.",
+    "Clinician 1 disagrees but with lower confidence and weaker evidence (geriatric frailty concerns), which does not outweigh the compelling evidence from the majority."
+  ]
+}

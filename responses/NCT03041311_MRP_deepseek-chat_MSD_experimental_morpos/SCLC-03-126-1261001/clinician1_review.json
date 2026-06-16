@@ -1,0 +1,10 @@
+{
+  "logit": 0.2,
+  "conf_logit": 0.4,
+  "analysis": "Patient stable with no acute hemodynamic, respiratory, or neurological compromise. Grade 1-2 leukopenia/neutropenia indicate manageable bone marrow suppression without fever or infection. No emergency intervention needed; monitor for sepsis and bleeding.",
+  "evidences": [
+    "No vital sign abnormalities or shock indicators reported",
+    "Low-grade neutropenia (Grade 2) without fever or infection",
+    "No neurological or metabolic derangements documented"
+  ]
+}

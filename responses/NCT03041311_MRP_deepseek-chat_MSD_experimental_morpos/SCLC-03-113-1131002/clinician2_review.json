@@ -1,0 +1,10 @@
+{
+  "logit": 0.65,
+  "conf_logit": 0.75,
+  "analysis": "Patient with advanced malignancy on experimental therapy shows recurrent severe neutropenia (Grade 4), thrombocytopenia, and anemia, indicating significant bone marrow suppression. Progressive respiratory symptoms (dyspnea Grade 3, cough, hemoptysis) with staphylococcal infection suggest pulmonary involvement and compromised immune function. Multi-organ toxicity and poor tolerance to therapy point to high disease burden and limited physiologic reserve.",
+  "evidences": [
+    "Recurrent Grade 4 neutropenia and Grade 3 thrombocytopenia indicating severe myelosuppression",
+    "Progressive dyspnea (Grade 3), cough, and hemoptysis with staphylococcal infection",
+    "Prolonged multi-system adverse events including anemia, diarrhea, and hyperglycemia"
+  ]
+}

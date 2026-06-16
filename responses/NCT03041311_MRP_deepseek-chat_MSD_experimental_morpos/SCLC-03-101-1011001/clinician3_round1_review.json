@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "new_logit": 0.85,
+  "new_conf_logit": 0.8,
+  "reason": "Rapid functional decline to failure to thrive, low BMI, and multi-organ toxicity indicate poor prognosis despite ECOG 1. Geriatric assessment emphasizes prioritizing comfort and quality of life over aggressive treatment.",
+  "evidences": [
+    "Failure to thrive as terminal functional decline indicator",
+    "Low BMI and high comorbidity burden predict poor treatment tolerance",
+    "Patient-centered goals of care alignment with palliative approach"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient exhibits a high-risk profile characterized by recurrent severe neutropenia (Grade 3-4) and thrombocytopenia, indicating significant bone marrow toxicity. Late-onset pulmonary embolism and deep vein thrombosis (Grade 2) on Day 181 suggest a hypercoagulable state. Persistent constitutional symptoms (fatigue, decreased appetite, dizziness) lasting over 100 days and new Grade 3 dizziness with photopsia on Day 122 point to declining functional reserve and possible CNS involvement. These cumulative toxicities and thromboembolic complications confer a guarded prognosis despite initial ECOG 0 status.",
+  "evidences": [
+    "Clinician 0 noted recurrent severe neutropenia (Grade 3-4), thrombocytopenia, and late-onset pulmonary embolism with deep vein thrombosis, indicating high thromboembolic and hemorrhagic risk. New Grade 3 dizziness and photopsia suggest possible CNS involvement or posterior circulation ischemia.",
+    "Clinician 1 highlighted a progressive pattern of severe neutropenia and thrombocytopenia with rapid cycling and incomplete recovery, new-onset pulmonary embolism and deep vein thrombosis on Day 181, and persistent constitutional symptoms (fatigue, decreased appetite, dizziness) lasting over 100 days, indicating a guarded prognosis.",
+    "Clinician 2 emphasized recurrent Grade 3-4 neutropenia and thrombocytopenia indicating significant bone marrow toxicity, pulmonary embolism and deep vein thrombosis suggesting a hypercoagulable state, and persistent fatigue, decreased appetite, and dizziness impacting functional status and quality of life, warranting careful reassessment of treatment goals."
+  ]
+}

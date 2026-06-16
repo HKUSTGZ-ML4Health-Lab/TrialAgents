@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The multi-disciplinary report correctly identifies imminent life threats: grade 4 neutropenia (sepsis risk), grade 3 thrombocytopenia (bleeding risk), angina/hypotension (cardiovascular instability), and renal impairment. These demand immediate ICU-level monitoring, broad-spectrum antibiotics, platelet support, and cardiac evaluation.",
+  "evidences": [
+    "Sepsis and neutropenic fever protocols",
+    "Platelet transfusion thresholds for thrombocytopenia",
+    "ACLS guidelines for angina and hypotension"
+  ]
+}

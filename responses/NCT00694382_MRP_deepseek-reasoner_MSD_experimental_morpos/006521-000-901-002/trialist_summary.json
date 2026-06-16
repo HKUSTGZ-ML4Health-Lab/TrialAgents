@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a low risk of mortality.",
+  "report": "The patient exhibits a stable clinical profile with no significant adverse events beyond mild peripheral neuropathy, which is self-limited and non-progressive. Vital signs remain within normal limits, ECOG performance status is consistently 0, and weight is stable, indicating excellent functional reserve and treatment tolerance. There are no cumulative toxicity or organ dysfunction signals, supporting a low mortality risk.",
+  "evidences": [
+    "Clinician 0 noted stable blood pressure (122-151/68-90 mmHg), heart rate (68-90 bpm), normal respiratory rate (10-11 breaths/min), and ECOG 0 throughout, indicating no respiratory distress or functional decline.",
+    "Clinician 1 emphasized consistent ECOG 0, stable weight at 95 kg, and mild neuropathy without systemic impact or progression, suggesting good therapeutic tolerance and low mortality risk.",
+    "Clinician 2 highlighted ECOG 0, stable weight, and mild peripheral neuropathy without functional impact, concluding a favorable prognosis with low mortality risk."
+  ]
+}

@@ -35,25 +35,11 @@ def _sample_ethnicity(value: float) -> str:
 def _sample_stage(value: float) -> str:
     return _choice_by_threshold(value, ["0", "I", "II", "III", "IV"], [0.04, 0.30, 0.24, 0.22, 0.20])
 
-
+# melanoma: cutaneous, mucosal, uveal/ocular
 def _sample_subtype(ethnicity: str, value: float, enrich_edge_cases: bool) -> str:
     del ethnicity, value, enrich_edge_cases
     return "cutaneous"
-
-    # Keep the previous subtype sampling logic here for future non-cutaneous
-    # cohorts. Current experiments intentionally specialize in cutaneous melanoma.
-    # if ethnicity == "Asian":
-    #     labels = ["acral", "cutaneous", "mucosal"]
-    #     weights = [0.44, 0.40, 0.16] if enrich_edge_cases else [0.30, 0.55, 0.15]
-    # elif ethnicity == "African":
-    #     labels = ["acral", "cutaneous", "mucosal"]
-    #     weights = [0.36, 0.52, 0.12] if enrich_edge_cases else [0.25, 0.65, 0.10]
-    # else:
-    #     labels = ["cutaneous", "acral", "mucosal"]
-    #     weights = [0.78, 0.12, 0.10] if enrich_edge_cases else [0.86, 0.08, 0.06]
-    # return _choice_by_threshold(value, labels, weights)
-
-
+    
 def _sample_ecog(stage: str, value: float) -> int:
     if stage in {"0", "I", "II"}:
         return int(np.digitize(value, [0.65, 0.90, 0.98]))

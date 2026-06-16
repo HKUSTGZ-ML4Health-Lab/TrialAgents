@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Progressive functional decline (ECOG 1\u21922), significant weight loss, and new bleeding risk indicate high frailty and poor prognosis. The assessment appropriately emphasizes cumulative deterioration without recovery, consistent with geriatric principles of realistic prognosis.",
+  "evidences": [
+    "ECOG decline as functional status indicator",
+    "Weight loss and anemia as cachexia/frailty markers",
+    "Cumulative adverse events signal poor recovery potential"
+  ]
+}

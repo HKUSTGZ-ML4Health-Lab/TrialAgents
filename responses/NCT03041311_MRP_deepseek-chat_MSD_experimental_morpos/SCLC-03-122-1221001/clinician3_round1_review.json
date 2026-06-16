@@ -1,0 +1,10 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Functional status (ECOG 1) and manageable toxicities align with low short-term mortality. Age 50-54 and absence of frailty markers support realistic prognosis.",
+  "evidences": [
+    "ECOG performance status is strong predictor of survival in oncology",
+    "Low comorbidity burden and absence of geriatric syndromes indicate favorable trajectory"
+  ]
+}

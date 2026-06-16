@@ -1,0 +1,10 @@
+{
+  "logit": 0.15,
+  "conf_logit": 0.3,
+  "analysis": "Patient is a 50-54-year-old male with ECOG 0, former smoker. Adverse events are predominantly low-grade (Grade 1-2) cytopenias and non-life-threatening symptoms. No evidence of hemodynamic instability, respiratory compromise, or altered mental status. No severe organ dysfunction or sepsis indicators. Overall low mortality risk from an emergency perspective.",
+  "evidences": [
+    "No hypotension, tachycardia, or shock indicators reported",
+    "No severe hypoxia or respiratory distress (dyspnoea was Grade 1, resolved in 1 day)",
+    "All adverse events are Grade 1-2; no multi-organ failure or ICU-level events"
+  ]
+}

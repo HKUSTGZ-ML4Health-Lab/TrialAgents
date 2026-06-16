@@ -1,0 +1,10 @@
+{
+  "logit": 0.45,
+  "conf_logit": 0.75,
+  "analysis": "Patient with anemia progression from grade 1 to 2, neutropenia, and later pneumonia (grade 3) with fever and leukocytosis. This suggests initial bone marrow suppression followed by infectious complication. The temporal pattern indicates suboptimal hematopoietic recovery and increased infection risk, common in experimental therapies. ECOG 0 and normal BMI are favorable, but the adverse event sequence raises moderate concern for mortality.",
+  "evidences": [
+    "Progression from grade 1 to grade 2 anemia",
+    "Development of grade 3 pneumonia with leukocytosis",
+    "Neutropenia preceding infectious complication"
+  ]
+}

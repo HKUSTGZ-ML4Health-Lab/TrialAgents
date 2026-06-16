@@ -1,0 +1,10 @@
+{
+  "logit": 0.65,
+  "conf_logit": 0.6,
+  "analysis": "This 60-64-year-old male with ECOG 1, current smoker, and multiple grade 1-3 adverse events (neutropenia, thrombocytopenia, fatigue, thyroid dysfunction) shows moderate comorbidity burden and functional reserve. Recurrent neutropenia suggests vulnerability to infections and treatment interruptions, impacting quality of life. Goals of care should balance symptom management and functional preservation.",
+  "evidences": [
+    "ECOG 1 performance status indicating limited functional impairment",
+    "Recurrent grade 2-3 neutropenia and thrombocytopenia reflecting hematologic vulnerability",
+    "Multiple symptomatic adverse events (fatigue, pain, tremor) affecting daily activities"
+  ]
+}

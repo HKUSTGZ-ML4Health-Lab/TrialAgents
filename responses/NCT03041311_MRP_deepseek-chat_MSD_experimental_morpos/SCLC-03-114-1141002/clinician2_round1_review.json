@@ -1,0 +1,12 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The multi-disciplinary assessment accurately captures the lethal trajectory of cumulative bone marrow failure and multi-organ toxicity. Grade 4 neutropenia and thrombocytopenia with subsequent anemia and thyroid dysfunction indicate irreversible hematopoietic and endocrine damage, compounded by obesity and ECOG 2, which reduce physiological reserve and increase mortality risk.",
+  "evidences": [
+    "Grade 4 neutropenia and thrombocytopenia predict high infection and bleeding mortality in clinical trials",
+    "Sequential anemia and thyroid dysfunction indicate progressive multi-system toxicity and poor bone marrow recovery",
+    "Obesity (BMI 32.4) is associated with reduced hematopoietic reserve and worse outcomes in chemotherapy-induced myelosuppression",
+    "ECOG 2 performance status correlates with increased mortality in advanced disease and treatment-related toxicity"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.35,
+  "conf_logit": 0.65,
+  "analysis": "Hemodynamically stable with no immediate airway, breathing, or circulatory compromise. However, declining weight (66.1 to 62.2 kg), worsening ECOG status (1 to 2), increasing heart rate (70 to 94), and new moderate anemia (from day 106) indicate progressive clinical deterioration. Mild hemorrhagic stomatitis suggests potential bleeding risk. No acute life-threatening crisis, but risk of decompensation warrants close monitoring.",
+  "evidences": [
+    "Progressive weight loss (66.1 to 62.2 kg) and ECOG decline (1 to 2)",
+    "Moderate anemia (onset day 106) with associated tachycardia (HR 94)",
+    "Mild hemorrhagic stomatitis indicating possible mucosal bleeding risk"
+  ]
+}

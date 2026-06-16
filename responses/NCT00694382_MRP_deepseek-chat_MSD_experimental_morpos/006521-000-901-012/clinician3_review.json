@@ -1,0 +1,10 @@
+{
+  "logit": 0.15,
+  "conf_logit": 0.4,
+  "analysis": "This 53-year-old female maintains excellent functional status (ECOG 0 throughout), stable weight, and normal vital signs despite multiple mild adverse events. No evidence of frailty, cognitive decline, or significant comorbidity burden. Prognosis is favorable with low mortality risk, focusing on symptom management and maintaining quality of life.",
+  "evidences": [
+    "ECOG Performance Status consistently 0 across all visits",
+    "Stable weight (87-88 kg) and normal blood pressure trends",
+    "Only mild adverse events without impact on daily function"
+  ]
+}

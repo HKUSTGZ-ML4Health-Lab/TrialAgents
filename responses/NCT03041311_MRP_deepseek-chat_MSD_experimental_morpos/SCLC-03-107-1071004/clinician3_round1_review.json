@@ -1,0 +1,10 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The assessment appropriately recognizes severe multi-organ dysfunction and poor treatment tolerance, which in geriatric medicine portends rapid functional decline and high short-term mortality. Functional status is likely compromised by recurrent hypoxia and infections, supporting a guarded prognosis.",
+  "evidences": [
+    "ECOG 1 with recurrent Grade 3-4 toxicities indicates significant comorbidity burden and frailty",
+    "Recurrent hypoxia and infections suggest poor physiologic reserve and limited recovery capacity"
+  ]
+}

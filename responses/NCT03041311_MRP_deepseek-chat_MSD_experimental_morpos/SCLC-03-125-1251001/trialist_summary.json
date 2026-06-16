@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a moderate risk of mortality.",
+  "report": "The patient experienced early severe granulocytopenia (Grade 3) and thrombocytopenia (Grade 2) indicating significant bone marrow suppression, followed by recurrent Grade 3 anemia. Late-onset mild diabetes and dyslipidemia suggest metabolic derangements. ECOG 1 and absence of acute organ failure indicate preserved functional status. The cumulative hematologic toxicity and metabolic issues raise moderate concern for mortality risk, but immediate life-threatening events are not present.",
+  "evidences": [
+    "Clinician 0 noted Grade 3 granulocytopenia (Day 15-31) increases infection risk and Grade 3 anemia (Day 52 and 73) may indicate ongoing marrow suppression, but no acute vital sign abnormalities or organ failure documented.",
+    "Clinician 1 highlighted severe granulocytopenia and thrombocytopenia within first month, recurrent Grade 3 anemia, and new-onset diabetes and dyslipidemia at day 267, suggesting cumulative organ stress and guarded prognosis.",
+    "Clinician 2 emphasized ECOG 1 indicating good functional status, but significant hematologic toxicities and new metabolic issues suggest moderate comorbidity burden, warranting close monitoring."
+  ]
+}

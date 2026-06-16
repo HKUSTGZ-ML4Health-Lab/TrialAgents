@@ -1,0 +1,10 @@
+{
+  "logit": 0.15,
+  "conf_logit": 0.85,
+  "analysis": "Patient is hemodynamically stable with normal vital signs throughout. Mild thrombocytopenia and leukopenia are present but not acutely life-threatening. Moderate cough resolved. ECOG improved from 2 to 1. No signs of shock, hypoxia, or multi-organ failure. Overall mortality risk is low.",
+  "evidences": [
+    "Sustained normal blood pressure and heart rate across all time points",
+    "Mild hematologic adverse events without active bleeding or infection",
+    "Improvement in functional status (ECOG 2 to 1)"
+  ]
+}

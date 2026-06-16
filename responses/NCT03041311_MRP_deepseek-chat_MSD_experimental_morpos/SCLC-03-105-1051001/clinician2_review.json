@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.75,
+  "analysis": "Elderly patient with progressive pancytopenia, recurrent severe cytopenias, and late-onset multi-organ dysfunction (renal, pulmonary, encephalopathy) suggests high disease burden and poor bone marrow reserve. The trajectory from isolated cytopenias to pancytopenia with systemic complications indicates advancing disease and limited physiological reserve, portending high short-term mortality.",
+  "evidences": [
+    "Progressive pancytopenia with recurrent severe neutropenia and thrombocytopenia",
+    "Development of acute prerenal failure, pneumonia, and encephalopathy",
+    "Persistent severe anemia requiring multiple episodes of grade 3 severity"
+  ]
+}

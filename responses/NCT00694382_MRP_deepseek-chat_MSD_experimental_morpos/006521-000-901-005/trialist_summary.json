@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a low risk of mortality.",
+  "report": "The patient exhibits moderate, self-limiting hematologic toxicities (anemia, leukopenia, neutropenia) and transient constitutional symptoms (fatigue, appetite loss) without severe infection, bleeding, or organ dysfunction. Vital signs remain stable, ECOG performance status is preserved (0-1), and weight is maintained. These findings indicate good treatment tolerance and functional reserve, with no high-risk signals for mortality.",
+  "evidences": [
+    "Clinician 0: Stable vital signs (BP 130/70-80, HR 74-80, RR 14), ECOG improved to 0, moderate hematologic toxicities without severe infection or bleeding.",
+    "Clinician 1: ECOG maintained at 0-1, recurrent but self-limiting leukopenia/neutropenia without infectious complications, stable vital signs and weight.",
+    "Clinician 2: ECOG 0-1 throughout, weight stable around 78-83 kg, no severe adverse events or organ failure."
+  ]
+}

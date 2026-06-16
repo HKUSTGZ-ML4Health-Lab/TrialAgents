@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.25,
+  "new_conf_logit": 0.8,
+  "reason": "Despite initial ECOG improvement, progressive weight loss, hypotension, tachycardia, and multiple adverse events indicate advanced frailty and high mortality risk. Geriatric assessment prioritizes realistic prognosis and quality of life over aggressive interventions.",
+  "evidences": [
+    "ECOG decline to 1 then further functional deterioration",
+    "Unintentional weight loss >5% indicating cachexia",
+    "Hemodynamic instability (hypotension, tachycardia) suggesting decompensation"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.45,
+  "conf_logit": 0.75,
+  "analysis": "Patient exhibits recurrent, multi-lineage cytopenias (neutropenia, anemia, thrombocytopenia) with a severe herpetic meningoencephalitis, indicating cumulative bone marrow suppression and immunosuppression. The ECOG 1 and smoking history contribute to overall risk, but the pattern suggests treatment-related toxicity rather than rapid multi-organ failure. Disease trajectory shows intermittent but manageable adverse events without irreversible organ damage.",
+  "evidences": [
+    "Recurrent grade 3-4 neutropenia and grade 2 thrombocytopenia with delayed recovery",
+    "Severe herpetic meningoencephalitis (grade 3) indicating immunosuppression",
+    "Prolonged anemia and persistent cytopenias beyond 200 days"
+  ]
+}

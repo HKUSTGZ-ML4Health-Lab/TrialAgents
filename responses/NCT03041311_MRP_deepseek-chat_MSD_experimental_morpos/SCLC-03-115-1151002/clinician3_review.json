@@ -1,0 +1,10 @@
+{
+  "logit": 0.65,
+  "conf_logit": 0.75,
+  "analysis": "Patient is 60-64 with obesity, former smoker, and ECOG 1 (ambulatory). Multiple grade 3-4 toxicities (neutropenia, thrombocytopenia, bronchiolitis, peripheral swelling) indicate high treatment burden and frailty. Functional decline from adverse events and comorbidity (obesity, smoking history) suggests moderate-to-high mortality risk. Goals of care should prioritize symptom management and quality of life.",
+  "evidences": [
+    "ECOG performance status 1 with multiple severe adverse events (grade 3-4 neutropenia, thrombocytopenia, bronchiolitis)",
+    "Obesity (BMI 31.2) and former smoking history (age 52 onset) contributing to comorbidity burden",
+    "Recurrent toxicities (alopecia, lipase increase, thrombocytopenia) indicating cumulative treatment-related frailty"
+  ]
+}

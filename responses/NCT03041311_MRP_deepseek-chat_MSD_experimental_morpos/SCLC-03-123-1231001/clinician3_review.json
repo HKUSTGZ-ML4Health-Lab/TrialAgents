@@ -1,0 +1,10 @@
+{
+  "logit": 0.35,
+  "conf_logit": 0.65,
+  "analysis": "Patient is 65-69 with ECOG 1 (ambulatory), but current smoking and multiple adverse events (neutropenia, fatigue, elevated amylase/lipase) suggest moderate comorbidity burden. Functional status remains fair, but ongoing symptoms may impact quality of life. Prognosis is guarded; goals of care should prioritize symptom management and functional preservation.",
+  "evidences": [
+    "ECOG performance status 1 indicates mild functional limitation",
+    "Current smoker with smoking stage 17 increases cardiovascular and cancer risk",
+    "Multiple grade 2-3 adverse events (neutropenia, fatigue, pancreatic enzymes) reflect treatment toxicity and comorbidity burden"
+  ]
+}

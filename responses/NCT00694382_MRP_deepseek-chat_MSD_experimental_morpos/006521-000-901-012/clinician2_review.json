@@ -1,0 +1,10 @@
+{
+  "logit": 0.15,
+  "conf_logit": 0.65,
+  "analysis": "Mild, self-limited adverse events (mucosal inflammation, epistaxis, hematomas) without systemic progression. Stable vital signs, ECOG 0, and weight maintenance suggest low disease burden. No evidence of multi-organ dysfunction or poor therapeutic response.",
+  "evidences": [
+    "ECOG Performance Status 0 throughout",
+    "Stable weight (87-88 kg) and vital signs",
+    "Mild, transient adverse events without organ involvement"
+  ]
+}

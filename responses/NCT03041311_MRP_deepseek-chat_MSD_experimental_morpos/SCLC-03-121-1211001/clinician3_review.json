@@ -1,0 +1,10 @@
+{
+  "logit": 0.25,
+  "conf_logit": 0.6,
+  "analysis": "Patient is 55-59 years old with good functional status (ECOG 0) and no smoking history. Adverse events are mild alopecia and transient asthenia, indicating good tolerance. Low comorbidity burden and preserved independence suggest low mortality risk. Focus on maintaining function and quality of life.",
+  "evidences": [
+    "ECOG performance status 0 indicates full independence",
+    "Mild adverse events (alopecia grade 1, asthenia grade 1-2) with resolution",
+    "No significant comorbidities or frailty indicators"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.75,
+  "conf_logit": 0.8,
+  "analysis": "The patient presents with progressive multi-system involvement including hematologic (anemia, leukopenia, thrombocytopenia), neurologic (seizure, myasthenic syndrome, memory impairment), and constitutional symptoms (fatigue, weight loss). The development of myasthenic syndrome (Grade 3) and generalized tonic-clonic seizure suggests possible paraneoplastic or autoimmune process, possibly related to underlying malignancy. Poor therapeutic response and evolving organ dysfunction indicate high disease burden and poor prognosis.",
+  "evidences": [
+    "Progressive multi-system involvement: hematologic, neurologic, and constitutional systems",
+    "Grade 3 myasthenic syndrome and generalized seizure indicating severe neurological compromise",
+    "Persistent anemia and thrombocytopenia suggesting bone marrow suppression or chronic disease"
+  ]
+}

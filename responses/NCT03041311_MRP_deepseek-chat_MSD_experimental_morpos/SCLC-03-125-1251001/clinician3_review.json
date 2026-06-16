@@ -1,0 +1,10 @@
+{
+  "logit": 0.45,
+  "conf_logit": 0.6,
+  "analysis": "Patient is a 65-69 year old female with ECOG 1, indicating good functional status. However, significant hematologic toxicities (grade 3 granulocytopenia and anemia) and metabolic issues (new diabetes, dyslipidemia) suggest moderate comorbidity burden. Smoking history adds risk. Functional independence is preserved, but close monitoring for frailty and treatment-related complications is warranted.",
+  "evidences": [
+    "ECOG performance status 1 indicating ambulatory and capable of self-care",
+    "Grade 3 granulocytopenia and anemia indicating significant treatment-related toxicity",
+    "New onset diabetes and dyslipidemia suggesting metabolic syndrome development"
+  ]
+}

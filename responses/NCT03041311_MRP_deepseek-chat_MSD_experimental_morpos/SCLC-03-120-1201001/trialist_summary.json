@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient exhibits a high mortality risk due to progressive multi-organ dysfunction. Key adverse events include persistent grade 2-3 anemia, thrombocytopenia, and escalating liver enzyme elevations (ALT, AST, ALP, bilirubin) indicating hepatic injury. The onset of grade 3 hemiparesis on day 242 suggests a significant neurological event (e.g., stroke or CNS bleed). Low BMI (18.1) and ECOG 1 indicate frailty and malnutrition, compounding risk. The cumulative pattern of hematologic, hepatic, and neurologic toxicities points to systemic decompensation with poor recovery signals.",
+  "evidences": [
+    "Clinician 0: Hemiparesis (Grade 3) starting day 242 suggests acute stroke or CNS bleed; persistent anemia (Grade 2-3) with thrombocytopenia risks bleeding or marrow failure; progressive liver enzyme elevation indicates hepatic dysfunction.",
+    "Clinician 1: Progressive anemia requiring multiple transfusions over 111 days; hepatocellular and cholestatic liver injury with elevated transaminases and alkaline phosphatase; new-onset hemiparesis suggests CNS involvement or vascular event.",
+    "Clinician 2: Low BMI (18.1) indicating malnutrition and frailty; persistent anemia and thrombocytopenia suggesting bone marrow compromise; new onset hemiparesis (grade 3) indicating potential CNS involvement or stroke."
+  ]
+}

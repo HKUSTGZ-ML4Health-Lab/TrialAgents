@@ -1,0 +1,10 @@
+{
+  "logit": 0.6,
+  "conf_logit": 0.7,
+  "analysis": "Patient with multiple comorbidities and recurrent cytopenias, infections, and functional decline (gait disturbance, falls). Despite initial good ECOG, cumulative toxicity and persistent anemia/neutropenia suggest moderate frailty. Quality of life is impacted by fatigue, memory issues, and dysgeusia. Prognosis is guarded; treatment intensity should be balanced with supportive care.",
+  "evidences": [
+    "Recurrent grade 2-4 cytopenias (anemia, neutropenia, thrombocytopenia) indicating significant bone marrow compromise",
+    "Multiple infections (UTI) and constitutional symptoms (fatigue, decreased appetite) reflecting frailty",
+    "New gait disturbance and fall event suggesting functional decline"
+  ]
+}

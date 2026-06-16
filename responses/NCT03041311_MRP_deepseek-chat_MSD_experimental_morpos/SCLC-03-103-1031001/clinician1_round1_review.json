@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The assessment correctly identifies sepsis, severe thrombocytopenia, and cardiac arrhythmia as immediate life threats. ICU-level care and urgent interventions for hemodynamic support, bleeding risk, and arrhythmia control are critical.",
+  "evidences": [
+    "Sepsis resuscitation guidelines",
+    "Thrombocytopenia bleeding risk protocols",
+    "Arrhythmia emergency management"
+  ]
+}

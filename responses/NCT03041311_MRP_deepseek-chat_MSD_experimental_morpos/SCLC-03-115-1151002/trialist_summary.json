@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient exhibits severe, multi-organ toxicity with Grade 4 neutropenia and thrombocytopenia, Grade 3 lipase elevation, and progressive respiratory compromise (bronchiolitis, dyspnea, hemoptysis) with systemic edema. These indicate profound bone marrow suppression, pancreatic injury, and pulmonary failure, compounded by obesity and smoking history. The cumulative, life-threatening adverse events and lack of recovery signals suggest high mortality risk.",
+  "evidences": [
+    "Clinician 0 identified Grade 4 neutropenia and thrombocytopenia as high risk for life-threatening infection or bleeding, and bronchiolitis with dyspnea and swelling as potential respiratory compromise or anaphylaxis.",
+    "Clinician 1 noted multi-organ toxicity including severe neutropenia, thrombocytopenia, lipase elevation, and bronchiolitis with systemic edema, indicating high disease burden and poor therapeutic reserve.",
+    "Clinician 2 highlighted multiple Grade 3-4 toxicities (neutropenia, thrombocytopenia, bronchiolitis, peripheral swelling) with obesity and smoking history, suggesting high treatment burden and frailty."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.35,
+  "conf_logit": 0.75,
+  "analysis": "Patient with recurrent neutropenia and anemia suggests bone marrow suppression, likely from chemotherapy. Lipase elevation indicates pancreatic involvement. Spinal pain may reflect metastatic disease. ECOG 1 and smoking history are risk factors. Overall, moderate risk with stable chronic disease and acute exacerbations.",
+  "evidences": [
+    "Recurrent neutropenia (Grade 1-2) and anemia (Grade 1) indicating bone marrow suppression",
+    "Lipase increased (Grade 2) suggesting pancreatic injury",
+    "Spinal pain possibly related to metastatic disease"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "action": "No",
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "A 65-69-year-old female with ECOG 1, smoking history, and recurrent cytopenias progressed to late-onset multi-organ failure at day 139, including grade 4 hyponatremia, grade 3 pneumonia, and restrictive cardiomyopathy. This rapid deterioration from manageable adverse events to severe cardiopulmonary, neurologic, and electrolyte compromise indicates systemic inflammatory or drug-induced toxicity with poor physiological reserve. The cumulative burden of severe infections, cardiac dysfunction, and electrolyte disturbances significantly elevates mortality risk.",
+  "reasons": [
+    "All clinicians agreed with the original high mortality risk assessment, providing supporting evidence from emergency medicine protocols, frailty scales, and organ dysfunction predictors.",
+    "No strong opposition or compelling counter-evidence was presented; thus, no modification to the original report is needed."
+  ]
+}

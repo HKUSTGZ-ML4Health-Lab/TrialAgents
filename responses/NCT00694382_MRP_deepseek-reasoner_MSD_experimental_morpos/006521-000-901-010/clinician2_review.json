@@ -1,0 +1,10 @@
+{
+  "logit": 0.65,
+  "conf_logit": 0.7,
+  "analysis": "Recurrent severe pleural effusions with dose interruptions suggest poor therapeutic response or adverse drug effect. Significant weight loss (64.2 to 53.5 kg) and heart rate decline (115 to 60 bpm) indicate progressive clinical deterioration. Stable ECOG 1 but effusions and cachexia imply high disease burden. Risk of mortality is elevated due to multi-organ involvement and treatment complications.",
+  "evidences": [
+    "Recurrent severe pleural effusions requiring dose modifications",
+    "Progressive weight loss (10.7 kg over 70 days)",
+    "Declining heart rate from 115 to 60 bpm with stable blood pressure"
+  ]
+}

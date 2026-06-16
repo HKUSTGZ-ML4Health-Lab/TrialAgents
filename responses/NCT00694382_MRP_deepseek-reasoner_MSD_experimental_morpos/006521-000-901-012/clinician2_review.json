@@ -1,0 +1,10 @@
+{
+  "logit": 0.15,
+  "conf_logit": 0.65,
+  "analysis": "Patient presents with mild mucocutaneous and bleeding adverse events, likely related to experimental therapy. No evidence of multi-organ dysfunction or disease progression. Vital signs remain stable with good functional status (ECOG 0). Bleeding events are self-limited. Prognosis favorable with low mortality risk.",
+  "evidences": [
+    "Mild adverse events with no severe or life-threatening complications",
+    "Stable vital signs and ECOG performance status of 0 throughout",
+    "Epistaxis and haematomas suggest mild bleeding tendency but not hemodynamically significant"
+  ]
+}

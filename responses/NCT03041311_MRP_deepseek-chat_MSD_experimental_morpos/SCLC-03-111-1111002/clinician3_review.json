@@ -1,0 +1,10 @@
+{
+  "logit": 0.45,
+  "conf_logit": 0.7,
+  "analysis": "Patient is a middle-aged female with ECOG 1 (ambulatory), but recurrent severe adverse events (neutropenia, pancreatitis, lipase elevation) suggest significant treatment toxicity and comorbidity burden. Functional decline from cumulative events is a concern, though baseline independence is preserved. Prognosis is guarded; quality of life and symptom management should be prioritized.",
+  "evidences": [
+    "ECOG performance status 1 (ambulatory, capable of self-care)",
+    "Recurrent Grade 3-4 neutropenia and pancreatitis (severe treatment-related toxicity)",
+    "Prolonged lipase elevation (chronic pancreatic injury, comorbidity burden)"
+  ]
+}

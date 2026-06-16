@@ -1,0 +1,14 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "new_logit": 0.85,
+  "new_conf_logit": 0.75,
+  "reason": "The assessment correctly identifies immediate life-threats: severe cytopenias, active bleeding, PE, and confusion suggesting sepsis or CNS event. Urgent airway/breathing support, coagulopathy reversal, and broad-spectrum antibiotics are critical. Risk stratification is appropriately conservative given rapid deterioration potential.",
+  "evidences": [
+    "Sepsis and neutropenic fever protocols require immediate antibiotics and source control",
+    "Massive transfusion protocol for active bleeding with thrombocytopenia",
+    "Pulmonary embolism with hypoxemia mandates anticoagulation unless contraindicated by bleeding risk",
+    "Altered mental status necessitates urgent neuroimaging and sepsis workup"
+  ]
+}

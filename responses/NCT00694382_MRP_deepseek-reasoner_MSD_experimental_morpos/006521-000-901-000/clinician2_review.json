@@ -1,0 +1,10 @@
+{
+  "logit": 0.55,
+  "conf_logit": 0.65,
+  "analysis": "67-year-old male on experimental subcutaneous therapy shows progressive functional decline (ECOG 1 to 2), weight loss (66.1 to 62.2 kg), and development of moderate anemia, suggesting treatment-related toxicity or disease progression. Tachycardia and tachypnea indicate possible evolving systemic compromise. Multi-organ involvement is concerning for increased mortality risk.",
+  "evidences": [
+    "ECOG performance status decline from 1 to 2",
+    "Weight loss of approximately 4 kg over 134 days",
+    "Development of moderate anemia starting at day 106"
+  ]
+}

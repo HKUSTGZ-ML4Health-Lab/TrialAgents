@@ -1,0 +1,10 @@
+{
+  "logit": 0.75,
+  "conf_logit": 0.7,
+  "analysis": "Patient exhibits recurrent severe neutropenia and thrombocytopenia, indicating cumulative bone marrow toxicity. Progressive anemia and late-onset confusional state suggest evolving multi-organ involvement. The pattern of hematologic adverse events with incomplete recovery points to high disease burden and poor therapeutic reserve, increasing mortality risk.",
+  "evidences": [
+    "Recurrent Grade 4 neutropenia with incomplete recovery between cycles",
+    "Progressive anemia (Grade 2 to Grade 3) indicating cumulative marrow suppression",
+    "Late-onset confusional state (Grade 3) suggesting potential CNS involvement or metabolic derangement"
+  ]
+}

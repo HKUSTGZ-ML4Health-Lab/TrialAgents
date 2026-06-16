@@ -1,0 +1,12 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.8,
+  "new_conf_logit": 0.75,
+  "reason": "The multi-disciplinary report accurately captures progressive bone marrow failure with pancytopenia, hemolysis (elevated LDH), and renal impairment, indicating systemic disease progression and poor physiological reserve (ECOG 2, low BMI). This aligns with high mortality risk.",
+  "evidences": [
+    "Progressive pancytopenia and LDH elevation indicate bone marrow failure and hemolysis, poor prognostic markers.",
+    "Renal impairment and low BMI reflect multi-organ dysfunction and frailty, worsening prognosis."
+  ]
+}

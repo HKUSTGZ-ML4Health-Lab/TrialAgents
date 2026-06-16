@@ -1,0 +1,10 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Recurrent Grade 4 neutropenia and multi-lineage cytopenias indicate high risk for septic shock and hemodynamic collapse. Immediate ABC assessment, blood cultures, and broad-spectrum antibiotics are critical. Low BMI and smoking reduce reserve, aligning with emergency sepsis protocols.",
+  "evidences": [
+    "Surviving Sepsis Campaign guidelines",
+    "IDSA febrile neutropenia guidelines"
+  ]
+}

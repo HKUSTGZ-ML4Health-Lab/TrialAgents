@@ -1,0 +1,10 @@
+{
+  "logit": 0.4,
+  "conf_logit": 0.35,
+  "analysis": "Despite preserved ECOG performance status (1), significant weight loss from 64.2 kg to 53.5 kg over 70 time units indicates cachexia and declining nutritional reserve. Recurrent severe pleural effusions suggest progressive disease with treatment interruptions. This 57-year-old patient faces moderate mortality risk due to functional decline and metabolic decompensation, warranting a focus on symptom control and quality of life.",
+  "evidences": [
+    "Weight loss of 10.7 kg (16.7%) from baseline to last visit, indicating cachexia",
+    "Recurrent severe pleural effusions requiring treatment interruption (dose zero at time 13-18)",
+    "ECOG Performance Status stable at 1, reflecting preserved ambulatory capacity despite declining physiology"
+  ]
+}

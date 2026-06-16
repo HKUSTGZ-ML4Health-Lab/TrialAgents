@@ -1,0 +1,10 @@
+{
+  "action": "No",
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient presents with severe, recurrent hematologic toxicities (Grade 4 neutropenia, Grade 3 thrombocytopenia, prolonged anemia) indicative of cumulative bone marrow suppression. Advanced age (75-79), ECOG 2 performance status, and obesity (BMI 30.9) further elevate infection and bleeding risks, reflecting poor physiologic reserve and limited marrow recovery, leading to a guarded prognosis.",
+  "reasons": [
+    "All clinicians unanimously agree with the high mortality risk assessment, supported by strong evidence and high confidence.",
+    "Clinician 0 and 1 highlight established predictors such as ECOG \u22652, recurrent Grade 4 neutropenia, advanced age, and obesity compounding infection and bleeding risks.",
+    "Clinician 2 emphasizes acute management needs (G-CSF, transfusions) that underscore the severity of cytopenias and imminent life-threatening complications."
+  ]
+}

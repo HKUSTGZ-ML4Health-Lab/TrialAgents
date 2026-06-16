@@ -1,0 +1,10 @@
+{
+  "logit": 0.05,
+  "conf_logit": 0.85,
+  "analysis": "Patient is 53 with excellent functional status (ECOG 0 throughout) and stable weight. Mild adverse events do not indicate significant comorbidity or frailty. Prognosis is excellent with low mortality risk; focus on maintaining independence and quality of life.",
+  "evidences": [
+    "ECOG Performance Status 0 at all time points",
+    "Weight stable at 87-88 kg",
+    "All adverse events mild, no severe organ dysfunction"
+  ]
+}

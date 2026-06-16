@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient exhibits a high mortality risk due to recurrent Grade 3 hypoxia, Grade 4 neutropenia and thrombocytopenia, and a secondary fungal infection, indicating severe bone marrow suppression and pulmonary compromise. The temporal pattern shows early respiratory failure and late hematologic toxicity with incomplete recovery, suggesting poor treatment tolerance and multi-organ dysfunction. These factors collectively point to a guarded prognosis with high short-term mortality.",
+  "evidences": [
+    "Clinician 0: Recurrent Grade 3 hypoxia requiring close monitoring for ARDS or pulmonary embolism; Grade 4 thrombocytopenia and neutropenia indicating severe bone marrow suppression and high infection risk; fungal infection (Grade 2) on day 21 with ongoing neutropenia, raising concern for invasive fungal sepsis.",
+    "Clinician 1: Grade 4 neutropenia and thrombocytopenia (day 16-21) with secondary fungal infection; recurrent severe hypoxia (grade 3) and dyspnea (grade 2) with late hemoptysis; persistent multi-system adverse events (pulmonary, hematologic, GI) without full resolution.",
+    "Clinician 2: ECOG performance status 1 with multiple Grade 3-4 toxicities; recurrent hypoxia (Grade 3) and prolonged dyspnoea, indicating respiratory compromise; Grade 4 neutropenia and thrombocytopenia with fungal infection, reflecting significant immunosuppression and frailty."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The assessment appropriately recognizes preserved functional status (ECOG 0-1) and stable weight as key geriatric prognostic indicators, supporting low mortality risk.",
+  "evidences": [
+    "ECOG performance status 0-1 indicates good functional independence",
+    "Stable weight and vital signs suggest adequate physiologic reserve"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient exhibits recurrent Grade 4 neutropenia, Grade 3 thrombocytopenia, and Grade 3 anemia, indicating severe cumulative bone marrow suppression. Prolonged dehydration (32-74 days) and subsequent bronchitis reflect impaired immune function and poor physiologic reserve. ECOG 2 and smoking history further elevate risk. These patterns suggest high vulnerability to infection, bleeding, and multi-organ failure, leading to increased mortality risk.",
+  "evidences": [
+    "Clinician 0: Grade 4 neutropenia (Days 15-25 and 39-46) with risk of febrile neutropenia and septic shock; Grade 3 thrombocytopenia (Days 15-25) with potential for spontaneous bleeding; Grade 3 anemia (Days 39-46 and 81-88) contributing to hypoperfusion and tissue hypoxia.",
+    "Clinician 1: Recurrent Grade 4 neutropenia and Grade 3 thrombocytopenia/anemia indicating severe bone marrow toxicity; dehydration and bronchitis suggesting impaired mucosal barrier and immune dysfunction; ECOG performance status 2 and current smoking contributing to poor physiologic reserve.",
+    "Clinician 2: ECOG performance status 2 indicates limited self-care and functional dependence; recurrent grade 4 neutropenia and grade 3 thrombocytopenia reflect severe bone marrow toxicity and increased infection/bleeding risk; prolonged dehydration (32-74 days) suggests poor oral intake and frailty."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.55,
+  "conf_logit": 0.75,
+  "analysis": "Patient with significant functional decline (ECOG 1 to 2), weight loss (57.6 to 50.0 kg), and severe pneumonitis. Comorbidity burden is high with persistent gastrointestinal symptoms. Prognosis is guarded; goals of care should prioritize symptom management and quality of life.",
+  "evidences": [
+    "ECOG performance status worsened from 1 to 2",
+    "Weight loss of 7.6 kg (13.2%) over 70 days",
+    "Severe pneumonitis with unknown resolution"
+  ]
+}

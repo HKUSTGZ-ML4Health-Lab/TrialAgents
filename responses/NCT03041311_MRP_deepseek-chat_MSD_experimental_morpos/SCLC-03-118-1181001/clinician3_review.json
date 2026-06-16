@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.75,
+  "analysis": "Patient with high comorbidity burden (grade 4-5 adverse events: febrile neutropenia, thrombocytopenia, infectious pleural effusion) and functional decline (ECOG 1). Multiple organ system involvement and recurrent infections suggest frailty and poor tolerance to aggressive therapy. Prognosis is guarded; goals of care should prioritize comfort and quality of life.",
+  "evidences": [
+    "Multiple grade 4-5 adverse events (febrile neutropenia, thrombocytopenia, infectious pleural effusion)",
+    "Recurrent severe infections (neutropenia, pleural effusion) indicating immunocompromise",
+    "ECOG performance status 1 with progressive functional decline"
+  ]
+}

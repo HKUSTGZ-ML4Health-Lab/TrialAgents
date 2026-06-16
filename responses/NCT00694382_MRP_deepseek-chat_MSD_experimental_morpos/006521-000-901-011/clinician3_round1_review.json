@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "new_logit": 0.55,
+  "new_conf_logit": 0.75,
+  "reason": "Functional decline (ECOG 1 to 2), significant weight loss, and severe pneumonitis indicate high mortality risk. Comorbidity and nutritional depletion worsen prognosis. Patient-centered goals should prioritize symptom management and quality of life.",
+  "evidences": [
+    "ECOG performance status decline",
+    "Weight loss >10% over 6 months",
+    "Severe pneumonitis with systemic deterioration"
+  ]
+}

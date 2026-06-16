@@ -1,0 +1,10 @@
+{
+  "logit": 0.95,
+  "conf_logit": 0.85,
+  "analysis": "Patient is at extremely high mortality risk due to severe, recurrent cytopenias (neutropenia, thrombocytopenia, anemia) culminating in pancytopenia, followed by acute prerenal failure, hypertensive crisis, and encephalopathy. This pattern suggests progressive bone marrow failure with multi-organ dysfunction. Immediate ABC assessment, hemodynamic support, and treatment of reversible causes (infection, dehydration) are critical.",
+  "evidences": [
+    "Grade 4 neutropenia and thrombocytopenia with subsequent pancytopenia indicate severe bone marrow suppression.",
+    "Acute prerenal failure, hypertension, and encephalopathy suggest evolving multi-organ failure.",
+    "Pneumonia and dehydration as concurrent acute stressors in a fragile elderly patient."
+  ]
+}

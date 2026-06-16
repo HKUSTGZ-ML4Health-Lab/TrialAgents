@@ -1,0 +1,8 @@
+{
+  "action": "No",
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient is a 69-year-old female with advanced malignancy, cachexia, ascites, anemia, thrombocytopenia, and significant weight loss. Hemodynamic instability (hypotension, tachycardia) indicates impending decompensation. Multiple adverse events and functional decline despite initial improvement suggest a high comorbidity burden and poor prognosis. The patient is at high mortality risk.",
+  "reasons": [
+    "All clinicians agreed with the initial assessment, providing supporting evidence from SCCM guidelines, oncologic emergency protocols, and features of advanced malignancy with multi-organ failure."
+  ]
+}

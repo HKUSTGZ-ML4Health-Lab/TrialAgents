@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 2,
+  "opinion": "not_changed",
+  "reason": "Internal medicine evaluation confirms low mortality risk: hematologic toxicities are Grade 1-2 and reversible, resolved lipase elevation and spinal pain suggest no progressive organ damage, and ECOG 1 indicates preserved functional reserve.",
+  "evidences": [
+    "Grade 1-2 cytopenias typically reflect chemotherapy effect, not marrow failure",
+    "Resolved pancreatic enzyme elevation without clinical pancreatitis reduces risk of organ failure",
+    "ECOG performance status 1 is associated with lower short-term mortality in oncology patients"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient presents with delayed-onset Grade 3 hepatic enzyme and bilirubin elevations (day 313) followed by acute pancreatitis (day 318), indicating progressive hepatobiliary and pancreatic injury. This pattern suggests potential hepatic failure or multi-organ dysfunction. Prior thrombocytopenia (day 120-130) may complicate bleeding risk. Despite good baseline ECOG 0, the accumulating severe organ toxicities and lack of recovery signals (end days unknown) point to a guarded prognosis.",
+  "evidences": [
+    "Grade 3 blood bilirubin increased and hepatic enzyme increased starting day 313, indicating significant hepatocellular injury and potential for hepatic failure.",
+    "Acute pancreatitis (Grade 2) on day 318, suggesting ongoing organ injury and possible biliary or pancreatic pathology.",
+    "Thrombocytopenia (Grade 2) from day 120-130, indicating possible bone marrow or consumptive process that may complicate bleeding risk."
+  ]
+}

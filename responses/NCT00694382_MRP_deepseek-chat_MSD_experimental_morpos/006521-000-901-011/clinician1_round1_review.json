@@ -1,0 +1,12 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.75,
+  "new_conf_logit": 0.8,
+  "reason": "Patient's declining SBP, severe pneumonitis, and rapid weight loss indicate impending respiratory failure and septic shock. Immediate ABC assessment, IV fluids, and broad-spectrum antibiotics are urgent.",
+  "evidences": [
+    "Emergency medicine protocol for septic shock",
+    "Acute respiratory failure management guidelines"
+  ]
+}

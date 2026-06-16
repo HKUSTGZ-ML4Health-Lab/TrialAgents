@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient exhibits severe pneumonitis with unknown resolution, progressive weight loss (13.2% over 70 days), declining systolic blood pressure, and worsening ECOG status from 1 to 2. These factors indicate systemic deterioration, respiratory compromise, and functional decline, significantly increasing mortality risk. Gastrointestinal adverse events (vomiting, nausea, decreased appetite) further contribute to nutritional depletion and clinical instability.",
+  "evidences": [
+    "Clinician 0: Severe pneumonitis with unknown resolution indicates ongoing respiratory compromise; progressive weight loss (13% decrease) and declining systolic blood pressure suggest systemic deterioration and possible shock; ECOG performance status worsening from 1 to 2 reflects functional decline and increased mortality risk.",
+    "Clinician 1: Severe pneumonitis with unknown resolution; progressive weight loss and declining ECOG status; recurrent gastrointestinal adverse events suggest multi-organ involvement and poor therapeutic response, indicating high mortality risk.",
+    "Clinician 2: ECOG performance status worsened from 1 to 2; weight loss of 7.6 kg (13.2%) over 70 days; severe pneumonitis with unknown resolution, indicating guarded prognosis."
+  ]
+}

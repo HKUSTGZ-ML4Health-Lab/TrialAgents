@@ -1,0 +1,10 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient presents with recurrent severe pleural effusions requiring dose interruptions, significant weight loss (64.2 to 53.5 kg, 16.7% loss over 70 days), and initial tachycardia followed by bradycardia (HR 115 to 60 bpm). These factors indicate progressive clinical deterioration, poor therapeutic response or drug toxicity, and cachexia. Despite stable ECOG status, the adverse event profile suggests high disease burden and multi-organ involvement, conferring elevated mortality risk.",
+  "evidences": [
+    "Recurrent severe pleural effusions requiring dose modifications (drug dose zero from time 13-18), indicating treatment interruption due to adverse events.",
+    "Progressive weight loss of 10.7 kg over 70 days, reflecting cachexia and declining nutritional reserve.",
+    "Declining heart rate from 115 to 60 bpm with stable blood pressure, possibly signaling cardiac or autonomic decompensation.",
+    "Clinician 1's assessment: mortality risk 0.65 with confidence 0.7, citing progressive deterioration and high disease burden."
+  ]
+}

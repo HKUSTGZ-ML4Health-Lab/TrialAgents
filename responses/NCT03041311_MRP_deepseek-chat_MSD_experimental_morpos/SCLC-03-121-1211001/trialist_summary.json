@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a low risk of mortality.",
+  "report": "The patient presents with mild, self-limited adverse events (alopecia grade 1, asthenia grade 1-2) that resolved without escalation. ECOG 0 and normal BMI indicate excellent functional reserve and low comorbidity burden. No signs of organ dysfunction or progressive disease. The overall safety profile is manageable, with no life-threatening signals.",
+  "evidences": [
+    "Clinician 0: Patient is hemodynamically stable with no acute vital sign abnormalities; asthenia resolved within 44 days without escalation; ECOG 0 and normal BMI suggest preserved functional reserve.",
+    "Clinician 1: ECOG performance status 0 indicates excellent functional capacity; adverse events are mild (grade 1-2) and self-limited; no laboratory or clinical signs of organ dysfunction.",
+    "Clinician 2: ECOG performance status 0 indicates full independence; mild adverse events (alopecia grade 1, asthenia grade 1-2) with resolution; no significant comorbidities or frailty indicators."
+  ]
+}

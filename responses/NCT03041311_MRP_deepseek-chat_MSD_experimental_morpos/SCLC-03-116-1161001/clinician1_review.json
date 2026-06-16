@@ -1,0 +1,10 @@
+{
+  "logit": 0.55,
+  "conf_logit": 0.75,
+  "analysis": "Patient with recurrent severe neutropenia (Grade 4) and anemia, indicating high infection risk and potential hemodynamic compromise. No vital signs provided; however, recurrent cytopenias suggest bone marrow suppression or sepsis. Immediate assessment of ABCs, blood cultures, and broad-spectrum antibiotics are warranted. Risk of febrile neutropenia and septic shock is elevated.",
+  "evidences": [
+    "Recurrent Grade 4 neutropenia (Days 15, 57, 78) with concurrent Grade 3 leukopenia",
+    "Anemia (Grade 2, Days 78-106) indicating possible marrow failure or chronic blood loss",
+    "Absence of vital sign data limits hemodynamic assessment; high suspicion for occult infection"
+  ]
+}

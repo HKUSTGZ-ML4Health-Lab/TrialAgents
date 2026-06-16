@@ -1,0 +1,9 @@
+{
+  "action": "No",
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient presents with progressive multi-organ dysfunction: late-onset Grade 3 hepatotoxicity, persistent cytopenias, chronic LDH elevation indicating ongoing tissue damage, and prolonged asthenia with fluid retention. These features collectively signify hematopoietic failure, hepatic compromise, and functional decline, portending poor recovery despite initial ECOG 1 status.",
+  "reasons": [
+    "All clinicians unanimously agreed with the initial high mortality risk assessment, providing consistent supporting evidence such as hepatotoxicity, cytopenias, and LDH elevation.",
+    "No dissenting opinions or compelling counter-evidence were presented; thus, no modification to the original report is required."
+  ]
+}

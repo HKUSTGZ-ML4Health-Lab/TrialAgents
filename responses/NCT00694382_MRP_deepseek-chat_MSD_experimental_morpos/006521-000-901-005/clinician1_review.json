@@ -1,0 +1,10 @@
+{
+  "logit": 0.1,
+  "conf_logit": 0.3,
+  "analysis": "Patient is hemodynamically stable with normal blood pressure and heart rate trends. Respiratory rate is normal at last visits. No signs of shock, hypoxia, or altered mental status. Moderate adverse events (anemia, leukopenia, neutropenia) are manageable and not acutely life-threatening. No immediate emergency intervention required.",
+  "evidences": [
+    "Stable vital signs: BP 130/70-80, HR 74-80, RR 14, SpO2 not provided but respiratory status adequate.",
+    "ECOG performance status improved to 0, indicating no functional impairment.",
+    "Moderate hematologic toxicities (anemia, leukopenia, neutropenia) without evidence of severe infection or bleeding."
+  ]
+}

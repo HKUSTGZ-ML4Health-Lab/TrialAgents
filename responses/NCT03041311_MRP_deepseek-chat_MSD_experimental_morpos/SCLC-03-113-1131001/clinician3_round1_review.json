@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 2,
+  "opinion": "changed",
+  "new_logit": 0.3,
+  "new_conf_logit": 0.5,
+  "reason": "ECOG 0 and reversible events support low mortality risk, but smoking and cumulative toxicity suggest moderate functional vulnerability. Geriatric assessment emphasizes reversible events do not guarantee long-term resilience.",
+  "evidences": [
+    "ECOG performance status",
+    "Cumulative toxicity burden",
+    "Smoking as independent risk factor"
+  ]
+}

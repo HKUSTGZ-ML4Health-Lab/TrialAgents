@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient shows progressive clinical deterioration: ECOG worsening from 1 to 2, weight loss of 5.9% (cachexia), rising heart rate (70\u219294 bpm), and tachypnea (17\u219220). Moderate anemia and multiple adverse events (nausea, stomatitis, alopecia) indicate cumulative treatment toxicity. These factors collectively suggest systemic decompensation and guarded prognosis, with no overt organ failure but clear functional decline.",
+  "evidences": [
+    "ECOG performance status worsening from 1 to 2 over 134 days, indicating functional decline.",
+    "Progressive weight loss from 66.1 kg to 62.2 kg (5.9% decrease), suggesting cachexia.",
+    "Moderate anemia with unknown duration and multiple adverse events (nausea, stomatitis, alopecia) reflecting cumulative toxicity."
+  ]
+}

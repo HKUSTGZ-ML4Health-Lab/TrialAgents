@@ -1,0 +1,10 @@
+{
+  "logit": 0.15,
+  "conf_logit": 0.65,
+  "analysis": "Patient with ECOG 0, normal BMI, no smoking history, presenting with mild alopecia (grade 1) and transient asthenia (grade 1-2). No evidence of multi-organ dysfunction or progressive disease. Adverse events are manageable and non-life-threatening. Overall low mortality risk based on preserved functional status and absence of serious comorbidities.",
+  "evidences": [
+    "ECOG performance status 0 indicates excellent functional capacity",
+    "Adverse events are mild (grade 1-2) and self-limited",
+    "No laboratory or clinical signs of organ dysfunction"
+  ]
+}

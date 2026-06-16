@@ -1,0 +1,12 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The patient is young (51) with excellent functional status (ECOG 0), stable weight, and no significant comorbidities or frailty. These factors strongly support a low mortality risk, consistent with geriatric principles emphasizing functional independence and reserve.",
+  "evidences": [
+    "ECOG performance status 0 indicates full functional independence",
+    "Stable weight without cachexia or sarcopenia",
+    "No frailty or significant comorbidity burden",
+    "Mild peripheral neuropathy is self-limited and non-disabling"
+  ]
+}

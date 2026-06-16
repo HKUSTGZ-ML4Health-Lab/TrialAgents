@@ -1,0 +1,10 @@
+{
+  "logit": 0.1,
+  "conf_logit": 0.3,
+  "analysis": "Vital signs remain stable throughout, with no hypotension, tachycardia, or respiratory distress. Mild thrombocytopenia and leukopenia are noted but not critical. ECOG status improved from 2 to 1. No immediate life-threatening conditions identified.",
+  "evidences": [
+    "Stable blood pressure and heart rate across all time points",
+    "Mild thrombocytopenia and leukopenia without clinical bleeding or infection",
+    "Improving ECOG performance status"
+  ]
+}

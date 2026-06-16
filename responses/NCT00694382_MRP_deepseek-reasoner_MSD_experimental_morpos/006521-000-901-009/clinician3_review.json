@@ -1,0 +1,10 @@
+{
+  "logit": 0.25,
+  "conf_logit": 0.4,
+  "analysis": "Patient is a 57-year-old male with improving functional status (ECOG from 2 to 1) and stable vital signs. Mild hematologic adverse events and transient moderate cough resolved. Weight fluctuations noted but recovered. Overall, good functional reserve and low frailty. Prognosis favorable with low short-term mortality risk. Continue monitoring functional status and manage treatment-related toxicities.",
+  "evidences": [
+    "ECOG performance status improved from 2 to 1 over 110 days",
+    "Transient weight loss from 74 kg to 65 kg but recovered to 68 kg",
+    "Mild thrombocytopenia and leukopenia without clinical sequelae"
+  ]
+}

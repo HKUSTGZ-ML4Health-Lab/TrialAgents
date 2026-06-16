@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.75,
+  "analysis": "The patient exhibits progressive multi-organ dysfunction with severe, recurrent hematologic toxicities (neutropenia, thrombocytopenia, anemia), persistent renal impairment (elevated creatinine), and cardiovascular events (hypertension, angina, hypotension). The chronic fatigue, dyspnea, and neuropathy indicate cumulative treatment-related damage and declining functional status, suggesting high mortality risk.",
+  "evidences": [
+    "Recurrent grade 3-4 neutropenia and thrombocytopenia with incomplete recovery",
+    "Persistent renal dysfunction (elevated creatinine from day 36 to 176)",
+    "Cardiovascular events including angina and grade 3 hypertension"
+  ]
+}

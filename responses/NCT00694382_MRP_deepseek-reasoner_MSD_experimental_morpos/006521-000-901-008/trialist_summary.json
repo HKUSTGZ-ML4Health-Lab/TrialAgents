@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "Comprehensive safety assessment shows a 69-year-old female with advanced malignant neoplasm progression (severe, ongoing), ascites, anemia, thrombocytopenia, and significant weight loss (9.5%). Hemodynamic instability evidenced by hypotension (96/59 mmHg) and tachycardia (101 bpm) at last visit indicates impending decompensation. Multiple moderate-to-severe adverse events including loss of consciousness, gastrointestinal symptoms, and deteriorating functional status despite initial ECOG improvement point to high comorbidity burden and poor prognosis. The patient is at high mortality risk.",
+  "evidences": [
+    "Clinician 0 notes: Hemodynamic instability with borderline hypotension, tachycardia, and tachypnea at last visit suggests early decompensation. Recent loss of consciousness and malignant progression indicate high imminent mortality risk.",
+    "Clinician 1 highlights: Advanced malignancy with progression, ascites, anemia, and thrombocytopenia indicate multi-organ involvement. Hemodynamic instability with hypotension and tachycardia on day 104 suggests impending decompensation.",
+    "Clinician 2 emphasizes: Weight loss of 9.5%, persistent fatigue, and multiple moderate adverse events indicate high comorbidity burden and frailty. Prognosis is poor with progressive disease and multi-organ involvement."
+  ]
+}

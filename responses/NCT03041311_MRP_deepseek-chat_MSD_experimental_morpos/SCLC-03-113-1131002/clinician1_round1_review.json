@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.85,
+  "new_conf_logit": 0.8,
+  "reason": "The multi-disciplinary report correctly identifies life-threatening neutropenia, thrombocytopenia, and progressive dyspnea with hemoptysis, indicating imminent risk of septic shock and respiratory failure. Immediate airway protection, broad-spectrum antibiotics, G-CSF, and transfusion support are critical. The assessment aligns with emergency priorities for rapid decompensation.",
+  "evidences": [
+    "Sepsis management protocols",
+    "Neutropenic fever guidelines",
+    "Acute respiratory failure indicators"
+  ]
+}

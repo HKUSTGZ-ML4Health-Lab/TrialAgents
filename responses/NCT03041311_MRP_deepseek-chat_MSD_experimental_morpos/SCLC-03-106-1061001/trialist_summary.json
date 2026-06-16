@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "This elderly female with ECOG 2 and multiple comorbidities exhibits a severe, progressive adverse event profile dominated by recurrent grade 4 cytopenias (neutropenia, thrombocytopenia, anemia), life-threatening infections (pneumonia, recurrent UTI), and thromboembolic events (pulmonary embolism). The trajectory shows cumulative toxicity with inadequate marrow recovery, acute respiratory compromise, and functional decline (asthenia, falls, confusion). These patterns indicate high mortality risk due to limited physiologic reserve and multi-organ failure.",
+  "evidences": [
+    "Clinician 0: Recurrent Grade 4 neutropenia and thrombocytopenia with bleeding manifestations (pelvic hematoma, epistaxis); new-onset dyspnea, pulmonary embolism, and pneumonia (Days 163-170) indicating acute respiratory failure; recurrent severe infections (UTI, pneumonia) with sepsis risk and altered mental status.",
+    "Clinician 1: Recurrent grade 4 neutropenia and thrombocytopenia with delayed recovery; multiple infections including pneumonia and recurrent UTI; pulmonary embolism with acute respiratory deterioration.",
+    "Clinician 2: ECOG performance status 2 indicating limited self-care ability; recurrent grade 4 neutropenia, thrombocytopenia, and anemia; multiple infections (UTI, pneumonia) and pulmonary embolism."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.35,
+  "conf_logit": 0.45,
+  "analysis": "Patient shows gradual deterioration with 10% weight loss, dehydration, and declining performance status. Vital signs remain stable at last assessment, but significant risk of metabolic derangements and volume depletion. Immediate intravenous fluid resuscitation and electrolyte monitoring are warranted.",
+  "evidences": [
+    "Weight loss from 60 kg to 54 kg (10% body weight) over 85 days",
+    "Dehydration and decreased appetite reported at day 80",
+    "ECOG performance status worsening from 1 to 2 at day 85"
+  ]
+}

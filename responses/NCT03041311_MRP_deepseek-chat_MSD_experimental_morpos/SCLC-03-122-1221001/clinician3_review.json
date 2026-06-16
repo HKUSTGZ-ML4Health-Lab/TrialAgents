@@ -1,0 +1,10 @@
+{
+  "logit": 0.25,
+  "conf_logit": 0.6,
+  "analysis": "Patient is 50-54 years old with ECOG 1, indicating good functional status. Recurrent neutropenia and anemia suggest treatment-related toxicity but no major organ failure. Current smoking adds moderate risk. Overall, low mortality risk with manageable comorbidity burden.",
+  "evidences": [
+    "ECOG performance status 1",
+    "Recurrent neutropenia and anemia (grade 1-2)",
+    "Current smoker"
+  ]
+}

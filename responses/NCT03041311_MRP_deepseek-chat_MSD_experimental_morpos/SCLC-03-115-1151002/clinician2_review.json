@@ -1,0 +1,10 @@
+{
+  "logit": 0.75,
+  "conf_logit": 0.8,
+  "analysis": "Patient with obesity, former smoker, and ECOG 1 develops severe neutropenia (day 15-17), thrombocytopenia (day 77-92), lipase elevation (day 62-70), and bronchiolitis (day 107-112) with systemic edema. This suggests multi-organ toxicity likely from experimental therapy, with pulmonary, hematologic, and pancreatic involvement. The progression from manageable alopecia to life-threatening cytopenias and respiratory compromise indicates high disease burden and poor therapeutic reserve.",
+  "evidences": [
+    "Grade 4 neutropenia and thrombocytopenia indicating severe bone marrow suppression",
+    "Grade 3 lipase elevation suggesting pancreatic injury",
+    "Progressive respiratory symptoms (cough, dyspnea, bronchiolitis) with hemoptysis and systemic edema"
+  ]
+}

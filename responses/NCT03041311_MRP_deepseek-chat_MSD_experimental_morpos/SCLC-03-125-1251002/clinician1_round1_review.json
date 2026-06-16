@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.75,
+  "new_conf_logit": 0.7,
+  "reason": "The report correctly identifies high mortality risk from severe, persistent bone marrow suppression. Immediate risks of neutropenic sepsis and hemodynamic instability from anemia require urgent assessment of vitals, CBC, and infection markers. Emergency interventions include broad-spectrum antibiotics and blood transfusion.",
+  "evidences": [
+    "Neutropenic sepsis protocols",
+    "Anemia transfusion guidelines",
+    "Emergency sepsis management"
+  ]
+}

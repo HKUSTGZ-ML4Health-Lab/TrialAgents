@@ -1,0 +1,10 @@
+{
+  "logit": 0.35,
+  "conf_logit": 0.55,
+  "analysis": "Hemodynamically stable but concerning pattern: recurrent severe pleural effusions with significant weight loss and persistent tachycardia. No acute respiratory failure or hypotension, but risk of underlying malignancy or drug-related complication. Requires urgent evaluation of effusion etiology, respiratory monitoring, and nutrition support.",
+  "evidences": [
+    "Recurrent severe pleural effusions (times 13-19 and 33-43) requiring drainage consideration",
+    "Unexplained weight loss: 64.2 kg to 53.5 kg over 70 days (17% loss)",
+    "Tachycardia (HR 115, 113 bpm) at early visits, potentially compensatory"
+  ]
+}

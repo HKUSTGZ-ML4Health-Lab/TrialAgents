@@ -1,0 +1,10 @@
+{
+  "logit": 0.12,
+  "conf_logit": 0.4,
+  "analysis": "The patient has a history of smoking and presents with multiple low-grade adverse events (anemia, nausea, dyspnea, thrombocytopenia, neutropenia, alopecia, fatigue) that are self-limited or resolving. ECOG 0 indicates good functional status. No evidence of progressive multi-organ dysfunction or high disease burden. The pattern suggests mild, manageable toxicities from the experimental treatment, with low mortality risk.",
+  "evidences": [
+    "ECOG performance status 0 indicates preserved functional capacity.",
+    "All adverse events are grade 1-2, transient, and not associated with organ failure.",
+    "No progressive or cumulative toxicity pattern; events resolve or are mild."
+  ]
+}

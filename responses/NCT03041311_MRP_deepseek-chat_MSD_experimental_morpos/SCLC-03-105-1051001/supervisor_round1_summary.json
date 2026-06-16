@@ -1,0 +1,9 @@
+{
+  "action": "No",
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient is an elderly individual (\u226580 years) with severe, progressive pancytopenia indicating profound bone marrow failure. This is compounded by multi-organ dysfunction including acute renal failure, hypertensive crisis, pneumonia, and encephalopathy. High clinical frailty (CFS \u22657) and comorbidity burden (CCI \u22656) further reduce physiological reserve, leading to a very high short-term mortality risk.",
+  "reasons": [
+    "All clinicians unanimously agree with the high mortality risk assessment, supported by consistent evidence from sepsis guidelines, frailty scales, and comorbidity indices.",
+    "No dissenting opinions or contradictory evidence were presented, so no modification to the original report is needed."
+  ]
+}

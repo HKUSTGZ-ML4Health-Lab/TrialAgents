@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.8,
+  "analysis": "This 75-79-year-old male with ECOG 1 has a high comorbidity burden including recurrent anemia, thrombocytopenia, pneumonia, and a pulmonary embolism. Functional decline is evident with gait disturbance and persistent fatigue. The trajectory suggests worsening frailty and poor tolerance to treatment, indicating a guarded prognosis.",
+  "evidences": [
+    "Recurrent grade 3-4 adverse events (anemia, thrombocytopenia, pulmonary embolism) indicating poor physiological reserve",
+    "Gait disturbance and persistent fatigue (grade 2-3) reflecting functional decline",
+    "Multiple organ system involvement (hematologic, respiratory, renal) consistent with high frailty burden"
+  ]
+}

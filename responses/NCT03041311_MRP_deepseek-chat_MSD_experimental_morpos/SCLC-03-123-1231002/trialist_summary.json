@@ -1,0 +1,8 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient is elderly (75-79 years) with obesity (BMI 30) and ECOG 1, but exhibits recurrent severe neutropenia (Grade 3) and thrombocytopenia (Grade 3) with incomplete marrow recovery between cycles, indicating cumulative bone marrow toxicity and impaired hematopoietic reserve. Persistent fatigue and alopecia reflect ongoing systemic toxicity. These patterns significantly increase risks of infection and bleeding, portending high mortality risk despite good baseline functional status.",
+  "evidences": [
+    "Clinician 1 noted recurrent severe neutropenia and thrombocytopenia with incomplete marrow recovery between cycles, along with persistent fatigue and alopecia indicating ongoing systemic toxicity, and age and obesity as risk factors for poor hematopoietic reserve and drug clearance.",
+    "Clinician 0 highlighted recurrent Grade 3 neutropenia without documented fever or sepsis workup and recurrent Grade 3 thrombocytopenia increasing bleeding risk, suggesting significant bone marrow suppression and urgent need for monitoring."
+  ]
+}

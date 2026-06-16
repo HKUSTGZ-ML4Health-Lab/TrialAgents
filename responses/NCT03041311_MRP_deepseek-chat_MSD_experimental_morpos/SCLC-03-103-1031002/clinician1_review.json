@@ -1,0 +1,10 @@
+{
+  "logit": 0.4,
+  "conf_logit": 0.7,
+  "analysis": "Patient experienced Grade 4 neutropenia (Day 16-22) and subsequent Grade 3 neutropenia (Day 23-29), indicating severe bone marrow suppression. Later developed Grade 3 herpetic meningoencephalitis (Day 508), a life-threatening CNS infection. No vital signs provided, but these events signify high infection risk and potential for neurological deterioration. Immediate ICU-level monitoring and empiric antiviral therapy are warranted.",
+  "evidences": [
+    "Grade 4 neutropenia (Day 16-22) with recurrence of Grade 3 neutropenia (Day 23-29) and later Grade 3 neutropenia (Day 65-71)",
+    "Grade 3 herpetic meningoencephalitis (Day 508-524) requiring urgent antiviral treatment",
+    "Recurrent cytopenias (anemia, thrombocytopenia) suggesting ongoing marrow dysfunction"
+  ]
+}

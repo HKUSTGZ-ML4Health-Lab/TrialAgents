@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "new_logit": 0.85,
+  "new_conf_logit": 0.75,
+  "reason": "The multi-disciplinary assessment accurately captures progressive multi-organ dysfunction with hepatotoxicity, cytopenias, and LDH elevation, consistent with aggressive disease or treatment toxicity. The trajectory of declining functional status and fluid retention confirms poor recovery potential, aligning with high mortality risk.",
+  "evidences": [
+    "Persistent cytopenias and rising LDH indicate ongoing tissue damage and hematopoietic failure.",
+    "Late-onset Grade 3 ALT elevation signifies significant hepatotoxicity, often associated with poor prognosis.",
+    "Prolonged asthenia and facial swelling reflect functional decline and fluid retention, markers of multi-organ failure."
+  ]
+}

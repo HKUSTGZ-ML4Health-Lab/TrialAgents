@@ -1,0 +1,10 @@
+{
+  "logit": 0.45,
+  "conf_logit": 0.7,
+  "analysis": "Patient has good functional status (ECOG 0, normal BMI) but developing significant hepatic toxicity (grade 3 bilirubin and enzyme elevation) and acute pancreatitis. These adverse events indicate declining organ reserve and increasing frailty risk. Former smoker status adds cardiovascular and pulmonary vulnerability. Prognosis is guarded due to accumulating comorbidity burden despite initial good performance status.",
+  "evidences": [
+    "ECOG performance status 0 indicates preserved functional independence",
+    "Grade 3 hepatic enzyme and bilirubin elevation suggests significant organ toxicity",
+    "Acute pancreatitis adds acute-on-chronic comorbidity burden"
+  ]
+}

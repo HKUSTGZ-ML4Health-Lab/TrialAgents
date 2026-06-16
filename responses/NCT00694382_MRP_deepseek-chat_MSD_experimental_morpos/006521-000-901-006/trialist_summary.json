@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient exhibits progressive weight loss (10% over 85 days), declining ECOG status from 1 to 2, and persistent moderate gastrointestinal adverse events (stoma complications, diarrhea, decreased appetite, dehydration). These indicate malabsorption, catabolic state, and functional deterioration, increasing frailty and mortality risk despite stable vital signs.",
+  "evidences": [
+    "Progressive weight loss from 60 kg to 54 kg over 85 days, indicating significant catabolic state and malnutrition.",
+    "ECOG performance status decline from 1 to 2, reflecting functional deterioration and increased frailty.",
+    "Persistent gastrointestinal adverse events (stoma complication, diarrhea, decreased appetite, dehydration) suggesting ongoing malabsorption and metabolic derangement."
+  ]
+}

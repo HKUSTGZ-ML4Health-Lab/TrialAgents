@@ -1,0 +1,10 @@
+{
+  "logit": 0.75,
+  "conf_logit": 0.85,
+  "analysis": "The patient exhibits malignant neoplasm progression at time 113, indicating failure of experimental therapy. ECOG performance status worsened from 1 to 2, reflecting declining functional capacity. Vital signs show mild blood pressure variability but no end-organ dysfunction. This clinical trajectory, with progressive cancer and reduced performance status, portends high short-term mortality risk.",
+  "evidences": [
+    "Severe malignant neoplasm progression at final assessment",
+    "ECOG performance status decline from 1 to 2",
+    "Lack of therapeutic response indicated by disease progression"
+  ]
+}

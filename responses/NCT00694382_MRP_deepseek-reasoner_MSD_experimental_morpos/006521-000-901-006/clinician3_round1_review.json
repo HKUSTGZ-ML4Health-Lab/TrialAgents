@@ -1,0 +1,12 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.3,
+  "new_conf_logit": 0.7,
+  "reason": "Functional decline (ECOG 1 to 2) and significant weight loss (10% in 3 months) indicate high nutritional vulnerability and early frailty. Multiple GI complications worsen prognosis. Patient-centered outcomes suggest poor quality of life with ongoing symptoms, supporting high short-term mortality risk.",
+  "evidences": [
+    "ECOG performance status decline as predictor of mortality",
+    "Weight loss as marker of cachexia and poor prognosis"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "new_logit": 0.85,
+  "new_conf_logit": 0.8,
+  "reason": "The assessment accurately captures the trajectory from bone marrow suppression to multi-organ failure. Febrile neutropenia with recurrent cytopenias indicates profound immunocompromise, while rapid progression of pleural effusion reflects uncontrolled infection and systemic inflammation. Comorbid atrial fibrillation exacerbates hemodynamic instability, aligning with high mortality.",
+  "evidences": [
+    "Grade 4 febrile neutropenia and thrombocytopenia indicate severe myelosuppression and infection risk.",
+    "Recurrent neutropenia and anemia reflect ongoing bone marrow failure and poor hematopoietic reserve.",
+    "Infectious pleural effusion progressing to fatal grade 5 within days demonstrates rapid multi-organ dysfunction.",
+    "Atrial fibrillation in setting of sepsis increases risk of hemodynamic compromise and embolic events.",
+    "High disease burden and immunocompromise portend imminent mortality despite interventions."
+  ]
+}

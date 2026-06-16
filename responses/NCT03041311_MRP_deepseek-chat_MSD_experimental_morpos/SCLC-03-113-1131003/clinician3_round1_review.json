@@ -1,0 +1,10 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The multidisciplinary assessment aligns with geriatric principles: severe hematologic toxicities and balance disorder indicate profound functional decline and high mortality risk from infection/bleeding. Realistic prognosis is poor given cumulative toxicity and comorbidity burden.",
+  "evidences": [
+    "Functional decline due to Grade 3 balance disorder and recurrent Grade 4 neutropenia",
+    "High comorbidity burden (thyroid dysfunction, anemia, prolonged cytopenias)"
+  ]
+}

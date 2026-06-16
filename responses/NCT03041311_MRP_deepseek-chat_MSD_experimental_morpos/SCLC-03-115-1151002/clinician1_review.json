@@ -1,0 +1,10 @@
+{
+  "logit": 0.45,
+  "conf_logit": 0.6,
+  "analysis": "Patient experienced Grade 4 neutropenia (days 15-17) and Grade 4 thrombocytopenia (days 77-78), indicating severe bone marrow suppression. Recent bronchiolitis, dyspnea, and peripheral/face swelling suggest possible infection or fluid overload. Hemodynamic and respiratory status require urgent assessment for sepsis or anaphylaxis.",
+  "evidences": [
+    "Grade 4 neutropenia and thrombocytopenia indicate high risk for life-threatening infection or bleeding.",
+    "Bronchiolitis with dyspnea and peripheral/face swelling may signal respiratory compromise or anaphylaxis.",
+    "Recurrent haemoptysis and cough suggest ongoing pulmonary pathology requiring immediate evaluation."
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "action": "No",
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient is a 70-74-year-old male smoker with ECOG 1, presenting with Grade 4 neutropenia lasting >7 days, indicating severe immunosuppression and high infection risk. Subsequent multi-organ involvement (pulmonary symptoms, cardiac arrhythmia) suggests limited physiologic reserve and possible sepsis. These factors collectively point to a mortality risk exceeding 50% within 30 days.",
+  "reasons": [
+    "All clinicians agreed with the original high mortality risk assessment, with high confidence and supporting evidence.",
+    "Clinician 2 provided specific literature linking prolonged Grade 4 neutropenia to 30-40% infection risk and multi-organ involvement to >50% 30-day mortality in older patients."
+  ]
+}

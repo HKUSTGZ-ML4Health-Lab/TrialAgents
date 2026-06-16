@@ -1,0 +1,10 @@
+{
+  "logit": 0.25,
+  "conf_logit": 0.7,
+  "analysis": "Patient with ECOG 0, normal BMI, and smoking history. Early transient vomiting and neutropenia (likely chemotherapy-related) followed by late-onset haemoptysis and non-cardiac chest pain at day 413 suggest possible pulmonary progression or complication. Alopecia indicates ongoing cytotoxic therapy. Good functional status and lack of multi-organ failure suggest moderate risk, but late pulmonary symptoms warrant further investigation.",
+  "evidences": [
+    "Late-onset haemoptysis and non-cardiac chest pain at day 413",
+    "ECOG performance status 0 and normal BMI",
+    "Transient neutropenia and vomiting without persistent organ dysfunction"
+  ]
+}

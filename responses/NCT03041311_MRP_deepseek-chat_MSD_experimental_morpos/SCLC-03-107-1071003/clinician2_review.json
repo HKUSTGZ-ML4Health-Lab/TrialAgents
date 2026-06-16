@@ -1,0 +1,10 @@
+{
+  "logit": 0.72,
+  "conf_logit": 0.75,
+  "analysis": "The patient exhibits a progressive pattern of severe neutropenia and thrombocytopenia, recurrent thromboembolic events (pulmonary embolism and deep vein thrombosis), and persistent constitutional symptoms (fatigue, anorexia, dizziness). These findings suggest a high-grade myelosuppressive process likely due to chemotherapy, complicated by a hypercoagulable state. The ECOG 0 status is favorable, but the cumulative toxicity and thrombotic complications indicate a guarded prognosis.",
+  "evidences": [
+    "Recurrent Grade 3-4 neutropenia with rapid cycling and incomplete recovery",
+    "New-onset pulmonary embolism and deep vein thrombosis on Day 181",
+    "Persistent constitutional symptoms (fatigue, decreased appetite, dizziness) lasting over 100 days"
+  ]
+}

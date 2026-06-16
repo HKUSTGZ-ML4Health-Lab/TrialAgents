@@ -1,0 +1,8 @@
+{
+  "answer": "In my opinion, the patient has a low risk of mortality.",
+  "report": "The patient's adverse events are predominantly low-grade (anemia, neutropenia) and self-limited, with the only grade 3 event (pneumonia) resolving without sequelae. ECOG 0 and normal BMI indicate excellent baseline fitness. The temporal pattern shows recovery from each event, and no cumulative organ dysfunction or frailty signals are present. The mortality risk is low.",
+  "evidences": [
+    "Clinician 0: Anemia grade 2 resolved without transfusion, pneumonia grade 3 resolved with no residual respiratory compromise, no vital sign abnormalities or signs of organ failure.",
+    "Clinician 2: ECOG performance status 0 (fully active, no restrictions), no evidence of frailty or significant comorbidity burden, single resolved pneumonia episode without lasting functional decline."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The delayed-onset Grade 3 hepatic and pancreatic injuries suggest progressive hepatobiliary-pancreatic injury with systemic inflammation, aligning with high mortality risk despite good baseline status.",
+  "evidences": [
+    "Drug-induced liver injury progressing to multi-organ dysfunction",
+    "Sequential hepatobiliary and pancreatic injury indicates systemic inflammatory process",
+    "Thrombocytopenia increases bleeding risk in setting of hepatic impairment"
+  ]
+}

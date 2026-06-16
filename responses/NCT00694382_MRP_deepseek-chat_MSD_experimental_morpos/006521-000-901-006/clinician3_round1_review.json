@@ -1,0 +1,14 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.75,
+  "new_conf_logit": 0.7,
+  "reason": "The assessment appropriately highlights functional decline (ECOG 1 to 2) and significant weight loss, indicating frailty and high mortality risk. However, the patient's age (56) and stable vital signs suggest potential for recovery with aggressive nutritional support and symptom management, so I adjust mortality risk upward but not to certainty.",
+  "evidences": [
+    "ECOG performance status decline from 1 to 2",
+    "Unintentional weight loss >10% over 85 days",
+    "Frailty phenotype (weight loss, decreased appetite, functional decline)",
+    "Gastrointestinal adverse events causing malabsorption and dehydration"
+  ]
+}

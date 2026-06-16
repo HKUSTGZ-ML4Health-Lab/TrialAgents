@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 2,
+  "opinion": "changed",
+  "new_logit": 0.45,
+  "new_conf_logit": 0.7,
+  "reason": "Internal medicine analysis confirms progressive malnutrition and functional decline as strong mortality predictors. The trajectory suggests high risk despite lacking lab data, aligning with the multi-disciplinary assessment.",
+  "evidences": [
+    "Weight loss >5% over 6 months is associated with increased mortality in oncologic patients.",
+    "ECOG performance decline from 1 to 2 indicates significant functional deterioration and poor prognosis.",
+    "Persistent GI toxicity (diarrhea, dehydration, stoma complications) leads to metabolic derangements and organ stress."
+  ]
+}

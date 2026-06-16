@@ -1,0 +1,10 @@
+{
+  "logit": 0.75,
+  "conf_logit": 0.8,
+  "analysis": "Patient is a 64-year-old female with declining functional status (ECOG from 1 to 2), weight loss, and severe adverse event of malignant neoplasm progression. Moderate frailty and high comorbidity burden suggest limited tolerance for aggressive therapy. Focus should shift to symptom management, maintaining independence, and quality of life.",
+  "evidences": [
+    "ECOG Performance Status worsening from 1 to 2",
+    "Weight loss from 67 kg to 65 kg",
+    "Severe adverse event: malignant neoplasm progression"
+  ]
+}

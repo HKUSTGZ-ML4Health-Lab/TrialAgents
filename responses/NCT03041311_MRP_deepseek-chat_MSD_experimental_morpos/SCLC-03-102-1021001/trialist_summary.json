@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient exhibits a high-risk adverse event profile with progressive multi-system involvement. Critical signals include a generalized tonic-clonic seizure (day 165) and Grade 3 myasthenic syndrome (day 290), indicating severe neurological compromise and risk of respiratory failure. Persistent anemia (Grade 2) and thrombocytopenia suggest bone marrow suppression or chronic disease, increasing hemorrhage risk. The constellation of hematologic, neurologic, and constitutional symptoms points to a paraneoplastic or autoimmune process with poor prognosis. Despite baseline ECOG 0, declining functional reserve and multiple persistent adverse events (fatigue, memory impairment) underscore high mortality risk.",
+  "evidences": [
+    "Clinician 0: Generalized tonic-clonic seizure (day 165) \u2013 risk of status epilepticus, CNS pathology. Grade 3 myasthenic syndrome (day 290) \u2013 impending respiratory failure. Persistent anemia (grade 2) and thrombocytopenia \u2013 risk of hemorrhage, hemodynamic instability.",
+    "Clinician 1: Progressive multi-system involvement: hematologic, neurologic, and constitutional systems. Grade 3 myasthenic syndrome and generalized seizure indicating severe neurological compromise. Persistent anemia and thrombocytopenia suggesting bone marrow suppression or chronic disease.",
+    "Clinician 2: Grade 3 myasthenic syndrome with prolonged duration. Multiple persistent adverse events (anaemia, fatigue, memory impairment). ECOG performance status 0 at baseline but declining functional reserve."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.35,
+  "conf_logit": 0.6,
+  "analysis": "This patient with ECOG 1 and smoking history presents with recurrent neutropenia, persistent lipase elevation, and pancreatitis, suggesting drug-related bone marrow and pancreatic toxicity. The later infectious complications and rashes indicate immune dysregulation. The overall trajectory shows manageable toxicities without progressive organ failure, but the chronic pancreatic injury warrants monitoring.",
+  "evidences": [
+    "Recurrent grade 3 neutropenia and prolonged lipase elevation indicating drug-induced bone marrow and pancreatic toxicity",
+    "Sequential infectious complications (URTI, viral gastroenteritis) suggesting immune compromise",
+    "Absence of progressive multi-organ failure or rapid clinical decline"
+  ]
+}

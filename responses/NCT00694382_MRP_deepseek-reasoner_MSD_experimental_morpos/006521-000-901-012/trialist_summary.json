@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a low risk of mortality.",
+  "report": "The patient presents with multiple mild adverse events (e.g., haematomas, epistaxis, stomatitis) but no severe or life-threatening complications. Vital signs remain stable with normal blood pressure, heart rate, and respiratory rate across all time points; ECOG performance status is consistently 0. Weight is stable (87-88 kg). The adverse event profile suggests mild, self-limited bleeding and mucocutaneous reactions, likely related to therapy, without evidence of organ dysfunction or hemodynamic instability. Overall, the patient demonstrates good functional capacity and low mortality risk.",
+  "evidences": [
+    "Clinician 0 noted consistently normal blood pressure (e.g., 134/85, 123/92, 102/68, 124/90 mmHg), heart rate (73-89 bpm), respiratory rate (16-18/min), and ECOG 0 throughout, with no immediate life-threatening conditions.",
+    "Clinician 1 highlighted that all adverse events are mild (e.g., epistaxis, haematomas) with no severe complications; vital signs stable and ECOG 0; self-limited bleeding tendencies not hemodynamically significant.",
+    "Clinician 2 emphasized ECOG Performance Status 0 at all time points, stable weight (87-88 kg), and all adverse events mild with no severe organ dysfunction, indicating excellent functional status and prognosis."
+  ]
+}

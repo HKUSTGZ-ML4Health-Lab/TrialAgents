@@ -1,0 +1,10 @@
+{
+  "logit": 0.78,
+  "conf_logit": 0.75,
+  "analysis": "The patient shows progressive multi-organ involvement: initial gastrointestinal and hematologic toxicities (nausea, anemia, thrombocytopenia) followed by hepatic injury (elevated alkaline phosphatase, transaminases, bilirubin) and neurologic deficit (hemiparesis). The pattern suggests drug-induced systemic toxicity with cumulative organ damage, poor therapeutic tolerance, and declining functional status. High mortality risk due to progressive multi-organ dysfunction.",
+  "evidences": [
+    "Progressive anemia requiring multiple transfusions over 111 days",
+    "Hepatocellular and cholestatic liver injury with elevated transaminases and alkaline phosphatase",
+    "New-onset hemiparesis suggesting possible CNS involvement or vascular event"
+  ]
+}

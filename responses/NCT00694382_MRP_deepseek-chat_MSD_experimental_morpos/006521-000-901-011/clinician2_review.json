@@ -1,0 +1,10 @@
+{
+  "logit": 0.75,
+  "conf_logit": 0.75,
+  "analysis": "This 68-year-old male on experimental therapy shows progressive functional decline (ECOG 1 to 2), significant weight loss (57.6kg to 50.0kg), and severe pneumonitis, suggesting multi-organ involvement and poor therapeutic response. The trajectory indicates high mortality risk due to progressive disease and treatment-related toxicity.",
+  "evidences": [
+    "Severe pneumonitis with unknown resolution",
+    "Progressive weight loss and declining ECOG status",
+    "Recurrent gastrointestinal adverse events"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "new_logit": 0.85,
+  "new_conf_logit": 0.8,
+  "reason": "The multi-disciplinary report aligns with geriatric assessment of poor physiological reserve, functional decline, and cumulative toxicity. High comorbidity burden and recurrent severe AEs indicate limited tolerance and high mortality risk.",
+  "evidences": [
+    "ECOG 1 with gait disturbance and fatigue signals functional decline",
+    "Recurrent Grade 4 thrombocytopenia, pulmonary embolism, and anemia indicate multi-organ dysfunction"
+  ]
+}

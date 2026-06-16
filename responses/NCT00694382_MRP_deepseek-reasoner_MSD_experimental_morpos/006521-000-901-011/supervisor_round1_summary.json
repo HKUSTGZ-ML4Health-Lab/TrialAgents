@@ -1,0 +1,8 @@
+{
+  "action": "No",
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient has severe grade 3-4 pneumonitis, progressive cachexia (13% weight loss over 70 days), functional decline (ECOG 1 to 2), GI symptoms, and hypotension. These indicate multi-organ stress, poor physiological reserve, and high mortality risk from drug-induced toxicity.",
+  "reasons": [
+    "All three clinicians agreed with the initial assessment, confirming high mortality risk based on cachexia, pneumonitis severity, and ECOG decline."
+  ]
+}

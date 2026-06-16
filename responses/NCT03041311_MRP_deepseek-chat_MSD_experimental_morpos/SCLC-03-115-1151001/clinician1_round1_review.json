@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Grade 4 neutropenia and thrombocytopenia pose imminent septic and hemorrhagic risks; prolonged anemia indicates poor marrow recovery. Hyperthyroidism adds metabolic stress. Immediate ABC assessment, broad-spectrum antibiotics, platelet transfusion, and thyroid management are critical. ECOG 1 and smoking worsen prognosis.",
+  "evidences": [
+    "IDSA guidelines for febrile neutropenia",
+    "ASH guidelines for platelet transfusion thresholds",
+    "ATLS primary survey for hemodynamic instability"
+  ]
+}

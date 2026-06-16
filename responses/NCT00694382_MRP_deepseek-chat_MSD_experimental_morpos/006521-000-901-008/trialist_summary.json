@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient exhibits a severe adverse event profile including malignant neoplasm progression, ascites, anemia, thrombocytopenia, and hypotension with tachycardia, indicating multi-organ failure and decompensation. Weight loss and declining ECOG status suggest cachexia and frailty. These factors collectively point to high mortality risk.",
+  "evidences": [
+    "Clinician 0: Malignant neoplasm progression (severe) at time 99, hypotension (SBP 96 mmHg) with tachycardia (HR 101) at time 104, loss of consciousness, ascites, and moderate anemia/thrombocytopenia.",
+    "Clinician 1: Progressive malignant neoplasm with multi-organ involvement including ascites, thrombocytopenia, and anemia; worsening ECOG status and hypotension suggest decompensation.",
+    "Clinician 2: ECOG performance status 2 at baseline, improved to 1 but with later vital sign instability (tachycardia 101, hypotension 96/59); weight loss from 68.5 kg to 62 kg (9.5% loss) indicating cachexia; multiple moderate-severe adverse events including malignant neoplasm progression, ascites, anemia, thrombocytopenia, and persistent pain/nausea."
+  ]
+}

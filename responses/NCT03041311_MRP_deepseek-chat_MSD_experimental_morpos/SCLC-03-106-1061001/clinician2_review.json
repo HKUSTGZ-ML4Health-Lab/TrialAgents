@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.75,
+  "analysis": "This elderly female with ECOG 2 and smoking history shows progressive multi-organ toxicity from experimental therapy: severe, recurrent cytopenias (neutropenia, thrombocytopenia, anemia) with prolonged recovery, severe stomatitis, and infectious complications (UTI, pneumonia). Late-onset pulmonary embolism and confusional state indicate thromboembolic and CNS involvement. The trajectory suggests cumulative drug toxicity with inadequate marrow reserve, leading to high mortality risk.",
+  "evidences": [
+    "Recurrent grade 4 neutropenia and thrombocytopenia with delayed recovery",
+    "Multiple infections including pneumonia and recurrent UTI",
+    "Pulmonary embolism with acute respiratory deterioration"
+  ]
+}

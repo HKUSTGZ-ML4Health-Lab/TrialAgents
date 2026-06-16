@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "new_logit": 0.85,
+  "new_conf_logit": 0.75,
+  "reason": "Agree with high mortality risk. Recurrent severe cytopenias, febrile neutropenia, and hypotension indicate imminent septic shock or bone marrow crisis. Urgent ABC, broad-spectrum antibiotics, and transfusion support are critical.",
+  "evidences": [
+    "Sepsis resuscitation guidelines",
+    "Febrile neutropenia protocol",
+    "ABC assessment in hemodynamic instability"
+  ]
+}

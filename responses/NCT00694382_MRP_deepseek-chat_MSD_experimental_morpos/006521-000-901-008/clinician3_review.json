@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.75,
+  "analysis": "This 69-year-old patient shows significant functional decline (ECOG 2 at baseline improving to 1, but later tachycardia, hypotension, and weight loss suggest decompensation). High comorbidity burden with malignant neoplasm progression, ascites, anemia, thrombocytopenia, and multiple symptoms (pain, nausea, fatigue, anxiety, depression). Frailty is evident with poor tolerance to treatment and declining quality of life. Prognosis is guarded; goals of care should focus on symptom management and preserving dignity.",
+  "evidences": [
+    "ECOG performance status 2 at baseline, improved to 1 but with later vital sign instability (tachycardia 101, hypotension 96/59)",
+    "Weight loss from 68.5 kg to 62 kg (9.5% loss) indicating cachexia",
+    "Multiple moderate-severe adverse events including malignant neoplasm progression, ascites, anemia, thrombocytopenia, and persistent pain/nausea"
+  ]
+}

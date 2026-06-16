@@ -1,0 +1,9 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.75,
+  "analysis": "Patient is 64 with functional decline from ECOG 1 to 2, indicating moderate impairment. Severe malignant neoplasm progression at day 113 portends poor prognosis. Weight stable, but cancer progression and reduced functional status suggest high near-term mortality risk despite relatively young age. Patient-centered goals should consider quality of life and palliative options.",
+  "evidences": [
+    "ECOG performance status declining from 1 (day1) to 2 (day29 onward)",
+    "Severe malignant neoplasm progression at day 113"
+  ]
+}

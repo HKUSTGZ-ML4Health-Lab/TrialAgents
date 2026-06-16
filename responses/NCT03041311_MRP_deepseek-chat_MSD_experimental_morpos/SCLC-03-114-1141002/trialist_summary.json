@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient exhibits recurrent severe neutropenia (Grade 4) and thrombocytopenia (Grade 4), indicating profound bone marrow suppression with high infection and bleeding risks. Progression to Grade 3 anemia and thyroid dysfunction (hyper- then hypothyroidism) suggests cumulative multi-system toxicity. ECOG 2 and obesity (BMI 32.4) further impair physiological reserve, increasing mortality risk.",
+  "evidences": [
+    "Recurrent Grade 4 neutropenia (days 17-25, 58-67) and thrombocytopenia (days 58-67) with incomplete recovery, elevating infection and bleeding risks.",
+    "Progression to Grade 3 anemia (day 67) and new-onset thyroid dysfunction (hyper- then hypothyroidism) indicate ongoing marrow failure and multi-system involvement.",
+    "ECOG performance status 2 and obesity (BMI 32.4) reduce functional reserve and comorbidity burden, worsening prognosis."
+  ]
+}

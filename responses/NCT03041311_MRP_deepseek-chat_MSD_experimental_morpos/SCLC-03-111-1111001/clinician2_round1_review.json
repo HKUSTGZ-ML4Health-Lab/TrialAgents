@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "new_logit": 0.82,
+  "new_conf_logit": 0.75,
+  "reason": "The multi-disciplinary assessment accurately captures the rapid, systemic progression from cytopenias to multi-organ failure (cardiopulmonary, neurologic, electrolyte) consistent with drug-induced or inflammatory toxicity. The cumulative organ dysfunction and poor reserve align with high mortality risk.",
+  "evidences": [
+    "Rapid progression from cytopenias to multi-organ failure suggests systemic inflammatory or drug-induced toxicity.",
+    "Cumulative organ dysfunction (cardiac, pulmonary, renal, neurologic) indicates poor physiological reserve.",
+    "Grade 4 hyponatremia and grade 3 restrictive cardiomyopathy are independent predictors of high mortality."
+  ]
+}

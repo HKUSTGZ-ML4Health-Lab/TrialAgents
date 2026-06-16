@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient is an elderly male with low BMI and ECOG 1, experiencing rapid multi-organ dysfunction. Critical adverse events include grade 5 failure to thrive, grade 4 neutropenia/thrombocytopenia, hyponatremia, and persistent dehydration, indicating high infection, bleeding, and metabolic crisis risk. The progression to failure to thrive suggests aggressive paraneoplastic syndrome or treatment toxicity, with poor recovery signals.",
+  "evidences": [
+    "Failure to thrive (grade 5) at day 69 indicates imminent death.",
+    "Grade 4 leukopenia/neutropenia and thrombocytopenia with delayed recovery increase infection and bleeding risk.",
+    "Multi-system involvement: hyponatremia, hyperbilirubinemia, dehydration, and SIADH suggest poor therapeutic response and high mortality."
+  ]
+}

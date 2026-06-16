@@ -1,0 +1,10 @@
+{
+  "logit": 0.6,
+  "conf_logit": 0.7,
+  "analysis": "Patient is 67 years old with declining functional status (ECOG worsening from 1 to 2) and significant weight loss (66.1 kg to 62.2 kg), indicating cachexia. Moderate anemia and multiple mild-moderate adverse events (nausea, stomatitis, alopecia) suggest treatment toxicity. Heart rate increase and respiratory rate rise may reflect systemic stress. Prognosis is guarded; goals of care should prioritize symptom management and quality of life.",
+  "evidences": [
+    "ECOG performance status decline from 1 to 2 over 134 days",
+    "Weight loss of 3.9 kg (5.9% of baseline) indicating cachexia",
+    "Moderate anemia with unknown duration and multiple adverse events"
+  ]
+}

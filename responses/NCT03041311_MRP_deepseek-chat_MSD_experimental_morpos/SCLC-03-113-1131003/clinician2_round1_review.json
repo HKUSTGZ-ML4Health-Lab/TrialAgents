@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The multi-disciplinary report accurately captures the high mortality risk driven by profound bone marrow suppression, multi-organ involvement, and functional decline, which aligns with the pathophysiology of severe treatment-related toxicity and systemic decompensation.",
+  "evidences": [
+    "Grade 4 neutropenia and Grade 3 thrombocytopenia indicate severe bone marrow failure with high infection and bleeding risk.",
+    "Multi-system adverse events (neurologic, endocrine, pulmonary) reflect widespread organ dysfunction and poor compensatory reserve.",
+    "Prolonged cytopenias and functional decline (ECOG worsening) are established poor prognostic markers in oncology patients."
+  ]
+}

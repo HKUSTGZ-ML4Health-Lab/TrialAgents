@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient shows progressive clinical deterioration with declining ECOG status (1 to 2), significant weight loss (66.1 to 62.2 kg), moderate anemia, and new-onset tachycardia and tachypnea. Hemorrhagic stomatitis indicates possible mucosal bleeding risk. Cumulative adverse events and lack of recovery signals suggest high mortality risk.",
+  "evidences": [
+    "Progressive weight loss of approximately 4 kg over 134 days and ECOG decline from 1 to 2 (Clinicians 0, 1, 2).",
+    "Development of moderate anemia starting at day 106, with associated tachycardia (HR 94) and tachypnea (RR 19) (Clinician 1).",
+    "Mild hemorrhagic stomatitis indicating possible bleeding risk and multi-organ involvement (Clinician 0, 1, 2)."
+  ]
+}

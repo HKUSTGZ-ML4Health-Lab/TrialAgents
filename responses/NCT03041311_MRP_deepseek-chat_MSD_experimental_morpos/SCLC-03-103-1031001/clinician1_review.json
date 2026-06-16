@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.8,
+  "analysis": "Patient at high mortality risk due to recurrent severe thrombocytopenia (Grade 4), sepsis (Grade 4), febrile neutropenia (Grade 3), and new-onset atrial fibrillation with ventricular arrhythmia. Immediate threats include hemodynamic instability from sepsis, bleeding risk from thrombocytopenia, and arrhythmia management. Urgent ICU-level care required.",
+  "evidences": [
+    "Sepsis (Grade 4) with febrile neutropenia (Grade 3) indicating septic shock risk",
+    "Recurrent thrombocytopenia progressing to Grade 4 (platelet count critical)",
+    "New-onset atrial fibrillation and ventricular arrhythmia suggesting cardiac compromise"
+  ]
+}

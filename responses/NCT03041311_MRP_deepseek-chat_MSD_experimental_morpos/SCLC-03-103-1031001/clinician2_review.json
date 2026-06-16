@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.75,
+  "analysis": "This elderly, underweight male with multiple comorbidities (COPD, atrial fibrillation) and poor nutritional status (BMI 18.7) shows progressive multi-organ involvement: severe thrombocytopenia, sepsis, cardiac arrhythmias, and recurrent pneumonitis. The disease trajectory suggests a high burden of immune-related adverse events, likely from immunotherapy, with inadequate therapeutic response. The combination of grade 4 sepsis, grade 4 thrombocytopenia, and new-onset COPD exacerbation indicates systemic decompensation and high short-term mortality risk.",
+  "evidences": [
+    "Grade 4 sepsis and grade 4 thrombocytopenia within first 4 months indicate severe immune dysregulation and high disease burden.",
+    "Progressive cardiac complications (atrial fibrillation, ventricular arrhythmia) and COPD exacerbation suggest multi-organ failure risk.",
+    "Persistent thrombocytopenia (grade 1 to grade 4) and recurrent pneumonitis reflect chronic, poorly controlled inflammatory state."
+  ]
+}

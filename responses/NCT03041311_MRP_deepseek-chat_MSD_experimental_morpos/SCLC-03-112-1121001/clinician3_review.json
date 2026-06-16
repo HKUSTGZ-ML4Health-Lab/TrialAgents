@@ -1,0 +1,10 @@
+{
+  "logit": 0.95,
+  "conf_logit": 0.85,
+  "analysis": "This 60-64 year old male with ECOG 1 has experienced rapid clinical deterioration with sepsis (grade 5) and neutropenia (grade 4) within 10 days, indicating high vulnerability and poor physiological reserve. The combination of severe adverse events suggests significant frailty and high mortality risk despite baseline functional status. Goals of care should prioritize comfort and quality of life.",
+  "evidences": [
+    "ECOG performance status 1 at baseline",
+    "Grade 5 sepsis and grade 4 neutropenia",
+    "Rapid onset of multiple severe adverse events"
+  ]
+}

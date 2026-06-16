@@ -1,0 +1,12 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The assessment accurately captures cumulative marrow suppression, multi-organ vulnerability from infection/bleeding risks, and limited physiologic reserve due to age, ECOG 2, and obesity. The trajectory aligns with progressive hematologic failure and poor recovery capacity.",
+  "evidences": [
+    "Cumulative bone marrow suppression from recurrent grade 4 cytopenias indicates reduced hematopoietic stem cell reserve.",
+    "Advanced age and ECOG 2 performance status are established predictors of poor chemotherapy tolerance and increased mortality.",
+    "Obesity (BMI 30.9) is associated with altered drug pharmacokinetics and higher infection risk in hematologic toxicities.",
+    "Prolonged cytopenias increase risk for sepsis and bleeding, compounding multi-organ failure risk."
+  ]
+}

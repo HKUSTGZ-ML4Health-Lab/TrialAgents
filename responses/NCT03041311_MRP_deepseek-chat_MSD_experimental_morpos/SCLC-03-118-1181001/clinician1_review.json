@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.75,
+  "analysis": "Patient has grade 4 febrile neutropenia, thrombocytopenia, and infectious pleural effusion progressing to fatal outcome (grade 5) on day 105. High risk of septic shock, multi-organ failure, and bleeding. Immediate need for broad-spectrum antibiotics, G-CSF, platelet transfusion, and pleural drainage.",
+  "evidences": [
+    "Febrile neutropenia (grade 4) on day 12-14 with subsequent thrombocytopenia (grade 4)",
+    "Infectious pleural effusion progressing to grade 5 (fatal) on day 105",
+    "History of atrial fibrillation and anemia (grade 3) indicating cardiovascular compromise"
+  ]
+}

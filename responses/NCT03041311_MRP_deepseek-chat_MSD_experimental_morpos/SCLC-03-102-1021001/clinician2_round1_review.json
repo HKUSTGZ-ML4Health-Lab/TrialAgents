@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The multi-disciplinary assessment accurately captures progressive multi-system failure with neurological (seizure, myasthenic syndrome), hematological (anemia, thrombocytopenia), and constitutional decline, consistent with paraneoplastic or autoimmune pathophysiology. This trajectory indicates high mortality risk.",
+  "evidences": [
+    "Generalized tonic-clonic seizure and Grade 3 myasthenic syndrome increase risk of respiratory failure and aspiration.",
+    "Persistent anemia and thrombocytopenia reflect bone marrow suppression or chronic disease, elevating hemorrhage risk.",
+    "Multi-system involvement with poor therapeutic response aligns with high disease burden and poor prognosis in internal medicine."
+  ]
+}

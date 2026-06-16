@@ -1,0 +1,10 @@
+{
+  "logit": 0.55,
+  "conf_logit": 0.65,
+  "analysis": "56-year-old female with declining functional status (ECOG from 1 to 2), significant weight loss (60 to 54 kg over 85 days), and multiple gastrointestinal adverse events (stoma complications, diarrhea, dehydration, decreased appetite). Moderate comorbidity burden and early frailty signs. Prognosis is guarded; quality of life and symptom management should be prioritized.",
+  "evidences": [
+    "ECOG Performance Status worsening from 1 to 2",
+    "Weight loss of 6 kg (10%) over 85 days",
+    "Multiple gastrointestinal adverse events including stoma complication, diarrhea, decreased appetite, and dehydration"
+  ]
+}

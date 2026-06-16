@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.75,
+  "analysis": "Progressive multi-organ dysfunction with hepatic, hematologic, and renal involvement. Persistent cytopenias, rising LDH, and late hepatic enzyme elevation suggest aggressive disease course or treatment-related toxicity. Poor therapeutic response indicated by recurrent symptoms and declining functional status (asthenia, swelling). High mortality risk due to cumulative organ damage and lack of recovery.",
+  "evidences": [
+    "Persistent and worsening cytopenias (anemia, thrombocytopenia, neutropenia) over 89 days",
+    "Late-onset grade 3 ALT elevation with concurrent bilirubin and ALP increase indicating significant hepatic injury",
+    "Chronic asthenia and hyperthermia suggesting systemic inflammation or disease progression"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.65,
+  "conf_logit": 0.65,
+  "analysis": "This 56-year-old female on subcutaneous therapy exhibits progressive weight loss, declining ECOG status, and GI toxicity including stoma complication, diarrhoea, and dehydration. The trajectory suggests either disease progression or treatment-related morbidity. Without laboratory data, multi-organ involvement cannot be fully assessed, but the clinical picture indicates moderate to high mortality risk due to nutritional compromise and functional decline.",
+  "evidences": [
+    "Weight loss of 6 kg (10%) over 85 days",
+    "ECOG performance status decline from 1 to 2",
+    "Recurrent GI adverse events (stoma complication, diarrhoea, dehydration)"
+  ]
+}

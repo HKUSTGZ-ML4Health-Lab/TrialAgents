@@ -1,0 +1,10 @@
+{
+  "logit": 0.6,
+  "conf_logit": 0.7,
+  "analysis": "This patient exhibits a pattern of recurrent, escalating cytopenias (anemia, neutropenia, thrombocytopenia) with febrile neutropenia and hypotension, suggesting cumulative bone marrow suppression from therapy. The emergence of cognitive disorder (Grade 3) may indicate CNS involvement or metabolic derangement. Multi-organ interactions include hematologic, immune, and possibly neurologic systems, with incomplete recovery between cycles. Progressive marrow failure and poor hematopoietic reserve raise concern for high mortality risk.",
+  "evidences": [
+    "Recurrent Grade 3-4 neutropenia and thrombocytopenia with febrile neutropenia",
+    "Prolonged cytopenias requiring multiple dose delays or reductions",
+    "New onset Grade 3 cognitive disorder suggesting possible CNS progression or toxicity"
+  ]
+}

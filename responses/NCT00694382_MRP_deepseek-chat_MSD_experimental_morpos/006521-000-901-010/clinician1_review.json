@@ -1,0 +1,10 @@
+{
+  "logit": 0.45,
+  "conf_logit": 0.7,
+  "analysis": "Patient with recurrent severe pleural effusions, tachycardia (HR 115), and significant weight loss (64.2 to 53.5 kg) raises concern for malignancy or chronic infection. Hemodynamically stable at last assessment, but weight loss and pleural effusions indicate potential underlying disease progression. Immediate evaluation for respiratory compromise and sepsis is warranted.",
+  "evidences": [
+    "Recurrent severe pleural effusions requiring drainage",
+    "Tachycardia (HR 115) at baseline with subsequent normalization",
+    "Significant weight loss (16.7% decrease) over 70 days"
+  ]
+}

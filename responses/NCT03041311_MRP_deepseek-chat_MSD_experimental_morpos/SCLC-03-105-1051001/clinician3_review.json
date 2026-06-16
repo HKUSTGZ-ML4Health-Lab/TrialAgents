@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.75,
+  "analysis": "This \u226580-year-old female with ECOG 0 initially but now has severe hematologic toxicity (pancytopenia, grade 4 neutropenia/thrombocytopenia), recurrent infections (pneumonia), acute kidney injury, encephalopathy, and functional decline (fatigue, confusion). High comorbidity burden and frailty indicate poor prognosis despite prior good status.",
+  "evidences": [
+    "Recurrent grade 3-4 cytopenias and pancytopenia",
+    "Pneumonia with acute prerenal failure and encephalopathy",
+    "Persistent anorexia, dehydration, and functional decline"
+  ]
+}

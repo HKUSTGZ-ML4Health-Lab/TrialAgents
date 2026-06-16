@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.75,
+  "analysis": "This elderly patient with multiple comorbidities presents a high mortality risk due to recurrent severe cytopenias (Grade 4 neutropenia, anemia, thrombocytopenia), recurrent infections (UTI, pneumonia), and evidence of bleeding (epistaxis, petechiae, pelvic hematoma). Recent onset of dyspnea, hypoxemia, and pulmonary embolism indicates acute respiratory compromise. Confusion and asthenia suggest possible sepsis or intracranial event. Immediate assessment of airway, breathing, circulation, and reversal of coagulopathy is critical.",
+  "evidences": [
+    "Recurrent Grade 4 neutropenia and thrombocytopenia with bleeding manifestations (pelvic hematoma, epistaxis)",
+    "New-onset dyspnea, pulmonary embolism, and pneumonia (Days 163-170) indicating acute respiratory failure",
+    "Recurrent severe infections (UTI, pneumonia) with sepsis risk and altered mental status"
+  ]
+}

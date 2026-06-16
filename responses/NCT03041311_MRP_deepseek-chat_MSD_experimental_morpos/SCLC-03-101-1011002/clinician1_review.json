@@ -1,0 +1,10 @@
+{
+  "logit": 0.55,
+  "conf_logit": 0.7,
+  "analysis": "Patient presents with recurrent severe neutropenia (Grade 4) and thrombocytopenia (Grade 3) indicating bone marrow suppression, with later onset confusion (Grade 3) suggesting possible sepsis or CNS involvement. Anemia (Grade 3) adds to hemodynamic compromise risk. Immediate ABC assessment and septic workup are critical.",
+  "evidences": [
+    "Recurrent Grade 4 neutropenia (days 15-20, 36-42) with Grade 3 thrombocytopenia (days 57-62) indicates severe bone marrow suppression and high infection risk.",
+    "New onset Grade 3 confusional state (days 165-170) raises concern for sepsis, CNS infection, or metabolic encephalopathy.",
+    "Grade 3 anemia (days 66-84) contributes to potential hemodynamic instability and tissue hypoxia."
+  ]
+}

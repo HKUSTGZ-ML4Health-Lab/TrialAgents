@@ -1,0 +1,10 @@
+{
+  "logit": 0.45,
+  "conf_logit": 0.65,
+  "analysis": "Patient with recurrent neutropenia, anemia, and elevated LDH suggests ongoing bone marrow suppression and possible tumor lysis or disease progression. ECOG 1 and smoking history add to risk. Multi-organ involvement is limited but lab trends indicate moderate risk.",
+  "evidences": [
+    "Recurrent neutropenia (Grade 3 then Grade 2) indicating cumulative myelotoxicity",
+    "Elevated LDH (Grade 2) suggesting cell turnover or disease activity",
+    "Anemia (Grade 2) reflecting chronic disease or bone marrow compromise"
+  ]
+}

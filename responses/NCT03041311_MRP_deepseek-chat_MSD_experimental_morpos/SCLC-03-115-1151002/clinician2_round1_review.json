@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The multi-disciplinary assessment accurately captures the life-threatening trajectory of multi-organ toxicity (bone marrow, pancreas, lungs) with systemic edema, indicating irreversible organ failure and poor prognosis.",
+  "evidences": [
+    "Severe neutropenia and thrombocytopenia reflect profound bone marrow suppression, a hallmark of high-grade chemotherapy toxicity.",
+    "Progressive respiratory compromise with bronchiolitis and hemoptysis suggests pulmonary failure, compounded by obesity and smoking history.",
+    "Grade 3 lipase elevation indicates pancreatic injury, adding to the multi-organ failure pattern."
+  ]
+}

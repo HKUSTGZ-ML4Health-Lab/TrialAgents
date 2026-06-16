@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Functional status ECOG 1 is preserved but acute pancreatitis, neutropenia, and obesity portend high mortality. Geriatric focus on symptom burden and multi-organ risk supports guarded prognosis.",
+  "evidences": [
+    "ECOG performance status",
+    "Acute pancreatitis severity",
+    "Neutropenia and infection risk"
+  ]
+}

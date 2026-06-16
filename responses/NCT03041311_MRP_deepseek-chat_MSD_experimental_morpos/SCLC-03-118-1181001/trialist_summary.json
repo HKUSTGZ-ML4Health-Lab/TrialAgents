@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient experienced multiple severe adverse events including grade 4 febrile neutropenia, thrombocytopenia, and recurrent neutropenia, indicating profound bone marrow suppression and systemic inflammation. Infectious pleural effusion progressed from grade 4 to fatal grade 5 within days, reflecting multi-organ failure and high disease burden. Comorbid atrial fibrillation and anemia further compromise cardiovascular reserve. These patterns suggest immunocompromise, poor treatment tolerance, and imminent mortality.",
+  "evidences": [
+    "Clinician 0: Grade 4 febrile neutropenia and thrombocytopenia early in course, followed by infectious pleural effusion progressing to grade 5 (fatal) on day 105, with atrial fibrillation and anemia indicating cardiovascular compromise.",
+    "Clinician 1: Rapid onset of atrial fibrillation, severe febrile neutropenia and thrombocytopenia, recurrent neutropenia and anemia at day 74, and infectious pleural effusion escalating from grade 4 to death within 4 days.",
+    "Clinician 2: Multiple grade 4-5 adverse events (febrile neutropenia, thrombocytopenia, infectious pleural effusion), recurrent severe infections indicating immunocompromise, and ECOG 1 with progressive functional decline."
+  ]
+}

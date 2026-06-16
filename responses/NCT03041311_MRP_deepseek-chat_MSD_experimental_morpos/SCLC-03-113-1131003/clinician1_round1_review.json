@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Grade 4 neutropenia and Grade 3 thrombocytopenia pose immediate life-threatening risks of neutropenic sepsis and hemorrhage. Urgent broad-spectrum antibiotics, platelet transfusion, and intensive monitoring are critical. The multidisciplinary assessment appropriately highlights these acute priorities.",
+  "evidences": [
+    "Sepsis guidelines for neutropenic patients",
+    "Platelet transfusion thresholds in thrombocytopenia",
+    "Emergency management of febrile neutropenia"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.35,
+  "conf_logit": 0.75,
+  "analysis": "Patient has stable vitals and ECOG 0, but haemoptysis and non-cardiac chest pain starting at day 413 are concerning for possible pulmonary embolism or tumor progression. Neutropenia (grade 2) resolved, but smoking history increases risk. Immediate ABC assessment and workup for haemoptysis cause are needed.",
+  "evidences": [
+    "Haemoptysis (grade 1) starting day 413",
+    "Non-cardiac chest pain (grade 2) starting day 413",
+    "Current smoker with smoking stage 12"
+  ]
+}

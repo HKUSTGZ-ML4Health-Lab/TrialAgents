@@ -1,0 +1,10 @@
+{
+  "logit": 0.92,
+  "conf_logit": 0.85,
+  "analysis": "Patient with progressive multi-organ dysfunction: recurrent anaphylaxis, severe neutropenia (Grade 4), worsening anemia, and pneumonia culminating in fatal respiratory failure (Grade 5). The rapid escalation of adverse events and poor therapeutic response indicate high disease burden and systemic decompensation.",
+  "evidences": [
+    "Grade 5 pneumonia (fatal outcome) on Day 99",
+    "Grade 4 neutropenia (Days 15-28) indicating severe bone marrow suppression",
+    "Recurrent anaphylaxis and progressive anemia suggesting immune dysregulation and multi-system involvement"
+  ]
+}

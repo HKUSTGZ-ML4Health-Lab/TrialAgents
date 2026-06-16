@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient, a 60-64-year-old male current smoker with ECOG 1, experienced severe immunosuppression evidenced by grade 3 neutropenia (day 18) and grade 3 pneumonia (day 57-60), indicating high infection risk. Persistent grade 2 dyspnea and fatigue (from day 76 onward) suggest progressive respiratory compromise and declining cardiopulmonary reserve. Ongoing hypokalemia (day 139) and muscular weakness (day 167) reflect metabolic derangement that may precipitate cardiac arrhythmias and worsen outcomes. The cumulative burden of multiple grade 2-3 adverse events, including dehydration and electrolyte disturbances, points to a guarded prognosis with moderate-to-high mortality risk from sepsis, respiratory failure, or treatment-related complications.",
+  "evidences": [
+    "Grade 3 neutropenia (day 18) followed by grade 3 pneumonia (day 57-60) indicates severe immunosuppression and ongoing infection risk, as noted by Clinician 0 and Clinician 1.",
+    "Persistent dyspnea (day 76 ongoing) and fatigue (day 76 ongoing) suggest possible respiratory compromise or sepsis, contributing to functional decline and increased mortality risk, highlighted by Clinician 0 and Clinician 2.",
+    "Hypokalemia (day 139 ongoing) can precipitate cardiac arrhythmias and worsen muscle weakness, reflecting metabolic derangement and possible myopathy, as emphasized by Clinician 0 and Clinician 1."
+  ]
+}

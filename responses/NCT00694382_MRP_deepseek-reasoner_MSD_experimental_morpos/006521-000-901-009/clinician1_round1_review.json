@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Patient hemodynamically stable, no acute life-threatening conditions, improving functional status, low mortality risk.",
+  "evidences": [
+    "Stable vital signs throughout",
+    "Improving ECOG from 2 to 1",
+    "No severe infections or bleeding"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The multi-disciplinary report correctly identifies life-threatening hematologic, hepatic, and neurologic toxicities. Immediate risks include intracranial hemorrhage, hepatic failure, and sepsis. Urgent neuroimaging, coagulation panel, and blood product support are critical.",
+  "evidences": [
+    "ATLS/ACLS protocols for acute neurologic and hematologic emergencies",
+    "Emergency management of acute stroke and coagulopathy guidelines",
+    "Sepsis and multi-organ failure risk stratification in frail patients"
+  ]
+}

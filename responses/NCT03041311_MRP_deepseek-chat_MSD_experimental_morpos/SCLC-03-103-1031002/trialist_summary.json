@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient experienced severe, recurrent cytopenias including Grade 4 neutropenia and Grade 3 herpetic meningoencephalitis, indicating profound immunosuppression and bone marrow suppression. The prolonged course of anemia and thrombocytopenia over 500+ days suggests chronic marrow dysfunction. These cumulative toxicities, despite an ECOG 1, point to a guarded prognosis with high infection risk and potential for irreversible organ damage.",
+  "evidences": [
+    "Clinician 0 noted Grade 4 neutropenia (Day 16-22) and Grade 3 herpetic meningoencephalitis (Day 508-524), highlighting severe bone marrow suppression and life-threatening CNS infection, warranting ICU-level monitoring.",
+    "Clinician 1 emphasized recurrent multi-lineage cytopenias and severe herpetic meningoencephalitis, indicating cumulative immunosuppression and treatment-related toxicity without rapid multi-organ failure.",
+    "Clinician 2 highlighted Grade 4 neutropenia, Grade 3 meningoencephalitis, and chronic cytopenias over 500+ days, reflecting severe treatment-related toxicity and chronic bone marrow suppression, leading to a guarded prognosis."
+  ]
+}

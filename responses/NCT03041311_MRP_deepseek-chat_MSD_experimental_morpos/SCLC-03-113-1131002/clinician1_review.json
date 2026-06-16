@@ -1,0 +1,10 @@
+{
+  "logit": 0.7,
+  "conf_logit": 0.75,
+  "analysis": "Patient presents with recurrent severe neutropenia (Grade 4) and thrombocytopenia, with recent onset of dyspnea (Grade 3), hemoptysis, and staphylococcal infection. High risk for septic shock and respiratory failure. Immediate assessment of airway, breathing, and circulation is critical. Urgent broad-spectrum antibiotics, G-CSF, and respiratory support may be needed.",
+  "evidences": [
+    "Grade 4 neutropenia (Days 15-21 and 161-167) with concurrent infection (Staphylococcal, Day 138-154)",
+    "Progressive dyspnea (Grade 2 to Grade 3) with hemoptysis and cough (Days 134-160)",
+    "Recurrent severe neutropenia and thrombocytopenia indicating bone marrow suppression"
+  ]
+}

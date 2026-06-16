@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.75,
+  "analysis": "This patient exhibits recurrent, severe neutropenia (Grade 4) and leukopenia with thrombocytopenia, consistent with cumulative myelosuppression from chemotherapy. The pattern suggests limited bone marrow reserve and incomplete recovery between cycles, increasing infection risk. Anemia (Grade 2) and alopecia indicate ongoing systemic toxicity. As a current smoker with low BMI, the patient has reduced physiologic reserve, elevating mortality risk from complications like febrile neutropenia or sepsis.",
+  "evidences": [
+    "Recurrent Grade 4 neutropenia with incomplete marrow recovery between cycles",
+    "Low BMI (19.5) and smoking history indicating reduced physiologic reserve",
+    "Cumulative myelosuppression with multi-lineage cytopenias"
+  ]
+}

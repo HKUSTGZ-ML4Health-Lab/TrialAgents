@@ -1,0 +1,10 @@
+{
+  "logit": 0.15,
+  "conf_logit": 0.7,
+  "analysis": "Patient is 55-59 years old with ECOG 0, indicating excellent functional status and independence. Former smoker with mild anemia and neutropenia, likely treatment-related, and a single episode of pneumonia (grade 3) that resolved. No evidence of frailty, cognitive decline, or significant comorbidity burden. Prognosis is favorable with good quality of life expected.",
+  "evidences": [
+    "ECOG performance status 0 (fully active, no restrictions)",
+    "No evidence of frailty or significant comorbidity burden",
+    "Single resolved pneumonia episode without lasting functional decline"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Progressive tachycardia, tachypnea, cachexia, and ECOG decline indicate systemic decompensation without overt organ failure. Immediate risks include sepsis, dehydration, or tumor lysis; requires urgent evaluation and monitoring.",
+  "evidences": [
+    "Emergency Medicine: vital sign trends predict clinical deterioration",
+    "Acute Care: weight loss >5% and rising HR indicate high-risk state"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.45,
+  "conf_logit": 0.5,
+  "analysis": "Patient with advanced malignancy on experimental therapy presents with severe disease progression. Vital signs are stable except for weight loss and ECOG decline from 1 to 2. No acute hemodynamic or respiratory compromise. Main risk is from progressive malignancy and potential treatment-related toxicity. Close monitoring for decompensation and oncologic emergency is warranted.",
+  "evidences": [
+    "Severe malignant neoplasm progression at day 113",
+    "ECOG performance status decline from 1 to 2",
+    "Weight loss of 2 kg from baseline at day 57/85"
+  ]
+}

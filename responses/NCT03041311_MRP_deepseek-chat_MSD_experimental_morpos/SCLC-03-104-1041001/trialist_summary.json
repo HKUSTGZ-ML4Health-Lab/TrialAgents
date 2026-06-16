@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient exhibits a high mortality risk due to progressive multi-system deterioration including recurrent severe neutropenia (Grade 4), thrombocytopenia (Grade 3), anemia, and worsening ECOG performance status (Grade 3). Critical adverse events such as hypotension, dyspnea, COPD exacerbation, and cellulitis suggest potential sepsis or cardiorespiratory compromise. Cumulative treatment toxicity and poor functional reserve, compounded by obesity and smoking history, indicate a poor prognosis.",
+  "evidences": [
+    "Clinician 0 identified Grade 4 neutropenia (Day 15) and Grade 3 thrombocytopenia (Day 37) indicating severe bone marrow suppression, progressive asthenia (Grade 3), fatigue (Grade 3), and ECOG worsening (Grade 3) suggesting multi-organ dysfunction, and hypotension (Day 148) and dyspnea (Day 15) raising concern for septic shock or pulmonary compromise.",
+    "Clinician 1 noted progressive ECOG performance status worsening to grade 3, recurrent grade 3-4 neutropenia and grade 3 thrombocytopenia, and multi-system involvement including pulmonary (COPD), hematologic, infectious (cellulitis), and constitutional symptoms.",
+    "Clinician 2 highlighted ECOG performance status worsened to 3 (severity 3) on day 485, recurrent falls (day 464) and limb injuries, and multiple severe adverse events: neutropenia grade 4, COPD grade 3, cellulitis grade 3, peripheral edema grade 3."
+  ]
+}

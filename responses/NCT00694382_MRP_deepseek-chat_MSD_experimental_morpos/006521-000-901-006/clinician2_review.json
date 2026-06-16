@@ -1,0 +1,10 @@
+{
+  "logit": 0.55,
+  "conf_logit": 0.75,
+  "analysis": "The patient shows progressive weight loss (60 to 54 kg), declining ECOG status (1 to 2), and persistent gastrointestinal complications including stoma issues, diarrhea, and dehydration. These suggest malabsorption and catabolic state, likely from the experimental drug. Vital signs remain stable but declining weight and functional status indicate increasing frailty and moderate mortality risk.",
+  "evidences": [
+    "Progressive weight loss from 60 kg to 54 kg over 85 days",
+    "ECOG performance status decline from 1 to 2",
+    "Persistent gastrointestinal adverse events (stoma complication, diarrhea, decreased appetite, dehydration)"
+  ]
+}

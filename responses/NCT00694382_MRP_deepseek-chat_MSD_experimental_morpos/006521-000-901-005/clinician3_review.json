@@ -1,0 +1,10 @@
+{
+  "logit": 0.35,
+  "conf_logit": 0.75,
+  "analysis": "Patient maintains good functional status (ECOG 0-1) and stable vital signs despite moderate adverse events including anemia, leukopenia, and fatigue. Weight fluctuates but remains stable overall. No evidence of severe frailty or cognitive decline. Prognosis is favorable with continued treatment.",
+  "evidences": [
+    "ECOG Performance Status remains 0-1 throughout",
+    "Weight stable around 78-83 kg",
+    "No severe adverse events or organ failure"
+  ]
+}

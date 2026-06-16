@@ -1,0 +1,9 @@
+{
+  "logit": 0.35,
+  "conf_logit": 0.4,
+  "analysis": "Patient has recurrent severe neutropenia and thrombocytopenia, indicating significant bone marrow suppression. No vital signs provided, but absence of reported hypotension, hypoxia, or altered mental status suggests no immediate hemodynamic or respiratory compromise. Main risk is infection from neutropenia and bleeding from thrombocytopenia. Urgent need for CBC, vital signs, and infection screening.",
+  "evidences": [
+    "Recurrent Grade 3 neutropenia (Days 15-28, 43-49) with no documented fever or sepsis workup",
+    "Recurrent Grade 3 thrombocytopenia (Days 64-70, 84-93) increasing bleeding risk"
+  ]
+}

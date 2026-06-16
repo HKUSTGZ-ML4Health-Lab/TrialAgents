@@ -1,0 +1,10 @@
+{
+  "logit": 0.25,
+  "conf_logit": 0.5,
+  "analysis": "The patient has mild, intermittent peripheral neuropathy likely related to the experimental drug. Vital signs are stable with good functional status (ECOG 0) and no evidence of multi-organ dysfunction. The overall disease trajectory appears benign with low mortality risk.",
+  "evidences": [
+    "Mild peripheral neuropathy with complete resolution between episodes",
+    "Stable vital signs and weight throughout the observation period",
+    "Excellent functional status (ECOG 0) maintained across all visits"
+  ]
+}

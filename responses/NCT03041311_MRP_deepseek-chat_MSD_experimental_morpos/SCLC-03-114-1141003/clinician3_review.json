@@ -1,0 +1,10 @@
+{
+  "logit": 0.75,
+  "conf_logit": 0.75,
+  "analysis": "This 75-79-year-old male with BMI 30.9, ECOG 2, and former smoker status presents with recurrent severe neutropenia and thrombocytopenia, indicating significant bone marrow toxicity and frailty. The high-grade adverse events (Grade 4 neutropenia) and prolonged anemia suggest poor physiologic reserve and increased vulnerability. Functional status is compromised (ECOG 2), and the comorbidity burden is high, leading to a guarded prognosis. Goals of care should prioritize symptom management and quality of life.",
+  "evidences": [
+    "ECOG performance status 2 indicates limited self-care and functional decline",
+    "Recurrent Grade 4 neutropenia and Grade 3 thrombocytopenia reflect severe hematologic toxicity",
+    "Prolonged anemia (Grade 2-3) lasting over 50 days suggests poor marrow recovery"
+  ]
+}

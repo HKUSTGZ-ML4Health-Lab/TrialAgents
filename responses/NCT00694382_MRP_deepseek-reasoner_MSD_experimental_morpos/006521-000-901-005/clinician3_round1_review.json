@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.85,
+  "new_conf_logit": 0.9,
+  "reason": "Functional status (ECOG 0) and lack of cachexia indicate excellent reserve; transient toxicities resolved without impairment; low short-term mortality risk is realistic.",
+  "evidences": [
+    "ECOG performance status 0 indicates full independence",
+    "Weight stability and absence of progressive cachexia",
+    "Resolution of all adverse events without functional impact"
+  ]
+}

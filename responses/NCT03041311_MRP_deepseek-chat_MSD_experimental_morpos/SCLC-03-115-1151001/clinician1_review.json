@@ -1,0 +1,10 @@
+{
+  "logit": 0.55,
+  "conf_logit": 0.65,
+  "analysis": "Patient presents with grade 4 neutropenia and thrombocytopenia (days 15-21) indicating severe bone marrow suppression, with subsequent grade 3 anemia (days 51-66). This pattern suggests high risk for sepsis, spontaneous hemorrhage, and hemodynamic instability. No vital signs provided; however, the temporal sequence of cytopenias warrants immediate assessment for infection, bleeding, and need for transfusion support. Hyperthyroidism (grade 1) may contribute to metabolic stress.",
+  "evidences": [
+    "Grade 4 neutropenia (days 15-17) with high infection risk",
+    "Grade 4 thrombocytopenia (days 15-21) with bleeding risk",
+    "Progression to grade 3 anemia (days 51-66) indicating ongoing marrow failure"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.75,
+  "analysis": "High mortality risk due to recurrent severe cytopenias (Grade 4 thrombocytopenia, Grade 3 neutropenia) and hypotensive episode, indicating possible sepsis or bone marrow failure. Urgent ABC assessment, sepsis workup, and transfusion support needed.",
+  "evidences": [
+    "Grade 4 thrombocytopenia (Day 15-24) with recurrence of Grade 3 (Day 85-91) and ongoing Grade 2-3 neutropenia.",
+    "Hypotension (Grade 2) on Day 43-45, suggesting hemodynamic instability.",
+    "Cognitive disorder (Grade 3) from Day 161, potentially indicating CNS involvement or metabolic crisis."
+  ]
+}

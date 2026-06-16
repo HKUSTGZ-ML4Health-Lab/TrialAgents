@@ -1,0 +1,10 @@
+{
+  "logit": 0.75,
+  "conf_logit": 0.75,
+  "analysis": "This 80+ year old female with ECOG 2 has experienced severe, recurrent toxicities including grade 4 cytopenias, infections, and a pulmonary embolism, indicating high frailty and poor treatment tolerance. Functional decline is evidenced by prolonged asthenia, falls, and urinary incontinence. Prognosis is poor, with high mortality risk due to cumulative organ stress and limited reserve.",
+  "evidences": [
+    "ECOG performance status 2 indicating limited self-care ability",
+    "Recurrent grade 4 neutropenia, thrombocytopenia, and anemia",
+    "Multiple infections (UTI, pneumonia) and pulmonary embolism"
+  ]
+}

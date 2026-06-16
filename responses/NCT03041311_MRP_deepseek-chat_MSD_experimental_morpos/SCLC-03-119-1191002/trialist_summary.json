@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient is a 70-74-year-old male smoker with ECOG 1 who developed Grade 4 neutropenia (days 16-23), indicating severe immunosuppression and high infection risk. Subsequent Grade 2 respiratory symptoms (cough, dyspnea) and cardiac arrhythmia (supraventricular extrasystoles starting day 32) suggest multi-organ involvement and possible sepsis or cardiac strain. The combination of severe hematologic toxicity, unresolved cardiac event, and declining functional status points to significant physiologic compromise and increased mortality risk.",
+  "evidences": [
+    "Clinician 0: Grade 4 neutropenia with recent respiratory symptoms increases risk of septic shock; supraventricular extrasystoles may indicate cardiac involvement or electrolyte disturbance; concurrent fatigue and dyspnea suggest possible respiratory compromise or early organ dysfunction.",
+    "Clinician 1: Grade 4 neutropenia indicating severe hematologic toxicity; cough and dyspnea suggesting pulmonary involvement; supraventricular extrasystoles reflecting cardiac stress; multi-organ involvement and incomplete recovery of arrhythmia suggest moderate mortality risk.",
+    "Clinician 2: Grade 4 neutropenia indicates severe bone marrow toxicity and infection risk; multiple grade 2 adverse events (cardiac, respiratory, GI) reflect multi-system involvement and frailty; functional status likely declining due to cumulative toxicity, increasing frailty risk."
+  ]
+}

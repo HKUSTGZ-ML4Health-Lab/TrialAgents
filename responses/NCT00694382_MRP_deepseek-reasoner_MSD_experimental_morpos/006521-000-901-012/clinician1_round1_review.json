@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.1,
+  "new_conf_logit": 0.95,
+  "reason": "Vital signs stable, no organ dysfunction, mild self-limited adverse events. Good functional capacity (ECOG 0). No signs of rapid deterioration or hemodynamic instability.",
+  "evidences": [
+    "Stable vital signs without tachycardia, hypotension, or hypoxia indicate low risk of acute decompensation",
+    "ECOG 0 performance status consistent with good physiologic reserve",
+    "Mild mucocutaneous bleeding without hemodynamic impact does not require emergency intervention"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Functional status is excellent (ECOG 0), weight stable, no frailty or comorbidity burden. Low mortality risk is realistic and patient-centered.",
+  "evidences": [
+    "ECOG performance status 0 indicates full independence",
+    "Stable weight and vital signs suggest good physiologic reserve",
+    "No evidence of frailty or significant comorbidity"
+  ]
+}

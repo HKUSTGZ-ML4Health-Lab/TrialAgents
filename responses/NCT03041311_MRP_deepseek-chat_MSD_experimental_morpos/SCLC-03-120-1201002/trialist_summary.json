@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient exhibits a progressive, multi-system adverse event profile with critical signals: late-onset Grade 3 ALT elevation (Day 112-133) indicating significant hepatotoxicity, persistent and worsening cytopenias (anemia, thrombocytopenia) over extended periods, chronic LDH elevation suggesting ongoing tissue damage or disease progression, and prolonged asthenia with facial swelling reflecting functional decline and fluid retention. These patterns cumulatively point to multi-organ dysfunction and poor recovery, elevating mortality risk despite initial ECOG 1 status.",
+  "evidences": [
+    "Clinician 1 highlighted progressive multi-organ dysfunction with hepatic, hematologic, and renal involvement, persistent cytopenias, rising LDH, and late hepatic enzyme elevation suggesting aggressive disease course or treatment-related toxicity, leading to a high mortality risk score of 0.85.",
+    "Clinician 0 noted delayed hepatic injury (ALT Grade 3, Day 112) and progressive anemia/thrombocytopenia, with chronic low-grade LDH elevation and asthenia suggesting ongoing systemic process, assigning a moderate mortality risk of 0.3.",
+    "Clinician 2 acknowledged persistent nausea, vomiting, anemia, thrombocytopenia, late-onset transaminitis, and rising LDH, with prolonged asthenia and swelling face indicating functional decline and fluid retention, resulting in a moderate mortality risk of 0.55."
+  ]
+}

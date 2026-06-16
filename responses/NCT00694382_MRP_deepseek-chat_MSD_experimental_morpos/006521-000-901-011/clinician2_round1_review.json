@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The assessment accurately captures systemic deterioration with progressive weight loss, declining ECOG, and severe pneumonitis, reflecting multi-organ failure and poor therapeutic response consistent with high mortality risk.",
+  "evidences": [
+    "Progressive weight loss >10% over 70 days indicates cachexia and poor prognosis",
+    "Worsening ECOG from 1 to 2 signifies functional decline and reduced treatment tolerance",
+    "Severe pneumonitis with unknown resolution suggests ongoing respiratory compromise and systemic inflammation"
+  ]
+}

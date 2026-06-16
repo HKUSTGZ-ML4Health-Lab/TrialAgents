@@ -1,0 +1,12 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.8,
+  "new_conf_logit": 0.85,
+  "reason": "Multi-organ failure, Grade 4 PE, and sepsis pose immediate life threats. ABC stabilization, anticoagulation, and vasopressor support are urgent.",
+  "evidences": [
+    "PE with hemodynamic instability requires immediate anticoagulation",
+    "Sepsis and multi-organ dysfunction mandate early goal-directed therapy"
+  ]
+}

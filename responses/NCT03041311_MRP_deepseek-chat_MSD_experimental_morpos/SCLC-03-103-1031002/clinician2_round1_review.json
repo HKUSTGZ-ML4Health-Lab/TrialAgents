@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.75,
+  "new_conf_logit": 0.85,
+  "reason": "Internal medicine assessment confirms profound immunosuppression from cumulative cytopenias and herpetic meningoencephalitis, indicating high mortality risk due to chronic marrow dysfunction and infection susceptibility.",
+  "evidences": [
+    "Recurrent multi-lineage cytopenias over 500+ days suggest irreversible bone marrow damage",
+    "Grade 4 neutropenia and Grade 3 herpetic CNS infection reflect severe immunosuppression",
+    "Chronic anemia and thrombocytopenia increase risk of end-organ ischemia and hemorrhage"
+  ]
+}

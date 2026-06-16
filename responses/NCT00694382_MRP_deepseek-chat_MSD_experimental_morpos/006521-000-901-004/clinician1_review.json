@@ -1,0 +1,10 @@
+{
+  "logit": 0.35,
+  "conf_logit": 0.75,
+  "analysis": "Hemodynamically stable with no shock or respiratory distress. Moderate diarrhea (day 6-17) may cause volume depletion but resolved. Severe malignant neoplasm progression at day 113 with ECOG 2 indicates advanced disease. No acute life-threatening organ failure. Risk is from underlying cancer progression, not immediate reversible causes.",
+  "evidences": [
+    "Malignant neoplasm progression (severe, day 113) with ECOG 2",
+    "Moderate diarrhea (day 6-17) resolved, no persistent hypotension or tachycardia",
+    "Stable vital signs: BP 140/90, HR 76, RR 14 at last visit"
+  ]
+}

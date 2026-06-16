@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Multi-system toxicity and prolonged asthenia indicate functional decline and limited reserve, consistent with high mortality risk despite initial ECOG 1.",
+  "evidences": [
+    "ECOG performance status decline",
+    "Prolonged cytopenias and hepatotoxicity",
+    "Chronic LDH elevation indicating tissue damage"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Persistent severe granulocytopenia and recurrent anemia indicate ongoing bone marrow suppression with incomplete recovery, increasing infection and hemodynamic risks. Low BMI and former smoking reduce reserve. Multi-organ assessment is consistent with high mortality risk.",
+  "evidences": [
+    "Grade 3 granulocytopenia for >2 weeks indicates severe myelosuppression with high infection risk.",
+    "Recurrent Grade 3 anemia suggests impaired erythropoiesis and reduced cardiopulmonary reserve.",
+    "Low BMI (20.9) and former smoking history decrease physiologic reserve and worsen outcomes."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.55,
+  "conf_logit": 0.7,
+  "analysis": "This 45-49-year-old female with BMI 20.1 and ECOG 1 shows a moderate mortality risk. She has persistent nausea, vomiting, anemia, and thrombocytopenia, indicating significant treatment toxicity. Late-onset transaminitis and rising LDH suggest possible hepatic involvement. Functional status remains reasonable, but cumulative adverse events and prolonged asthenia raise concerns for declining reserve. Goals of care should prioritize symptom management and quality of life.",
+  "evidences": [
+    "ECOG performance status 1 with multiple grade 2 adverse events (nausea, vomiting, anemia, asthenia)",
+    "Persistent hematologic toxicities (anemia, thrombocytopenia) and late hepatic enzyme elevations",
+    "Prolonged asthenia and swelling face indicating functional decline and fluid retention"
+  ]
+}

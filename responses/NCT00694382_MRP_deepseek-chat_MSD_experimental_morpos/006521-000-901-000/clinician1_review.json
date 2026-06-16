@@ -1,0 +1,10 @@
+{
+  "logit": 0.45,
+  "conf_logit": 0.7,
+  "analysis": "Patient shows progressive tachycardia (70\u219294 bpm), tachypnea (17\u219220), declining weight (66.1\u219262.2 kg), and ECOG worsening (1\u21922). Moderate anemia and stomatitis indicate possible treatment-related toxicity. No immediate airway or severe hemodynamic compromise, but signs of clinical deterioration warrant close monitoring.",
+  "evidences": [
+    "Heart rate increasing from 70 to 94 bpm over 106 days",
+    "Weight loss from 66.1 kg to 62.2 kg (6% decrease)",
+    "ECOG performance status declining from 1 to 2"
+  ]
+}

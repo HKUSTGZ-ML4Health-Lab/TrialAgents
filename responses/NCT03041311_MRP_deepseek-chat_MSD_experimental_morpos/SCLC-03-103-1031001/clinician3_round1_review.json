@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.85,
+  "new_conf_logit": 0.8,
+  "reason": "The multi-disciplinary assessment correctly identifies high short-term mortality risk given recurrent sepsis, severe thrombocytopenia, and cardiac arrhythmias in an underweight elderly male. Functional status (ECOG 1) is optimistic; these events likely indicate frailty and poor physiologic reserve. Goals should prioritize symptom control and quality of life.",
+  "evidences": [
+    "Frailty phenotype (weight loss, exhaustion, low activity) predicts mortality in older adults",
+    "Recurrent severe adverse events (sepsis, thrombocytopenia) are markers of multi-organ dysfunction and poor prognosis",
+    "COPD exacerbation and cardiac arrhythmias in elderly increase short-term mortality risk"
+  ]
+}

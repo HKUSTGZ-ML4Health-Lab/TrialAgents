@@ -1,0 +1,8 @@
+{
+  "answer": "In my opinion, the patient has a low risk of mortality.",
+  "report": "The patient has a good functional status (ECOG 0) and normal BMI. Adverse events are mostly mild and transient, including early vomiting and neutropenia that resolved. Late-onset haemoptysis and non-cardiac chest pain at day 413 are concerning but grade 1-2 severity and the patient's overall good condition suggest manageable risk. Smoking history is a modifiable risk factor. No evidence of multi-organ failure or persistent severe toxicity.",
+  "evidences": [
+    "Clinician 1: Patient with ECOG 0, normal BMI, and smoking history. Early transient vomiting and neutropenia (likely chemotherapy-related) followed by late-onset haemoptysis and non-cardiac chest pain at day 413 suggest possible pulmonary progression or complication. Good functional status and lack of multi-organ failure suggest moderate risk.",
+    "Clinician 2: Patient is a middle-aged male with good functional status (ECOG 0) and no significant comorbidity burden. Adverse events are mild and transient, not impacting independence. Current smoking is a modifiable risk factor. Overall, low short-term mortality risk."
+  ]
+}

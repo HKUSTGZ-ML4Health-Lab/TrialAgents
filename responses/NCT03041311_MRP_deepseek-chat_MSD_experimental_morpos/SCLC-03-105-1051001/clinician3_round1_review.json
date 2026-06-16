@@ -1,0 +1,12 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "new_logit": 0.85,
+  "new_conf_logit": 0.75,
+  "reason": "The assessment accurately reflects profound functional decline and multi-organ failure in a frail elderly patient. The high short-term mortality risk is realistic given severe cytopenias, recurrent infections, and encephalopathy, which together indicate limited physiological reserve.",
+  "evidences": [
+    "Clinical Frailty Scale (CFS) score \u22657",
+    "High comorbidity burden (Charlson Comorbidity Index \u22656)"
+  ]
+}

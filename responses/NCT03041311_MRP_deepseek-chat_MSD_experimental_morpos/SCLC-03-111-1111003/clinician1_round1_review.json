@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "new_logit": 0.95,
+  "new_conf_logit": 0.9,
+  "reason": "The report accurately identifies immediate life-threats: anaphylaxis causing airway compromise, septic shock from pneumonia, and profound neutropenia. Urgent ABC stabilization, broad-spectrum antibiotics, and hematology support are critical. The cumulative Grade 3+ events and ECOG 1 indicate high frailty, aligning with emergency risk stratification.",
+  "evidences": [
+    "ATLS/ABC protocols for anaphylaxis and shock",
+    "Surviving Sepsis Campaign: early antibiotics and source control",
+    "Neutropenic fever guidelines: empiric broad-spectrum antibiotics"
+  ]
+}

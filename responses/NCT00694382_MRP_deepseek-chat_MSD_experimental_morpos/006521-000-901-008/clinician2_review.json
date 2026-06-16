@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.8,
+  "analysis": "The patient demonstrates progressive malignant neoplasm with multi-organ involvement, including ascites, thrombocytopenia, and anemia. Worsening ECOG status and hypotension suggest decompensation. The constellation of gastrointestinal, hepatic, and hematologic adverse events indicates systemic disease burden and poor therapeutic response.",
+  "evidences": [
+    "Malignant neoplasm progression (severe) at day 99",
+    "Ascites, thrombocytopenia, and anemia indicating multi-organ failure",
+    "ECOG performance status decline from 2 to 1 with persistent symptoms"
+  ]
+}

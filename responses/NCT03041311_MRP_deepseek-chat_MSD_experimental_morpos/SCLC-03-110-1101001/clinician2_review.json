@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.75,
+  "analysis": "This elderly male with ECOG 1 and former smoking history shows progressive multi-organ decline: recurrent grade 3-4 hematologic toxicities (anemia, thrombocytopenia), pulmonary events (pneumonia, hypoxia, pulmonary embolism), renal injury, and metabolic disturbances. The late development of pulmonary embolism and persistent fatigue/debility suggests treatment-related cumulative toxicity and poor physiological reserve, portending high mortality.",
+  "evidences": [
+    "Grade 4 thrombocytopenia and pulmonary embolism indicate severe hematologic and vascular compromise",
+    "Recurrent grade 3 anemia and hypoxia reflect inadequate marrow and pulmonary function recovery",
+    "Progressive fatigue, gait disturbance, and depression signal declining functional status and systemic decompensation"
+  ]
+}

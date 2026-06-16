@@ -1,0 +1,10 @@
+{
+  "logit": 0.45,
+  "conf_logit": 0.65,
+  "analysis": "Patient has Grade 3 hyponatraemia (Day 43-66) and Grade 3 neutropenia (Day 38-43), both life-threatening. Hyponatraemia can cause neurological deterioration; neutropenia increases infection risk. No vital signs provided; assume hemodynamic stability. Immediate need for electrolyte correction and infection monitoring.",
+  "evidences": [
+    "Grade 3 hyponatraemia (Na <130 mEq/L) with ongoing duration (Day 43-66) poses risk of cerebral edema and seizures.",
+    "Grade 3 neutropenia (ANC <1000/\u03bcL) from Day 38-43 increases susceptibility to severe infections and sepsis.",
+    "Hyperkalaemia (Grade 2) on Day 24-26 indicates prior electrolyte instability, requiring vigilance for recurrence."
+  ]
+}

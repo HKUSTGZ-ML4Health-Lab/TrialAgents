@@ -1,0 +1,10 @@
+{
+  "logit": 0.65,
+  "conf_logit": 0.7,
+  "analysis": "Patient is 65-69 with ECOG 2, indicating functional impairment. Multiple recurrent severe cytopenias (neutropenia, thrombocytopenia, anemia) suggest high treatment toxicity and comorbidity burden. Former smoker with obesity. Recurrent neutropenia and thrombocytopenia increase infection and bleeding risks. Prognosis is guarded; need to prioritize quality of life and discuss goals of care.",
+  "evidences": [
+    "ECOG performance status 2 indicating limited functional independence",
+    "Recurrent severe neutropenia (Grade 4) and thrombocytopenia (Grade 4) reflecting high treatment toxicity",
+    "Obesity (BMI 32.4) and former smoking history adding comorbidity burden"
+  ]
+}

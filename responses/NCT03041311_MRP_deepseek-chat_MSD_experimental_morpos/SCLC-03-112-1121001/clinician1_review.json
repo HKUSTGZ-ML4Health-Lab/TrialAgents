@@ -1,0 +1,10 @@
+{
+  "logit": 0.95,
+  "conf_logit": 0.85,
+  "analysis": "Patient with sepsis (severity 5), neutropenia (severity 4), and bronchitis. Sepsis on day 10 is immediately life-threatening, with high mortality risk due to septic shock and multi-organ failure. Urgent ABC assessment, fluid resuscitation, broad-spectrum antibiotics, and vasopressors needed. Neutropenia increases infection risk. Immediate ICU admission required.",
+  "evidences": [
+    "Sepsis severity 5 indicates septic shock with high mortality risk",
+    "Neutropenia severity 4 predisposes to overwhelming infection",
+    "Bronchitis may be the source of sepsis"
+  ]
+}

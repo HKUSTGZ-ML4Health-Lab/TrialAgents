@@ -1,0 +1,10 @@
+{
+  "logit": 0.55,
+  "conf_logit": 0.65,
+  "analysis": "Patient with recurrent severe pleural effusions, weight loss, and tachycardia suggests underlying malignancy or inflammatory process. Weight decreased from 64.2 to 53.5 kg (16.7% loss) indicates cachexia. Tachycardia at baseline (115 bpm) with later bradycardia (60 bpm) may reflect autonomic dysfunction or drug effect. Stable ECOG 1 suggests preserved functional status despite disease burden. Risk is moderate due to progressive cachexia and recurrent effusions but stable performance status.",
+  "evidences": [
+    "Recurrent severe pleural effusions (time 13-19 and 33-43)",
+    "Progressive weight loss from 64.2 to 53.5 kg (16.7% decrease)",
+    "Tachycardia (115 bpm) with later bradycardia (60 bpm)"
+  ]
+}

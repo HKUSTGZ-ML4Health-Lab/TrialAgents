@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.75,
+  "analysis": "Patient with advanced malignancy (ECOG 1) develops early severe hypoxia/dyspnea (day 3-8), then profound hematologic toxicity (grade 4 neutropenia/thrombocytopenia day 16-21) with secondary fungal infection, indicating high disease burden and poor marrow reserve. Late persistent respiratory symptoms (cough, hemoptysis, chest pain) suggest progressive pulmonary involvement or treatment-related pneumonitis. Multi-organ compromise (pulmonary, hematologic, gastrointestinal) with incomplete recovery portends high short-term mortality.",
+  "evidences": [
+    "Grade 4 neutropenia and thrombocytopenia (day 16-21) with secondary fungal infection",
+    "Recurrent severe hypoxia (grade 3) and dyspnea (grade 2) with late hemoptysis",
+    "Persistent multi-system adverse events (pulmonary, hematologic, GI) without full resolution"
+  ]
+}

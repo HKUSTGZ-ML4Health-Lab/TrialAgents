@@ -1,0 +1,10 @@
+{
+  "logit": 0.55,
+  "conf_logit": 0.75,
+  "analysis": "Patient with anemia (Hb likely low, grade 2), thrombocytopenia, and a generalized tonic-clonic seizure on day 165. Seizure in setting of possible intracranial pathology (metastasis/bleed) and cytopenias raises concern for CNS event or severe metabolic derangement. Myasthenic syndrome (grade 3) on day 290 indicates neuromuscular compromise, risk of respiratory failure. Immediate priorities: airway protection, seizure control, assess for reversible causes (electrolytes, infection, bleeding).",
+  "evidences": [
+    "Generalized tonic-clonic seizure (day 165) \u2013 risk of status epilepticus, CNS pathology.",
+    "Grade 3 myasthenic syndrome (day 290) \u2013 impending respiratory failure.",
+    "Persistent anemia (grade 2) and thrombocytopenia \u2013 risk of hemorrhage, hemodynamic instability."
+  ]
+}

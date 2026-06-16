@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The assessment appropriately highlights profound functional decline (ECOG 2), cumulative toxicities, and late ascites, which align with poor prognosis in geriatric patients. Quality of life and symptom burden are adequately considered.",
+  "evidences": [
+    "ECOG performance status 2 indicates limited independence and increased vulnerability.",
+    "Recurrent severe neutropenia and prolonged diarrhea reflect poor treatment tolerance and high comorbidity burden.",
+    "Late-onset ascites suggests progressive disease or hepatic compromise, worsening prognosis."
+  ]
+}

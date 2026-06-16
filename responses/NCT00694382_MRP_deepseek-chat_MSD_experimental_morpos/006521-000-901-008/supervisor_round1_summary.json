@@ -1,0 +1,9 @@
+{
+  "action": "No",
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient presents with multi-organ failure (ascites, thrombocytopenia, anemia), hemodynamic instability (hypotension with tachycardia), and functional decline (weight loss, declining ECOG status), indicating advanced frailty and cachexia. These features collectively reflect a high systemic disease burden and poor treatment tolerance, leading to a high mortality risk.",
+  "reasons": [
+    "All clinicians agreed with the initial assessment, providing supporting evidence such as multi-organ failure indicators, sepsis resuscitation guidelines, and functional decline markers.",
+    "No opposing views or compelling counterarguments were presented; thus, the original high mortality risk assessment is maintained."
+  ]
+}

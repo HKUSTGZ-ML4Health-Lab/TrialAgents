@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a low risk of mortality.",
+  "report": "The patient presents with low-grade (Grade 1-2) hematologic toxicities including recurrent neutropenia and anemia, which suggest manageable bone marrow suppression without evidence of severe organ dysfunction or life-threatening events. The ECOG performance status of 1 indicates good functional capacity. Although lipase elevation and spinal pain raise concerns for pancreatic injury and possible metastatic disease, these are Grade 2 and 1 respectively and have resolved. Current smoking adds moderate risk but does not significantly elevate short-term mortality. Overall, the adverse event profile is consistent with treatment-related toxicity rather than imminent mortality.",
+  "evidences": [
+    "No severe adverse events (Grade \u22653) reported; all events are Grade 1-2 and manageable.",
+    "ECOG performance status 1 indicates good functional status and low risk of rapid decline.",
+    "Recurrent neutropenia and anemia suggest bone marrow suppression but without evidence of hemodynamic instability, respiratory failure, or sepsis."
+  ]
+}

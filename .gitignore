@@ -104,5 +104,4 @@ typeshed/
 
 .cursorrules
 utils/viz/
-tests/
 data/

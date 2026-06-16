@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The multi-disciplinary assessment accurately captures systemic decompensation with profound bone marrow suppression (Grade 4 neutropenia), vascular compromise (CVA with residual deficits), and endocrine dysregulation, reflecting poor physiological reserve and high mortality risk.",
+  "evidences": [
+    "Grade 4 neutropenia indicates severe bone marrow failure and high infection risk.",
+    "Cerebrovascular accident with residual deficits suggests irreversible end-organ damage.",
+    "Persistent cytopenias and electrolyte disturbances reflect multi-system failure and poor recovery."
+  ]
+}

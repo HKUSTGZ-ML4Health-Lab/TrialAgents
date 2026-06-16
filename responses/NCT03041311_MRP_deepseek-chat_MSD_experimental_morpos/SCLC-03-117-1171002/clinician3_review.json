@@ -1,0 +1,10 @@
+{
+  "logit": 0.25,
+  "conf_logit": 0.6,
+  "analysis": "Patient is a middle-aged male with obesity (BMI 31.1) and ECOG 0, indicating good functional baseline. He is a former smoker with smoking stage 18, suggesting moderate cumulative exposure. Adverse events are mostly mild (Grade 1-2) and transient, including anemia, nausea, dyspnea, alopecia, and cytopenias, with no severe organ dysfunction or functional decline. Fatigue is ongoing but low-grade. Overall, comorbidity burden is low, and prognosis is favorable with attention to symptom management and smoking cessation support.",
+  "evidences": [
+    "ECOG performance status 0 indicating full independence",
+    "Only Grade 1-2 adverse events with no lasting functional impairment",
+    "Low comorbidity burden with obesity as main risk factor"
+  ]
+}

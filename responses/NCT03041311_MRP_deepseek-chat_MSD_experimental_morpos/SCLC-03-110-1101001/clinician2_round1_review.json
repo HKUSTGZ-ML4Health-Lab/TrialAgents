@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The multi-disciplinary assessment accurately captures progressive multi-organ dysfunction and cumulative toxicity, consistent with systemic decompensation in an elderly patient with limited physiological reserve.",
+  "evidences": [
+    "Recurrent severe hematologic toxicities indicate compromised bone marrow reserve and treatment intolerance.",
+    "Pulmonary embolism in setting of hypoxia and renal injury reflects widespread endothelial damage and hypercoagulable state.",
+    "Persistent fatigue and gait disturbance signify functional decline and poor prognosis in geriatric oncology."
+  ]
+}

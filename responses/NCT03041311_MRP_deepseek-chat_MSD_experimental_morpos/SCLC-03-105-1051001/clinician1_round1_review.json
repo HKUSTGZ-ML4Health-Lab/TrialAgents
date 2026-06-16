@@ -1,0 +1,10 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Patient has pancytopenia, acute renal failure, hypertensive crisis, pneumonia, and encephalopathy\u2014a classic emergency medicine picture of multi-organ failure. Immediate ABC, hemodynamic support, and infection control are critical. High short-term mortality is correctly identified.",
+  "evidences": [
+    "Sepsis and multi-organ failure guidelines",
+    "Emergency management of pancytopenia and hypertensive crisis"
+  ]
+}

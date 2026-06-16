@@ -1,0 +1,10 @@
+{
+  "logit": 0.6,
+  "conf_logit": 0.75,
+  "analysis": "Patient presents with recurrent severe neutropenia (Grade 3-4), thrombocytopenia, and late-onset pulmonary embolism with deep vein thrombosis, indicating high thromboembolic and hemorrhagic risk. Recent dizziness (Grade 3) and photopsia suggest possible CNS involvement or posterior circulation ischemia. Hemodynamic and respiratory status require urgent assessment.",
+  "evidences": [
+    "Pulmonary embolism (Grade 2) and deep vein thrombosis (Grade 2) on Day 181",
+    "Recurrent Grade 3-4 neutropenia with Grade 3 thrombocytopenia",
+    "New Grade 3 dizziness and Grade 2 photopsia on Day 122"
+  ]
+}

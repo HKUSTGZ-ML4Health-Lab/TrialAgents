@@ -1,0 +1,10 @@
+{
+  "logit": 0.6,
+  "conf_logit": 0.7,
+  "analysis": "Patient is a middle-aged male with obesity and smoking history, presenting with severe thrombocytopenia (grade 4) and anemia. The progression from grade 3 to grade 4 thrombocytopenia over 63 days suggests a worsening hematologic condition, possibly drug-induced or due to underlying malignancy. ECOG 0 indicates good functional status, but the adverse events imply significant bone marrow suppression. Multi-organ involvement is limited to hematologic system; however, the severity and duration of thrombocytopenia elevate mortality risk. Close monitoring for bleeding and infection is warranted.",
+  "evidences": [
+    "Progression from grade 3 to grade 4 thrombocytopenia over 63 days",
+    "Concurrent anemia (grade 1) lasting 68 days",
+    "ECOG performance status 0 with smoking and obesity as comorbidities"
+  ]
+}

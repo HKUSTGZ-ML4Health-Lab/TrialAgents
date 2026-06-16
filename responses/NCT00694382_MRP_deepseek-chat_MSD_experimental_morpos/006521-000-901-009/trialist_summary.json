@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a low risk of mortality.",
+  "report": "The patient's adverse event profile is mild to moderate, with thrombocytopenia and leukopenia showing no progression or severe complications. ECOG performance status improved from 2 to 1, indicating good functional recovery. Vital signs remain stable, and cough resolved. Weight loss at day 110 suggests nutritional decline but not critical. Overall, manageable adverse events and improving functional status suggest low mortality risk.",
+  "evidences": [
+    "Clinician 0 noted stable vital signs, mild thrombocytopenia and leukopenia without clinical bleeding or infection, and improving ECOG performance status, supporting low mortality risk.",
+    "Clinician 1 highlighted improving ECOG status from 2 to 1, stable vital signs, and mild non-progressive hematologic adverse events, indicating good functional reserve and low mortality risk.",
+    "Clinician 2 emphasized ECOG improvement, mild adverse events without severe complications, and weight decline as early frailty but overall low comorbidity burden and preserved independence, suggesting low mortality risk."
+  ]
+}

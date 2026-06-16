@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The patient's excellent functional status (ECOG 0), stable weight, and lack of significant comorbidity indicate low geriatric mortality risk. The assessment appropriately focuses on preserved independence and manageable adverse events.",
+  "evidences": [
+    "ECOG performance status 0",
+    "Stable weight without cachexia",
+    "Absence of frailty indicators"
+  ]
+}

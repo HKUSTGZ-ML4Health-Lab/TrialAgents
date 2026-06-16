@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.75,
+  "analysis": "This 69-year-old female with advanced malignant neoplasm progression, ascites, anemia, and thrombocytopenia shows significant functional decline despite initial ECOG improvement from 2 to 1. Weight loss of 9.5%, persistent fatigue, and multiple moderate adverse events indicate high comorbidity burden and frailty. Patient-centered care should focus on symptom management and quality of life, as prognosis is poor with progressive disease and multi-organ involvement.",
+  "evidences": [
+    "Malignant neoplasm progression (severe) with ascites and thrombocytopenia",
+    "Weight loss from 68.5 kg to 62 kg (9.5% loss)",
+    "ECOG performance status 2 at baseline, improving to 1 but with ongoing moderate-severe adverse events"
+  ]
+}

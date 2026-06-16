@@ -1,0 +1,12 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.95,
+  "new_conf_logit": 0.85,
+  "reason": "Rapid decline from baseline ECOG 1 to fatal sepsis within 10 days indicates profound frailty and poor physiological reserve, consistent with high mortality risk. Functional assessment must account for acute decompensation despite prior independence.",
+  "evidences": [
+    "Rapid clinical deterioration as frailty indicator",
+    "Grade 5 sepsis with neutropenia: high short-term mortality"
+  ]
+}

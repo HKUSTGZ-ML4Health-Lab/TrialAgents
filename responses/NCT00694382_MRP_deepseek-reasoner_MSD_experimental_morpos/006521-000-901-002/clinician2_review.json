@@ -1,0 +1,10 @@
+{
+  "logit": 0.15,
+  "conf_logit": 0.55,
+  "analysis": "The patient exhibits a stable clinical course with no evidence of progressive multi-organ dysfunction. Mild peripheral neuropathy, likely treatment-related, is self-limited. ECOG performance status remains 0, and vital signs are within normal limits without significant fluctuations. Weight stability and absence of laboratory abnormalities suggest good therapeutic tolerance. Overall, the patient has a low mortality risk based on preserved functional capacity and absence of disease progression.",
+  "evidences": [
+    "Consistent ECOG performance status of 0 across all visits",
+    "Stable weight at 95 kg throughout the observation period",
+    "Mild neuropathy episodes without progression or systemic impact"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a low risk of mortality.",
+  "report": "The patient presents with predominantly Grade 1-2 adverse events including transient cytopenias, nausea, dyspnea, alopecia, and fatigue. No severe organ dysfunction, hemodynamic instability, or progressive toxicity is observed. ECOG 0 indicates excellent functional status. The pattern suggests mild, manageable treatment-related toxicities with low mortality risk.",
+  "evidences": [
+    "Clinician 0: All adverse events are Grade 1-2; no multi-organ failure or ICU-level events; no hypotension, tachycardia, or shock indicators reported.",
+    "Clinician 1: ECOG performance status 0 indicates preserved functional capacity; all adverse events are transient and not associated with organ failure; no progressive or cumulative toxicity pattern.",
+    "Clinician 2: Only Grade 1-2 adverse events with no lasting functional impairment; low comorbidity burden with obesity as main risk factor; ECOG 0 indicating full independence."
+  ]
+}

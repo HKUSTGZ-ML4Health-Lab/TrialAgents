@@ -1,0 +1,13 @@
+{
+  "answer": "disagree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.55,
+  "new_conf_logit": 0.7,
+  "reason": "Haemoptysis and chest pain at day 413 warrant emergent exclusion of PE or tumor bleeding; stable vitals do not rule out rapid decompensation. Immediate CT angiography, ECG, and troponin are critical.",
+  "evidences": [
+    "ABC assessment for haemoptysis",
+    "CT angiography for PE or hemorrhage",
+    "ECG and troponin for acute chest pain"
+  ]
+}

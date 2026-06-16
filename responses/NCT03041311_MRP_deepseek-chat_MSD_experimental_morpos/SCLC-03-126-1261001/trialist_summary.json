@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a low risk of mortality.",
+  "report": "The patient presents with recurrent but self-limited grade 1-2 leukopenia and neutropenia, indicating manageable bone marrow suppression without fever, infection, or multi-organ dysfunction. ECOG 1 and preserved functional reserve support a favorable prognosis. No acute hemodynamic, respiratory, or neurological compromise is present. The adverse events are reversible and not life-threatening, with no evidence of progressive organ failure. Smoking history is low-risk, and obesity is not acutely decompensated. Overall, the safety profile suggests low short-term mortality risk.",
+  "evidences": [
+    "Clinician 0: No vital sign abnormalities or shock indicators reported; low-grade neutropenia (Grade 2) without fever or infection; no neurological or metabolic derangements documented.",
+    "Clinician 1: Recurrent but self-limited leukopenia and neutropenia; ECOG performance status 1 with preserved functional capacity; absence of multi-organ dysfunction or infectious complications.",
+    "Clinician 2: ECOG performance status 1: ambulatory, capable of light work; grade 1-2 leukopenia/neutropenia: reversible, not life-threatening; former smoker with low pack-year history: reduced but not eliminated risk."
+  ]
+}

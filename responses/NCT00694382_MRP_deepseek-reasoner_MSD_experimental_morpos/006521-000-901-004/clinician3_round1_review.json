@@ -1,0 +1,12 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.3,
+  "new_conf_logit": 0.7,
+  "reason": "ECOG decline from 1 to 2 in context of severe cancer progression indicates a sharp functional trajectory, which is a dominant predictor of near-term mortality in geriatric oncology. Weight stability does not outweigh progressive disease and functional loss. Realistic prognosis is guarded.",
+  "evidences": [
+    "ECOG performance status decline is a strong, validated predictor of mortality in advanced cancer patients.",
+    "Functional trajectory (rather than single time-point) is key for prognostic accuracy in older adults with cancer."
+  ]
+}

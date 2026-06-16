@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The assessment accurately captures rapid multi-organ failure with severe cytopenias, SIADH, and hepatic dysfunction, reflecting aggressive paraneoplastic or treatment toxicity. This aligns with high mortality risk due to irreversible organ decompensation and poor therapeutic response.",
+  "evidences": [
+    "Grade 4 neutropenia and thrombocytopenia predict high infection and bleeding risk.",
+    "Hyponatremia from SIADH indicates metabolic crisis and poor prognosis.",
+    "Failure to thrive (grade 5) is a terminal endpoint in cancer patients."
+  ]
+}

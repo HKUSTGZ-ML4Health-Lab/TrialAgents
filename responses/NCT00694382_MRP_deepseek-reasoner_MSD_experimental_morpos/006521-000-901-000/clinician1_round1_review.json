@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Emergency medicine perspective: Progressive tachycardia, tachypnea, weight loss, anemia, and hemorrhagic stomatitis signal high risk for acute decompensation. No immediate crisis but close monitoring and early intervention needed.",
+  "evidences": [
+    "Undifferentiated shock assessment",
+    "Bleeding risk evaluation",
+    "NEWS score deterioration indicators"
+  ]
+}

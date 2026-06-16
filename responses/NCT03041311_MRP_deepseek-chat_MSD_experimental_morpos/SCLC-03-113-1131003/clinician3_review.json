@@ -1,0 +1,10 @@
+{
+  "logit": 0.55,
+  "conf_logit": 0.6,
+  "analysis": "This 65-69-year-old male with ECOG 1 and former smoker status presents with recurrent severe neutropenia (Grade 4), thrombocytopenia, and balance disorder (Grade 3), indicating significant treatment toxicity and functional decline. Comorbidity burden includes thyroid dysfunction and anemia. Frailty risk is moderate due to cumulative adverse events impacting independence. Prognosis is guarded; goals of care should prioritize symptom management and quality of life.",
+  "evidences": [
+    "ECOG performance status 1 with recurrent Grade 3-4 neutropenia and thrombocytopenia",
+    "Grade 3 balance disorder (days 219-240) indicating functional decline",
+    "Multiple adverse events including thyroid dysfunction and anemia suggesting multi-system involvement"
+  ]
+}

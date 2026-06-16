@@ -1,0 +1,10 @@
+{
+  "logit": 0.65,
+  "conf_logit": 0.8,
+  "analysis": "This patient is at high mortality risk due to recurrent severe neutropenia (Grade 4), anemia, thrombocytopenia, and progressive asthenia/fatigue (Grade 3) with ECOG decline. Hypotension and dyspnea suggest potential sepsis or cardiorespiratory compromise. Urgent assessment of hemodynamics, oxygenation, and infection source is needed; consider broad-spectrum antibiotics, G-CSF, and blood product support.",
+  "evidences": [
+    "Grade 4 neutropenia (Day 15) and Grade 3 thrombocytopenia (Day 37) indicating severe bone marrow suppression",
+    "Progressive asthenia (Grade 3), fatigue (Grade 3), and ECOG worsening (Grade 3) suggesting multi-organ dysfunction",
+    "Hypotension (Day 148) and dyspnea (Day 15) raising concern for septic shock or pulmonary compromise"
+  ]
+}

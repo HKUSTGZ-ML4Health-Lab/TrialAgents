@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a low risk of mortality.",
+  "report": "The patient's adverse event profile shows manageable toxicities without progressive organ failure. Recurrent neutropenia (Grade 3) and chronic lipase elevation (Grade 4) indicate drug-induced bone marrow and pancreatic toxicity, but no sepsis or acute pancreatitis occurred. Superior vena cava syndrome resolved early. ECOG 1 and absence of multi-organ failure suggest preserved functional status and low short-term mortality risk.",
+  "evidences": [
+    "Clinician 0: Superior vena cava syndrome (Grade 2) resolved by Day 25; recurrent Grade 3 neutropenia without sepsis; chronic lipase elevation (Grade 4) without acute pancreatitis; overall stable vitals, low short-term mortality risk.",
+    "Clinician 1: Recurrent Grade 3 neutropenia and prolonged lipase elevation indicating drug-induced bone marrow and pancreatic toxicity; sequential infectious complications (URTI, viral gastroenteritis) suggesting immune compromise; absence of progressive multi-organ failure or rapid clinical decline.",
+    "Clinician 2: ECOG performance status 1 (ambulatory, capable of self-care); recurrent Grade 3-4 neutropenia and pancreatitis (severe treatment-related toxicity); prolonged lipase elevation (chronic pancreatic injury, comorbidity burden)."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The assessment appropriately highlights severe cumulative myelosuppression, low BMI, and smoking history as markers of limited physiologic reserve and high mortality risk. Functional decline and recurrent infections further support guarded prognosis.",
+  "evidences": [
+    "Cumulative myelosuppression and incomplete recovery indicate progressive marrow failure",
+    "Low BMI and smoking history reduce physiologic reserve, increasing infection/sepsis risk",
+    "Recurrent grade 4 neutropenia and multi-lineage cytopenias elevate mortality risk from febrile neutropenia"
+  ]
+}

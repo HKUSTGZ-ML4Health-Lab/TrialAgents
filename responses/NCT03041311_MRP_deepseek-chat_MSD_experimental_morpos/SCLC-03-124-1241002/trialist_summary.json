@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient presents with severe, progressive thrombocytopenia (grade 3 to grade 4) lasting over 100 days, indicating profound bone marrow suppression and high bleeding risk. Concurrent grade 1 anemia may exacerbate hemodynamic instability. Despite good ECOG status, smoking and obesity add cardiovascular risk. The prolonged grade 4 thrombocytopenia is a critical safety signal, elevating mortality risk due to potential fatal hemorrhage.",
+  "evidences": [
+    "Clinician 0: Grade 4 thrombocytopenia (platelets <25,000/mcL) from day 213 to 317, concurrent anemia, and ECOG 0 with smoking increase risk of cardiovascular events and bleeding.",
+    "Clinician 1: Progression from grade 3 to grade 4 thrombocytopenia over 63 days suggests worsening hematologic condition, possibly drug-induced or due to underlying malignancy, elevating mortality risk.",
+    "Clinician 2: Grade 4 thrombocytopenia signals high risk for bleeding and complications; current smoking adds cardiovascular and pulmonary risk."
+  ]
+}

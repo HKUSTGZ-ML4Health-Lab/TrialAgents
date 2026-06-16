@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The assessment appropriately identifies severe bone marrow suppression and metabolic stress as key drivers of poor prognosis. However, ECOG 1 status may overestimate resilience; functional reserve is compromised by cumulative toxicity and smoking.",
+  "evidences": [
+    "Functional decline risk with severe cytopenias",
+    "Smoking as frailty accelerator",
+    "Hyperthyroidism increasing metabolic vulnerability"
+  ]
+}

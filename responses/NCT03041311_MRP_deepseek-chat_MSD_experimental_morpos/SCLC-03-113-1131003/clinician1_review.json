@@ -1,0 +1,10 @@
+{
+  "logit": 0.55,
+  "conf_logit": 0.65,
+  "analysis": "Patient shows recurrent severe neutropenia (Grade 4) and thrombocytopenia (Grade 3), indicating bone marrow suppression and risk of life-threatening infection or bleeding. Neutropenic sepsis is a critical concern. Hemodynamic and respiratory status unknown; immediate assessment of vitals, oxygenation, and signs of infection is needed. History of urinary tract infection increases sepsis risk.",
+  "evidences": [
+    "Grade 4 neutropenia (Day 80-86) with prior Grade 3 neutropenia (Day 15-22) and urinary tract infection (Day 8-14)",
+    "Grade 3 thrombocytopenia (Day 57-65) and subsequent Grade 2 thrombocytopenia (Day 80-86)",
+    "Multiple cytopenias and recurrent infections suggest high risk of septic shock and bleeding"
+  ]
+}

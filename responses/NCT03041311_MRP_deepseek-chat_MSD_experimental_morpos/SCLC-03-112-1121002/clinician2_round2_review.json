@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The assessment aligns with internal medicine principles: ECOG 0 and normal BMI indicate preserved physiological reserve; grade 1-2 haemoptysis and chest pain reflect localized pulmonary progression without systemic decompensation; absence of multi-organ failure supports favorable short-term prognosis.",
+  "evidences": [
+    "ECOG performance status is a strong independent predictor of survival in oncology patients.",
+    "Grade 1-2 haemoptysis without respiratory failure or anemia suggests limited disease burden.",
+    "Absence of multi-organ dysfunction aligns with favorable short-term prognosis."
+  ]
+}

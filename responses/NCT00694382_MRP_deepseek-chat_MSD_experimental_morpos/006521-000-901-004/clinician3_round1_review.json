@@ -1,0 +1,14 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "new_logit": 0.75,
+  "new_conf_logit": 0.8,
+  "reason": "The multi-disciplinary assessment appropriately highlights functional decline (ECOG 1\u21922), weight loss, and cachexia\u2014key geriatric markers of poor prognosis. The high mortality risk aligns with the patient's moderate frailty and high comorbidity burden. Focus on symptom management and quality of life is realistic.",
+  "evidences": [
+    "ECOG performance status decline from 1 to 2 indicates loss of independence",
+    "Weight loss of 2 kg in 113 days suggests cachexia, a poor prognostic sign",
+    "New-onset hypertension may reflect cardiovascular stress from advanced malignancy",
+    "Moderate frailty and high comorbidity burden limit tolerance for aggressive therapy"
+  ]
+}

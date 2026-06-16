@@ -1,0 +1,10 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Rapid progression from bronchitis to septic shock with grade 4 neutropenia within 2 days indicates profound immunosuppression and multi-organ failure, consistent with high mortality. ECOG 1 and former smoking are minor risk factors; the dominant pathophysiology is overwhelming sepsis in a neutropenic host.",
+  "evidences": [
+    "Neutropenic sepsis carries >50% mortality in clinical trials",
+    "Rapid multi-organ dysfunction (sepsis grade 5) is a terminal event"
+  ]
+}

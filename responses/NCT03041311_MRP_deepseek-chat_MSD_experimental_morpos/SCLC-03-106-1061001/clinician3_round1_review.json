@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "new_logit": 0.75,
+  "new_conf_logit": 0.75,
+  "reason": "The assessment appropriately highlights cumulative toxicity, limited physiologic reserve, and functional decline\u2014hallmarks of frailty. Recurrent grade 4 cytopenias, infections, and thromboembolism with inadequate marrow recovery confirm poor treatment tolerance and high mortality risk in this ECOG 2 patient.",
+  "evidences": [
+    "Cumulative toxicity with inadequate marrow recovery",
+    "Functional decline (asthenia, falls, confusion)",
+    "Limited physiologic reserve and multi-organ failure"
+  ]
+}

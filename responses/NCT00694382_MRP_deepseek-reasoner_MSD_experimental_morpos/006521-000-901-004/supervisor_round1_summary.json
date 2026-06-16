@@ -1,0 +1,9 @@
+{
+  "action": "No",
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "Severe malignant neoplasm progression at day 113, ECOG performance status decline from 1 to 2, lack of therapeutic response, and progressive disease are dominant risk factors for near-term mortality. Stable vital signs and weight recovery do not outweigh these adverse events.",
+  "reasons": [
+    "All three clinicians agreed with high confidence, supporting the original assessment with literature on ECOG decline and malignancy progression as validated predictors of poor prognosis.",
+    "No opposing opinions or weak evidence were presented; thus, no revision is necessary."
+  ]
+}

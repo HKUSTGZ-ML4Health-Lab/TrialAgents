@@ -1,0 +1,10 @@
+{
+  "logit": 0.3,
+  "conf_logit": 0.7,
+  "analysis": "The patient shows recurrent leukopenia and neutropenia, likely treatment-related, without evidence of multi-organ dysfunction or infection. ECOG 1 and former smoker status indicate preserved functional reserve. No progressive organ failure is present, suggesting a low short-term mortality risk.",
+  "evidences": [
+    "Recurrent but self-limited leukopenia and neutropenia",
+    "ECOG performance status 1 with preserved functional capacity",
+    "Absence of multi-organ dysfunction or infectious complications"
+  ]
+}

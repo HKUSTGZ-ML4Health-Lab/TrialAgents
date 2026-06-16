@@ -1,0 +1,10 @@
+{
+  "logit": 0.65,
+  "conf_logit": 0.75,
+  "analysis": "Patient with progressive cytopenias (neutropenia grade 4, thrombocytopenia grade 3) and multi-organ adverse events suggests significant bone marrow suppression and systemic toxicity. The development of both hyper- and hypothyroidism indicates immune-related endocrine dysfunction. ECOG 1 and former smoker status add moderate risk. Overall, the pattern is consistent with severe treatment-related toxicity leading to moderate-high mortality risk.",
+  "evidences": [
+    "Progressive neutropenia to grade 4 and thrombocytopenia to grade 3",
+    "Multi-organ involvement: hematologic, endocrine, pulmonary, neurologic",
+    "Prolonged anemia and macrocytic anemia suggesting chronic marrow suppression"
+  ]
+}

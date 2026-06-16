@@ -1,0 +1,9 @@
+{
+  "action": "No",
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient exhibits acute pancreatitis (Grade 3 enzyme elevation) with neutropenia, indicating drug-induced multi-organ toxicity. Comorbidities (smoking, obesity) and systemic symptoms (fatigue, chest pain) worsen prognosis. Despite preserved ECOG 1, risk of organ failure and sepsis is high, necessitating intensive monitoring.",
+  "reasons": [
+    "All clinicians agree with the high mortality risk assessment, citing consistent evidence from pancreatitis severity guidelines, sepsis protocols, and drug toxicity literature.",
+    "No dissenting opinions or weak confidence were expressed, so no modification to the original report is needed."
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient exhibits recurrent severe neutropenia (Grade 4) and thrombocytopenia, indicating significant bone marrow suppression. Progressive dyspnea (Grade 3), hemoptysis, and staphylococcal infection suggest pulmonary compromise and compromised immune function. Multi-system toxicities (anemia, diarrhea, hyperglycemia) and prolonged adverse events point to high disease burden and limited physiologic reserve, increasing mortality risk.",
+  "evidences": [
+    "Clinician 0: Grade 4 neutropenia (Days 15-21 and 161-167) with concurrent staphylococcal infection (Days 138-154); progressive dyspnea (Grade 2 to 3) with hemoptysis and cough (Days 134-160); recurrent severe neutropenia and thrombocytopenia indicating bone marrow suppression.",
+    "Clinician 1: Recurrent Grade 4 neutropenia and Grade 3 thrombocytopenia indicating severe myelosuppression; progressive dyspnea (Grade 3), cough, and hemoptysis with staphylococcal infection; prolonged multi-system adverse events including anemia, diarrhea, and hyperglycemia.",
+    "Clinician 2: Recurrent Grade 3-4 neutropenia (Days 15-21, 57-63, 78-84, 161-167) indicating significant myelotoxicity; new onset dyspnea (Grade 2-3) and hemoptysis (Day 134-160) suggesting pulmonary compromise."
+  ]
+}

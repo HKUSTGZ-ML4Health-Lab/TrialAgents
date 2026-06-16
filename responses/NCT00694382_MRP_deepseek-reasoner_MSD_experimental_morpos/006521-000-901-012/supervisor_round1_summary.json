@@ -1,0 +1,10 @@
+{
+  "action": "No",
+  "answer": "In my opinion, the patient has a low risk of mortality.",
+  "report": "Patient with ECOG 0, stable vital signs, and only mild mucocutaneous adverse events without hemodynamic compromise or organ dysfunction, indicating good physiologic reserve and low short-term mortality risk.",
+  "reasons": [
+    "All clinicians agreed with the initial low-risk assessment.",
+    "Evidence cited: ECOG 0, stable vital signs, absence of severe adverse events.",
+    "No conflicting opinions or compelling counter-evidence presented."
+  ]
+}

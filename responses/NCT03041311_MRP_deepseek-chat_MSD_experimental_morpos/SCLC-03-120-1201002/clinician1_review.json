@@ -1,0 +1,10 @@
+{
+  "logit": 0.3,
+  "conf_logit": 0.7,
+  "analysis": "Patient shows delayed hepatic injury (ALT Grade 3, Day 112) and progressive anemia/thrombocytopenia, but no immediate hemodynamic or respiratory instability. Chronic low-grade LDH elevation and asthenia suggest ongoing systemic process. No acute ABC threats; risk is moderate from potential hepatic decompensation or bleeding.",
+  "evidences": [
+    "Grade 3 ALT elevation (Day 112-133) indicating significant hepatotoxicity",
+    "Recurrent Grade 2 anemia and thrombocytopenia with prolonged course",
+    "Persistent LDH elevation and asthenia suggesting ongoing disease or drug effect"
+  ]
+}

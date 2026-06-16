@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The multi-disciplinary assessment correctly identifies high mortality risk due to progressive neurological compromise and declining functional reserve despite baseline ECOG 0. Geriatric perspective emphasizes that persistent symptoms and multi-system involvement portend poor prognosis.",
+  "evidences": [
+    "Functional decline despite ECOG 0",
+    "High comorbidity burden with neurological and hematologic involvement",
+    "Poor prognosis with paraneoplastic/autoimmune processes"
+  ]
+}

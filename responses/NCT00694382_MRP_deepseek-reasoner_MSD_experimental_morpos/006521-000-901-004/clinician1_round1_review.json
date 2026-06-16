@@ -1,0 +1,10 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Emergency medicine perspective confirms high mortality risk due to progressive malignancy and ECOG decline, despite stable vital signs; acute decompensation risk remains but is not immediately present.",
+  "evidences": [
+    "Oncologic emergency protocols emphasize performance status as key predictor",
+    "Modified Early Warning Score (MEWS) would be low but patient at risk for rapid deterioration"
+  ]
+}

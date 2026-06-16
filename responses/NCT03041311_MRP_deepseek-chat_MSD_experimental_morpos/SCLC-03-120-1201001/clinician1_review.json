@@ -1,0 +1,10 @@
+{
+  "logit": 0.75,
+  "conf_logit": 0.7,
+  "analysis": "Patient presents with persistent anemia (Grade 2-3), thrombocytopenia, and progressive LFT elevation, suggesting possible hepatic or bone marrow involvement. Hemiparesis (Grade 3) on day 242 indicates acute neurological event, likely ischemic or hemorrhagic stroke. High risk of multi-organ failure, sepsis, or intracranial catastrophe. Immediate ABC assessment, neuroimaging, and coagulation panel required.",
+  "evidences": [
+    "Hemiparesis (Grade 3) starting day 242, suggesting acute stroke or CNS bleed",
+    "Persistent anemia (Grade 2-3) with thrombocytopenia, risk of bleeding or marrow failure",
+    "Progressive liver enzyme elevation (ALT, AST, ALP) indicating hepatic dysfunction"
+  ]
+}

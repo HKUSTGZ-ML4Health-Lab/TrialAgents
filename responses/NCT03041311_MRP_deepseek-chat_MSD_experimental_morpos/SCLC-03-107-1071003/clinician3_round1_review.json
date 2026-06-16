@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The assessment correctly identifies cumulative toxicity and thromboembolic complications as markers of declining functional reserve, consistent with geriatric principles of frailty and poor prognosis despite initial good ECOG status.",
+  "evidences": [
+    "Persistent constitutional symptoms >100 days indicate significant functional decline",
+    "Recurrent severe neutropenia and thrombocytopenia reflect limited bone marrow reserve",
+    "Thromboembolic events in older adults signal high morbidity and mortality risk"
+  ]
+}

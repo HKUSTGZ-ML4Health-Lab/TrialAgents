@@ -1,0 +1,10 @@
+{
+  "logit": 0.25,
+  "conf_logit": 0.65,
+  "analysis": "Patient with stable vital signs and improving ECOG performance status from 2 to 1 suggests good functional reserve. Mild thrombocytopenia and leukopenia may indicate drug-related bone marrow suppression, but no progression to severe cytopenias. Weight loss at day 110 (65 kg from 68 kg) and transient cough (moderate, resolved) warrant monitoring. Overall, disease appears controlled with no multi-organ dysfunction.",
+  "evidences": [
+    "Improving ECOG performance status from 2 to 1",
+    "Stable vital signs without hypotension or tachycardia",
+    "Mild, non-progressive hematologic adverse events"
+  ]
+}

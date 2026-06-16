@@ -1,0 +1,8 @@
+{
+  "action": "No",
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient shows recurrent Grade 4 neutropenia and multi-lineage cytopenias, indicating severe cumulative myelosuppression and limited bone marrow reserve. Low BMI and smoking history reduce physiologic reserve, increasing infection and sepsis risk. Incomplete recovery between cycles and prolonged anemia suggest progressive marrow failure, elevating mortality risk from febrile neutropenia or septic shock.",
+  "reasons": [
+    "All clinicians agree with the original assessment, providing strong supporting evidence from guidelines and literature on cumulative myelosuppression, low BMI, and smoking history increasing mortality risk."
+  ]
+}

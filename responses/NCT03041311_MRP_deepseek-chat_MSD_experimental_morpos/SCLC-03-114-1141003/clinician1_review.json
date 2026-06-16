@@ -1,0 +1,10 @@
+{
+  "logit": 0.65,
+  "conf_logit": 0.75,
+  "analysis": "Patient presents with recurrent severe neutropenia (Grade 4) and thrombocytopenia (Grade 3), indicating high risk for septic shock and bleeding. Anemia is progressive. Immediate need for infection surveillance, platelet support, and G-CSF. ECOG 2 and age increase vulnerability. Hemodynamic and respiratory status require urgent assessment.",
+  "evidences": [
+    "Recurrent Grade 4 neutropenia (Days 15-21, 57-64) with prolonged Grade 3 neutropenia (Days 79-107) indicating severe immunosuppression and infection risk.",
+    "Grade 3 thrombocytopenia (Days 79-86) and Grade 2 thrombocytopenia (Days 57-64) raising concern for spontaneous bleeding.",
+    "Progressive anemia from Grade 1 to Grade 3 (Days 21-46) and persistent Grade 2 anemia (Days 79-137) suggesting ongoing bone marrow suppression."
+  ]
+}

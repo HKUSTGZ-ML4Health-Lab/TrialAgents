@@ -1,0 +1,10 @@
+{
+  "logit": 0.65,
+  "conf_logit": 0.7,
+  "analysis": "Patient is a middle-aged male with ECOG 1, but has experienced multiple severe adverse events including febrile neutropenia, grade 4 thrombocytopenia, and prolonged cytopenias, indicating significant treatment-related toxicity. The cognitive disorder of grade 3 is concerning for functional decline. Current smoking and anemia add to comorbidity burden. Prognosis is guarded; goals of care should prioritize quality of life and symptom management.",
+  "evidences": [
+    "ECOG performance status 1 indicates some functional limitation.",
+    "Multiple severe (grade 3-4) hematologic toxicities suggest poor treatment tolerance.",
+    "Grade 3 cognitive disorder signals potential functional and cognitive decline."
+  ]
+}

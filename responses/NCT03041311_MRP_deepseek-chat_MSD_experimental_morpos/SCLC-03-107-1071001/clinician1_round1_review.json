@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Recurrent grade 3 neutropenia with prolonged recovery indicates severe marrow suppression, high risk for febrile neutropenia and sepsis. No hemodynamic instability yet, but rapid deterioration possible. Thyroid dysfunction adds metabolic stress. Emergency monitoring and empiric antibiotics are critical.",
+  "evidences": [
+    "IDSA guidelines for febrile neutropenia",
+    "Sepsis resuscitation bundle",
+    "Emergency management of immune-related adverse events"
+  ]
+}

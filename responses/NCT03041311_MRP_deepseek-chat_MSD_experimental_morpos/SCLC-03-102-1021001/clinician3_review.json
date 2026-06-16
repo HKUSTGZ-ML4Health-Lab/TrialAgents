@@ -1,0 +1,10 @@
+{
+  "logit": 0.55,
+  "conf_logit": 0.65,
+  "analysis": "Patient is relatively young but has significant comorbidity burden including persistent anaemia, thrombocytopenia, and recent myasthenic syndrome (Grade 3). ECOG 0 suggests good baseline function, but ongoing fatigue, nausea, and memory impairment indicate declining functional reserve. Seizure and myasthenia raise concern for CNS involvement or paraneoplastic process. Prognosis is guarded; treatment should focus on symptom management and preserving quality of life.",
+  "evidences": [
+    "ECOG performance status 0 at baseline",
+    "Grade 3 myasthenic syndrome with prolonged duration",
+    "Multiple persistent adverse events (anaemia, fatigue, memory impairment)"
+  ]
+}

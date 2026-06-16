@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Severe pneumonitis with respiratory failure risk, hypotension, and cachexia indicate high mortality. Immediate respiratory support, steroids, and drug hold are critical. Agree with high risk assessment.",
+  "evidences": [
+    "Grade 3-4 pneumonitis requiring urgent respiratory support",
+    "Hypotension and cachexia reflecting poor physiological reserve",
+    "ECOG decline from 1 to 2 increasing vulnerability to deterioration"
+  ]
+}

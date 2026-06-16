@@ -1,0 +1,10 @@
+{
+  "logit": 0.15,
+  "conf_logit": 0.75,
+  "analysis": "Patient is hemodynamically stable with normal vital signs, no respiratory distress, and ECOG 0 throughout. Mild peripheral neuropathy is the only adverse event, not life-threatening. No immediate emergency intervention required.",
+  "evidences": [
+    "Stable vital signs: BP 122-151/68-90 mmHg, HR 68-90 bpm, RR 10-11/min",
+    "ECOG Performance Status consistently 0, indicating fully active",
+    "Only mild neuropathy, no signs of organ dysfunction or sepsis"
+  ]
+}

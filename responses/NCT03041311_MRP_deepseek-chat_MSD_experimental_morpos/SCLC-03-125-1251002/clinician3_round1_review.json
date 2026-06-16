@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "new_logit": 0.75,
+  "new_conf_logit": 0.7,
+  "reason": "Severe persistent bone marrow suppression (Grade 3 granulocytopenia and anemia) indicates poor hematopoietic reserve, increasing infection and hemodynamic risk. Low BMI and smoking history reduce physiologic reserve despite ECOG 1. Functional status alone insufficient to mitigate these hematologic complications.",
+  "evidences": [
+    "Hematologic toxicity severity and duration",
+    "Low BMI and smoking history",
+    "ECOG 1 but limited reserve"
+  ]
+}

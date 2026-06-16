@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.95,
+  "new_conf_logit": 0.9,
+  "reason": "Patient is 53 with ECOG 0, stable weight, and only mild AEs; functional independence is excellent, no comorbidity or frailty. Mortality risk is low, not high as previously implied.",
+  "evidences": [
+    "ECOG performance status 0 throughout",
+    "Stable weight (87-88 kg)",
+    "Absence of severe or life-threatening adverse events"
+  ]
+}

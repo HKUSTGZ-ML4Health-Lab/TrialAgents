@@ -1,0 +1,13 @@
+{
+  "clinician0_logit": 0.75,
+  "clinician0_conf": 0.7,
+  "clinician1_logit": 0.78,
+  "clinician1_conf": 0.75,
+  "clinician2_logit": 0.65,
+  "clinician2_conf": 0.7,
+  "meta_logit": 0.73,
+  "meta_conf": 0.8,
+  "final_logit": 0.7285,
+  "final_conf": 0.7375,
+  "ground_truth": 0
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.55,
+  "conf_logit": 0.75,
+  "analysis": "Patient presents with severe neutropenia (Grade 4) and thrombocytopenia (Grade 3), indicating high risk for infection and bleeding. Anemia (Grade 3) and dehydration (Grade 2) further compromise hemodynamic stability. No vital signs provided; however, these hematologic toxicities suggest possible bone marrow suppression and systemic inflammatory response. Immediate need for sepsis evaluation, blood product support, and aggressive hydration.",
+  "evidences": [
+    "Grade 4 neutropenia (Days 15-25 and 39-46) with risk of febrile neutropenia and septic shock",
+    "Grade 3 thrombocytopenia (Days 15-25) with potential for spontaneous bleeding",
+    "Grade 3 anemia (Days 39-46 and 81-88) contributing to hypoperfusion and tissue hypoxia"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.75,
+  "conf_logit": 0.85,
+  "analysis": "Patient at high mortality risk due to severe hematologic toxicity (Grade 4 neutropenia, Grade 3 anemia) and a cerebrovascular accident (Grade 3) indicating multi-organ involvement. Hemodynamic instability, metabolic derangements (hyperglycemia, hypokalemia), and ongoing gastrointestinal symptoms suggest systemic decompensation. Immediate ICU-level monitoring and supportive care are required.",
+  "evidences": [
+    "Grade 4 neutropenia (Day 92-100) with prolonged leukopenia and thrombocytopenia, indicating high infection risk.",
+    "Grade 3 cerebrovascular accident (Day 29-60) with residual aphasia and gait disturbance, suggesting ongoing neurological compromise.",
+    "Recurrent Grade 3 anemia and electrolyte disturbances (hypokalemia, hyperglycemia) reflecting severe metabolic stress."
+  ]
+}

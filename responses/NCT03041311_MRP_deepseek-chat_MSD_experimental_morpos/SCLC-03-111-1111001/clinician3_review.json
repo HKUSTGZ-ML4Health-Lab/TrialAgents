@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.75,
+  "analysis": "This patient has significant comorbidity burden including recurrent severe infections (pneumonia, pneumonitis), hyponatraemia, dehydration, and restrictive cardiomyopathy, indicating high frailty and poor physiological reserve. Functional decline is evidenced by asthenia, dizziness, and confusional state, suggesting impaired mobility and cognition. Prognosis is poor, with high mortality risk. Goals of care should prioritize comfort and quality of life.",
+  "evidences": [
+    "Recurrent grade 2-4 neutropenia and anaemia indicating bone marrow compromise",
+    "Multiple severe adverse events (pneumonia, hyponatraemia, restrictive cardiomyopathy) suggesting multi-organ dysfunction",
+    "Functional decline (asthenia, dizziness, confusional state) reflecting frailty and reduced independence"
+  ]
+}

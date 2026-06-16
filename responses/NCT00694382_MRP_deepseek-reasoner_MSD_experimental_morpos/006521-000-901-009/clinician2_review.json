@@ -1,0 +1,10 @@
+{
+  "logit": 0.12,
+  "conf_logit": 0.75,
+  "analysis": "Patient on experimental therapy developed mild thrombocytopenia and leukopenia, likely due to bone marrow suppression, which are manageable. Moderate cough occurred but resolved. ECOG improved from 2 to 1, indicating good functional status. Vital signs stable, weight recovered. No multi-organ dysfunction. Favorable disease trajectory with low mortality risk.",
+  "evidences": [
+    "Mild hematologic toxicities (thrombocytopenia and leukopenia) without progression",
+    "Improved ECOG performance status from 2 to 1",
+    "Stable vital signs and weight recovery suggesting preserved organ function"
+  ]
+}

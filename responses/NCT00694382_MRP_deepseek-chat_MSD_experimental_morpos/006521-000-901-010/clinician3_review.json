@@ -1,0 +1,10 @@
+{
+  "logit": 0.45,
+  "conf_logit": 0.65,
+  "analysis": "57-year-old female with ECOG 1 (ambulatory) throughout, but recurrent severe pleural effusions causing treatment interruptions (dose held weeks 13-18) and weight fluctuations (64.2\u219258.5\u219253.5 kg) suggest significant disease burden and progressive cachexia. Tachycardia (HR 115) at baseline may indicate distress. Functional status preserved, but clinical trajectory and recurrent effusions portend moderate short-term mortality risk. Goals of care should focus on symptom control and quality of life.",
+  "evidences": [
+    "ECOG Performance Status stable at 1 (ambulatory) across all time points",
+    "Recurrent severe pleural effusions requiring treatment interruption",
+    "Progressive weight loss from 64.2 kg to 53.5 kg (16.7% loss)"
+  ]
+}

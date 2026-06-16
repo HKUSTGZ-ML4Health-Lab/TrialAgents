@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.85,
+  "new_conf_logit": 0.8,
+  "reason": "Recurrent severe neutropenia and thrombocytopenia with incomplete marrow recovery indicate high risk for life-threatening infection and spontaneous bleeding. Absence of current vital signs or signs of sepsis does not preclude rapid deterioration. Urgent CBC, vitals, and empiric broad-spectrum antibiotics plus platelet transfusion threshold are needed.",
+  "evidences": [
+    "Neutropenic fever protocols require immediate antibiotics and cultures",
+    "Platelet count <50,000 increases bleeding risk, especially if <20,000",
+    "Elderly with bone marrow suppression have reduced physiologic reserve and higher mortality"
+  ]
+}

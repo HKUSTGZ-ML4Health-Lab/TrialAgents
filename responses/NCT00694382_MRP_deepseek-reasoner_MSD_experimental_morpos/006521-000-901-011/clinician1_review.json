@@ -1,0 +1,10 @@
+{
+  "logit": 0.72,
+  "conf_logit": 0.75,
+  "analysis": "Severe pneumonitis (Grade 3-4) with ongoing respiratory risk and progressive weight loss/ECOG decline indicate high mortality. Vital signs stable so far but deterioration likely. Immediate need: respiratory support, high-dose steroids, hold experimental drug. Emergency monitoring required.",
+  "evidences": [
+    "Severe pneumonitis (Grade 3-4) starting at time 50 with unknown resolution",
+    "Progressive weight loss (57.6 to 50.0 kg) and ECOG decline (1 to 2)",
+    "Hypotension episode (SBP 100 mmHg) at time 39 suggesting early hemodynamic instability"
+  ]
+}

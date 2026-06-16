@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.75,
+  "new_conf_logit": 0.7,
+  "reason": "Grade 4 neutropenia with active infections (UTI, pyrexia) and new neurologic symptoms (dysarthria, gait disturbance) indicate imminent sepsis risk and possible CNS involvement. Cumulative marrow suppression and hyponatremia raise concern for rapid deterioration. Immediate emergency interventions (broad-spectrum antibiotics, sepsis workup, neuroimaging) are critical.",
+  "evidences": [
+    "Sepsis resuscitation guidelines for neutropenic fever",
+    "Emergency neurological assessment protocols for acute dysarthria and gait disturbance",
+    "Hyponatremia management in high-risk patients"
+  ]
+}

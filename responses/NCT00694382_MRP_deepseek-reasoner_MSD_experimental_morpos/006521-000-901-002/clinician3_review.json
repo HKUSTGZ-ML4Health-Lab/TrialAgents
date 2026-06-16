@@ -1,0 +1,10 @@
+{
+  "logit": 0.15,
+  "conf_logit": 0.75,
+  "analysis": "Patient is 51 years old with excellent functional status (ECOG 0) and stable weight, indicating low mortality risk. Mild peripheral neuropathy is noted but does not affect daily function. No evidence of frailty or significant comorbidity. Prognosis is favorable.",
+  "evidences": [
+    "ECOG performance status 0 throughout the observation period",
+    "Stable weight at 95 kg across all time points",
+    "Mild peripheral neuropathy without functional impact"
+  ]
+}

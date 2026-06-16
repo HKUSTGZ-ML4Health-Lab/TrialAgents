@@ -1,0 +1,10 @@
+{
+  "action": "No",
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient exhibits severe multi-system adverse events including Grade 4 neutropenia, Grade 3 cerebrovascular accident with residual deficits, recurrent Grade 3 anemia, and persistent gastrointestinal, electrolyte, and endocrine disturbances. These cumulative, unresolved toxicities indicate profound bone marrow suppression, irreversible end-organ damage, and metabolic decompensation, reflecting poor physiological reserve and high mortality risk.",
+  "reasons": [
+    "All clinicians unanimously agree with the original high mortality risk assessment, providing consistent supporting evidence from their respective expertise.",
+    "Clinician 0 highlights severe bone marrow failure and irreversible end-organ damage; Clinician 1 emphasizes clinical management implications of critical events; Clinician 2 underscores functional decline and metabolic decompensation as key frailty markers.",
+    "No dissenting opinions or compelling counter-evidence were presented, so no modification to the original report is needed."
+  ]
+}

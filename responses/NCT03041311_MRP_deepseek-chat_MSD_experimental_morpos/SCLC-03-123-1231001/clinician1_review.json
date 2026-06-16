@@ -1,0 +1,10 @@
+{
+  "logit": 0.35,
+  "conf_logit": 0.75,
+  "analysis": "Patient with elevated lipase/amylase (Grade 3) starting day 182 indicates acute pancreatitis, a life-threatening condition requiring urgent evaluation for hemodynamic instability, sepsis, and organ failure. Current smoker status increases risk. No hypotension or hypoxia data provided, but pancreatitis can rapidly progress to shock. Immediate ABC assessment, IV fluids, and monitoring for multi-organ dysfunction are critical.",
+  "evidences": [
+    "Grade 3 lipase and amylase elevation (day 182) indicating acute pancreatitis",
+    "Current smoker status (increased risk for pancreatitis complications)",
+    "Ongoing non-cardiac chest pain (day 61) may represent referred pain from pancreatitis"
+  ]
+}

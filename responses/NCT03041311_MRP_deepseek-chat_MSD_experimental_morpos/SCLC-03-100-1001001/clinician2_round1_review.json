@@ -1,0 +1,15 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.75,
+  "new_conf_logit": 0.85,
+  "reason": "The multi-disciplinary report accurately captures cumulative bone marrow toxicity leading to severe cytopenias and infections, multi-organ involvement evidenced by neurologic symptoms and hyponatremia, and functional decline\u2014all consistent with high mortality risk from progressive systemic compromise.",
+  "evidences": [
+    "Grade 4 neutropenia and recurrent infections indicate severe immunosuppression and high infection-related mortality.",
+    "Persistent anemia and thrombocytopenia reflect irreversible bone marrow damage, limiting hematopoietic reserve.",
+    "New dysarthria and gait disturbance suggest CNS involvement or paraneoplastic syndrome, worsening prognosis.",
+    "Chronic hyponatremia and pancreatic enzyme elevation point to systemic inflammatory or metabolic derangement.",
+    "Functional decline (falls, gait disturbance) despite initial good ECOG status signals rapid disease progression."
+  ]
+}

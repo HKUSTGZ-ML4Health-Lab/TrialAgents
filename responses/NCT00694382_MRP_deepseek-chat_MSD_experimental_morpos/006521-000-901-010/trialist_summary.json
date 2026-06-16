@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient presents with recurrent severe pleural effusions, significant weight loss (16.7% decrease), and tachycardia, indicating possible malignancy or chronic infection. The weight loss suggests cachexia, a poor prognostic sign. Despite stable ECOG 1, the clinical trajectory and need for treatment interruptions point to high mortality risk.",
+  "evidences": [
+    "Recurrent severe pleural effusions (time 13-19 and 33-43) requiring treatment interruption.",
+    "Progressive weight loss from 64.2 kg to 53.5 kg (16.7% loss) indicating cachexia.",
+    "Tachycardia (115 bpm) at baseline with later bradycardia (60 bpm), suggesting autonomic dysfunction or drug effect."
+  ]
+}

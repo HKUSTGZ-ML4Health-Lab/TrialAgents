@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.75,
+  "new_conf_logit": 0.8,
+  "reason": "Seizure and myasthenic syndrome pose imminent airway and respiratory failure risk. Persistent cytopenias increase hemorrhage and infection risk, aligning with high mortality.",
+  "evidences": [
+    "Seizure with cytopenias suggests CNS bleed or metabolic crisis requiring immediate neuroimaging and labs.",
+    "Myasthenic crisis necessitates respiratory monitoring and possible noninvasive ventilation.",
+    "Thrombocytopenia and anemia demand transfusion readiness and bleeding precautions."
+  ]
+}

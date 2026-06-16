@@ -1,0 +1,10 @@
+{
+  "logit": 0.82,
+  "conf_logit": 0.75,
+  "analysis": "Hemodynamic instability with borderline hypotension, tachycardia, and tachypnea at last visit suggests early decompensation. Recent loss of consciousness and malignant progression indicate high imminent mortality risk. Immediate assessment for sepsis, tumor lysis, or bleed is needed.",
+  "evidences": [
+    "Systolic blood pressure 96 mmHg with tachycardia (HR 101) at time 104",
+    "Malignant neoplasm progression (severe, ongoing from time 99)",
+    "Prior hypotension and loss of consciousness at time 53"
+  ]
+}

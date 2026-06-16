@@ -1,0 +1,10 @@
+{
+  "logit": 0.6,
+  "conf_logit": 0.75,
+  "analysis": "The patient shows progressive decline with ECOG worsening from 1 to 2, weight loss (66.1 to 62.2 kg), and rising heart rate (70 to 90 bpm) indicating systemic decompensation. Moderate anemia and stomatitis suggest cumulative toxicity from the experimental agent, likely a cytotoxic drug. The combination of functional decline and adverse events points to a moderate-to-high short-term mortality risk, though no overt organ failure is present.",
+  "evidences": [
+    "ECOG performance status worsening from 1 to 2",
+    "Progressive weight loss (66.1 kg to 62.2 kg over 134 days)",
+    "Moderate anemia with unknown duration"
+  ]
+}

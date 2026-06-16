@@ -1,0 +1,10 @@
+{
+  "logit": 0.1,
+  "conf_logit": 0.3,
+  "analysis": "Patient is hemodynamically stable with no acute vital sign abnormalities or signs of shock, respiratory distress, or altered mental status. Reported adverse events (alopecia, asthenia) are non-life-threatening. No immediate emergency intervention required.",
+  "evidences": [
+    "No hypotension, tachycardia, or hypoxia reported",
+    "Asthenia resolved within 44 days without escalation",
+    "ECOG 0 and normal BMI suggest preserved functional reserve"
+  ]
+}

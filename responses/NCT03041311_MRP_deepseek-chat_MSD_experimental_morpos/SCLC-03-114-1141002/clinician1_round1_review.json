@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Grade 4 neutropenia and thrombocytopenia with progression to anemia and multi-system toxicity pose immediate life-threatening risks of sepsis and hemorrhage. ECOG 2 and obesity reduce reserve. Urgent vitals, bleeding, and infection assessment is critical.",
+  "evidences": [
+    "Emergency Medicine: Neutropenic fever protocol",
+    "Critical Care: Hemorrhage risk with platelets <20K",
+    "Acute Care: Rapid response for septic shock"
+  ]
+}

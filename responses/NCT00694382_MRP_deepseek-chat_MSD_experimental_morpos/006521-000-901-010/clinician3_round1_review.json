@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 2,
+  "opinion": "changed",
+  "new_logit": 0.65,
+  "new_conf_logit": 0.7,
+  "reason": "Despite preserved ECOG 1, progressive cachexia (16.7% weight loss), recurrent effusions, and tachycardia indicate high physiologic vulnerability. Geriatric assessment would show frailty phenotype beyond ECOG, supporting high mortality risk.",
+  "evidences": [
+    "Cachexia as independent mortality predictor",
+    "Recurrent pleural effusions indicating disease progression",
+    "Tachycardia as stress marker"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.95,
+  "conf_logit": 0.85,
+  "analysis": "Patient with failure to thrive (Grade 5) and multiple severe toxicities: Grade 4 leukopenia/neutropenia, Grade 3 thrombocytopenia, hyponatremia, and persistent dehydration. High risk of septic shock, bleeding, and metabolic crisis. Requires immediate ICU-level monitoring, broad-spectrum antibiotics, electrolyte correction, and supportive care.",
+  "evidences": [
+    "Failure to thrive (Grade 5) indicating imminent death",
+    "Grade 4 leukopenia/neutropenia with high infection risk",
+    "Grade 3 thrombocytopenia and hyponatremia increasing bleeding and neurological risk"
+  ]
+}

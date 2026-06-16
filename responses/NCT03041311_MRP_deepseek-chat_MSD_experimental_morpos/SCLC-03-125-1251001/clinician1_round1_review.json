@@ -1,0 +1,10 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "No immediate life-threatening risks; preserved functional status and absence of acute organ failure align with low acute mortality risk. Hematologic and metabolic issues are chronic and manageable with monitoring.",
+  "evidences": [
+    "Emergency medicine guidelines: focus on ABCs and acute organ failure",
+    "Acute care indicators: stable vitals, no infection/sepsis, no bleeding"
+  ]
+}

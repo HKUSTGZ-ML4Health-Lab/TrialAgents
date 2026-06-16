@@ -1,0 +1,10 @@
+{
+  "logit": 0.12,
+  "conf_logit": 0.2,
+  "analysis": "No immediate life-threatening conditions identified. Vital signs not provided; however, reported adverse events are low-grade (Grade 1-2) hematologic toxicities and mild spinal pain. No evidence of hemodynamic instability, respiratory failure, or sepsis. Patient is at low risk for short-term mortality.",
+  "evidences": [
+    "No severe adverse events (Grade \u22653) reported",
+    "No documented vital sign abnormalities or organ dysfunction",
+    "All adverse events are manageable and non-life-threatening"
+  ]
+}

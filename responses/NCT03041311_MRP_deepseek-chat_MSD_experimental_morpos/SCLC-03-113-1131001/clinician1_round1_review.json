@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 2,
+  "opinion": "not_changed",
+  "reason": "Patient stable with resolved grade 3 events and no ongoing ABC compromise. No sepsis or respiratory failure signs. Low immediate mortality risk aligns with emergency triage.",
+  "evidences": [
+    "Resolved grade 3 toxicities without sequelae",
+    "No shock or altered mental status",
+    "Stable vital signs and absence of progressive organ failure"
+  ]
+}

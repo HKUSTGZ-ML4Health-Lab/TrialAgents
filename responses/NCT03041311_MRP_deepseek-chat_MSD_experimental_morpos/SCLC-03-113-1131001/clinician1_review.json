@@ -1,0 +1,10 @@
+{
+  "logit": 0.35,
+  "conf_logit": 0.4,
+  "analysis": "Patient stable with no immediate life-threatening ABC compromise. Key concerns: Grade 3 prostatitis and bronchitis, dyspnea, and thrombocytopenia. Risk of sepsis or respiratory failure warrants monitoring. No shock or altered mental status.",
+  "evidences": [
+    "Grade 3 prostatitis (days 9-60) and bronchitis (days 85-87) indicate active infections requiring urgent evaluation for sepsis.",
+    "Dyspnea Grade 3 (days 91-95) suggests possible pulmonary complication or infection progression.",
+    "Thrombocytopenia (Grade 2 then 1) raises bleeding risk, though currently mild."
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient is an elderly, underweight male with multiple severe adverse events including grade 4 sepsis, grade 4 thrombocytopenia, febrile neutropenia, cardiac arrhythmias, and COPD exacerbation. These events indicate systemic decompensation and multi-organ failure risk. Recurrent thrombocytopenia and persistent pneumonitis reflect chronic inflammation. The combination of sepsis, severe thrombocytopenia, and cardiac compromise suggests high short-term mortality.",
+  "evidences": [
+    "Clinician 0: Grade 4 sepsis and febrile neutropenia indicate septic shock risk; recurrent thrombocytopenia progressing to grade 4; new-onset atrial fibrillation and ventricular arrhythmia suggest cardiac compromise.",
+    "Clinician 1: Grade 4 sepsis and grade 4 thrombocytopenia within first 4 months indicate severe immune dysregulation; progressive cardiac complications and COPD exacerbation suggest multi-organ failure risk; persistent thrombocytopenia and recurrent pneumonitis reflect chronic inflammatory state.",
+    "Clinician 2: Grade 4 sepsis and febrile neutropenia requiring intensive care; recurrent thrombocytopenia and cardiac arrhythmias; COPD exacerbation indicating pulmonary vulnerability."
+  ]
+}

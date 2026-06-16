@@ -1,0 +1,12 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.75,
+  "new_conf_logit": 0.8,
+  "reason": "Grade 3 pancreatitis with neutropenia and smoking/obesity risk factors indicates multi-organ dysfunction trajectory, aligning with high mortality despite preserved ECOG.",
+  "evidences": [
+    "Acute pancreatitis mortality increases with organ failure and comorbidities (smoking, obesity)",
+    "Neutropenia and pancreatic enzyme elevation suggest drug-induced systemic toxicity with poor prognosis"
+  ]
+}

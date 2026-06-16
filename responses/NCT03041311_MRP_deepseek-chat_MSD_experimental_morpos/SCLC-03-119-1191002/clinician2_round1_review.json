@@ -1,0 +1,10 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The multi-disciplinary assessment correctly identifies severe neutropenia as a marker of profound bone marrow suppression, which, combined with respiratory and cardiac complications, indicates systemic physiologic compromise and high mortality risk.",
+  "evidences": [
+    "Grade 4 neutropenia lasting >7 days is associated with a 30-40% risk of life-threatening infection in older patients.",
+    "Multi-organ involvement (hematologic, pulmonary, cardiac) in a 70-74-year-old smoker with ECOG 1 portends a mortality risk exceeding 50% within 30 days."
+  ]
+}

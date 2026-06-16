@@ -1,0 +1,10 @@
+{
+  "logit": 0.45,
+  "conf_logit": 0.7,
+  "analysis": "Patient shows progressive pancytopenia (anemia, thrombocytopenia, leukopenia) with grade 3 severity on day 59, indicating bone marrow suppression. Elevated LDH and creatinine suggest possible hemolysis or tumor lysis syndrome. Risk of bleeding, infection, and renal impairment is high. Immediate need for blood product support, infection monitoring, and renal function assessment.",
+  "evidences": [
+    "Grade 3 anemia, thrombocytopenia, and leukopenia starting day 59",
+    "Elevated blood creatinine (grade 1) and LDH (grade 1) from day 63",
+    "Prolonged asthenia (grade 2) from day 77 to 119"
+  ]
+}

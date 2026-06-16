@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient exhibits progressive pancytopenia with grade 3 severity, prolonged asthenia, elevated LDH and creatinine, indicating bone marrow failure, hemolysis, and renal impairment. ECOG 2 and low BMI suggest frailty and poor physiological reserve. These factors collectively indicate high mortality risk.",
+  "evidences": [
+    "Clinician 0 noted progressive pancytopenia with grade 3 severity on day 59, elevated LDH and creatinine, and prolonged asthenia, indicating bone marrow suppression and multi-organ involvement.",
+    "Clinician 1 highlighted escalating anemia severity (Grade 1\u21923), multi-lineage cytopenias, and rising LDH and creatinine, suggesting bone marrow failure and hemolysis/renal stress.",
+    "Clinician 2 emphasized ECOG 2, low BMI (19.4), and prolonged anemia/asthenia over 100 days, reflecting significant frailty and vulnerability."
+  ]
+}

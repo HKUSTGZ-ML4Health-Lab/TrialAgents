@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient exhibits recurrent grade 3 neutropenia with prolonged recovery, indicating severe bone marrow suppression and high infection risk. Thyroid dysfunction (hyper- and hypothyroidism) suggests immune-related endocrine complications. Despite ECOG 1, the cumulative hematologic toxicity and unresolved symptoms (fatigue, pain, tremor) signal a deteriorating clinical trajectory, increasing mortality risk.",
+  "evidences": [
+    "Clinician 0 noted recurrent grade 3 neutropenia (days 43, 64, 81) with slow recovery, high infection risk, and potential for febrile neutropenia or sepsis.",
+    "Clinician 2 highlighted recurrent grade 2-3 neutropenia and thrombocytopenia reflecting hematologic vulnerability, and multiple symptomatic adverse events affecting daily activities, indicating moderate comorbidity burden.",
+    "Clinician 1 acknowledged relapsing-remitting neutropenia and thyroid dysfunction but underestimated risk due to stable ECOG 1; however, the pattern of immune-mediated cytopenias and endocrinopathy supports a high-risk profile."
+  ]
+}

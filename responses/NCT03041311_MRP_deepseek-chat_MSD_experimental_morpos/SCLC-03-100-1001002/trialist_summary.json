@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient exhibits a high mortality risk due to severe, multi-system adverse events. Critical signals include Grade 4 neutropenia (Days 92-100) indicating profound bone marrow suppression, Grade 3 cerebrovascular accident (Days 29-60) with residual neurological deficits, and recurrent Grade 3 anemia. These events, combined with persistent gastrointestinal symptoms, electrolyte disturbances, and endocrine dysfunction, reflect systemic decompensation and poor physiological reserve. The cumulative burden and lack of full recovery across hematologic, neurologic, and metabolic systems underscore a guarded prognosis.",
+  "evidences": [
+    "Clinician 0: Grade 4 neutropenia (Day 92-100) with prolonged leukopenia and thrombocytopenia, indicating high infection risk; Grade 3 cerebrovascular accident (Day 29-60) with residual aphasia and gait disturbance; recurrent Grade 3 anemia and electrolyte disturbances reflecting severe metabolic stress.",
+    "Clinician 1: Grade 4 neutropenia and persistent anemia/leukopenia indicating severe bone marrow suppression; cerebrovascular accident (grade 3) suggesting significant vascular event; progressive multi-system involvement (hematologic, endocrine, gastrointestinal) with poor recovery.",
+    "Clinician 2: Grade 3 cerebrovascular accident with residual aphasia and gait disturbance; persistent grade 3-4 neutropenia and anemia requiring multiple transfusions; sustained weight loss and decreased appetite indicating nutritional compromise."
+  ]
+}

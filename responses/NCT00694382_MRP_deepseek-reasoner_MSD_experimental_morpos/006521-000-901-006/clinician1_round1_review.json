@@ -1,0 +1,10 @@
+{
+  "answer": "agree",
+  "confidence": 2,
+  "opinion": "not_changed",
+  "reason": "Patient\u2019s progressive decline, unresolved GI losses, and functional deterioration pose imminent risks of hypovolemic shock, electrolyte crises, or sepsis. Vital sign stability is deceptive; aggressive monitoring and fluid resuscitation are urgent.",
+  "evidences": [
+    "Dehydration and electrolyte imbalances are life-threatening emergency conditions",
+    "Poor performance status and weight loss predict high short-term mortality in oncologic patients"
+  ]
+}

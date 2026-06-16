@@ -1,0 +1,10 @@
+{
+  "logit": 0.65,
+  "conf_logit": 0.75,
+  "analysis": "Patient is 55-59 years old with ECOG 2, indicating limited functional independence. Multiple severe hematologic toxicities (Grade 4 neutropenia, recurrent leukopenia) and prolonged diarrhea suggest poor treatment tolerance and high comorbidity burden. Ascites at day 365 raises concern for progressive disease. Prognosis is guarded; quality of life and symptom management should be prioritized.",
+  "evidences": [
+    "ECOG performance status 2 indicates reduced functional capacity",
+    "Recurrent Grade 3-4 neutropenia and leukopenia reflect significant bone marrow toxicity",
+    "Development of ascites suggests disease progression or advanced organ dysfunction"
+  ]
+}

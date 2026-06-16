@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Recurrent severe neutropenia, thrombocytopenia, and new Grade 3 dizziness with photopsia signal imminent risks of sepsis, bleeding, or posterior circulation stroke. Immediate hemodynamic and neuro assessment are critical.",
+  "evidences": [
+    "Sepsis and neutropenic fever protocols",
+    "Thrombocytopenia bleeding risk guidelines",
+    "Posterior circulation stroke emergency evaluation"
+  ]
+}

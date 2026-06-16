@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient is a 64-year-old female with advanced malignancy, evidenced by severe malignant neoplasm progression at day 113. ECOG performance status worsened from 1 to 2, indicating functional decline. Weight loss from 67 kg to 65 kg suggests cachexia. New-onset hypertension (SBP 160 mmHg at day 85) may reflect cardiovascular stress. Moderate diarrhea (day 6-17) resolved without lasting effects. The combination of progressive cancer, declining performance status, and weight loss indicates high mortality risk despite stable vital signs.",
+  "evidences": [
+    "Clinician 0: Malignant neoplasm progression (severe, day 113) with ECOG 2; moderate diarrhea (day 6-17) resolved; stable vital signs: BP 140/90, HR 76, RR 14 at last visit.",
+    "Clinician 1: ECOG Performance Status worsening from 1 to 2; new-onset hypertension (SBP 160 mmHg at day 85); severe adverse event: malignant neoplasm progression.",
+    "Clinician 2: ECOG Performance Status worsening from 1 to 2; weight loss from 67 kg to 65 kg; severe adverse event: malignant neoplasm progression."
+  ]
+}

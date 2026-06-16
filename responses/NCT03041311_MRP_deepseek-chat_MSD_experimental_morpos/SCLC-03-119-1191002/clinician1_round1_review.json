@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Grade 4 neutropenia with new respiratory symptoms and arrhythmia indicates high risk for septic shock and cardiac compromise. Immediate ABC assessment, cultures, broad-spectrum antibiotics, and cardiac monitoring are critical. Risk stratification is appropriately conservative.",
+  "evidences": [
+    "Sepsis resuscitation guidelines (SSC)",
+    "Neutropenic fever protocol",
+    "Cardiac arrhythmia management in sepsis"
+  ]
+}

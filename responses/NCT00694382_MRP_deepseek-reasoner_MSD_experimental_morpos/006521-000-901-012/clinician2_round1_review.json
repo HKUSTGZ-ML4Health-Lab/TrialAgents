@@ -1,0 +1,12 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.2,
+  "new_conf_logit": 0.9,
+  "reason": "Mild, self-limited adverse events without evidence of organ dysfunction or hemodynamic instability; stable vitals and ECOG 0 indicate preserved physiologic reserve, supporting low mortality risk.",
+  "evidences": [
+    "Mild mucocutaneous bleeding rarely proceeds to life-threatening hemorrhage without coagulopathy",
+    "ECOG 0 and stable vital signs are strong predictors of favorable short-term outcomes in oncology patients"
+  ]
+}

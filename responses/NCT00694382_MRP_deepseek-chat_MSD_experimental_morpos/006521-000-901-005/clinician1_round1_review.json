@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Vital signs stable, no acute distress, manageable hematologic toxicities without severe infection or bleeding. No immediate life-threatening risks identified; risk stratification appropriate for emergency care.",
+  "evidences": [
+    "Normal vital signs trends",
+    "No signs of shock or hypoxia",
+    "Moderate, self-limiting toxicities"
+  ]
+}

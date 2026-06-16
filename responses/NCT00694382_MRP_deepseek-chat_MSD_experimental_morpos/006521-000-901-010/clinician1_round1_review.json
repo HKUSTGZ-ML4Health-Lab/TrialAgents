@@ -1,0 +1,12 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "new_logit": 0.45,
+  "new_conf_logit": 0.7,
+  "reason": "High-risk features (tachycardia, cachexia, recurrent effusions) indicate imminent decompensation risk. Urgent sepsis and respiratory compromise evaluation needed.",
+  "evidences": [
+    "Emergency protocol evidence: sepsis screening and respiratory assessment",
+    "Acute care indicator: tachycardia and weight loss >10% in 6 months"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The assessment aligns with geriatric medicine principles: the patient's low BMI, ECOG 1, and multi-organ toxicities indicate significant functional decline and frailty. The progressive pattern of hematologic, hepatic, and neurologic events suggests poor recovery potential, supporting a high mortality risk.",
+  "evidences": [
+    "Malnutrition and low BMI are strong predictors of mortality in older adults",
+    "ECOG 1 with new hemiparesis indicates functional decline and increased dependency",
+    "Multi-organ dysfunction (anemia, thrombocytopenia, transaminitis, hemiparesis) reflects systemic decompensation"
+  ]
+}

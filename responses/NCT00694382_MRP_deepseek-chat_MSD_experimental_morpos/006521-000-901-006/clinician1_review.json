@@ -1,0 +1,10 @@
+{
+  "logit": 0.25,
+  "conf_logit": 0.6,
+  "analysis": "Patient shows progressive weight loss (60 to 54 kg), declining ECOG status (1 to 2), and moderate dehydration with diarrhea. Vital signs remain stable, no hemodynamic or respiratory compromise. Immediate risk is moderate due to potential for further metabolic derangement and malnutrition.",
+  "evidences": [
+    "Progressive weight loss from 60 kg to 54 kg over 85 days",
+    "ECOG decline from 1 to 2 indicating functional deterioration",
+    "Moderate dehydration and diarrhea with decreased appetite"
+  ]
+}

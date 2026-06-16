@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient, an elderly male with ECOG 1, experienced a cascade of severe, recurrent adverse events including Grade 4 thrombocytopenia, Grade 4 pulmonary embolism, recurrent Grade 3 anemia, hypoxia, and renal injury. These indicate multi-organ dysfunction, poor physiological reserve, and cumulative toxicity. The late development of pulmonary embolism and persistent functional decline (fatigue, gait disturbance) signal systemic decompensation and high mortality risk.",
+  "evidences": [
+    "Clinician 0 identified Grade 4 pulmonary embolism (Day 308-312) with ongoing hypoxia, Grade 4 thrombocytopenia (Day 107-113), recurrent Grade 3 anemia, and recurrent pneumonia with hypoxia as key evidence of high mortality risk from multi-organ dysfunction and thromboembolic event.",
+    "Clinician 1 highlighted Grade 4 thrombocytopenia and pulmonary embolism indicating severe hematologic and vascular compromise; recurrent Grade 3 anemia and hypoxia reflecting inadequate marrow and pulmonary function recovery; and progressive fatigue, gait disturbance, and depression signaling declining functional status and systemic decompensation.",
+    "Clinician 2 noted recurrent Grade 3-4 adverse events (anemia, thrombocytopenia, pulmonary embolism) indicating poor physiological reserve; gait disturbance and persistent fatigue reflecting functional decline; and multiple organ system involvement (hematologic, respiratory, renal) consistent with high frailty burden."
+  ]
+}

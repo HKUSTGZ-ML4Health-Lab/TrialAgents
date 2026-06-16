@@ -1,0 +1,10 @@
+{
+  "logit": 0.55,
+  "conf_logit": 0.7,
+  "analysis": "Patient is 70-74 years old, current smoker, with ECOG 1 (ambulatory, able to perform light work). He experienced severe neutropenia (grade 4) and multiple grade 2 toxicities (cough, dyspnea, fatigue, infusion reaction, cardiac arrhythmia, GI symptoms). This indicates significant treatment-related morbidity and reduced physiologic reserve. Functional status is likely declining due to cumulative toxicity, increasing frailty risk. Prognosis is guarded; goals of care should prioritize quality of life and symptom management.",
+  "evidences": [
+    "ECOG performance status 1 suggests mild functional impairment",
+    "Grade 4 neutropenia indicates severe bone marrow toxicity and infection risk",
+    "Multiple grade 2 adverse events (cardiac, respiratory, GI) reflect multi-system involvement and frailty"
+  ]
+}

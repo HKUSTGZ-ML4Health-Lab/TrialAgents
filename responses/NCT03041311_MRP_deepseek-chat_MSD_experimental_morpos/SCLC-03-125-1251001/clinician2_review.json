@@ -1,0 +1,10 @@
+{
+  "logit": 0.4,
+  "conf_logit": 0.65,
+  "analysis": "This 65-69-year-old former smoker with obesity (BMI 32) and ECOG 1 developed early severe granulocytopenia and thrombocytopenia (days 15-31), suggesting chemotherapy-related bone marrow suppression. Subsequent anemia episodes (days 52, 73) indicate persistent marrow injury. Late-onset mild diabetes and dyslipidemia (day 267) may reflect metabolic syndrome or steroid effect. Disease trajectory shows initial hematologic toxicity with partial recovery, but metabolic derangements raise concern for cumulative organ stress. Prognosis is guarded but not immediately life-threatening.",
+  "evidences": [
+    "Severe granulocytopenia (grade 3) and thrombocytopenia (grade 2) within first month",
+    "Recurrent grade 3 anemia at days 52 and 73",
+    "New-onset diabetes and dyslipidemia at day 267"
+  ]
+}

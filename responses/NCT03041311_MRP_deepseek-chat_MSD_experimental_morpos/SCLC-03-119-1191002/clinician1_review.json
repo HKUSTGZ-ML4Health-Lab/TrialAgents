@@ -1,0 +1,10 @@
+{
+  "logit": 0.65,
+  "conf_logit": 0.75,
+  "analysis": "Patient presents with Grade 4 neutropenia (days 16-23) indicating severe immunosuppression and high infection risk. Recent onset of dyspnea, cough, and fatigue (day 29) raises concern for sepsis or pneumonia. Supraventricular extrasystoles (day 32) suggest possible cardiac strain. Immediate assessment of oxygenation, hemodynamics, and infection source is critical.",
+  "evidences": [
+    "Grade 4 neutropenia with recent respiratory symptoms (dyspnea, cough) increases risk of septic shock",
+    "Supraventricular extrasystoles may indicate cardiac involvement or electrolyte disturbance",
+    "Concurrent fatigue and dyspnea suggest possible respiratory compromise or early organ dysfunction"
+  ]
+}

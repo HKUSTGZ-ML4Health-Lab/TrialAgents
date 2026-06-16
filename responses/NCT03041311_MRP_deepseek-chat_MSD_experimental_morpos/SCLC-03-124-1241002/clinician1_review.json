@@ -1,0 +1,10 @@
+{
+  "logit": 0.55,
+  "conf_logit": 0.75,
+  "analysis": "Patient presents with severe thrombocytopenia progressing to grade 4, indicating high bleeding risk. Anemia is present but mild. Immediate concerns include spontaneous intracranial hemorrhage or GI bleeding. Vital signs not provided; assume stable for now. Urgent need for platelet transfusion and coagulation panel.",
+  "evidences": [
+    "Grade 4 thrombocytopenia (platelets <25,000/mcL) from day 213 to 317",
+    "Concurrent anemia (grade 1) may exacerbate hemodynamic instability if bleeding occurs",
+    "ECOG 0 and current smoker status increase risk of cardiovascular events"
+  ]
+}

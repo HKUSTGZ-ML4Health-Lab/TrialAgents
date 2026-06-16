@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient presents with Grade 3 amylase and lipase elevation starting day 182, indicative of acute pancreatitis, a life-threatening condition. Current smoking and obesity (BMI 28.7) exacerbate risk. Ongoing non-cardiac chest pain and fatigue suggest systemic involvement. Neutropenia (Grade 2) indicates bone marrow suppression. The temporal progression from hematologic to pancreatic toxicity raises concern for multi-organ dysfunction, despite preserved ECOG 1 status. Immediate monitoring for shock, sepsis, and organ failure is critical.",
+  "evidences": [
+    "Clinician 0: Grade 3 lipase/amylase elevation (day 182) indicates acute pancreatitis, a life-threatening condition requiring urgent evaluation for hemodynamic instability, sepsis, and organ failure. Current smoker status increases risk.",
+    "Clinician 1: Grade 3 amylase/lipase elevation (day 182) suggests drug-induced pancreatic injury. Neutropenia (Grade 2, day 79-85) indicates bone marrow suppression. Current smoker with obesity (BMI 28.7) as cardiovascular risk factors.",
+    "Clinician 2: Multiple grade 2-3 adverse events (neutropenia, fatigue, pancreatic enzymes) reflect treatment toxicity and comorbidity burden. Current smoker with smoking stage 17 increases cardiovascular and cancer risk."
+  ]
+}

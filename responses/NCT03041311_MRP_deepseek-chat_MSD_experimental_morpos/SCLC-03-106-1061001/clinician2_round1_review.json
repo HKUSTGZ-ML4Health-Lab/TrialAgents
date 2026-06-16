@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The multi-disciplinary assessment accurately captures the trajectory of cumulative drug toxicity, limited marrow reserve, and multi-organ failure. The progression from severe cytopenias to life-threatening infections and thromboembolic events reflects systemic decompensation consistent with high mortality risk in an elderly patient with ECOG 2.",
+  "evidences": [
+    "Recurrent grade 4 cytopenias indicate severe bone marrow suppression with inadequate recovery, a poor prognostic sign.",
+    "Sequential infections (pneumonia, UTI) and pulmonary embolism reflect immune compromise and hypercoagulable state, common in advanced multi-organ dysfunction.",
+    "Functional decline (asthenia, falls, confusion) signals decreased physiologic reserve and increased vulnerability to fatal outcomes."
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient exhibits severe, recurrent hematologic toxicities including Grade 4 neutropenia and Grade 3 thrombocytopenia, indicating profound bone marrow suppression. This is compounded by a Grade 3 balance disorder suggesting neurologic involvement, and multi-system adverse events (endocrine, infectious, pulmonary). The cumulative toxicity pattern, prolonged cytopenias, and functional decline point to high mortality risk from infection, bleeding, or organ failure.",
+  "evidences": [
+    "Clinician 0 noted recurrent severe neutropenia (Grade 4) and thrombocytopenia (Grade 3) with prior urinary tract infection, indicating high risk of septic shock and bleeding.",
+    "Clinician 1 highlighted progressive cytopenias to Grade 4 neutropenia and Grade 3 thrombocytopenia, multi-organ involvement (hematologic, endocrine, neurologic), and prolonged anemia suggesting chronic marrow suppression.",
+    "Clinician 2 emphasized recurrent Grade 3-4 neutropenia and thrombocytopenia, Grade 3 balance disorder indicating functional decline, and multiple adverse events across systems, leading to guarded prognosis."
+  ]
+}

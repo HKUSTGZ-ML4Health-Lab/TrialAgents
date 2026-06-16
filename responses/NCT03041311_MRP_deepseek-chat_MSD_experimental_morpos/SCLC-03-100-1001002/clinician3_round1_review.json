@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The assessment appropriately highlights multi-system decompensation and lack of functional recovery, consistent with evolving frailty and high vulnerability in a patient with prior ECOG 0 but now significant deficits.",
+  "evidences": [
+    "Functional decline from ECOG 0 to dependence due to CVA, gait disturbance, and persistent anorexia indicates poor physiological reserve.",
+    "Cumulative burden of Grade 3-4 events (neutropenia, CVA, anemia) without full recovery supports guarded prognosis.",
+    "Weight loss and endocrine dysfunction reflect metabolic decompensation, key markers of frailty and mortality risk."
+  ]
+}

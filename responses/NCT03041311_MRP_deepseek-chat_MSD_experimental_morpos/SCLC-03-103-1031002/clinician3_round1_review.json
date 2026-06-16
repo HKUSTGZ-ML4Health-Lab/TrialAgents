@@ -1,0 +1,10 @@
+{
+  "answer": "agree",
+  "confidence": 2,
+  "opinion": "not_changed",
+  "reason": "The assessment appropriately recognizes high mortality risk from profound immunosuppression and chronic marrow dysfunction, despite preserved ECOG 1. Geriatric perspective emphasizes that cumulative toxicities and prolonged recovery signal underlying frailty and poor physiologic reserve.",
+  "evidences": [
+    "ECOG 1 may overestimate functional reserve in context of severe recurrent cytopenias and infections",
+    "Chronic marrow dysfunction over 500+ days indicates irreversible organ damage and high vulnerability"
+  ]
+}

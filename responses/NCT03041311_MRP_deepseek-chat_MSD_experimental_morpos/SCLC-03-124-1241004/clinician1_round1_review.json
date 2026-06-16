@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "No immediate life-threatening risks identified; resolved low-grade events and normal vitals support low mortality risk. Emergency interventions not indicated.",
+  "evidences": [
+    "Resolved grade 3 pneumonia without sequelae",
+    "No hemodynamic instability or respiratory failure",
+    "ECOG 0 and normal BMI indicate excellent reserve"
+  ]
+}

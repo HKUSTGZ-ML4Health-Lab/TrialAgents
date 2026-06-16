@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.75,
+  "analysis": "This patient presents with recurrent severe hypoxia (Grade 3), grade 4 thrombocytopenia and neutropenia, and late-onset sepsis (fungal infection). The pattern suggests treatment-related myelosuppression and pulmonary toxicity with high risk of respiratory failure and septic shock. Immediate airway assessment, oxygen supplementation, broad-spectrum antimicrobials, and hematologic support are critical.",
+  "evidences": [
+    "Recurrent Grade 3 hypoxia requiring close monitoring for ARDS or pulmonary embolism.",
+    "Grade 4 thrombocytopenia and neutropenia indicating severe bone marrow suppression and high infection risk.",
+    "Fungal infection (Grade 2) on day 21 with ongoing neutropenia, raising concern for invasive fungal sepsis."
+  ]
+}

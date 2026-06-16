@@ -1,0 +1,10 @@
+{
+  "logit": 0.65,
+  "conf_logit": 0.75,
+  "analysis": "Patient with significant comorbidity burden including recurrent cytopenias (grade 4 neutropenia, grade 2-3 thrombocytopenia) and infectious complications (herpetic meningoencephalitis). ECOG 1 suggests preserved functional status, but cumulative adverse events and prolonged treatment course indicate moderate frailty and risk for further decline. Quality of life is threatened by persistent symptoms (fatigue, pain, nausea). Realistic prognosis is guarded, balancing potential treatment benefit with toxicity.",
+  "evidences": [
+    "ECOG performance status 1 indicating some functional limitation",
+    "Grade 4 neutropenia and grade 3 herpetic meningoencephalitis reflecting severe treatment-related toxicity and infection risk",
+    "Recurrent anemia and thrombocytopenia over 500+ days suggesting chronic bone marrow suppression"
+  ]
+}

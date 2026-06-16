@@ -1,0 +1,12 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.85,
+  "new_conf_logit": 0.8,
+  "reason": "Grade 4 neutropenia and late-onset ascites signal imminent septic shock and hepatic decompensation. Immediate ABC assessment, IV access, cultures, broad-spectrum antibiotics, and fluid resuscitation are critical. The high mortality risk is validated.",
+  "evidences": [
+    "Sepsis resuscitation bundles (SSC guidelines)",
+    "Neutropenic fever emergency protocols"
+  ]
+}

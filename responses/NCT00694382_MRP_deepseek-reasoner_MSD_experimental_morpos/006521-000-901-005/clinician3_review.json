@@ -1,0 +1,10 @@
+{
+  "logit": 0.15,
+  "conf_logit": 0.85,
+  "analysis": "This 74-year-old male demonstrates excellent functional resilience despite moderate treatment-related toxicities. ECOG performance status improved from 1 to 0 and remained stable, indicating full independence. Weight fluctuations were minor (83\u219278\u219280 kg), with no evidence of progressive cachexia. All adverse events (anaemia, leukopenia, neutropenia, fatigue, appetite loss) resolved without impairing daily function. Prognosis is favorable with low short-term mortality risk. Continued monitoring is warranted, but aggressive intervention is not indicated given preserved functional status.",
+  "evidences": [
+    "ECOG performance status maintained at 0 from Day 29 onward, indicating full independence.",
+    "Weight remained within 5 kg of baseline despite transient decreases, suggesting adequate nutritional reserve.",
+    "Recovery from multiple moderate adverse events (anaemia, leukopenia, neutropenia, fatigue) without lasting functional decline."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.35,
+  "conf_logit": 0.75,
+  "analysis": "Patient has recurrent grade 3 neutropenia (days 43, 64, 81) with prolonged recovery, indicating severe bone marrow suppression. No hemodynamic instability or respiratory compromise documented. Hypothyroidism and hyperthyroidism suggest immune-related endocrine dysfunction. Immediate risks: febrile neutropenia, sepsis, bleeding from thrombocytopenia.",
+  "evidences": [
+    "Recurrent grade 3 neutropenia (absolute neutrophil count <1000/\u03bcL) with slow recovery, high infection risk.",
+    "Platelet count decreased (grade 1) may worsen, increasing bleeding risk.",
+    "Thyroid dysfunction (hyper- and hypothyroidism) requires monitoring for thyroid storm or myxedema coma."
+  ]
+}

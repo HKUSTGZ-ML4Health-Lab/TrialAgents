@@ -1,0 +1,12 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.1,
+  "new_conf_logit": 0.9,
+  "reason": "The internal medicine perspective confirms stable disease trajectory, preserved functional reserve, and absence of cumulative organ toxicity. The multi-disciplinary assessment accurately reflects low mortality risk based on comprehensive evaluation of pathophysiology and clinical stability.",
+  "evidences": [
+    "Stable clinical course without progressive multi-organ dysfunction indicates preserved physiological reserve and low acute decompensation risk.",
+    "ECOG performance status 0 and weight stability are strong predictors of favorable outcomes in oncology populations, supporting low mortality."
+  ]
+}

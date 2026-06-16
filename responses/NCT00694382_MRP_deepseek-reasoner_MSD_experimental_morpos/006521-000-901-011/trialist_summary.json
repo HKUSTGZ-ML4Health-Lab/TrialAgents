@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient presents with severe pneumonitis (Grade 3-4, ongoing), progressive cachexia (13% weight loss over 70 days), and functional decline (ECOG from 1 to 2). These factors indicate multi-organ stress, poor physiological reserve, and high vulnerability to further deterioration. Gastrointestinal symptoms (vomiting, nausea, decreased appetite) and an episode of hypotension (SBP 100 mmHg) add to the risk. The adverse event profile suggests drug-induced toxicity with cumulative effects, leading to a substantial mortality risk.",
+  "evidences": [
+    "Severe pneumonitis (Grade 3-4) starting at time 50 with unknown resolution, indicating ongoing respiratory risk (Clinician 0, 1, 2).",
+    "Progressive weight loss from 57.6 kg to 50.0 kg (13% decrease) over 70 days, consistent with cachexia and metabolic decompensation (Clinician 0, 1, 2).",
+    "ECOG performance status worsened from 1 to 2, reflecting significant functional deterioration and frailty (Clinician 0, 1, 2)."
+  ]
+}

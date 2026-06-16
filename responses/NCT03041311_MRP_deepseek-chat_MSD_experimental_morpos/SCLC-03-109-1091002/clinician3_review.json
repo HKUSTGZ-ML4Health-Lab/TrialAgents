@@ -1,0 +1,10 @@
+{
+  "logit": 0.35,
+  "conf_logit": 0.6,
+  "analysis": "Patient is a former smoker with recent onset of multiple grade 2-3 toxicities (hyperkalaemia, neutropenia, hyponatraemia) and prolonged constipation, indicating significant treatment burden. Functional status is unknown, but these events suggest potential for functional decline. Age is relatively young for geriatric focus, but comorbidity burden and adverse events raise moderate risk. Goals should prioritize symptom management and preserving independence.",
+  "evidences": [
+    "Grade 3 neutropenia and hyponatraemia requiring monitoring and intervention",
+    "Prolonged constipation (over 3 months) affecting quality of life",
+    "Former smoker with smoking history may contribute to underlying vulnerability"
+  ]
+}

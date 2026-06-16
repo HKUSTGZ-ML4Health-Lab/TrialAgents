@@ -1,0 +1,10 @@
+{
+  "logit": 0.35,
+  "conf_logit": 0.45,
+  "analysis": "A 74-year-old male on experimental subcutaneous therapy shows moderate drug-related myelosuppression (anemia, leukopenia, neutropenia) with temporal resolution but recurrence of leukopenia. Good functional reserve (ECOG 0) despite anorexia and fatigue. Weight loss of 5 kg suggests possible cachexia. Overall, disease trajectory is of manageable hematologic toxicity with stable organ function, but age and recurrent leukopenia pose chronic infection risk.",
+  "evidences": [
+    "Recurrent moderate leukopenia (days 28-56, 112 onward) indicating ongoing bone marrow suppression",
+    "Persistent moderate anemia from day 14 onward, not resolved",
+    "ECOG performance status maintained at 0 from day 29, reflecting good functional capacity"
+  ]
+}

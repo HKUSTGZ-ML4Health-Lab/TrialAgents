@@ -1,0 +1,10 @@
+{
+  "logit": 0.45,
+  "conf_logit": 0.65,
+  "analysis": "Patient is middle-aged with good functional status (ECOG 0) and obesity (BMI 30.1), but is a current smoker. Severe thrombocytopenia (grade 3-4) and anemia indicate significant hematologic toxicity, increasing vulnerability. Comorbidity burden is low, but adverse events may impair functional independence and quality of life. Prognosis is guarded; careful monitoring and supportive care are essential.",
+  "evidences": [
+    "ECOG performance status 0 indicates good baseline functional independence",
+    "Grade 4 thrombocytopenia signals high risk for bleeding and complications",
+    "Current smoking status adds cardiovascular and pulmonary risk"
+  ]
+}

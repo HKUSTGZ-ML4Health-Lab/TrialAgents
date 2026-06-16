@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Patient is hemodynamically stable with no acute distress, organ dysfunction, or life-threatening adverse events. No emergency interventions needed. Risk of rapid deterioration is minimal given excellent functional status.",
+  "evidences": [
+    "Normal vital signs and absence of shock criteria",
+    "Grade 1-2 adverse events without progression",
+    "ECOG 0 and low comorbidity indicate robust reserve"
+  ]
+}

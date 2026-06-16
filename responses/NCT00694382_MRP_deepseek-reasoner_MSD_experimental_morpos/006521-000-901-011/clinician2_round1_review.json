@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.3,
+  "new_conf_logit": 0.7,
+  "reason": "The multi-disciplinary assessment correctly identifies multi-organ stress from severe pneumonitis and cachexia, indicating poor physiological reserve and high mortality risk. The trajectory of functional decline and hypotension episodes confirms systemic decompensation.",
+  "evidences": [
+    "Cachexia is a strong independent predictor of mortality in elderly patients, indicating catabolic state and reduced reserve.",
+    "Grade 3-4 drug-induced pneumonitis carries high mortality, especially with concurrent GI symptoms and hypotension.",
+    "ECOG decline from 1 to 2 reflects worsening functional status, a key prognostic factor in oncologic and geriatric populations."
+  ]
+}

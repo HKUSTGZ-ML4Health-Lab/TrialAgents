@@ -1,0 +1,9 @@
+{
+  "action": "No",
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient is a 64-year-old female with advanced malignancy, evidenced by severe neoplasm progression. ECOG performance status declined from 1 to 2, indicating functional loss. Weight loss of 2 kg suggests cachexia, a poor prognostic sign. New-onset hypertension may reflect cardiovascular stress from the malignancy. These factors collectively indicate high mortality risk despite stable vital signs.",
+  "reasons": [
+    "All clinicians agreed with the initial report, providing consistent supporting evidence such as ECOG decline, cachexia, and hypertension as markers of poor prognosis.",
+    "No conflicting opinions or compelling counterarguments were presented, so no modification to the original assessment is needed."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.65,
+  "conf_logit": 0.75,
+  "analysis": "Recurrent severe neutropenia and thrombocytopenia, progressing to grade 4, with subsequent anemia and thyroid dysfunction suggest cumulative bone marrow toxicity and multi-system involvement. The pattern indicates poor hematologic reserve and evolving endocrine complication, typical of aggressive disease or treatment-related effects. ECOG 2 and obesity further compromise physiological resilience.",
+  "evidences": [
+    "Recurrent grade 4 neutropenia and thrombocytopenia with incomplete recovery",
+    "Progressive anemia and new-onset thyroid dysfunction (hyper- then hypothyroidism)",
+    "ECOG performance status 2 and obesity (BMI 32.4) indicating reduced functional reserve"
+  ]
+}

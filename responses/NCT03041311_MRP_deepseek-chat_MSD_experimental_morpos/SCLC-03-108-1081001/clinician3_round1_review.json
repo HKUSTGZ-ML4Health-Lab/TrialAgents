@@ -1,0 +1,10 @@
+{
+  "answer": "agree",
+  "confidence": 2,
+  "opinion": "not_changed",
+  "reason": "The assessment appropriately identifies high mortality risk given acute decompensation (grade 3 pneumonia) in a vulnerable host with reduced physiologic reserve and smoking history. Functional status (ECOG 1) is preserved but does not outweigh acute illness severity.",
+  "evidences": [
+    "Acute illness severity (grade 3 pneumonia) in elderly with comorbidity",
+    "Reduced physiologic reserve indicated by multiple grade 1 AEs and smoking history"
+  ]
+}

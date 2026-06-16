@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The multi-disciplinary report captures key geriatric markers: ECOG decline, cachexia, and rising vital signs indicate systemic decompensation. Functional status is central to prognosis, and these changes support a guarded outlook with focus on symptom management.",
+  "evidences": [
+    "ECOG decline from 1 to 2 indicates loss of independence",
+    "5.9% weight loss meets cachexia criteria and predicts poor outcomes",
+    "Rising heart rate and respiratory rate suggest physiologic stress without organ failure"
+  ]
+}

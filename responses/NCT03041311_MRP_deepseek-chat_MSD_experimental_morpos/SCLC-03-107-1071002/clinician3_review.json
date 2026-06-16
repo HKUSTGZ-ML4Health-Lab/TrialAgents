@@ -1,0 +1,10 @@
+{
+  "logit": 0.75,
+  "conf_logit": 0.7,
+  "analysis": "Patient with significant comorbidity burden including recurrent severe cytopenias, cardiac events (angina, hypertension), and progressive functional decline (falls, weakness, dyspnea). Prolonged fatigue and persistent neuropathy indicate declining independence. High mortality risk given frailty phenotype and multi-organ involvement.",
+  "evidences": [
+    "Recurrent grade 3-4 neutropenia and thrombocytopenia indicating poor bone marrow reserve",
+    "Multiple falls and muscular weakness suggesting declining mobility and functional status",
+    "Prolonged fatigue (157+ days) and persistent dyspnea indicating reduced cardiopulmonary reserve"
+  ]
+}

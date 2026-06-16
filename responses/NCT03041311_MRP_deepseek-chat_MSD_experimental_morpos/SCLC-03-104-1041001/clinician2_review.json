@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.75,
+  "analysis": "This patient with obesity and smoking history shows progressive multi-system deterioration: recurrent severe neutropenia, worsening fatigue/asthenia, grade 3 thrombocytopenia, anemia, and later COPD exacerbation, cellulitis, and declining ECOG status. The pattern suggests cumulative treatment toxicity and advancing disease, with poor functional reserve and high mortality risk.",
+  "evidences": [
+    "Progressive ECOG performance status worsening to grade 3",
+    "Recurrent grade 3-4 neutropenia and grade 3 thrombocytopenia",
+    "Multi-system involvement: pulmonary (COPD), hematologic, infectious (cellulitis), and constitutional symptoms"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "action": "No",
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient's rapid progression from bronchitis to septic shock within 48 hours, coupled with grade 4 neutropenia and grade 5 sepsis, indicates profound immunosuppression and multi-organ failure. Neutropenia predisposes to overwhelming infection, and the absence of recovery signals suggests irreversible physiological decline. ECOG 1 and smoking history further elevate infection risk. These factors collectively predict a high short-term mortality.",
+  "reasons": [
+    "All clinicians unanimously agree with the high mortality risk assessment, supported by Sepsis 3.0 guidelines, neutropenic sepsis protocols, and literature on rapid deterioration as a frailty indicator.",
+    "No dissenting opinions or weak evidence were presented; thus, the original synthesized report is fully validated."
+  ]
+}

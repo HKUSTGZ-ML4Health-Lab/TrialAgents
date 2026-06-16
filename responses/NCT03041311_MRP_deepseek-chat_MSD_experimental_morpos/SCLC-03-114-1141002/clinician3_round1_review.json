@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.75,
+  "new_conf_logit": 0.8,
+  "reason": "Recurrent severe cytopenias and ECOG 2 indicate poor functional reserve and high frailty. Multi-system toxicity and obesity further reduce physiological reserve, supporting high mortality risk. Patient-centered care should prioritize quality of life and goals of care discussions.",
+  "evidences": [
+    "ECOG performance status and functional impairment",
+    "Recurrent severe neutropenia and thrombocytopenia",
+    "Multi-system toxicity and obesity"
+  ]
+}

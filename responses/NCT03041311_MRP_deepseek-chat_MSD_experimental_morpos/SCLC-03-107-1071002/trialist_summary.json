@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient exhibits a high mortality risk due to recurrent severe hematologic toxicities (grade 4 neutropenia, grade 3 thrombocytopenia), cardiovascular events (angina, grade 3 hypertension, hypotension), persistent renal impairment, and progressive functional decline (falls, weakness, prolonged fatigue/dyspnea). These patterns indicate multi-organ dysfunction and poor bone marrow reserve, with cumulative treatment-related damage and reduced cardiopulmonary reserve.",
+  "evidences": [
+    "Clinician 0: Recurrent severe neutropenia (grade 4), thrombocytopenia (grade 3), hypotension episodes, and angina/dyspnea indicate high infection, bleeding, and cardiac/respiratory compromise risk.",
+    "Clinician 1: Progressive multi-organ dysfunction with recurrent grade 3-4 neutropenia/thrombocytopenia, persistent renal impairment (elevated creatinine day 36-176), and cardiovascular events (angina, grade 3 hypertension) suggest high mortality.",
+    "Clinician 2: Recurrent severe cytopenias, cardiac events, falls, muscular weakness, prolonged fatigue (157+ days), and persistent dyspnea indicate frailty phenotype and multi-organ involvement with high mortality risk."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.55,
+  "conf_logit": 0.7,
+  "analysis": "Patient presents with delayed Grade 3 hepatic enzyme and bilirubin elevations starting day 313, followed by acute pancreatitis day 318. This suggests progressive hepatobiliary injury with potential for hepatic failure or multi-organ dysfunction. Immediate assessment of liver function, coagulation, and hemodynamic stability is critical. Thrombocytopenia may complicate bleeding risk. Urgent imaging and supportive care are warranted.",
+  "evidences": [
+    "Grade 3 blood bilirubin increased and hepatic enzyme increased starting day 313",
+    "Acute pancreatitis (Grade 2) on day 318, suggesting ongoing organ injury",
+    "Thrombocytopenia (Grade 2) from day 120-130, indicating possible bone marrow or consumptive process"
+  ]
+}

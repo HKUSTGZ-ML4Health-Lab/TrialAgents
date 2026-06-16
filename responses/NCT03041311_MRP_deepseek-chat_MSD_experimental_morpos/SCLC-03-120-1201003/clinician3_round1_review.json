@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The assessment adequately captures frailty via ECOG 2, low BMI, and pancytopenia, indicating poor physiological reserve and high mortality risk. Functional decline and comorbidity burden are properly weighted.",
+  "evidences": [
+    "ECOG performance status \u22652 predicts poor survival in older adults",
+    "Low BMI (<20) and pancytopenia are markers of frailty and increased mortality",
+    "Elevated LDH and creatinine reflect multi-organ dysfunction, worsening prognosis"
+  ]
+}

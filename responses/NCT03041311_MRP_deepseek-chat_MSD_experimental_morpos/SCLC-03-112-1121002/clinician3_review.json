@@ -1,0 +1,10 @@
+{
+  "logit": 0.25,
+  "conf_logit": 0.6,
+  "analysis": "Patient is a middle-aged male with good functional status (ECOG 0) and no significant comorbidity burden. Adverse events are mild and transient, not impacting independence. Current smoking is a modifiable risk factor. Overall, low short-term mortality risk, but ongoing monitoring for functional decline and smoking cessation is advised.",
+  "evidences": [
+    "ECOG performance status 0 indicates full independence and good functional capacity",
+    "Only mild adverse events (vomiting, alopecia) with no evidence of frailty or significant organ dysfunction",
+    "Current smoker with smoking stage 12, but no chronic comorbidities or functional decline noted"
+  ]
+}

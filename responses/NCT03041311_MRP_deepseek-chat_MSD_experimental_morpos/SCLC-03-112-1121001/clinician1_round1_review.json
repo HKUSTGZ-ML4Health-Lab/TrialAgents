@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Septic shock with grade 4 neutropenia and rapid deterioration to fatal sepsis on day 10 confirms immediate life-threatening risk. Emergency ABC, fluid resuscitation, broad-spectrum antibiotics, vasopressors, and ICU admission are critical.",
+  "evidences": [
+    "Sepsis 3.0 guidelines",
+    "Neutropenic sepsis protocols",
+    "Emergency ABC assessment"
+  ]
+}

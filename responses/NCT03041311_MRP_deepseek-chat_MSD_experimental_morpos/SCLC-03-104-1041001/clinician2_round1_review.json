@@ -1,0 +1,14 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "new_logit": 0.85,
+  "new_conf_logit": 0.75,
+  "reason": "The multi-disciplinary assessment accurately captures progressive multi-system deterioration (neutropenia, thrombocytopenia, anemia, declining ECOG) consistent with cumulative treatment toxicity and poor functional reserve. The trajectory aligns with advanced disease pathophysiology and high mortality risk.",
+  "evidences": [
+    "Recurrent Grade 4 neutropenia indicates severe bone marrow suppression and increased infection risk.",
+    "Grade 3 thrombocytopenia and anemia reflect multi-lineage hematopoietic failure.",
+    "Declining ECOG performance status (Grade 3) correlates with poor prognosis in advanced disease.",
+    "Hypotension, dyspnea, and cellulitis suggest possible sepsis or cardiorespiratory compromise, worsening outcomes."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient experienced Grade 3 neutropenia (Day 38-43) and Grade 3 hyponatraemia (Day 43-66), both life-threatening. Neutropenia increases infection risk, while prolonged hyponatraemia can cause neurological deterioration. Hyperkalaemia (Grade 2) indicates prior electrolyte instability. The temporal progression from mild to severe events suggests worsening clinical course. Former smoker status adds pulmonary vulnerability. These factors collectively indicate significant multi-system involvement and high mortality risk.",
+  "evidences": [
+    "Grade 3 hyponatraemia (Na <130 mEq/L) from Day 43-66 poses risk of cerebral edema and seizures (Clinician 0).",
+    "Grade 3 neutropenia (ANC <1000/\u03bcL) from Day 38-43 increases susceptibility to severe infections and sepsis (Clinician 0).",
+    "Hyperkalemia (Grade 2) followed by hyponatremia suggests renal or adrenal axis involvement (Clinician 1).",
+    "Prolonged constipation (122 days) may reflect autonomic dysfunction or medication effect (Clinician 1)."
+  ]
+}

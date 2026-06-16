@@ -1,0 +1,10 @@
+{
+  "logit": 0.65,
+  "conf_logit": 0.7,
+  "analysis": "Patient is a 65-69-year-old former smoker with low BMI (19.4), ECOG 2 indicating limited functional independence. Multiple grade 2-3 hematologic toxicities (anemia, thrombocytopenia, leukopenia) and prolonged asthenia suggest significant frailty and vulnerability. Comorbidity burden and declining functional status increase mortality risk.",
+  "evidences": [
+    "ECOG performance status 2 indicates reduced independence in daily activities",
+    "Low BMI (19.4) suggests nutritional risk and frailty",
+    "Prolonged anemia and asthenia (over 100 days) reflect poor physiological reserve"
+  ]
+}

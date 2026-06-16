@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "new_logit": 0.75,
+  "new_conf_logit": 0.7,
+  "reason": "The assessment appropriately captures progressive functional decline and multi-organ dysfunction, consistent with a frail phenotype and poor bone marrow reserve. Quality of life is implicitly considered through functional indicators.",
+  "evidences": [
+    "Functional decline (falls, weakness, dyspnea) indicates high frailty",
+    "Multi-organ dysfunction (hematologic, cardiovascular, renal) increases mortality risk",
+    "Poor bone marrow reserve and cumulative treatment damage limit recovery potential"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.45,
+  "conf_logit": 0.65,
+  "analysis": "Patient is a 60-64-year-old male with ECOG 1, indicating some functional limitation. Multiple grade 2-3 adverse events (neutropenia, pneumonia, fatigue, dyspnoea) suggest significant comorbidity burden and treatment toxicity. Persistent symptoms like dyspnoea and fatigue may impair daily activities and quality of life. Prognosis is guarded; need to reassess goals of care and consider supportive measures.",
+  "evidences": [
+    "ECOG performance status 1 (restricted in physically strenuous activity)",
+    "Grade 3 pneumonia and neutropenia indicating severe infection risk",
+    "Persistent grade 2 fatigue and dyspnoea suggesting ongoing functional decline"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.65,
+  "conf_logit": 0.75,
+  "analysis": "Patient with ECOG 2, former smoker, presenting with recurrent severe neutropenia (grade 4) and leukopenia, anemia, and late-onset ascites. Immediate threats include sepsis risk from prolonged neutropenia and possible hepatic decompensation with ascites. Hemodynamic and respiratory status require urgent assessment.",
+  "evidences": [
+    "Grade 4 neutropenia (day 15-21) with subsequent recurrent neutropenic episodes",
+    "Late-onset ascites (day 365) suggesting possible hepatic or malignant progression",
+    "Persistent anemia and thrombocytopenia indicating bone marrow suppression"
+  ]
+}

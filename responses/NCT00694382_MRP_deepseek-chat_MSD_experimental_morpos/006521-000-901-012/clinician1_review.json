@@ -1,0 +1,10 @@
+{
+  "logit": 0.15,
+  "conf_logit": 0.3,
+  "analysis": "Patient is hemodynamically stable with normal vital signs, no respiratory distress, and ECOG 0 throughout. Adverse events are mild (e.g., headache, epistaxis) and not life-threatening. No evidence of shock, hypoxia, or altered mental status. Low mortality risk.",
+  "evidences": [
+    "Systolic BP ranges 102-134 mmHg, no hypotension",
+    "Heart rate 73-89 bpm, no tachycardia or bradycardia",
+    "ECOG 0 at all visits, indicating full functional capacity"
+  ]
+}

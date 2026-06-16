@@ -1,0 +1,10 @@
+{
+  "logit": 0.45,
+  "conf_logit": 0.7,
+  "analysis": "Patient with smoking history presents with delayed-onset Grade 3 hepatic enzyme and bilirubin elevations (day 313), followed by acute pancreatitis (day 318), suggesting progressive hepatobiliary and pancreatic injury. Prior mild thrombocytopenia (day 120) and upper respiratory infection (day 46) indicate intermittent systemic inflammation. The pattern raises concern for drug-induced liver injury with evolving multi-organ involvement, though ECOG 0 and absence of decompensation currently moderate risk.",
+  "evidences": [
+    "Grade 3 hepatic enzyme and bilirubin elevations starting day 313, indicating significant hepatocellular injury",
+    "Acute pancreatitis (Grade 2) occurring shortly after hepatic abnormalities, suggesting progressive biliary or pancreatic pathology",
+    "Former smoker with ECOG 0 performance status, reflecting preserved functional reserve despite adverse events"
+  ]
+}

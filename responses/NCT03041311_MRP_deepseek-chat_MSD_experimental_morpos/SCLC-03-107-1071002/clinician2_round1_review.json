@@ -1,0 +1,14 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "new_logit": 0.85,
+  "new_conf_logit": 0.75,
+  "reason": "The multi-disciplinary assessment accurately captures the patient's progressive multi-organ dysfunction, including recurrent severe hematologic toxicities, cardiovascular events, renal impairment, and functional decline. This pattern reflects cumulative treatment-related damage and poor bone marrow reserve, consistent with high mortality risk from an internal medicine perspective.",
+  "evidences": [
+    "Recurrent grade 4 neutropenia and grade 3 thrombocytopenia indicate severe bone marrow toxicity and limited hematopoietic reserve.",
+    "Angina, grade 3 hypertension, and hypotension reflect compromised cardiovascular reserve and increased risk of adverse events.",
+    "Persistent renal impairment (elevated creatinine) suggests ongoing nephrotoxicity and reduced renal reserve.",
+    "Functional decline (falls, weakness, fatigue, dyspnea) is a strong predictor of mortality in chronically ill patients."
+  ]
+}

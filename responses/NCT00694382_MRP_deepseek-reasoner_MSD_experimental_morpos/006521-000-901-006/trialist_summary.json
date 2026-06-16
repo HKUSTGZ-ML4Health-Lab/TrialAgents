@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient exhibits a progressive decline with significant weight loss (10% over 85 days), worsening ECOG performance status (from 1 to 2), and multiple GI adverse events including stoma complications, diarrhoea, dehydration, and decreased appetite. These indicate nutritional compromise, functional deterioration, and potential metabolic derangements. The unresolved nature of several AEs and the trajectory suggest a guarded prognosis with moderate to high mortality risk.",
+  "evidences": [
+    "Clinician 0: Weight loss from 60 kg to 54 kg (10% body weight) over 85 days; dehydration and decreased appetite at day 80; ECOG worsening from 1 to 2 at day 85.",
+    "Clinician 1: Weight loss of 6 kg (10%) over 85 days; ECOG performance status decline from 1 to 2; recurrent GI adverse events (stoma complication, diarrhoea, dehydration).",
+    "Clinician 2: ECOG decline from 1 to 2; weight loss from 60 kg to 54 kg (10%) over 85 days; adverse events including dehydration, decreased appetite, diarrhoea."
+  ]
+}

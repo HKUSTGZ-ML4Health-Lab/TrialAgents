@@ -1,0 +1,10 @@
+{
+  "logit": 0.25,
+  "conf_logit": 0.75,
+  "analysis": "This patient exhibits a relapsing-remitting pattern of neutropenia (Grade 1-3), along with transient thrombocytopenia and thyroid dysfunction (hyper- then hypothyroidism). The constellation suggests immune-mediated cytopenias and endocrinopathy, possibly related to immune checkpoint inhibitor therapy. Despite these adverse events, the patient maintains ECOG 1 and no evidence of progressive multi-organ failure. The risk profile is moderate, with good functional status and manageable toxicities.",
+  "evidences": [
+    "Recurrent grade 3 neutropenia without infectious complications",
+    "Thyroid function fluctuation (hyperthyroidism to hypothyroidism)",
+    "Stable performance status (ECOG 1) throughout the observation period"
+  ]
+}

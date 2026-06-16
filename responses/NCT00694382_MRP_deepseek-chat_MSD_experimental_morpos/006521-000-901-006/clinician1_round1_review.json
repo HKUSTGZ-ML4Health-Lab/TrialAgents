@@ -1,0 +1,12 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.85,
+  "new_conf_logit": 0.75,
+  "reason": "Progressive weight loss and functional decline despite stable vitals indicate high catabolic risk; urgent IV rehydration and nutritional support needed to prevent decompensation.",
+  "evidences": [
+    "Emergency Medicine: Weight loss >10% in 3 months is a red flag for malnutrition-related mortality",
+    "Acute Care: Stable vitals do not rule out imminent deterioration in frail patients"
+  ]
+}

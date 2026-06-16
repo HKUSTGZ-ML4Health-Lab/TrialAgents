@@ -1,0 +1,10 @@
+{
+  "logit": 0.55,
+  "conf_logit": 0.65,
+  "analysis": "Patient with recurrent severe neutropenia, thrombocytopenia, and anemia suggests cumulative bone marrow suppression, likely from chemotherapy. Subsequent dehydration and bronchitis indicate compromised immune function and multi-system involvement. ECOG 2 and smoking history add to risk. Disease trajectory shows cyclical hematologic toxicity with incomplete recovery, increasing infection susceptibility.",
+  "evidences": [
+    "Recurrent Grade 4 neutropenia and Grade 3 thrombocytopenia/anemia indicating severe bone marrow toxicity",
+    "Dehydration and bronchitis suggesting impaired mucosal barrier and immune dysfunction",
+    "ECOG performance status 2 and current smoking contributing to poor physiologic reserve"
+  ]
+}

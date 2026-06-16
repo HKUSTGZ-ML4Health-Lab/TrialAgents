@@ -1,0 +1,10 @@
+{
+  "logit": 0.25,
+  "conf_logit": 0.4,
+  "analysis": "Patient stable without immediate life-threatening events. Anemia (grade 2) resolved, neutropenia (grade 2) resolved, and pneumonia (grade 3) treated and resolved. No evidence of hemodynamic instability, respiratory failure, or sepsis. Low mortality risk.",
+  "evidences": [
+    "Anemia grade 2 resolved without transfusion requirement",
+    "Pneumonia grade 3 resolved with no residual respiratory compromise",
+    "No vital sign abnormalities or signs of organ failure"
+  ]
+}

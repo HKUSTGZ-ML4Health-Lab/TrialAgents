@@ -1,0 +1,12 @@
+{
+  "answer": "disagree",
+  "confidence": 2,
+  "opinion": "changed",
+  "new_logit": 0.25,
+  "new_conf_logit": 0.7,
+  "reason": "Haemoptysis and non-cardiac chest pain at day 413 raise concern for pulmonary embolism or tumor progression, which can rapidly deteriorate despite stable vitals. Immediate workup (CT angiography, D-dimer, ECG) is needed to rule out life-threatening causes.",
+  "evidences": [
+    "Emergency protocol for haemoptysis: ABC assessment, CT angiography to rule out PE or hemorrhage",
+    "Acute chest pain evaluation: ECG, troponin, D-dimer for PE risk stratification"
+  ]
+}

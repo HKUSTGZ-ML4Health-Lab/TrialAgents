@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.75,
+  "new_conf_logit": 0.65,
+  "reason": "Grade 4 cytopenias, respiratory failure with hemoptysis, and systemic edema indicate imminent septic shock or pulmonary hemorrhage. Immediate ABC assessment, broad-spectrum antibiotics, and ICU transfer are critical.",
+  "evidences": [
+    "Sepsis resuscitation bundle (SSC 2021)",
+    "Massive transfusion protocol for thrombocytopenic bleeding",
+    "Airway management guidelines for acute respiratory failure"
+  ]
+}

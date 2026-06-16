@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Grade 4 thrombocytopenia >100 days poses imminent hemorrhagic risk; anemia worsens decompensation. Urgent platelet transfusion and coagulation assessment are mandatory. Vital sign instability would require immediate ICU-level monitoring.",
+  "evidences": [
+    "Emergency Medicine: platelet transfusion threshold for severe thrombocytopenia",
+    "Critical Care: spontaneous hemorrhage risk in grade 4 thrombocytopenia",
+    "ACLS: hemodynamic support for anemia-related instability"
+  ]
+}

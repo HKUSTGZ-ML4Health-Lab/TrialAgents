@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The assessment correctly identifies immediate life-threatening risks: septic shock from febrile neutropenia, bleeding from thrombocytopenia, and respiratory failure from pleural effusion. Urgent interventions (broad-spectrum antibiotics, G-CSF, platelet transfusion, pleural drainage) are essential. Risk stratification is appropriately conservative given rapid deterioration and poor reserve.",
+  "evidences": [
+    "Surviving Sepsis Campaign guidelines for febrile neutropenia",
+    "ACEP clinical policy on sepsis and septic shock",
+    "Platelet transfusion thresholds for thrombocytopenia with bleeding risk"
+  ]
+}

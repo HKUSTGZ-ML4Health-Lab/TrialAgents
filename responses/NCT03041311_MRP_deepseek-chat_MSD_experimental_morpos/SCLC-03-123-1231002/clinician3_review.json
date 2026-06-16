@@ -1,0 +1,10 @@
+{
+  "logit": 0.45,
+  "conf_logit": 0.6,
+  "analysis": "Patient is 75-79 years old with ECOG 1, indicating good functional baseline. However, recurrent grade 2-3 neutropenia and thrombocytopenia suggest significant chemotherapy toxicity, increasing vulnerability. Fatigue and alopecia impact quality of life. Comorbidity burden appears low, but hematologic toxicities raise frailty risk. Realistic prognosis should consider treatment tolerance and patient goals.",
+  "evidences": [
+    "ECOG performance status 1 (ambulatory, capable of light work)",
+    "Recurrent grade 3 neutropenia and thrombocytopenia indicating significant myelotoxicity",
+    "Persistent fatigue (grade 1) affecting daily activities"
+  ]
+}

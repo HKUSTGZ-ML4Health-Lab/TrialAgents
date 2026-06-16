@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The multi-disciplinary assessment appropriately identifies high mortality risk due to rapid multi-organ failure and poor physiological reserve, aligning with geriatric principles of frailty and limited functional reserve.",
+  "evidences": [
+    "Frailty phenotype assessment (Fried criteria)",
+    "Clinical Frailty Scale (CFS) score 7-8 indicating severe frailty",
+    "Charlson Comorbidity Index (CCI) high score reflecting significant comorbidity burden"
+  ]
+}

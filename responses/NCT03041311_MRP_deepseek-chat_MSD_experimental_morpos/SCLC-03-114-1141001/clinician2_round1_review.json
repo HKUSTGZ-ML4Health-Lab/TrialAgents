@@ -1,0 +1,12 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Internal medicine assessment confirms high mortality risk due to profound bone marrow suppression (recurrent Grade 4 neutropenia, persistent anemia, thrombocytopenia) and late-onset ascites indicating progressive hepatic or malignant involvement. ECOG 2 and prolonged diarrhea reflect poor functional reserve and multi-organ dysfunction, consistent with treatment-related or disease-driven decline.",
+  "evidences": [
+    "Recurrent severe neutropenia and leukopenia as dose-limiting toxicity markers",
+    "Late-onset ascites suggesting hepatic dysfunction or peritoneal carcinomatosis",
+    "Persistent anemia and thrombocytopenia indicating inadequate bone marrow recovery",
+    "ECOG 2 and prolonged diarrhea compromising treatment tolerance and systemic status"
+  ]
+}

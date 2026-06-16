@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient experienced a rapid succession of severe adverse events, including recurrent anaphylaxis (Grade 3), Grade 4 neutropenia (days 15-28), and pneumonia progressing to fatal Grade 5 on day 99. The Grade 4 neutropenia indicates profound bone marrow suppression, increasing infection risk, while the fatal pneumonia reflects systemic decompensation. ECOG 1 suggests functional limitation, and the cumulative burden of Grade 3+ events points to high frailty and poor prognosis.",
+  "evidences": [
+    "Clinician 0: Fatal pneumonia (Grade 5) on day 99; Grade 4 neutropenia (days 15-28) increasing infection risk; recurrent anaphylaxis (days 2-3) with airway risk.",
+    "Clinician 1: Grade 5 pneumonia (fatal outcome) on day 99; Grade 4 neutropenia (days 15-28) indicating severe bone marrow suppression; recurrent anaphylaxis and progressive anemia suggesting immune dysregulation and multi-system involvement.",
+    "Clinician 2: ECOG performance status 1 indicates some functional limitation; Grade 5 pneumonia (fatal) and Grade 4 neutropenia reflect severe comorbidity burden; recurrent anaphylactic reactions and multiple Grade 3+ adverse events suggest high frailty."
+  ]
+}

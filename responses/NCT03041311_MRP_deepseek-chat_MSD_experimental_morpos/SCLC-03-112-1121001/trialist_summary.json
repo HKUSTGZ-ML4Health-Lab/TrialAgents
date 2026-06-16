@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient experienced rapid clinical deterioration from bronchitis (day 8) to fatal sepsis (day 10), with severe neutropenia (grade 4) on day 9. Sepsis grade 5 indicates septic shock with high mortality risk. Neutropenia predisposes to overwhelming infection, and the rapid onset of multiple severe adverse events suggests profound immunosuppression and poor physiological reserve. ECOG 1 and former smoking history increase infection risk. No recovery signals are present.",
+  "evidences": [
+    "Sepsis severity 5 indicates septic shock with high mortality risk; neutropenia severity 4 predisposes to overwhelming infection; bronchitis may be the source of sepsis.",
+    "Grade 4 neutropenia on day 9 progressing to fatal sepsis on day 10; rapid clinical deterioration from bronchitis (day 8) to death (day 10); ECOG performance status 1 with former smoking history increasing infection risk.",
+    "ECOG performance status 1 at baseline; grade 5 sepsis and grade 4 neutropenia; rapid onset of multiple severe adverse events."
+  ]
+}

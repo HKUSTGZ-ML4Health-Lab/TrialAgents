@@ -1,0 +1,10 @@
+{
+  "logit": 0.72,
+  "conf_logit": 0.75,
+  "analysis": "This patient exhibits a complex, progressive clinical course marked by multi-organ involvement. The trajectory includes significant hematologic toxicity (anemia, neutropenia, thrombocytopenia), a cerebrovascular accident, and endocrine disturbances (hyperthyroidism, hypothyroidism). The development of grade 4 neutropenia and persistent cytopenias suggests severe bone marrow suppression, while the CVA indicates vascular compromise. The interplay between hematologic, neurologic, and endocrine systems points to a high disease burden and poor therapeutic reserve, elevating mortality risk.",
+  "evidences": [
+    "Grade 4 neutropenia and persistent anemia/leukopenia indicating severe bone marrow suppression",
+    "Cerebrovascular accident (grade 3) suggesting significant vascular event",
+    "Progressive multi-system involvement (hematologic, endocrine, gastrointestinal) with poor recovery"
+  ]
+}

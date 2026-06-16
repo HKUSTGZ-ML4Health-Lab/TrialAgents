@@ -1,0 +1,10 @@
+{
+  "logit": 0.35,
+  "conf_logit": 0.65,
+  "analysis": "This 65-69-year-old male with ECOG 0 and smoking history presents with a complex multisystem adverse event profile including severe back pain, prostatitis, rash, thrombocytopenia, neuritis, bronchitis, and dyspnea. The temporal clustering of events (especially around days 58-95) suggests a possible drug-related systemic inflammatory or immune-mediated process. While the patient has multiple organ system involvement (hematologic, neurologic, respiratory, genitourinary), the events are largely reversible and functional status remains good. The overall trajectory is consistent with moderate toxicity from experimental therapy rather than progressive organ failure.",
+  "evidences": [
+    "Transient thrombocytopenia (grade 2 to 1) with rapid resolution over 1 day",
+    "Self-limited severe adverse events (back pain, prostatitis, bronchitis, dyspnea) that resolved without sequelae",
+    "Maintained ECOG 0 performance status throughout the observation period"
+  ]
+}

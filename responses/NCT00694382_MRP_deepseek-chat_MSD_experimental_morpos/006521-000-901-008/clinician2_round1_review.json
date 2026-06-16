@@ -1,0 +1,10 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The assessment accurately captures systemic disease progression with multi-organ failure, cachexia, and decompensation. The pathophysiology aligns with advanced malignancy and poor therapeutic response.",
+  "evidences": [
+    "Multi-organ failure indicators (ascites, thrombocytopenia, anemia) reflect systemic disease burden",
+    "Hypotension with tachycardia and declining ECOG status signal decompensation and high mortality risk"
+  ]
+}

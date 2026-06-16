@@ -1,0 +1,10 @@
+{
+  "logit": 0.45,
+  "conf_logit": 0.65,
+  "analysis": "Patient with fatigue, hyperkalemia, neutropenia, hyponatremia, and constipation suggests multi-system involvement. Hyperkalemia and hyponatremia indicate renal or endocrine dysfunction; neutropenia raises concern for bone marrow suppression. Temporal progression from mild to severe events (neutropenia, hyponatremia) reflects worsening clinical course. Former smoker status adds pulmonary risk. Overall, moderate risk with potential for decompensation.",
+  "evidences": [
+    "Grade 3 neutropenia and hyponatremia indicate significant bone marrow and electrolyte disturbances",
+    "Hyperkalemia (Grade 2) followed by hyponatremia suggests renal or adrenal axis involvement",
+    "Prolonged constipation (122 days) may reflect autonomic dysfunction or medication effect"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.15,
+  "conf_logit": 0.35,
+  "analysis": "Patient is hemodynamically stable with no signs of shock or respiratory distress. Moderate neutropenia and leukopenia pose infection risk, but no fever or sepsis indicators. Anaemia and other adverse events are manageable. Immediate mortality risk is low, but surveillance for infection-related deterioration is warranted.",
+  "evidences": [
+    "Neutropenia (moderate) from day 49 to 84 increases infection susceptibility.",
+    "Leukopenia episodes (day 28-56 and day 112 onwards) without evidence of sepsis.",
+    "Stable vital signs: normotensive, heart rate normal range, no tachypnea or hypoxia."
+  ]
+}

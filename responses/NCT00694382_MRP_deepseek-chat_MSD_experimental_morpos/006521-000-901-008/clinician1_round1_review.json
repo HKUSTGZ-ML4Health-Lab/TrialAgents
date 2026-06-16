@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.9,
+  "new_conf_logit": 0.85,
+  "reason": "The multi-disciplinary report correctly identifies hypotension, tachycardia, and tachypnea as signs of impending shock. Ascites and thrombocytopenia raise concern for spontaneous bacterial peritonitis or bleeding. Immediate ABC assessment, fluid resuscitation, and source control are urgent.",
+  "evidences": [
+    "Sepsis resuscitation guidelines",
+    "Shock management protocols",
+    "Acute decompensation indicators"
+  ]
+}

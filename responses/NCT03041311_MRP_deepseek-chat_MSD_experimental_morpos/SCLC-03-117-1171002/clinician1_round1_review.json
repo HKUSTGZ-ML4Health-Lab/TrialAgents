@@ -1,0 +1,10 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Patient has ECOG 0, low-grade toxicities, no hemodynamic instability or organ failure. Immediate life-threatening risks are absent, and urgent interventions are not indicated. Risk stratification is appropriately conservative for emergency care.",
+  "evidences": [
+    "Emergency Medicine assessment: low mortality risk",
+    "No signs of sepsis, respiratory failure, or shock"
+  ]
+}

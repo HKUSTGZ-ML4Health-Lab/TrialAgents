@@ -1,0 +1,10 @@
+{
+  "logit": 0.95,
+  "conf_logit": 0.9,
+  "analysis": "Patient with recurrent anaphylaxis, grade 4 neutropenia, and pneumonia progressing to fatal outcome (day 99). Immediate threats: airway compromise from anaphylaxis, septic shock from pneumonia, and severe immunosuppression. Requires urgent ABC stabilization, broad-spectrum antibiotics, and hematology support.",
+  "evidences": [
+    "Fatal pneumonia (grade 5) on day 99",
+    "Grade 4 neutropenia (day 15-28) increasing infection risk",
+    "Recurrent anaphylaxis (days 2-3) with airway risk"
+  ]
+}

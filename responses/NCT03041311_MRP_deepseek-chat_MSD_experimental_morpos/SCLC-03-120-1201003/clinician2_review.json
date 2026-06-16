@@ -1,0 +1,10 @@
+{
+  "logit": 0.65,
+  "conf_logit": 0.7,
+  "analysis": "The patient shows a progressive pattern of cytopenias (anemia, thrombocytopenia, leukopenia) with escalating severity, suggesting bone marrow suppression likely from therapy. Concurrent rise in LDH and creatinine indicates multi-organ involvement (hemolysis? renal impairment). Persistent asthenia and sinusitis reflect impaired functional status and immune compromise. This trajectory suggests high disease burden and poor treatment tolerance.",
+  "evidences": [
+    "Escalating anemia severity (Grade 1\u21923) with prolonged duration",
+    "Multi-lineage cytopenias (platelets, WBC, hemoglobin) indicating bone marrow failure",
+    "Rising LDH and creatinine suggesting hemolysis and renal stress"
+  ]
+}

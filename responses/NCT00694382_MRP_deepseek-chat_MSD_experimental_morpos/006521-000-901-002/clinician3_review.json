@@ -1,0 +1,10 @@
+{
+  "logit": 0.15,
+  "conf_logit": 0.75,
+  "analysis": "Patient is a 51-year-old male with excellent functional status (ECOG 0 throughout), stable weight, and no significant comorbidities. Mild peripheral neuropathy is the only adverse event, which is manageable and does not impair daily activities. Overall, this patient has a low mortality risk from a geriatric perspective, with preserved independence and good quality of life.",
+  "evidences": [
+    "ECOG Performance Status remains 0 throughout the study period, indicating full functional independence.",
+    "Stable weight (95 kg) and vital signs suggest good physiological reserve.",
+    "Only mild peripheral neuropathy reported, which does not affect functional status."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.65,
+  "conf_logit": 0.7,
+  "analysis": "This 60-64-year-old female with ECOG 0 at baseline has experienced significant functional decline due to multiple grade 2-4 adverse events including anemia, neutropenia, cerebrovascular accident, and gait disturbance. The cumulative burden of these events, along with persistent anorexia and weight loss, suggests evolving frailty and high vulnerability. Her prognosis is guarded, and aggressive treatment should be balanced with quality of life and functional goals.",
+  "evidences": [
+    "Grade 3 cerebrovascular accident with residual aphasia and gait disturbance",
+    "Persistent grade 3-4 neutropenia and anemia requiring multiple transfusions",
+    "Sustained weight loss and decreased appetite indicating nutritional compromise"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Recurrent pleural effusions and significant weight loss indicate progressive deterioration; bradycardia may signal cardiac tamponade or hemodynamic instability. Immediate risk of respiratory failure or cardiovascular collapse justifies high mortality risk assessment.",
+  "evidences": [
+    "Pleural effusion management: urgent drainage if respiratory compromise",
+    "Cachexia as marker of poor prognosis in advanced cancer",
+    "Bradycardia in deteriorating patient: consider pericardial effusion or sepsis"
+  ]
+}

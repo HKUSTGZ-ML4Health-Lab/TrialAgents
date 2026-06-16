@@ -1,0 +1,10 @@
+{
+  "logit": 0.65,
+  "conf_logit": 0.75,
+  "analysis": "Patient shows recurrent severe neutropenia (grade 4), thrombocytopenia (grade 3), and leukopenia, indicating high infection and bleeding risk. Hypotension episodes (grade 2 and 1) suggest hemodynamic instability. Dyspnea and angina pectoris raise concern for cardiac/respiratory compromise. Immediate monitoring of vitals, blood counts, and signs of sepsis or bleeding is critical.",
+  "evidences": [
+    "Neutropenia grade 4 (Day 15-24) and recurrent grade 3-4 episodes",
+    "Hypotension grade 2 (Day 10-15) and grade 1 (Day 16-37)",
+    "Angina pectoris grade 2 (Day 58-59) and dyspnea grade 2 (Day 51-55, 171-176)"
+  ]
+}

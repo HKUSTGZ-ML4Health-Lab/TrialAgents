@@ -1,0 +1,10 @@
+{
+  "logit": 0.45,
+  "conf_logit": 0.6,
+  "analysis": "Patient with ECOG 1, smoking history, and obesity presents with multiple adverse events including neutropenia, fatigue, and significant pancreatic enzyme elevation (amylase/lipase Grade 3) starting day 182, suggesting drug-induced pancreatic injury. Alopecia and non-cardiac chest pain indicate systemic effects. The temporal progression from hematologic to pancreatic toxicity raises concern for multi-organ involvement, though functional status remains preserved. Moderate mortality risk given controlled chronic disease with acute exacerbation.",
+  "evidences": [
+    "Grade 3 amylase and lipase elevation (day 182) indicating pancreatic injury",
+    "Neutropenia (Grade 2, day 79-85) suggesting bone marrow suppression",
+    "Current smoker with obesity (BMI 28.7) as cardiovascular risk factors"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.35,
+  "conf_logit": 0.65,
+  "analysis": "Patient is a 70-74-year-old former smoker with ECOG 1, BMI 28.1, and a history of aortic aneurysm. Adverse events include pneumonia (grade 3) and multiple grade 1 toxicities. The clinical course shows a progression of symptoms, but no evidence of multi-organ failure or rapid decline. The patient's functional status and manageable adverse events suggest a moderate risk, though age and smoking history are concerning.",
+  "evidences": [
+    "ECOG performance status of 1 indicates preserved functional capacity.",
+    "Grade 3 pneumonia is a serious but treatable event; no signs of sepsis or organ failure.",
+    "Former smoker with aortic aneurysm; no acute cardiovascular decompensation."
+  ]
+}

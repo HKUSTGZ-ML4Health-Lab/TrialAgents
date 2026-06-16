@@ -1,0 +1,12 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "ECOG 3, recurrent falls, and fatigue indicate severe functional decline; multi-system toxicity and comorbidities confirm poor prognosis.",
+  "evidences": [
+    "ECOG performance status 3 indicating severe functional impairment",
+    "Recurrent falls and fatigue as markers of frailty",
+    "Multiple comorbidities (COPD, anemia, thrombocytopenia) with cumulative burden",
+    "Grade 4 neutropenia and Grade 3 thrombocytopenia signaling poor hematopoietic reserve"
+  ]
+}

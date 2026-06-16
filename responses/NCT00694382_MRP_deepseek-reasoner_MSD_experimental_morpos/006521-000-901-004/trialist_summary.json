@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient's severe malignant neoplasm progression at day 113, coupled with a decline in ECOG performance status from 1 to 2 (indicating functional impairment), are critical adverse events portending poor prognosis. While vital signs remain stable and weight recovers, the lack of therapeutic response and progressive disease are dominant risk factors for near-term mortality. The adverse event profile is dominated by cancer progression, with manageable gastrointestinal toxicities (diarrhoea, nausea) that resolved. The overall safety assessment indicates a high mortality risk.",
+  "evidences": [
+    "Severe malignant neoplasm progression at day 113, indicating failure of experimental therapy and advancing disease (Clinician 1 and 2).",
+    "ECOG performance status decline from 1 to 2, sustained from day 29 onward, reflecting reduced functional capacity and worsening clinical status (Clinician 0, 1, 2).",
+    "Weight loss of 2 kg at days 57 and 85, though regained by day 113, suggests transient nutritional compromise (Clinician 0)."
+  ]
+}

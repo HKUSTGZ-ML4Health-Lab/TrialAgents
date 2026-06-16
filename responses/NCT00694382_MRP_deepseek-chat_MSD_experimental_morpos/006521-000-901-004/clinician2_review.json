@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.8,
+  "analysis": "The patient shows progressive functional decline (ECOG from 1 to 2) and new-onset hypertension (SBP 160 mmHg at day 85), indicating cardiovascular stress. Severe adverse event 'malignant neoplasm progression' at day 113 suggests advancing disease. Despite stable weight, the combination of declining performance status and serious adverse event points to high mortality risk.",
+  "evidences": [
+    "ECOG Performance Status worsening from 1 to 2",
+    "New-onset hypertension (SBP 160 mmHg at day 85)",
+    "Severe adverse event: Malignant neoplasm progression"
+  ]
+}

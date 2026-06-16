@@ -1,0 +1,8 @@
+{
+  "action": "No",
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient has recurrent severe pleural effusions requiring dose interruptions, significant weight loss (16.7% over 70 days), and heart rate change from tachycardia to bradycardia. These indicate progressive deterioration, poor therapeutic response, cachexia, and high disease burden with multi-organ involvement, leading to elevated mortality risk.",
+  "reasons": [
+    "All three clinicians agreed with the original report, providing supporting literature on cachexia, pleural effusions, and vital sign changes as markers of poor prognosis. No modifications were necessary."
+  ]
+}

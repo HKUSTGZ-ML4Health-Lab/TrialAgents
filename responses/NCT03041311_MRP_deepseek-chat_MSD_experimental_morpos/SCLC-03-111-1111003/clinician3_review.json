@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.8,
+  "analysis": "This patient has a high mortality risk due to severe frailty, multiple organ failures (grade 4 neutropenia, grade 5 pneumonia), and poor functional status (ECOG 1). The rapid decline from anaphylaxis to fatal pneumonia suggests high vulnerability and poor prognosis. Patient-centered goals should prioritize comfort and quality of life.",
+  "evidences": [
+    "ECOG performance status 1 indicates some functional limitation",
+    "Grade 5 pneumonia (fatal) and grade 4 neutropenia reflect severe comorbidity burden",
+    "Recurrent anaphylactic reactions and multiple grade 3+ adverse events suggest high frailty"
+  ]
+}

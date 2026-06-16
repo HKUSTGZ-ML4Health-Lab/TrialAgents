@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.8,
+  "new_conf_logit": 0.7,
+  "reason": "Recurrent severe neutropenia, thrombocytopenia, and progressive dyspnea indicate profound bone marrow and pulmonary compromise, severely limiting physiologic reserve. Functional decline is highly likely, and quality of life is compromised. The multi-disciplinary assessment aligns with geriatric principles of high mortality risk in older adults with multi-system toxicities.",
+  "evidences": [
+    "Recurrent Grade 4 neutropenia and thrombocytopenia indicate severe bone marrow suppression, a marker of limited physiologic reserve.",
+    "Progressive dyspnea and hemoptysis suggest significant pulmonary compromise, further reducing functional capacity.",
+    "Multi-system toxicities (anemia, diarrhea, hyperglycemia) and prolonged adverse events indicate high comorbidity burden, increasing mortality risk in older adults."
+  ]
+}

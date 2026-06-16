@@ -1,0 +1,10 @@
+{
+  "logit": 0.42,
+  "conf_logit": 0.65,
+  "analysis": "67-year-old male with declining functional status (ECOG from 1 to 2), significant weight loss (6% in 2 months), and moderate anemia indicates cachexia and increased frailty. Multiple side effects (stomatitis, nausea) may worsen nutritional deficits. Prognosis is guarded; prioritize symptom control, nutritional support, and maintaining independence.",
+  "evidences": [
+    "ECOG Performance Status decline from 1 to 2",
+    "Weight loss of 4 kg over 56 days (6% body weight)",
+    "Moderate anemia present from day 106"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Recurrent severe cytopenias, infections, and new neurologic deficits (dysarthria, gait disturbance) indicate advanced frailty and multi-organ compromise. Functional decline and cumulative toxicity override initial good ECOG, supporting high mortality risk.",
+  "evidences": [
+    "Frailty phenotype (Fried criteria): weight loss, exhaustion, low activity, weakness, slow gait",
+    "Multimorbidity burden (Charlson Comorbidity Index >5)",
+    "Recurrent grade 4 neutropenia and infections",
+    "Functional decline (gait disturbance, falls) indicating loss of independence"
+  ]
+}

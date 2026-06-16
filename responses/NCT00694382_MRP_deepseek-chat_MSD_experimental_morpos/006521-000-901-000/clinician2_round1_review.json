@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.65,
+  "new_conf_logit": 0.8,
+  "reason": "The multi-disciplinary assessment accurately captures systemic decompensation through progressive ECOG decline, cachexia, and rising heart rate, reflecting catabolic state and autonomic dysfunction. Moderate anemia and stomatitis indicate cumulative toxicity without overt organ failure, consistent with a guarded prognosis.",
+  "evidences": [
+    "Cachexia and ECOG decline are independent predictors of poor outcomes in advanced cancer.",
+    "Rising heart rate and tachypnea indicate systemic stress and early decompensation.",
+    "Cumulative toxicity from experimental agent aligns with functional decline and adverse event profile."
+  ]
+}

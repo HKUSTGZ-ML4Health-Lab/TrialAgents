@@ -1,0 +1,10 @@
+{
+  "logit": 0.45,
+  "conf_logit": 0.45,
+  "analysis": "56-year-old female with gastrointestinal stoma complications, significant weight loss (10% in 3 months), functional decline (ECOG from 1 to 2), dehydration, and anorexia. This suggests nutritional vulnerability and early frailty. Comorbidity burden from GI issues is high. Patient-centered care should prioritize symptom control and nutritional support, with guarded prognosis and moderate short-term mortality risk.",
+  "evidences": [
+    "ECOG decline from 1 to 2",
+    "Weight loss from 60 kg to 54 kg (10%) over 85 days",
+    "Adverse events: dehydration, decreased appetite, diarrhoea"
+  ]
+}

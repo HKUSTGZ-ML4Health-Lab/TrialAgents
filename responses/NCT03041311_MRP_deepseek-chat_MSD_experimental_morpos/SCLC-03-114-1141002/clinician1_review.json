@@ -1,0 +1,10 @@
+{
+  "logit": 0.65,
+  "conf_logit": 0.75,
+  "analysis": "Patient with recurrent severe neutropenia and thrombocytopenia (Grade 4) on days 17 and 58, followed by Grade 3 anemia on day 67, indicating significant bone marrow suppression. High risk of life-threatening bleeding or infection. Hemodynamic stability uncertain; urgent assessment of vitals, bleeding signs, and infection markers needed.",
+  "evidences": [
+    "Recurrent Grade 4 neutropenia (days 17-25, 58-67) with infection risk",
+    "Grade 4 thrombocytopenia (days 58-67) with bleeding risk",
+    "Progression to Grade 3 anemia (day 67) suggesting ongoing marrow failure"
+  ]
+}

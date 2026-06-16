@@ -1,0 +1,10 @@
+{
+  "logit": 0.65,
+  "conf_logit": 0.75,
+  "analysis": "This 60-64 year old female with ECOG 1 and current smoking presents with severe neutropenia and thrombocytopenia (Grade 4) early in treatment, followed by prolonged anemia (Grade 3 to 1) and new-onset hyperthyroidism. The pattern suggests significant bone marrow suppression and possible immune dysregulation, likely treatment-related. Multi-organ involvement (hematologic, endocrine) indicates systemic toxicity. Despite initial recovery, the late hyperthyroidism raises concern for autoimmune or paraneoplastic process, worsening prognosis.",
+  "evidences": [
+    "Grade 4 neutropenia and thrombocytopenia on day 15 indicate severe acute bone marrow toxicity",
+    "Prolonged anemia (Grade 3 to 1) over 76 days suggests impaired hematopoietic recovery",
+    "New-onset hyperthyroidism (Grade 1) at day 127 may signal immune reconstitution or paraneoplastic syndrome"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.85,
+  "new_conf_logit": 0.8,
+  "reason": "Acute pancreatitis with Grade 3 lipase/amylase, neutropenia, and obesity presents immediate life-threatening risks of septic shock and multi-organ failure. Urgent ABC assessment, aggressive IV fluids, and monitoring for organ dysfunction are critical. Prior survival estimate of 0.35 was too optimistic given these acute findings.",
+  "evidences": [
+    "ATLS primary survey and resuscitation protocols",
+    "Surviving Sepsis Campaign guidelines for early goal-directed therapy",
+    "Pancreatitis management guidelines (IAP/APA) emphasizing early risk stratification"
+  ]
+}

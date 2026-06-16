@@ -1,0 +1,10 @@
+{
+  "logit": 0.35,
+  "conf_logit": 0.75,
+  "analysis": "Patient with superior vena cava syndrome (Day 2-25) and recurrent severe neutropenia (Grade 3). Current smoker, ECOG 1. No immediate hemodynamic or respiratory compromise noted. Chronic lipase elevation (Grade 4) suggests pancreatic injury but no acute pancreatitis. Overall stable vitals, low short-term mortality risk.",
+  "evidences": [
+    "Superior vena cava syndrome (Grade 2) resolved by Day 25",
+    "Recurrent Grade 3 neutropenia (Days 43-53, 75-88) without sepsis",
+    "Chronic lipase elevation (Grade 4) without acute pancreatitis"
+  ]
+}

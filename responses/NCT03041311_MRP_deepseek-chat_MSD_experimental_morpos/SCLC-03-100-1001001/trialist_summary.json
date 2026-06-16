@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient exhibits a high mortality risk due to severe, recurrent bone marrow suppression (grade 4 neutropenia, persistent anemia, thrombocytopenia) leading to infections (UTI, pyrexia) and functional decline (gait disturbance, falls). Cumulative toxicity, new neurologic symptoms (dysarthria, gait disturbance), and chronic hyponatremia indicate multi-organ involvement and systemic compromise, despite initial good ECOG status.",
+  "evidences": [
+    "Clinician 0: Grade 4 neutropenia (day 15-21) with subsequent infections (UTI, pyrexia) indicating high infection/sepsis risk; recurrent anemia and thrombocytopenia suggesting ongoing marrow compromise; dyspnea episodes requiring respiratory status assessment.",
+    "Clinician 1: Recurrent grade 3-4 neutropenia and infections (UTI) indicating significant immunosuppression; progressive neurologic deficits (dysarthria, gait disturbance) suggesting CNS involvement; persistent anemia and thrombocytopenia reflecting ongoing marrow dysfunction.",
+    "Clinician 2: Recurrent grade 2-4 cytopenias (anemia, neutropenia, thrombocytopenia) indicating significant bone marrow compromise; multiple infections (UTI) and constitutional symptoms (fatigue, decreased appetite) reflecting frailty; new gait disturbance and fall event suggesting functional decline."
+  ]
+}

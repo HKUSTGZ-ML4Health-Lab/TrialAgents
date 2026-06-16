@@ -1,0 +1,10 @@
+{
+  "logit": 0.45,
+  "conf_logit": 0.75,
+  "analysis": "Patient with ECOG 1, former smoker, and multiple grade 3-4 toxicities (neutropenia, anemia, thrombocytopenia) indicating significant treatment burden. Recurrent neutropenia and confusional state suggest frailty vulnerability. Functional status preserved but at risk of decline. Goals of care should prioritize quality of life and minimize aggressive interventions.",
+  "evidences": [
+    "ECOG performance status 1 (ambulatory but symptomatic)",
+    "Recurrent grade 3-4 neutropenia and anemia indicating hematologic toxicity",
+    "Confusional state (grade 3) suggesting cognitive vulnerability"
+  ]
+}

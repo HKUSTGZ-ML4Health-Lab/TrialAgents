@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The assessment correctly identifies immediate life-threatening risks: hypotension, dyspnea, and severe neutropenia suggest sepsis or cardiorespiratory failure. Urgent interventions (broad-spectrum antibiotics, G-CSF, vasopressors, blood products) are implied but should be explicitly prioritized for rapid deployment.",
+  "evidences": [
+    "Sepsis guidelines: immediate antibiotics and hemodynamic support for neutropenic fever",
+    "Emergency management of neutropenic sepsis: early G-CSF and blood product transfusion",
+    "ACEP clinical policy on septic shock: rapid risk stratification and resuscitation"
+  ]
+}

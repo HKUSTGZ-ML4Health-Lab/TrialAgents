@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The assessment aligns with geriatric medicine principles: profound functional decline (ECOG 1 to imminent death), high comorbidity burden, and poor treatment tolerance indicate realistic prognosis of imminent mortality.",
+  "evidences": [
+    "ECOG performance status decline reflects poor functional reserve",
+    "Multiple grade 4-5 adverse events indicate severe comorbidity burden",
+    "Recurrent neutropenia and infections suggest frailty and immunosenescence"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The multi-disciplinary report accurately identifies immediate life-threatening risks: Grade 4 neutropenia (sepsis risk), Grade 3 CVA (neurological compromise), and metabolic derangements (arrhythmia, encephalopathy). These require urgent ICU-level monitoring, broad-spectrum antibiotics, and electrolyte correction. Risk stratification is appropriately conservative for emergency care.",
+  "evidences": [
+    "Grade 4 neutropenia mandates empiric antibiotics and isolation per neutropenic fever protocols.",
+    "Cerebrovascular accident with deficits requires neuro checks and blood pressure management.",
+    "Electrolyte disturbances (hypokalemia, hyperglycemia) increase arrhythmia and seizure risk."
+  ]
+}

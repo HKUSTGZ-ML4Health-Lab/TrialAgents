@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient presents with recurrent severe neutropenia (Grade 4) and leukopenia, persistent anemia, thrombocytopenia, and late-onset ascites (Day 365), indicating profound bone marrow suppression and possible hepatic or malignant progression. ECOG 2 and prolonged diarrhea further compromise functional status and treatment tolerance. These cumulative toxicities and organ dysfunction signal a high mortality risk.",
+  "evidences": [
+    "Clinician 0: Grade 4 neutropenia (day 15-21) with recurrent episodes, late-onset ascites (day 365) suggesting hepatic or malignant progression, and persistent anemia/thrombocytopenia indicating bone marrow suppression.",
+    "Clinician 1: Recurrent Grade 3-4 neutropenia with delayed recovery, late-onset ascites (Day 365) indicating possible hepatic failure or carcinomatosis, and persistent anemia with ECOG 2 performance status.",
+    "Clinician 2: ECOG 2 indicating reduced functional capacity, recurrent Grade 3-4 neutropenia/leukopenia reflecting significant bone marrow toxicity, and ascites suggesting disease progression or advanced organ dysfunction."
+  ]
+}

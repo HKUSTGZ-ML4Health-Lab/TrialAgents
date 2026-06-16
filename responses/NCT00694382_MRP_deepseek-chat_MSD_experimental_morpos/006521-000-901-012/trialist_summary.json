@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a low risk of mortality.",
+  "report": "The patient presents with multiple mild, self-limited adverse events (e.g., headache, mucosal inflammation, hematomas, epistaxis) without systemic progression or organ involvement. Vital signs remain stable (BP 102-134/68-92 mmHg, HR 73-89 bpm), weight is maintained (87-88 kg), and ECOG performance status is consistently 0, indicating full functional capacity. No evidence of hypotension, tachycardia, or multi-organ dysfunction. The adverse event profile is manageable and does not signal increased mortality risk.",
+  "evidences": [
+    "Clinician 0: Patient is hemodynamically stable with normal vital signs, no respiratory distress, and ECOG 0 throughout. Adverse events are mild and not life-threatening. Systolic BP ranges 102-134 mmHg, no hypotension; heart rate 73-89 bpm, no tachycardia or bradycardia; ECOG 0 at all visits.",
+    "Clinician 1: Mild, self-limited adverse events without systemic progression. Stable vital signs, ECOG 0, and weight maintenance suggest low disease burden. No evidence of multi-organ dysfunction or poor therapeutic response. ECOG Performance Status 0 throughout; stable weight (87-88 kg) and vital signs; mild, transient adverse events without organ involvement.",
+    "Clinician 2: This 53-year-old female maintains excellent functional status (ECOG 0 throughout), stable weight, and normal vital signs despite multiple mild adverse events. No evidence of frailty, cognitive decline, or significant comorbidity burden. Prognosis is favorable with low mortality risk. ECOG Performance Status consistently 0 across all visits; stable weight (87-88 kg) and normal blood pressure trends; only mild adverse events without impact on daily function."
+  ]
+}

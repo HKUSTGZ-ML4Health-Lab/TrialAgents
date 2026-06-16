@@ -1,0 +1,10 @@
+{
+  "logit": 0.65,
+  "conf_logit": 0.7,
+  "analysis": "This 60-64-year-old male with BMI 18.1 (malnutrition), ECOG 1, and persistent anemia, transaminitis, and hemiparesis suggests significant comorbidity burden and functional decline. The recurrent grade 2-3 anemia and liver enzyme elevations indicate ongoing systemic stress. Given the progressive nature of these events and new neurological deficit, prognosis is guarded with moderate-high mortality risk. Goals of care should prioritize symptom management and quality of life.",
+  "evidences": [
+    "Low BMI (18.1) indicating malnutrition and frailty",
+    "Persistent anemia (grades 1-3) and thrombocytopenia suggesting bone marrow compromise",
+    "New onset hemiparesis (grade 3) indicating potential CNS involvement or stroke"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.75,
+  "conf_logit": 0.75,
+  "analysis": "Patient with multiple severe adverse events (sepsis, febrile neutropenia, thrombocytopenia, atrial fibrillation, COPD exacerbation) and prolonged hospitalizations, indicating high comorbidity burden and frailty. ECOG 1 suggests some functional independence, but recurrent serious events and persistent symptoms (cough, pneumonitis) impair quality of life. Prognosis is guarded; goals of care should prioritize symptom management and functional preservation.",
+  "evidences": [
+    "Grade 4 sepsis and febrile neutropenia requiring intensive care",
+    "Recurrent thrombocytopenia (Grade 4) and cardiac arrhythmias",
+    "COPD exacerbation (Grade 3) indicating pulmonary vulnerability"
+  ]
+}

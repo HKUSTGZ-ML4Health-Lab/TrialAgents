@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.05,
+  "new_conf_logit": 0.9,
+  "reason": "Patient has stable vital signs, no respiratory distress, and ECOG 0. Adverse events are mild and self-limited. No immediate life-threatening risks identified. Emergency interventions not required.",
+  "evidences": [
+    "Vital signs within normal limits",
+    "ECOG performance status 0",
+    "No signs of shock or organ dysfunction"
+  ]
+}

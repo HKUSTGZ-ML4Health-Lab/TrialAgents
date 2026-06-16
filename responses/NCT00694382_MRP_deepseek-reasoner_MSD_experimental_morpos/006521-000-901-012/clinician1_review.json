@@ -1,0 +1,10 @@
+{
+  "logit": 0.1,
+  "conf_logit": 0.85,
+  "analysis": "Patient is hemodynamically stable with normal vital signs, no respiratory distress, and ECOG 0 performance status. No immediate life-threatening conditions are identified based on available data. Mild adverse events are manageable and do not indicate organ dysfunction or impending deterioration.",
+  "evidences": [
+    "Consistently normal blood pressure, heart rate, and respiratory rate across all time points.",
+    "ECOG performance status of 0 throughout, indicating full functional capacity.",
+    "No severe adverse events or signs of sepsis, bleeding, or metabolic crisis."
+  ]
+}

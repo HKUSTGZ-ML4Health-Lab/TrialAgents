@@ -1,0 +1,12 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.3,
+  "new_conf_logit": 0.9,
+  "reason": "Progressive malignancy and ECOG decline dominate prognosis; stable vitals do not offset therapy failure. Pathophysiology supports high near-term mortality.",
+  "evidences": [
+    "ECOG performance status decline is a validated predictor of survival in cancer patients.",
+    "Malignant neoplasm progression indicates lack of therapeutic response and poor prognosis."
+  ]
+}

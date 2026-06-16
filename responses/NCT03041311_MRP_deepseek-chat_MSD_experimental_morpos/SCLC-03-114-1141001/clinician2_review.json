@@ -1,0 +1,10 @@
+{
+  "logit": 0.65,
+  "conf_logit": 0.75,
+  "analysis": "The patient exhibits recurrent severe neutropenia and leukopenia with dose-limiting toxicity, followed by late-onset ascites suggesting progressive hepatic dysfunction or peritoneal involvement. The ECOG 2 and persistent anemia indicate poor bone marrow reserve and systemic decline. Multi-organ interaction between hematologic toxicity and potential liver involvement raises concern for treatment-related mortality or disease progression.",
+  "evidences": [
+    "Recurrent Grade 3-4 neutropenia with delayed recovery",
+    "Late-onset ascites (Day 365) indicating possible hepatic failure or carcinomatosis",
+    "Persistent anemia and ECOG 2 performance status"
+  ]
+}

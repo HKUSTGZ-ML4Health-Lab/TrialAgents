@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.75,
+  "analysis": "This elderly male with low BMI and ECOG 1 presents with progressive multi-organ dysfunction: severe cytopenias (neutropenia/thrombocytopenia grade 4), SIADH/hyponatremia, and hepatic involvement (hyperbilirubinemia). The rapid deterioration to failure to thrive (grade 5) suggests aggressive paraneoplastic syndrome or treatment-related toxicity. Poor therapeutic response and escalating adverse events indicate high mortality risk.",
+  "evidences": [
+    "Failure to thrive (grade 5) at day 69",
+    "Grade 4 neutropenia and thrombocytopenia with delayed recovery",
+    "Multi-system involvement: hyponatremia, hyperbilirubinemia, dehydration"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.95,
+  "conf_logit": 0.85,
+  "analysis": "Rapid progression from bronchitis to severe neutropenia (Grade 4) and fatal sepsis (Grade 5) within days suggests profound immunosuppression, likely treatment-related. Multi-organ failure from sepsis, compounded by ECOG 1 status and former smoking history, indicates high mortality. No therapeutic response evident.",
+  "evidences": [
+    "Grade 4 neutropenia on day 9 progressing to fatal sepsis on day 10",
+    "Rapid clinical deterioration from bronchitis (day 8) to death (day 10)",
+    "ECOG performance status 1 with former smoking history increasing infection risk"
+  ]
+}

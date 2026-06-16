@@ -1,0 +1,10 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "Recurrent severe neutropenia and thrombocytopenia with incomplete marrow recovery indicate cumulative toxicity and impaired hematopoietic reserve, portending high mortality risk despite good baseline functional status.",
+  "evidences": [
+    "Recurrent severe neutropenia and thrombocytopenia with incomplete marrow recovery",
+    "Impaired hematopoietic reserve in older adults"
+  ]
+}

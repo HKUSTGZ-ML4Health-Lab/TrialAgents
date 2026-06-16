@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.75,
+  "analysis": "Patient presents with acute multi-organ dysfunction: severe hyponatremia (grade 4), dehydration, pneumonia, restrictive cardiomyopathy, and confusion. Immediate ABC assessment, IV fluids, electrolyte correction, and sepsis management are critical. High mortality risk due to concurrent cardiac, respiratory, and neurological compromise.",
+  "evidences": [
+    "Hyponatraemia grade 4 (life-threatening electrolyte disorder)",
+    "Pneumonia grade 3 with dehydration (sepsis risk)",
+    "Restrictive cardiomyopathy grade 3 (cardiac compromise)"
+  ]
+}

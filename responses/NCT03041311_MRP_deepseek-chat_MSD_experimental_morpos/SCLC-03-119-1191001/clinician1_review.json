@@ -1,0 +1,10 @@
+{
+  "logit": 0.25,
+  "conf_logit": 0.75,
+  "analysis": "Patient has recurrent neutropenia (Grade 3 and 2), anemia, and elevated LDH, but no hemodynamic or respiratory instability is documented. Current smoker with ECOG 1. Risk of infection/sepsis is moderate; no immediate life-threatening ABC compromise. Monitoring for febrile neutropenia and sepsis is warranted.",
+  "evidences": [
+    "Grade 3 neutropenia (Day 44-57) and recurrent Grade 2 neutropenia",
+    "Elevated LDH (Grade 2, Day 226) suggesting possible tissue damage or malignancy progression",
+    "Current smoker with ECOG 1, increasing infection risk"
+  ]
+}

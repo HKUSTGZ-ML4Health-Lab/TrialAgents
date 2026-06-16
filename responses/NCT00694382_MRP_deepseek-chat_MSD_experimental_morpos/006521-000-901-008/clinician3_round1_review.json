@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.95,
+  "new_conf_logit": 0.85,
+  "reason": "The multi-disciplinary assessment appropriately integrates functional decline (ECOG worsening), cachexia, and multi-organ failure, which in geriatric medicine strongly predict poor outcomes. Quality of life is severely compromised, and goals of care should shift to palliation.",
+  "evidences": [
+    "Functional decline and cachexia indicate advanced frailty",
+    "High comorbidity burden with malignant progression and multi-organ failure",
+    "Patient-centered outcomes suggest poor quality of life and limited treatment tolerance"
+  ]
+}

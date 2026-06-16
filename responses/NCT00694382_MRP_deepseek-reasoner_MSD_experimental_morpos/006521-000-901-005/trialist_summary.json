@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a low risk of mortality.",
+  "report": "Comprehensive safety assessment shows manageable adverse event profile. The patient experienced moderate, transient toxicities (neutropenia, leukopenia, fatigue, appetite loss) that resolved without lasting functional impairment. Recurrent leukopenia and ongoing anemia are noted but vital signs remain stable and ECOG performance status improved to 0, indicating good functional reserve. Weight fluctuations are minor. No signs of sepsis, organ failure, or cachexia. The overall trajectory suggests low short-term mortality risk.",
+  "evidences": [
+    "Clinician 2 highlighted excellent functional resilience: ECOG performance status maintained at 0 from Day 29 onward, indicating full independence despite moderate adverse events.",
+    "Clinician 0 noted stable vital signs: normotensive, heart rate normal range, no tachypnea or hypoxia, with no evidence of infection-related deterioration.",
+    "Clinician 1 acknowledged recurrent leukopenia but also pointed out good functional reserve (ECOG 0) and stable organ function, which supports low mortality risk despite age and hematologic toxicity."
+  ]
+}

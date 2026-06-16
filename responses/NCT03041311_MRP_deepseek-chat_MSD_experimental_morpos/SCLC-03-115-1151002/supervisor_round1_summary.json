@@ -1,0 +1,10 @@
+{
+  "action": "No",
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient presents with severe multi-organ toxicity including Grade 4 neutropenia and thrombocytopenia indicating profound bone marrow suppression, Grade 3 lipase elevation signifying pancreatic injury, and progressive respiratory compromise with bronchiolitis, dyspnea, and hemoptysis leading to pulmonary failure. These are compounded by obesity and smoking history, which reduce physiological reserve and increase comorbidity burden. The cumulative, life-threatening adverse events and absence of recovery signals point to a high mortality risk.",
+  "reasons": [
+    "All clinicians agreed with the previous report, providing consistent supporting evidence such as severe bone marrow suppression, pulmonary failure, and multi-organ failure patterns.",
+    "Clinician 1 referenced relevant management guidelines (SSC 2021, massive transfusion protocol, airway management) which align with the high-risk assessment.",
+    "No strong opposition or compelling counter-evidence was presented to warrant further discussion."
+  ]
+}

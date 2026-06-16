@@ -1,0 +1,10 @@
+{
+  "logit": 0.82,
+  "conf_logit": 0.75,
+  "analysis": "This 65-69-year-old female with ECOG 1, smoking history, and recurrent neutropenia/anemia develops late-onset multi-organ failure (day 139): severe hyponatremia, pneumonia, pneumonitis, restrictive cardiomyopathy, and dehydration. The rapid progression from cytopenias to cardiopulmonary and neurologic compromise suggests a systemic inflammatory or drug-induced process with poor therapeutic reserve. High mortality risk due to progressive multi-system dysfunction and limited compensatory mechanisms.",
+  "evidences": [
+    "Recurrent grade 2-3 neutropenia with late-onset pneumonia and pneumonitis",
+    "New restrictive cardiomyopathy with concurrent hyponatremia (grade 4) and dehydration",
+    "Rapid decline from stable cytopenias to multi-organ failure by day 139"
+  ]
+}

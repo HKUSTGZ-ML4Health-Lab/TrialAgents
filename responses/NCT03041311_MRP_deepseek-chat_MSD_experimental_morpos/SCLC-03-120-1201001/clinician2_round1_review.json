@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The multi-disciplinary report accurately captures progressive multi-organ dysfunction with hematologic, hepatic, and neurologic toxicities, consistent with systemic decompensation. The pattern of cumulative organ damage and frailty markers (low BMI, ECOG 1) aligns with high mortality risk.",
+  "evidences": [
+    "Progressive multi-organ involvement indicates poor therapeutic tolerance and systemic toxicity.",
+    "Low BMI and ECOG 1 are established predictors of adverse outcomes in clinical trials.",
+    "Neurologic event (hemiparesis) superimposed on hepatic and hematologic failure suggests advanced disease trajectory."
+  ]
+}

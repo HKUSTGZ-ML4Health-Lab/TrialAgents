@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.92,
+  "new_conf_logit": 0.85,
+  "reason": "Multi-organ involvement from advanced malignancy\u2014ascites, cytopenias, weight loss, and hemodynamic instability\u2014indicates systemic decompensation and high short-term mortality.",
+  "evidences": [
+    "Advanced malignancy with cachexia and multi-organ failure",
+    "Hemodynamic instability as sign of impending decompensation",
+    "Thrombocytopenia and anemia reflecting bone marrow infiltration"
+  ]
+}

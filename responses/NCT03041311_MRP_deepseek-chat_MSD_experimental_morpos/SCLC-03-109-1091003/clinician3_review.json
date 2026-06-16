@@ -1,0 +1,10 @@
+{
+  "logit": 0.55,
+  "conf_logit": 0.6,
+  "analysis": "This 65-69-year-old female with ECOG 2, current smoker, and multiple grade 3-4 toxicities (neutropenia, thrombocytopenia, anemia) has significant comorbidity burden and functional decline. Recurrent severe neutropenia and prolonged dehydration indicate poor tolerance to therapy and increased vulnerability. Prognosis is guarded; focus should shift to symptom management, functional preservation, and quality of life.",
+  "evidences": [
+    "ECOG performance status 2 indicates limited self-care and functional dependence.",
+    "Recurrent grade 4 neutropenia and grade 3 thrombocytopenia reflect severe bone marrow toxicity and increased infection/bleeding risk.",
+    "Prolonged dehydration (32-74 days) suggests poor oral intake and frailty."
+  ]
+}

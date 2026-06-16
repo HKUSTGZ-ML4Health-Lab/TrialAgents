@@ -1,0 +1,10 @@
+{
+  "logit": 0.15,
+  "conf_logit": 0.3,
+  "analysis": "Patient has Grade 3 granulocytopenia and leukopenia with thrombocytopenia, indicating significant bone marrow suppression. Anemia episodes are isolated. No hemodynamic instability, respiratory distress, or neurological compromise. Diabetes and dyslipidemia are mild. Immediate risk is low, but monitoring for infection and bleeding is warranted.",
+  "evidences": [
+    "Grade 3 granulocytopenia (Day 15-31) increases infection risk",
+    "Grade 3 anemia (Day 52 and 73) may indicate ongoing marrow suppression",
+    "No acute vital sign abnormalities or organ failure documented"
+  ]
+}

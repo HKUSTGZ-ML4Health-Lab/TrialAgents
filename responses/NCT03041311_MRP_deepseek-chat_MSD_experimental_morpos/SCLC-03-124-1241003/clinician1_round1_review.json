@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.7,
+  "new_conf_logit": 0.75,
+  "reason": "Delayed hepatobiliary and pancreatic injury with thrombocytopenia signals high risk of acute liver failure, hemorrhage, or multi-organ dysfunction. Immediate ICU-level monitoring, coagulation correction, and organ support are critical.",
+  "evidences": [
+    "ACEP clinical policy for acute liver failure",
+    "ATLS guidelines for hemorrhagic shock prevention",
+    "Surviving Sepsis Campaign for multi-organ dysfunction"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.3,
+  "conf_logit": 0.4,
+  "analysis": "Patient is 65-69, ECOG 0, indicating good baseline functional status. However, multiple adverse events (back pain, prostatitis, rash, thrombocytopenia, anemia, dyspnea) suggest significant treatment-related toxicity. The accumulation of grade 3 events (prostatitis, bronchitis, dyspnea) and prolonged symptoms (neuralgia, perineal pain) indicate moderate comorbidity burden and potential for functional decline. Current smoker status adds risk. Overall, moderate mortality risk considering age, toxicity, and smoking.",
+  "evidences": [
+    "ECOG performance status 0 indicates good functional independence at baseline",
+    "Multiple grade 3 adverse events (prostatitis, back pain, bronchitis, dyspnea) suggest significant treatment toxicity",
+    "Current smoker status increases cardiovascular and pulmonary risk"
+  ]
+}

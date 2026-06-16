@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.8,
+  "analysis": "Patient with obesity, former smoker, and multiple comorbidities including COPD, anemia, and thrombocytopenia. Progressive functional decline evidenced by worsening ECOG performance status to 3, recurrent falls, and persistent fatigue/asthenia. High comorbidity burden and frailty indicators suggest poor prognosis and need for palliative-focused care.",
+  "evidences": [
+    "ECOG performance status worsened to 3 (severity 3) on day 485",
+    "Recurrent falls (day 464) and limb injuries",
+    "Multiple severe adverse events: neutropenia grade 4, COPD grade 3, cellulitis grade 3, peripheral edema grade 3"
+  ]
+}

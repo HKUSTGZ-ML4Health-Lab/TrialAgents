@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.8,
+  "analysis": "Patient with rapid onset of atrial fibrillation, followed by severe febrile neutropenia and thrombocytopenia, indicating significant bone marrow suppression and systemic inflammation. Recurrent neutropenia and anemia suggest ongoing myelosuppression. Infectious pleural effusion progressing to fatal outcome reflects multi-organ failure and high disease burden.",
+  "evidences": [
+    "Febrile neutropenia (Grade 4) and thrombocytopenia (Grade 4) early in course",
+    "Recurrent neutropenia (Grade 4) and anemia (Grade 3) at day 74",
+    "Infectious pleural effusion (Grade 4) progressing to Grade 5 (death) within 4 days"
+  ]
+}

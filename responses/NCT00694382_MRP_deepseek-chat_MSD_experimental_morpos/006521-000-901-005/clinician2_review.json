@@ -1,0 +1,10 @@
+{
+  "logit": 0.35,
+  "conf_logit": 0.65,
+  "analysis": "The patient shows a stable clinical course with intermittent moderate hematologic toxicities (anemia, leukopenia, neutropenia) and transient constitutional symptoms, likely related to the experimental therapy. Vital signs and ECOG performance status remain largely preserved, suggesting good functional reserve and treatment tolerance. No evidence of progressive multi-organ dysfunction or high disease burden.",
+  "evidences": [
+    "ECOG performance status maintained at 0-1 throughout the trial",
+    "Recurrent but self-limiting leukopenia and neutropenia without infectious complications",
+    "Stable vital signs and weight with minimal fluctuations"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.05,
+  "conf_logit": 0.95,
+  "analysis": "Patient is hemodynamically stable with normal vital signs throughout the observation period. No signs of respiratory compromise, shock, or altered mental status. The only adverse event is mild peripheral neuropathy, which does not pose an immediate life threat. Overall mortality risk is very low from an emergency medicine perspective.",
+  "evidences": [
+    "Stable blood pressure (122-151/68-90 mmHg) and heart rate (68-90 bpm)",
+    "Normal respiratory rate (10-11 breaths/min) indicating no respiratory distress",
+    "ECOG Performance Status 0 throughout, indicating full functional capacity"
+  ]
+}

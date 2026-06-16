@@ -1,0 +1,12 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.25,
+  "new_conf_logit": 0.8,
+  "reason": "Vital signs show impending decompensation; acute risks of sepsis, bleeding, tumor lysis are high. Immediate IV access, fluid resuscitation, vasopressors, and urgent labs (CBC, coagulation, LDH, cultures) are needed. Loss of consciousness and hypotension demand rapid intervention.",
+  "evidences": [
+    "Sepsis/hemodynamic instability management per SCCM guidelines",
+    "Oncologic emergencies: tumor lysis, DIC, neutropenic fever protocols"
+  ]
+}

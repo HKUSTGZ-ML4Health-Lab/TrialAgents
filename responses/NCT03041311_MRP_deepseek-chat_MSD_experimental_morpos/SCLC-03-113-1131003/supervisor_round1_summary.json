@@ -1,0 +1,9 @@
+{
+  "action": "No",
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient exhibits severe bone marrow suppression (Grade 4 neutropenia, Grade 3 thrombocytopenia) with multi-system adverse events (neurologic, endocrine, pulmonary), prolonged cytopenias, and functional decline. This cumulative toxicity pattern indicates high mortality risk from infection, bleeding, or organ failure.",
+  "reasons": [
+    "All clinicians agreed with the initial assessment, providing supporting evidence such as sepsis guidelines, platelet transfusion thresholds, and established poor prognostic markers.",
+    "No dissenting opinions or compelling counter-evidence were presented, so no modification to the original report is needed."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "logit": 0.85,
+  "conf_logit": 0.8,
+  "analysis": "This patient shows a clear trajectory of clinical deterioration with malignant neoplasm progression, new-onset hypotension (SBP 96 mmHg), tachycardia (HR 101), and tachypnea (RR 22) at time 104. The development of ascites, moderate anemia, thrombocytopenia, and loss of consciousness indicates possible septic shock, bleeding, or tumor-related complications. Immediate ABC assessment, fluid resuscitation, and evaluation for source control are critical.",
+  "evidences": [
+    "Malignant neoplasm progression (severe) at time 99",
+    "Hypotension (SBP 96 mmHg) with tachycardia (HR 101) at time 104",
+    "Loss of consciousness, ascites, and moderate anemia/thrombocytopenia"
+  ]
+}

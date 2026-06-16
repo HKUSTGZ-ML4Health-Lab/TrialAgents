@@ -1,0 +1,9 @@
+{
+  "answer": "In my opinion, the patient has a high risk of mortality.",
+  "report": "The patient exhibits a pattern of recurrent, severe cytopenias (Grade 4 thrombocytopenia, Grade 3 neutropenia) with febrile neutropenia and hypotension, indicating cumulative bone marrow suppression and possible sepsis. The emergence of Grade 3 cognitive disorder suggests CNS involvement or metabolic crisis. These factors, combined with incomplete recovery between cycles and poor hematopoietic reserve, point to a high mortality risk.",
+  "evidences": [
+    "Clinician 0: Grade 4 thrombocytopenia (Day 15-24) with recurrence of Grade 3 (Day 85-91) and ongoing Grade 2-3 neutropenia; hypotension (Grade 2) on Day 43-45; cognitive disorder (Grade 3) from Day 161.",
+    "Clinician 1: Recurrent Grade 3-4 neutropenia and thrombocytopenia with febrile neutropenia; prolonged cytopenias requiring multiple dose delays or reductions; new onset Grade 3 cognitive disorder suggesting possible CNS progression or toxicity.",
+    "Clinician 2: Multiple severe (grade 3-4) hematologic toxicities suggest poor treatment tolerance; grade 3 cognitive disorder signals potential functional and cognitive decline."
+  ]
+}

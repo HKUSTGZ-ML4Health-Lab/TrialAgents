@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.65,
+  "new_conf_logit": 0.8,
+  "reason": "New-onset hypertension and weight loss signal cardiovascular decompensation and cachexia in advanced malignancy. These acute changes warrant urgent evaluation for reversible causes despite stable vitals.",
+  "evidences": [
+    "Hypertension as acute stress marker in cancer patients",
+    "Cachexia associated with increased short-term mortality",
+    "ECOG decline as predictor of rapid deterioration"
+  ]
+}

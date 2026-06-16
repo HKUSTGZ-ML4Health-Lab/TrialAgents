@@ -1,6 +1,4 @@
-# TrialAgents
-
-**Zero-Shot Forecasting of Evolving Patient Dynamics and Clinical Outcomes via Multi-Agent Collaboration**
+# TrialAgents: An Agentic System for Clinical Trial Patient Dynamics Forecasting
 
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue)](https://python.org)
 [![PyTorch 2.0+](https://img.shields.io/badge/PyTorch-2.0%2B-orange)](https://pytorch.org)
@@ -31,8 +29,8 @@ The Supervisor coordinates iterative discussions, tracks disagreements, and driv
 
 | Task | Component | Description |
 |---|---|---|
-| Mortality Prediction | DPT (LNL pipeline) | Refines noisy zero-shot outputs with lightweight temporal modeling |
-| Digital Twin Generation | Simulator | Produces autoregressive, privacy-preserving patient trajectories |
+| Mortality Prediction | DPT (LNL pipeline, optional) | Refines noisy zero-shot outputs with lightweight temporal modeling |
+| Digital Twin Generation | Simulator agent | Produces autoregressive, privacy-preserving patient trajectories |
 
 ## Supported Clinical Trial Datasets
 ClinicalTrials.gov IDs:
@@ -67,7 +65,7 @@ cp utils/config.py.example utils/config.py
 python main.py --dataset NCT00694382 --start_idx 0 --end_idx 10
 
 # Specify LLM backend
-python main.py --dataset NCT00694382 --llm deepseek-chat --group experimental
+python main.py --dataset NCT00694382 --llm deepseek-reasoner --group experimental
 ```
 
 ### Common CLI arguments
@@ -100,8 +98,7 @@ data/outputs/{dataset}_{task}_{llm}_{corpus}_{group}/
     ├── trialist_final_summary.json
     ├── trialist_summary.json
     ├── trialist_userprompt.txt
-    └── zz_final_logits.json
-    
+    └── zz_final_logits.json    
 ```
 
 ## License

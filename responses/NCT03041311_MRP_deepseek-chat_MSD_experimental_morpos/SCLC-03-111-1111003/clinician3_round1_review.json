@@ -1,0 +1,10 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The assessment appropriately captures high frailty and poor prognosis. ECOG 1 underestimates functional decline; rapid decompensation and Grade 4 neutropenia indicate severe vulnerability. Quality of life and comfort-focused care are paramount.",
+  "evidences": [
+    "ECOG performance status is a valid functional assessment tool in older adults.",
+    "Grade 4 neutropenia and fatal pneumonia reflect high comorbidity burden and poor resilience."
+  ]
+}

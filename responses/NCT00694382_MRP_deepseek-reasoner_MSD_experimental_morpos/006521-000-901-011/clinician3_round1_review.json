@@ -1,0 +1,14 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "changed",
+  "new_logit": 0.7,
+  "new_conf_logit": 0.7,
+  "reason": "Patient's ECOG decline from 1 to 2, 13% weight loss (cachexia), and ongoing severe pneumonitis indicate profound functional loss and poor physiological reserve, escalating mortality risk beyond previous estimate.",
+  "evidences": [
+    "ECOG performance status decline from 1 to 2",
+    "Significant weight loss >10% in 70 days indicating cachexia",
+    "Severe Grade 3-4 pneumonitis with ongoing symptoms",
+    "Frailty phenotype: vulnerability to stressors and multi-organ involvement"
+  ]
+}

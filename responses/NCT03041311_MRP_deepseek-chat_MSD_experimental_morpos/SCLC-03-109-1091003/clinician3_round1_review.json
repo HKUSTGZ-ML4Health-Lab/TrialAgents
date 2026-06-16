@@ -1,0 +1,11 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "reason": "The assessment appropriately identifies severe bone marrow suppression and poor physiologic reserve, consistent with high mortality risk in this age group. Functional status (ECOG 2) and comorbidities are well integrated, supporting a guarded prognosis.",
+  "evidences": [
+    "ECOG performance status \u22652 is associated with increased mortality in older adults with cancer",
+    "Recurrent grade 3-4 toxicities indicate poor treatment tolerance and reduced physiologic reserve",
+    "Prolonged dehydration and infection reflect impaired homeostasis and increased vulnerability"
+  ]
+}

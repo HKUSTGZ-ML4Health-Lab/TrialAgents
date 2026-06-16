@@ -1,0 +1,13 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "new_logit": 0.55,
+  "new_conf_logit": 0.7,
+  "reason": "Recurrent severe neutropenia and thrombocytopenia with new confusion indicate high risk of sepsis and CNS bleeding. Immediate ABC assessment, septic workup, and empiric antibiotics are urgent. Risk stratification appropriately conservative.",
+  "evidences": [
+    "Sepsis-induced coagulopathy and CNS bleeding risk",
+    "Grade 4 neutropenia with fever requires immediate broad-spectrum antibiotics",
+    "Confusion in setting of cytopenias suggests septic encephalopathy or intracranial hemorrhage"
+  ]
+}

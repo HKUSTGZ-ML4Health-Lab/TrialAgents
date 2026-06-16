@@ -1,0 +1,11 @@
+{
+  "answer": "disagree",
+  "confidence": 2,
+  "opinion": "not_changed",
+  "reason": "Recurrent Grade 3-4 toxicities signal high cumulative comorbidity burden and risk of functional decline, despite preserved ECOG 1. Geriatric assessment emphasizes that such toxicity patterns often precede decompensation in older adults.",
+  "evidences": [
+    "Cumulative toxicity burden from recurrent Grade 3-4 adverse events",
+    "ECOG 1 may underestimate frailty risk in context of multi-organ system involvement",
+    "Geriatric prognostic tools incorporate comorbidity severity and treatment tolerance"
+  ]
+}

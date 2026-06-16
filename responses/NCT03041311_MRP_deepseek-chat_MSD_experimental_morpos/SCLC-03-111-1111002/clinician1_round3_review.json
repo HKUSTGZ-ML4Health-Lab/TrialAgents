@@ -1,0 +1,15 @@
+{
+  "answer": "agree",
+  "confidence": 3,
+  "opinion": "not_changed",
+  "new_logit": 0.35,
+  "new_conf_logit": 0.75,
+  "reason": "Agree with low immediate mortality risk: stable vitals, resolved SVCS, no sepsis or organ failure. Emergency priorities are monitoring for neutropenic fever and pancreatitis progression.",
+  "evidences": [
+    "Stable vital signs and absence of acute decompensation",
+    "Resolved superior vena cava syndrome",
+    "Grade 3 neutropenia without fever or sepsis",
+    "Grade 4 lipase without acute pancreatitis criteria",
+    "ECOG 1 functional status"
+  ]
+}

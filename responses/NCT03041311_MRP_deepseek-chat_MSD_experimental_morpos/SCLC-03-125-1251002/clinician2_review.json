@@ -1,0 +1,10 @@
+{
+  "logit": 0.65,
+  "conf_logit": 0.75,
+  "analysis": "Patient with ECOG 1 and former smoker status presents with severe granulocytopenia (Day 15-31) and recurrent severe anemia (Day 55, 73). These cytopenias suggest significant bone marrow suppression, likely from chemotherapy. The temporal pattern indicates ongoing hematopoietic toxicity with incomplete recovery, increasing infection risk and impairing cardiopulmonary reserve. Despite no overt multi-organ failure, the persistent severe cytopenias and poor nutritional status (BMI 20.9) portend moderate-to-high mortality risk.",
+  "evidences": [
+    "Recurrent severe anemia (Grade 3) on Day 55 and 73 indicates persistent bone marrow dysfunction",
+    "Prolonged severe granulocytopenia (Day 15-31) increases risk of life-threatening infections",
+    "Low BMI (20.9) and former smoking history suggest reduced physiologic reserve"
+  ]
+}
